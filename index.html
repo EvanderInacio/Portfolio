@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--============= Unicons css ===================-->
+   <link
+   rel="stylesheet"
+   href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+  />
+
+ <!--============= Swiper ===================-->
+ <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+ <link rel="stylesheet" href="assets/css/style.css">
+ <link rel="icon" href="assets/images/logo.svg">
+ <title>Evander Inácio | Front-end developer </title>
+</head> 
+<body>
+
+  <!--================== HEADER ========================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+
+      <a href="#home" class="nav_logo">Evander</a>
+
+      <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list grid">
+
+            <li class="nav_item"> 
+              <a href="#home" class="nav_link active-link" >
+                <i class="uil uil-estate nav_icon"></i> Home
+              </a>
+            </li>
+
+              <li class="nav_item"> 
+                <a href="#about" class="nav_link">
+                  <i class="uil uil-user nav_icon "></i> Sobre
+                </a>
+              </li>
+
+          <li class="nav_item"> 
+            <a href="#skills" class="nav_link">
+              <i class="uil uil-desktop nav_icon"></i> Tecnologias
+            </a>
+          </li>
+                  
+        <li class="nav_item"> 
+            <a href="#portfolio" class="nav_link">
+              <i class="uil uil-scenery nav_icon"></i> Projetos
+            </a>
+        </li>
+                 
+        <li class="nav_item"> 
+          <a href="#contact" class="nav_link">
+            <i class="uil uil-comment-alt-message nav_icon"></i> Contato
+          </a> 
+        </li>
+
+        <li class="nav_item"> 
+          <a href="blog.html" class="nav_link">
+            <i class="uil uil-file-alt nav_icon"></i> Blog
+          </a>
+        </li>
+      </ul>
+      <i class="uil uil-times nav_close" id="nav-close"></i>
+    </div>
+    
+    <div class="nav_btns">
+      <!-- Theme change button desktop-->
+     <div id="mode">
+      <div id="switch"> 
+      <label id="inner-text">Light</label>
+       </div>
+     </div>
+      
+      <!-- Theme change button Mobile -->
+      <i class="uil uil-moon change-theme uil-sun" id="theme-button"></i>
+      
+      <div class="nav_toggle" id="nav-toggle">
+        <i class="uil uil-apps"></i>
+      </div>
+    </div>   
+    </nav>
+  </header>
+
+  <!--================== MAIN ========================-->
+  <main class="main">
+
+    <!--================== HOME ========================-->
+    <section class="home section home_section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content grid">
+
+            <div class="home_social">
+              <a href="https://www.linkedin.com/in/evander-inacio/" target="_blank" class="home_social-icon">
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=+5511995085916&text=Olá Evander! te achei através de seu portfólio, gostaria de marcar um horário." target="_blank" class="home_social-icon"> 
+                <i class="uil uil-whatsapp"></i>
+              </a>
+              <a href="https://github.com/EvanderInacio" target="_blank"  class="home_social-icon">
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+
+            <div class="home_effect-wrap">
+              <div class="effect effect-1"></div>
+              <div class="effect effect-2"></div>
+              <div class="effect effect-3">
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+              </div>
+            </div>
+
+            <div class="home_desktop">
+              <div class="home_space">
+              <img  src="assets/images/space.svg" alt="">
+              <img class="home_people" src="assets/images/fundoPessoa.png" alt="">
+            </div>
+            </div>
+            
+            <div class="home_data">
+              <h1 class="home_title">Olá, eu sou <br> Evander Inácio <span class="score">.</span></h1>
+              <h3 class="home_subtitle home_animation">Desenvolvedor Front-End</h3>
+              <p class="home_description">Busco uma oportunidade de dar vida ao design e mudar o mundo através da tecnologia. <br>
+              </p>
+              
+              <a href="#portfolio" class="button button--flex">
+                Conheça meu portfolio <i class="uil uil-message button_icon"></i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--================== ABOUT ========================-->
+    <section class="about section" id="about">
+      <h2 class="section_title">Sobre <span class="score">.</span></h2>
+      <span class="section_subtitle">Um pouco sobre mim</span>
+
+      <div class="about_container container grid">
+        <img src="assets/images/Evander.jpg" alt="" class="about_img">
+        
+        <div class="about_data">
+         <p class="about_description"> Sou o Evander, desenvolvedor Front End, sou graduado em Análise e desenvolvimento de sistemas pela Unopar. <br><br>
+         Atualmente estudo muito para ampliar meus conhecimentos e assim aprimorar ainda mais as habilidades que possuo. Com foco no desenvolvimento e eficiência de novos sistemas e na melhoria de existentes. <br>
+         Busco uma oportunidade no mercado de trabalho.<br><br>
+         Sempre aprendendo novas coisas rumo ao espaço. <i class="uil uil-rocket card_icon pont"></i> 
+         </p> 
+
+         <div class="about_buttons">
+            <a download="" href="assets/pdf/CurriculoEvander.pdf" class="button button--flex"> Download CV  <i class="uil uil-import button_icon"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!--================== SKILLS ========================-->
+    <section class="skills section" id="skills">
+       
+      <h2 class="section_title">Tecnologias <span class="score">.</span></h2>
+      <span class="section_subtitle subtitle">Linguagens e Ferramentas</span>
+
+      <p class="skills_cursor"> Aqui estão as linguagens e tecnologias que tenho contato no momento. <br>
+      Sempre busco aprender novas tecnologias. </p> 
+       
+      <div class="skills_container container grid">
+        <div class="skills_card" id="card">
+          <div class="circle">
+            <img class="skills_img" src="assets/images/html-card.png" alt="">
+          </div>
+            <h3 class="section_subtitle">Html</h3>
+        </div>
+
+        <div class="skills_card card">
+         <div class="circle circle1">
+           <img class="skills_img" src="assets/images/css-card.png" alt="">
+         </div>
+           <h3 class="section_subtitle">Css</h3>
+        </div>
+
+        <div class="skills_card card">
+         <div class="circle circle2">
+           <img class="skills_img" src="assets/images/js-card.png" alt="">
+         </div>
+           <h3 class="section_subtitle">JavaScript</h3>
+        </div>
+
+        <div class="skills_card card">
+         <div class="circle circle3">
+         <img class="skills_img" src="assets/images/vs-card.png" alt="">
+        </div>
+         <h3 class="section_subtitle">VS Code</h3>
+        </div>
+
+        <div class="skills_card card">
+         <div class="circle circle4">
+         <img class="skills_img" src="assets/images/github-card.png" alt="">
+        </div>
+         <h3 class="section_subtitle">Github</h3>
+        </div>
+
+        <div class="skills_card ">  
+         <div class="circle circle5">
+         <img class="skills_img" src="assets/images/git-card.png" alt="">
+        </div>
+        <h3 class="section_subtitle">Git</h3>
+        </div>   
+      </div>
+     </div>
+    </section>
+
+    <!--================== QUALIFICATION ========================-->
+    <section class="qualification section">
+      <h2 class="section_title">Qualificações  <span class="score">.</span></h2>
+      <span class="section_subtitle">minha jornada pessoal </span>
+
+      <div class="qualification_container container">
+        <div class="qualification_tabs">
+          <div class="qualification_button button--flex qualification_active" data-target='#education'>
+           <i class="uil uil-graduation-cap qualification_icon"></i>
+           Educação 
+          </div>
+
+          <div class="qualification_button button--flex active" data-target='#works'>
+           <i class="uil uil-briefcase qualification_icon"></i>
+           Trabalhos
+          </div>
+          
+        </div>
+
+        <div class="grid">
+          <!--============ EDUCAÇÃO ===============-->
+          <div class="qualification_content qualification_active" data-content id="education">
+            <div class="qualification_list grid">
+
+              <div class="qualification_data">
+
+                <div class="qualification_titles">
+                  <h3 class="qualification_name">Análise e Desenvolvimento de  Sistemas</h3>
+                  <p class="qualification_description">Universidade Unopar</p>
+
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2019 - 2021
+                  </div>
+                </div>
+
+                <div class="qualification_bar">
+                  <span class="qualification_percentage qualification_unopar"></span>
+                </div>
+
+                <div class="status">
+                  <span class="qualification_number">Status: <span class="pont">100%</span></span>
+                  </div>
+
+              </div>
+
+              <div class="qualification_data">
+
+                <div class="qualification_titles">
+                  <h3 class="qualification_name">Html Css e JavaScript</h3>
+                  <p class="qualification_description">Fundação Bradesco</p>
+
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                     2021 - 2022
+                  </div>
+                </div>
+
+                <div class="qualification_bar">
+                  <span class="qualification_percentage qualification_bradesco"></span>
+                </div>
+
+                <div class="status">
+                  <span class="qualification_number">Status: <span class="pont">50%</span></span>
+                  </div>
+
+              </div>
+
+              <div class="qualification_data">
+
+                <div class="qualification_titles">
+                  <h3 class="qualification_name">Desenvolvimento Web</h3>
+                  <p class="qualification_description">Rocketseat</p>
+
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                     2021 - 2022
+                  </div>
+                </div>
+
+                <div class="qualification_bar">
+                  <span class="qualification_percentage qualification_rocket"></span>
+                </div>
+
+                <div class="status">
+                  <span class="qualification_number">Status: <span class="pont">12%</span></span>
+                  </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!--============ TRABALHOS  ===============-->
+          <div class="qualification_content" data-content id="works">
+              <div class="qualification_list grid">
+  
+                <div class="qualification_data">
+  
+                  <div class="qualification_titles">
+                    <h3 class="qualification_name">Tribal Tattoo</h3>
+                    <p class="qualification_description">Rocketseat - Home Office</p>
+
+                    <div class="qualification_calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                       2021
+                    </div>
+                  </div>
+  
+                  <div class="qualification_bar">
+                    <span class="qualification_percentage qualification_tribal"></span>
+                  </div>
+
+                  <div class="status">
+                  <span class="qualification_number">Status: <span class="pont">100%</span></span>
+                  </div>
+  
+                </div>
+
+                <div class="qualification_data">
+  
+                  <div class="qualification_titles">
+                    <h3 class="qualification_name">Portfolio</h3>
+                    <p class="qualification_description">Home Office</p>
+
+                    <div class="qualification_calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                       2022
+                    </div>
+                  </div>
+  
+                  <div class="qualification_bar">
+                    <span class="qualification_percentage qualification_portfolio"></span>
+                  </div>
+
+                  <div class="status">
+                    <span class="qualification_number">Status: <span class="pont">80%</span></span>
+                    </div>
+  
+                </div>
+
+                <div>
+                  <a href="#portfolio" class="button button--flex">
+                    Mais em portfolio <i class="uil uil-message button_icon"></i>
+                  </a>
+                </div>
+  
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolios section" id="portfolio">
+      <h2 class="section_title">Portfolio <span class="score">.</span></h2>
+      <span class="section_subtitle">Trabalhos mais recentes</span>
+  
+      <div class="portfolios_container container grid">
+        <!--==================== PORTFOLIO 1 ====================-->
+        <div class="portfolios_content">
+              <div>
+                <img class="portfolio_img" src="assets/images/Tribal-Tattoo.png" alt="">
+                  <i class="uil uil-web-grid portfolios_icon"></i>
+                  <h3 class="portfolios_title">Tribal  Tattoo</h3>
+              </div>
+
+              <span class="button button--flex button--small button--link portfolios_button">
+                Ver mais 
+                <i class="uil uil-arrow-right button_icon"></i>
+              </span>
+
+              <div class="portfolios_modal">
+                  <div class="portfolios_modal-content">
+                      <h4 class="portfolios_modal-title">Tribal Tattoo <i class="uil uil-layers button_icon pont"></i></h4>
+                      <i class="uil uil-times portfolios_modal-close"></i>
+                  
+                      <p>Website desenvolvido para um studio de tatuagens com base no modelo desenvolvido <br> durante o evento Next Level Week da Rocketseat. </p> <br>
+
+                      <ul class="portfolios_modal-portfolios grid">
+                        <li class="portfolios_modal-portfolio">
+                          <p>
+                            <i class="uil uil-check-circle portfolios_modal-icon"></i> HTML <br>
+                            <i class="uil uil-check-circle portfolios_modal-icon"></i> CSS <br>
+                            <i class="uil uil-check-circle portfolios_modal-icon"></i> JAVA SCRIPT<br>
+                            <i class="uil uil-check-circle portfolios_modal-icon"></i> SWIPE JS<br>
+                            <i class="uil uil-check-circle portfolios_modal-icon"></i> SCROLL REVEL        
+                          </p>
+                        </li>
+                      
+                        <div class="portfolio_button">
+                          <a href="https://github.com/EvanderInacio/TribalTattoo" target="_blank" class="button button--flex button--small button--link button--white"><i class="uil uil-github-alt button_icon"></i> Repositório do projeto</a><br>
+
+                          <a href="https://evanderinacio.github.io/TribalTattoo/" target="_blank" class="button button--flex"> Acesse o Website
+                          <i class="uil uil-signout button_icon"></i></a>
+                        </div>
+
+                    </ul>
+                  </div>
+              </div>
+        </div>
+
+        <!--==================== PORTFOLIO 2 ====================-->
+        <div class="portfolios_content">
+                <div>
+                  <img class="portfolio_img" src="assets/images/Portfolio.png" alt="">
+                    <i class="uil uil-web-grid portfolios_icon"></i>
+                    <h3 class="portfolios_title">Portfolio</h3>
+                </div>
+  
+                <span class="button button--flex button--small button--link portfolios_button">
+                  Ver mais
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </span>
+  
+                <div class="portfolios_modal">
+                    <div class="portfolios_modal-content">
+                        <h4 class="portfolios_modal-title">Portfolio <i class="uil uil-layers button_icon pont"></i></h4>
+                        <i class="uil uil-times portfolios_modal-close"></i>
+                    
+                        <p>Meu portfolio criado com o objetivo de mostrar meus projetos ao longo da minha carreira. </p> <br>
+                        <p>Acompanhe aqui mesmo pelo site ou através do Repositório github.</p>  <br>
+
+                        <ul class="portfolios_modal-portfolios grid">
+                          <li class="portfolios_modal-portfolio">
+                            <p>
+                              <i class="uil uil-check-circle portfolios_modal-icon"></i> HTML <br>
+                              <i class="uil uil-check-circle portfolios_modal-icon"></i> CSS <br>
+                              <i class="uil uil-check-circle portfolios_modal-icon"></i> JAVA SCRIPT<br>
+                              <i class="uil uil-check-circle portfolios_modal-icon"></i> SWIPE JS<br>
+                          </li>
+
+                          <div class="portfolio_button">
+                            <a href="https://github.com/EvanderInacio/Portfolio" target="_blank" class="button button--flex button--small button--link button--white"><i class="uil uil-github-alt button_icon"></i> Repositório do projeto</a><br>
+
+                            <a href="#" target="_blank" class="button button--flex"> Você já está nele
+                              <i class="uil uil-check button_icon"></i></a>
+
+                          </div>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+        <!--==================== PORTFOLIO 3 ====================-->
+        <div class="portfolios_content">
+              <div>
+                <img class="portfolio_img" src="assets/images/space-portfolio.png" alt="">
+                <i class="uil uil-arrow portfolios_icon"></i>
+                  <h3 class="portfolios_title">Em breve</h3>
+              </div>
+
+              <span class="button button--flex button--small button--link portfolios_button">
+                  Ver mais
+                  <i class="uil uil-arrow-right button_icon"></i>
+              </span>
+
+              <div class="portfolios_modal">
+                  <div class="portfolios_modal-content">
+                    <h4 class="portfolios_modal-title"> Aguarde <i class="uil uil-coffee pont"></i></h4>
+                      <i class="uil uil-times portfolios_modal-close"></i>
+                  
+                      <p>
+                        <i class="uil uil-check-circle portfolios_modal-icon"></i>
+                        Pegue o café e espere um pouco, estou desenvolvendo o projeto. <br>
+                        <i class="uil uil-desktop-cloud-alt portfolios_modal-icon"></i> Enquanto estou desenvolvendo esse projeto, aproveite para ver outros projetos meus no Github.
+                      </p> <br> 
+
+                      <ul class="portfolios_modal-portfolios grid">
+                          <li class="portfolios_modal-portfolio">
+
+                              <div class="portfolio_button">
+                                <a href="https://github.com/EvanderInacio" target="_blank" class="button button--flex button--small button--link button--white"><i class="uil uil-github-alt button_icon"></i> Github</a><br>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+        </div>
+
+        <!--==================== PORTFOLIO 4 ====================-->
+        <div class="portfolios_content visibility">
+          <div>
+            <img class="portfolio_img" src="assets/images/space-portfolio.png" alt="">
+            <i class="uil uil-arrow portfolios_icon"></i>
+              <h3 class="portfolios_title">Em breve</h3>
+          </div>
+
+          <span class="button button--flex button--small button--link portfolios_button">
+              Ver mais
+              <i class="uil uil-arrow-right button_icon"></i>
+          </span>
+
+          <div class="portfolios_modal">
+              <div class="portfolios_modal-content">
+                <h4 class="portfolios_modal-title"> Aguarde <i class="uil uil-coffee pont"></i></h4>
+                  <i class="uil uil-times portfolios_modal-close"></i>
+              
+                  <p>
+                    <i class="uil uil-check-circle portfolios_modal-icon"></i>
+                    Pegue o café e espere um pouco, estou desenvolvendo o projeto. <br>
+                    <i class="uil uil-desktop-cloud-alt portfolios_modal-icon"></i> Enquanto estou desenvolvendo esse projeto, aproveite para ver outros projetos meus no Github.
+                  </p> <br> 
+
+                  <ul class="portfolios_modal-portfolios grid">
+                      <li class="portfolios_modal-portfolio">
+
+                          <div class="portfolio_button">
+                            <a href="https://github.com/EvanderInacio" target="_blank" class="button button--flex button--small button--link button--white"><i class="uil uil-github-alt button_icon"></i> Github</a><br>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+
+        <!--==================== PORTFOLIO 5 ====================-->
+        <div class="portfolios_content visibility">
+          <div>
+            <img class="portfolio_img" src="assets/images/space-portfolio.png" alt="">
+            <i class="uil uil-arrow portfolios_icon"></i>
+              <h3 class="portfolios_title">Em breve</h3>
+          </div>
+
+          <span class="button button--flex button--small button--link portfolios_button">
+              Ver mais
+              <i class="uil uil-arrow-right button_icon"></i>
+          </span>
+
+          <div class="portfolios_modal">
+              <div class="portfolios_modal-content">
+                <h4 class="portfolios_modal-title"> Aguarde <i class="uil uil-coffee pont"></i></h4>
+                  <i class="uil uil-times portfolios_modal-close"></i>
+              
+                  <p>
+                    <i class="uil uil-check-circle portfolios_modal-icon"></i>
+                    Pegue o café e espere um pouco, estou desenvolvendo o projeto. <br>
+                    <i class="uil uil-desktop-cloud-alt portfolios_modal-icon"></i> Enquanto estou desenvolvendo esse projeto, aproveite para ver outros projetos meus no Github.
+                  </p> <br> 
+
+                  <ul class="portfolios_modal-portfolios grid">
+                      <li class="portfolios_modal-portfolio">
+
+                          <div class="portfolio_button">
+                            <a href="https://github.com/EvanderInacio" target="_blank" class="button button--flex button--small button--link button--white"><i class="uil uil-github-alt button_icon"></i> Github</a><br>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+
+        <!--==================== PORTFOLIO 6 ====================-->
+        <div class="portfolios_content visibility">
+          <div>
+            <img class="portfolio_img" src="assets/images/space-portfolio.png" alt="">
+            <i class="uil uil-arrow portfolios_icon"></i>
+              <h3 class="portfolios_title">Em breve</h3>
+          </div>
+
+          <span class="button button--flex button--small button--link portfolios_button">
+              Ver mais
+              <i class="uil uil-arrow-right button_icon"></i>
+          </span>
+
+          <div class="portfolios_modal">
+              <div class="portfolios_modal-content">
+                <h4 class="portfolios_modal-title"> Aguarde <i class="uil uil-coffee pont"></i></h4>
+                  <i class="uil uil-times portfolios_modal-close"></i>
+              
+                  <p>
+                    <i class="uil uil-check-circle portfolios_modal-icon"></i>
+                    Pegue o café e espere um pouco, estou desenvolvendo o projeto. <br>
+                    <i class="uil uil-desktop-cloud-alt portfolios_modal-icon"></i> Enquanto estou desenvolvendo esse projeto, aproveite para ver outros projetos meus no Github.
+                  </p> <br> 
+
+                  <ul class="portfolios_modal-portfolios grid">
+                      <li class="portfolios_modal-portfolio">
+
+                          <div class="portfolio_button">
+                            <a href="https://github.com/EvanderInacio" target="_blank" class="button button--flex button--small button--link button--white"><i class="uil uil-github-alt button_icon"></i> Github</a><br>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!--================== CERTIFICATES ========================-->
+    <section class="certificate action section">
+      <h2 class="section_title">Certificados <span class="score">.</span></h2>
+      <span class="section_subtitle subtitle">Minhas certificações</span>
+      
+      <div class="certificate_container container swiper mySwiper">
+        
+        <div class="swiper-wrapper">
+
+          <!--======== CERTIFICATES 1 ========-->
+          <div class="certificate_content grid swiper-slide">
+            <img src="assets/images/Certificado Fundamentos de Lógica de Programação.png" alt="" class="certificate_img">
+            
+            <div class="certificate_data">
+              <h3 class="certificate_title">Fundamentos de Lógica de Programação</h3>
+              <p class="certificate_description"> Certificado obtido no curso online
+               de Lógica de Programação da fundação bradesco</p>
+              <a download="" href="assets/pdf/Certificado Logica de Programação.pdf" class="button button--flex button--small certificate_button">Download
+                <i class="uil uil-arrow-to-bottom button_icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--======== CERTIFICATES 2 ========-->
+          <div class="certificate_content grid swiper-slide">
+            <img src="assets/images/Certificado Html e Css  na pratica.png" alt="" class="certificate_img">
+            
+            <div class="certificate_data">
+              <h3 class="certificate_title">Html e Css  na prática</h3>
+              <p class="certificate_description">Certificado obtido no curso online da fundação bradesco </p>
+              <a download="" href="assets/pdf/Certificado Html e Css na pratica.pdf" target="_blank"
+              class="button button--flex button--small certificate_button">Download
+              <i class="uil uil-arrow-to-bottom button_icon"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!--======== CERTIFICATES 3 ========-->
+        <div class="certificate_content grid swiper-slide">
+          <img src="assets/images/Certificado Inovando com CSS.png" alt="" class="certificate_img">
+          
+          <div class="certificate_data">
+            <h3 class="certificate_title">Inovando com CSS</h3>
+            <p class="certificate_description"> Certificado obtido no curso online de CSS da fundação bradesco</p>
+            <a download="" href="assets/pdf/Certificado Inovando com Css.pdf" class="button button--flex button--small certificate_button">Download
+              <i class="uil uil-arrow-to-bottom button_icon"></i>
+             </a>
+            </div>
+          </div>
+
+           <!--======== CERTIFICATES 4 ========-->
+        <div class="certificate_content grid swiper-slide">
+          <img src="assets/images/space-certificates.jpg" alt="" class="certificate_img">
+          
+          <div class="certificate_data">
+            <h3 class="certificate_title">Aguarde</h3>
+            <p class="certificate_description"> Estou sempre buscando novas certificações.</p>
+            <a  class="button button--flex button--small certificate_button">Em breve
+              <i class="uil uil-clock-two button_icon"></i> 
+             </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-certificate-icon"></i>
+        </div>
+       <div class="swiper-button-prev">
+         <i class="uil uil-angle-left-b swiper-certificate-icon"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    
+    <!--================== PROJECT CARD ========================-->
+    <section class="project section">
+          <div class="project_bg">
+            <div class="project_container project grid">
+              <div class="project_data">
+                <h2 class="project_title">Você procura um desenvolvedor Front-End para o seu projeto <span class="light">?</span></h2>
+                <p class="project_description">Qualquer dúvida sobre o projeto ou se deseja apenas dar o seu oi/feedback, estarei feliz em receber e assim que possivel, irei te retornar! </p>
+              
+                <a href="#contact" class="button button--flex button--white">
+                  Entre em contato <i class="uil uil-message button_icon"></i>
+                  </a>
+              </div>
+       
+                <img src="assets/images/space-colony.png" alt="" class="project_img">
+            </div>
+          </div>
+    </section>
+
+    <!--================== CONTACT ========================-->
+    <section class="contact section" id="contact">
+      <h2 class="section_title">Contato <span class="score">.</span></h2>
+      <span class="section_subtitle">Entre em contato comigo</span>
+      
+      <div class="contact_container container grid">
+        <div class="div_contact">
+
+          <div class="contact_information">
+            <i class="uil uil-whatsapp contact_icon"></i>
+            <div>
+              <h3 class="contact_title">Whatsapp</h3>
+              <span class="contact_subtitle">(11) 99508 - 5916</span>
+              </div>
+              </div>
+   
+              <div class="contact_information">
+               <i class="uil uil-envelope contact_icon "></i>
+               <div>
+                 <h3 class="contact_title">Mande um E-Mail</h3>
+                 <span class="contact_subtitle">evander.20112@hotmail.com </span>
+               </div>
+              </div>
+   
+              <div class="contact_information">
+               <i class="uil uil-map-marker contact_icon"></i>
+               <div>
+                 <h3 class="contact_title">Localização</h3>
+                 <span class="contact_subtitle"> Mogi das Cruzes - SP</span>
+               </div>
+              </div>
+
+          </div>
+
+          <div class="contact_socials">
+            <h2 class="section_title">Redes Sociais <span class="score">.</span></h2>
+            
+            <ul class="contact_social">
+
+              <li>
+               <a href="https://www.linkedin.com/in/evander-inacio/" target='_blank' class="button button--small button--white">
+                <i class="uil uil-linkedin-alt"></i> 
+               </a>
+              </li>
+
+              <li>
+               <a href="https://github.com/EvanderInacio" target="_blank"  class="button button--small button--white">
+                <i class="uil uil-github-alt"></i> 
+               </a>
+              </li>
+        
+              <li>
+               <a href="https://www.facebook.com/evandder.lopes/" target='_blank' class="button button--small button--white">
+               <i class="uil uil-facebook-f"></i> 
+               </a>
+              </li>
+        
+              <li>
+               <a href="https://twitter.com/Evander_Inacio" target='_blank' class="button button--small button--white ">
+               <i class="uil uil-twitter-alt"></i> 
+               </a>
+              </li> 
+
+              <li>
+               <a href="https://api.whatsapp.com/send?phone=+5511995085916&text=Olá Evander! te achei através de seu portfólio, gostaria de marcar um horário." target="_blank" class="button button--small button--white"> 
+               <i class="uil uil-whatsapp"></i>
+               </a>
+              </li> 
+            </ul>
+
+          </div>
+        </div>
+    </section>
+     
+  </main>
+
+  <div class="footer_divider"></div>
+  <!--================== FOOTER ========================-->
+  <footer class="footer">
+        <div class="footer_bg">
+          <div class="footer_container container grid">
+            <div>
+              <h1 class="footer_title">Evander <i class="uil uil-brackets-curly light"></i></a></h1>
+              <span class="footer_subtitle">Frontend developer</span>
+            </div>
+
+            <ul class="footer_links">
+              <li>
+                  <a href="#about" class="footer_link">Sobre</a>
+              </li>
+              <li>
+                  <a href="#portfolio" class="footer_link">Portfolio</a>
+              </li>
+              <li>
+                  <a href="#contact" class="footer_link">Contato</a>
+              </li>
+            </ul>
+ 
+            <div class="footer_socials">
+              <a href="https://www.linkedin.com/in/evander-inacio/" target='_blank' class="footer_social">
+               <i class="uil uil-linkedin-alt"></i>
+              </a>
+ 
+              <a href="https://www.facebook.com/evandder.lopes/" target='_blank' class="footer_social">
+               <i class="uil uil-facebook-f"></i>
+              </a>
+ 
+              <a href="https://twitter.com/Evander_Inacio" target='_blank' class="footer_social">
+               <i class="uil uil-twitter-alt"></i>
+              </a>
+            </div>
+ 
+          </div>
+          <p class="footer_copy">&#169; 2022 Evander Inácio <i class="uil uil-coffee pont"></i></p>
+ 
+         </div>
+  </footer>
+
+  <!--================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scroll_icon"></i>
+  </a>
+
+  <!--============= Swipper js ===================-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--============= Main js ===================-->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

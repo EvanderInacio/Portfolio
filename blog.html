@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--============= Unicons css ===================-->
+   <link
+   rel="stylesheet"
+   href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+ />
+
+ <!--============= CSS ===================-->
+  <style>
+    @import url(/assets/css/style.css);
+   .blog_data{
+    text-align: center;
+  }
+
+  .blog_image{
+    width: 288px;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+  }
+
+  @media (min-width: 994px){
+    .blog_image{
+      width: auto;
+    }
+  }
+  </style>
+
+  <!--============= LOGO ===================-->
+  <link rel="icon" href="/assets/images/logo.svg">
+  <title>Blog Evander Inácio | Dev </title>
+</head>
+<body>
+  
+  <!--================== HEADER ========================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+
+      <a href="/index.html" class="nav_logo">Evander</a>
+
+      <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list grid">
+
+            <li class="nav_item"> 
+              <a href="/index.html#home" class="nav_link" >
+                <i class="uil uil-estate nav_icon"></i> Home
+              </a>
+            </li>
+
+              <li class="nav_item"> 
+                <a href="/index.html#about" class="nav_link">
+                  <i class="uil uil-user nav_icon "></i> Sobre
+                </a>
+              </li>
+
+          <li class="nav_item"> 
+            <a href="/index.html#skills" class="nav_link">
+              <i class="uil uil-desktop nav_icon"></i> Tecnologias
+            </a>
+          </li>
+                  
+        <li class="nav_item"> 
+            <a href="/index.html#portfolio" class="nav_link">
+              <i class="uil uil-scenery nav_icon"></i> Projetos
+            </a>
+        </li>
+                 
+        <li class="nav_item"> 
+          <a href="/index.html#contact" class="nav_link">
+            <i class="uil uil-comment-alt-message nav_icon"></i> Contato
+          </a> 
+        </li>
+
+        <li class="nav_item"> 
+          <a href="assets/html/blog.html" class="nav_link active-link">
+            <i class="uil uil-file-alt nav_icon"></i> Blog
+          </a>
+        </li>
+      </ul>
+      <i class="uil uil-times nav_close" id="nav-close"></i>
+    </div>
+    
+    <div class="nav_btns">
+      <!-- Theme change button desktop-->
+     <div id="mode">
+      <div id="switch"> 
+      <label id="inner-text">Light</label>
+       </div>
+     </div>
+      
+      <!-- Theme change button Mobile -->
+      <i class="uil uil-moon change-theme uil-sun" id="theme-button"></i>
+      
+      <div class="nav_toggle" id="nav-toggle">
+        <i class="uil uil-apps"></i>
+      </div>
+    </div>   
+    </nav>
+  </header>
+
+  <!--================== MAIN ========================-->
+  <main class="main">
+  <!--================== BLOG ========================-->
+  <section class="blog section" id="blog">
+        <h2 class="section_title">Blog <span class="score">.</span></h2>
+        <span class="section_subtitle">Notícias e tutoriais</span>
+
+        <div class="blog_data grid">
+
+          <h3 class="blog_title">Está página ainda está em desenvolvimento <i class="uil uil-rocket pont"></i> </h3>
+
+          <div class="blog_image">
+            <img src="/assets/images/astronaut_blog.png" alt="">
+          </div>
+
+        </div>
+  </section>
+
+  <!--================== CONTACT ========================-->
+    <section class="contact section">
+      
+      <div class="contact_container container grid">
+          <div class="contact_socials">
+            <h2 class="section_title">Redes Sociais <span class="score">.</span></h2>
+            
+            <ul class="contact_social">
+
+              <li>
+               <a href="https://www.linkedin.com/in/evander-inacio/" target='_blank' class="button button--small button--white">
+                <i class="uil uil-linkedin-alt"></i> 
+               </a>
+              </li>
+
+              <li>
+               <a href="https://github.com/EvanderInacio" target="_blank"  class="button button--small button--white">
+                <i class="uil uil-github-alt"></i> 
+               </a>
+              </li>
+        
+              <li>
+               <a href="https://www.facebook.com/evandder.lopes/" target='_blank' class="button button--small button--white">
+               <i class="uil uil-facebook-f"></i> 
+               </a>
+              </li>
+        
+              <li>
+               <a href="https://twitter.com/Evander_Inacio" target='_blank' class="button button--small button--white ">
+               <i class="uil uil-twitter-alt"></i> 
+               </a>
+              </li> 
+
+              <li>
+               <a href="https://api.whatsapp.com/send?phone=+5511995085916&text=Olá Evander! te achei através de seu portfólio, gostaria de marcar um horário." target="_blank" class="button button--small button--white"> 
+               <i class="uil uil-whatsapp"></i>
+               </a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+    </section>
+     
+  </main>
+
+  <div class="footer_divider"></div>
+  <!--================== FOOTER ========================-->
+  <footer class="footer">
+      <div class="footer_bg">
+        <div class="footer_container container grid">
+          <div>
+            <h1 class="footer_title">Evander <i class="uil uil-brackets-curly light"></i></a></h1>
+            <span class="footer_subtitle">Frontend developer</span>
+          </div>
+
+          <ul class="footer_links">
+            <li>
+                <a href="/index.html#home" class="footer_link">Home</a>
+            </li>
+            <li>
+                <a href="/index.html#portfolio" class="footer_link">Portfolio</a>
+            </li>
+            <li>
+                <a href="/index.html#contact" class="footer_link">Contato</a>
+            </li>
+          </ul>
+
+          <div class="footer_socials">
+            <a href="https://www.linkedin.com/in/evander-inacio/" target='_blank' class="footer_social">
+             <i class="uil uil-linkedin-alt"></i>
+            </a>
+
+            <a href="https://www.facebook.com/evandder.lopes/" target='_blank' class="footer_social">
+             <i class="uil uil-facebook-f"></i>
+            </a>
+
+            <a href="https://twitter.com/Evander_Inacio" target='_blank' class="footer_social">
+             <i class="uil uil-twitter-alt"></i>
+            </a>
+          </div>
+
+        </div>
+        <p class="footer_copy">&#169; 2022 Evander Inácio <i class="uil uil-coffee pont"></i></p>
+
+       </div>
+  </footer>
+  
+  <!--============= MAIN JS ===================-->
+  <script>
+
+     /*==================== MENU SHOW ====================*/
+     const navMenu = document.getElementById('nav-menu'),
+     navToggle = document.getElementById('nav-toggle'),
+     navClose = document.getElementById('nav-close')
+
+    if (navToggle) {
+     navToggle.addEventListener('click', () => {
+       navMenu.classList.add('show-menu')
+      })
+    }
+
+     if (navClose) {
+       navClose.addEventListener('click', () => {
+       navMenu.classList.remove('show-menu')
+       })
+     }
+
+    /*==================== REMOVE MENU MOBILE ====================*/
+    const navLink = document.querySelectorAll('.nav_link')
+
+     function linkAction() {  
+     const navMenu = document.getElementById('nav-menu')
+     // remova o menu clicando em cada link
+      navMenu.classList.remove('show-menu')
+    }
+     navLink.forEach(menu => menu.addEventListener('click', linkAction))
+     
+
+   /*==================== DARK LIGHT THEME ====================*/
+   /*============== DARK LIGHT DESKTOP =============*/
+   const Switch_mode = document.getElementById('switch');
+   const Inner_text = document.getElementById('inner-text');
+
+    mode.onclick = function(){
+     document.body.classList.toggle('sun-theme');
+     Switch_mode.classList.toggle('switch-active');
+     Inner_text.classList.toggle('inner-text-active');
+     if(document.body.classList.toggle('.sun-theme')){
+       Inner_text.innerHTML = 'Dark'
+     }
+     else{
+      Inner_text.innerHTML = 'Light'
+     }
+   }
+
+    /*============== DARK LIGHT MOBILE =============*/
+    const themeButton = document.getElementById('theme-button')
+    const sunTheme = 'sun-theme'
+    const iconTheme = 'uil-sun'
+
+    const selectedTheme = localStorage.getItem('selected-theme')
+    const selectedIcon = localStorage.getItem('selected-icon')
+
+   const getCurrentTheme = () =>
+    document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+   const getCurrentIcon = () =>
+    themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+
+   if (selectedTheme) {
+     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](sunTheme)
+     themeButton.classList[selectedIcon === 'uil-sun' ? 'add' : 'remove'](
+     iconTheme
+    )
+   }
+
+    themeButton.addEventListener('click', () => {
+     // Adicionar ou remover o tema claro / ícone
+      document.body.classList.toggle(sunTheme)
+      themeButton.classList.toggle(iconTheme)
+
+      localStorage.setItem('selected-theme', getCurrentTheme())
+      localStorage.setItem('selected-icon', getCurrentIcon())
+    })
+
+  </script>
+
+</body>
+</html>
