@@ -953,12 +953,10 @@ body.sun-theme {
 }
 
 .contact_social {
-  display: grid;
+  display: flex;
+  gap: 1rem;
   justify-content: center;
-  row-gap: 1rem;
   font-size: var(--mb-1-5);
-  grid-template-columns: repeat(4, 0.2fr);
-  align-items: center;
 }
 
 /*=============== FOOTER =========================*/
@@ -1152,9 +1150,6 @@ body.sun-theme {
     display: grid;
   }
 
-  .contact_social {
-    grid-template-columns: repeat(5, 0.1fr);
-  }
 }
 
 @media (min-width: 768px) {
@@ -1325,10 +1320,6 @@ body.sun-theme {
   .div_contact {
     display: flex;
     gap: 5rem;
-  }
-
-  .contact_social {
-    grid-template-columns: repeat(5, 0.1fr);
   }
 
   .footer_container {
