@@ -731,33 +731,36 @@
               </div>
           </div>
         
-          <form name="contato" class="contact_form grid" data-netlify="true">
+          <form action="https://formsubmit.co/evander.20112@hotmail.com" method="POST" class="contact_form grid" data-netlify="true">
+          
             <div class="contact_inputs grid">
 
               <div class="contact_content">
                 <label for="" class="contact_label"><i class="uil uil-user"></i> Nome completo </label>
-                <input type="text" class="contact_input">
+                <input type="text" name="name" class="contact_input">
               </div>
 
               <div class="contact_content">
                 <label for="" class="contact_label"> <i class="uil uil-envelope"></i> Seu Email </label>
-                <input type="email" class="contact_input">
+                <input type="email" name="email" class="contact_input">
               </div>
             </div>
 
             <div class="contact_content">
               <label for="" class="contact_label"><i class="uil uil-comment-lines"></i> Sua mensagem </label>
-              <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+              <textarea name="mensagem" id="" cols="0" rows="7" class="contact_input"></textarea>
             </div>
 
             <div>
-               <button type="submit" class="button button--flex button_envio">
+
+              <button type="submit" class="button button--flex button_envio">
                 Enviar mensagem
                 <i class="uil uil-message button_icon"></i>
               </button>
+
             </div>
           </form>
-
+          
           <div class="contact_socials">
             <h2 class="section_title">Redes Sociais <span class="score">.</span></h2>
             
