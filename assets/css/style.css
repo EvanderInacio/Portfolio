@@ -1469,6 +1469,7 @@ body.sun-theme {
 
   .portfolios_container {
     grid-template-columns: repeat(3, 255px);
+    justify-content: center;
   }
 
   .portfolio_img {
@@ -1518,4 +1519,23 @@ body.sun-theme {
   .home_space {
     width: 40rem;
   }
+  
+   .portfolios_container {
+    grid-template-columns: repeat(3, 255px);
+    gap: 5.5rem;
+    justify-content: center;
+  }
+
+  .portfolios_content{
+    width: 20rem;
+  }
+
+  .portfolio_img {
+   width: 20rem;
+   height: 200px;
+   margin-left: -4px;
+   align-items: center;
+   justify-content: center;
+  }
+  
 }
