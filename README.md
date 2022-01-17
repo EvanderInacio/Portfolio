@@ -18,6 +18,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Google Fonts](https://fonts.google.com/)
 - [SwipeJS](https://github.com/nolimits4web/Swiper)
+- [Iconscout](https://iconscout.com/unicons/explore/line)
 
 ## 💻 Autor<br>
 <table>
