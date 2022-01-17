@@ -773,6 +773,15 @@ body.sun-theme {
   color: #f70606;
 }
 
+.portfolio_description{
+  text-align: center;
+  font-size: var(--h3-font-size);
+}
+
+.portfolio_description a{
+  color: #0011ff;
+}
+
 .portfolios_modal {
   position: fixed;
   top: 0;
