@@ -1046,10 +1046,10 @@ body.sun-theme {
 }
 
 .footer_copy {
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   text-align: center;
-  margin-top: var(--mb-1-5);
-  margin-bottom: var(--mb-1-5);
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 .footer_title,
@@ -1078,13 +1078,13 @@ body.sun-theme {
 }
 
 .scroll_icon {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #fff;
 }
 
 /*========= SHOW SCROLL =========*/
 .show-scroll {
-  bottom: 5rem;
+  bottom: 6rem;
 }
 
 /*========= SCROLL BAR =========*/
@@ -1376,8 +1376,11 @@ body.sun-theme {
     justify-self: flex-end;
   }
 
-  .footer_copy {
-    margin-top: 4rem;
+.footer_copy {
+    font-size: var(--normal-font-size);
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: var(--mb-1-5);
   }
 }
 
