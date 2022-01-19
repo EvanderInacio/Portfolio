@@ -195,7 +195,7 @@ body.sun-theme {
 
 /*========== LIGHT MODE MOBILE ==============*/
 .change-theme {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--title-color);
   margin-right: var(--mb-1);
   cursor: pointer;
@@ -245,7 +245,7 @@ body.sun-theme {
 /*================ NAVIGATION =========================*/
 .nav {
   max-width: 768px;
-  height: var(--header-height);
+  height: 4.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -257,12 +257,16 @@ body.sun-theme {
   font-weight: var(--font-medium);
 }
 
+.nav_logo{
+  font-size: 1.125rem;
+}
+
 .nav_logo:hover {
   color: var(--first-color);
 }
 
 .nav_toggle {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -293,7 +297,7 @@ body.sun-theme {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -303,14 +307,14 @@ body.sun-theme {
 }
 
 .nav_icon {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .nav_close {
   position: absolute;
   right: 1.3rem;
   bottom: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   color: var(--first-color);
 }
