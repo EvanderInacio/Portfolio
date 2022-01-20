@@ -252,6 +252,10 @@ body.sun-theme {
   }
 }
 
+.nav_list {
+ grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
 
 .nav_link {
   display: flex;
