@@ -246,7 +246,7 @@ body.sun-theme {
     opacity: 0.95;
     background-color: var(--header-color);
     padding: 3rem 2.5rem 5rem;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
   }
