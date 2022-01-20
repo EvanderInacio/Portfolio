@@ -1374,7 +1374,7 @@ body.sun-theme {
   }
 
   .nav_logo {
-    font-size: var(--normal-font-size);
+    font-size: var(--h3-font-size);
     display: flex;
   }
 
