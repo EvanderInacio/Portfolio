@@ -2,7 +2,7 @@
   Meu Portfolio
 </h1>
 
-![Resultado final do projeto](assets/images/readme.png)
+![Resultado final do projeto](https://www.evanderinacio.com.br/assets/images/Portfolio.png)
 
 ## 🚀 Tecnologias
 
