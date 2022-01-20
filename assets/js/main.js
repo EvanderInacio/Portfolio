@@ -119,24 +119,6 @@ window.addEventListener('scroll', scrollUp)
 
 
 /*==================== DARK LIGHT THEME ====================*/
-
-/*============== DARK LIGHT DESKTOP =============*/
-const Switch_mode = document.getElementById('switch');
-const Inner_text = document.getElementById('inner-text');
-
-mode.onclick = function(){
-  document.body.classList.toggle('sun-theme');
-  Switch_mode.classList.toggle('switch-active');
-  Inner_text.classList.toggle('inner-text-active');
-  if(document.body.classList.toggle('.sun-theme')){
-    Inner_text.innerHTML = 'Dark'
-  }
-  else{
-    Inner_text.innerHTML = 'Light'
-  }
-}
-
-/*============== DARK LIGHT MOBILE =============*/
 const themeButton = document.getElementById('theme-button')
 const sunTheme = 'sun-theme'
 const iconTheme = 'uil-sun'
