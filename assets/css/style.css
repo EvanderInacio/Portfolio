@@ -228,6 +228,10 @@ body.sun-theme {
   color: var(--first-color);
 }
 
+.logo_cor{
+  color: #0011ff;
+}
+
 .nav_toggle {
   font-size: 1.5rem;
   cursor: pointer;
