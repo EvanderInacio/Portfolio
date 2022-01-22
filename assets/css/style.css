@@ -572,7 +572,7 @@ body.sun-theme {
 }
 
 .skills_card h3 {
-  color: #fff;
+  color: var(--title-color);
   font-size: var(--h3-font-size);
   text-align: center;
   position: relative;
