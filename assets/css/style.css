@@ -536,18 +536,18 @@ body.sun-theme {
 
 .skills_card {
   position: relative;
-  width: 16rem;
-  height: 6rem;
+  width: 17rem;
+  height: 26rem;
   margin: var(--mb-0-5);
   border-radius: var(--mb-2);
-  background-color: hsl(257, 100%, 8%);
+  background-color: var(--container-color);
   overflow: hidden;
   transition: 0.5s;
 }
 
 .skills_card:hover {
   box-shadow: 0 8px 8px var(--first-color);
-  transform: translateY(0.25rem);
+  transform: translateY(-1rem);
 }
 
 .circle {
@@ -568,14 +568,6 @@ body.sun-theme {
 }
 
 .circle3 {
-  background: hsl(235, 92%, 58%);
-}
-
-.circle4 {
-  background: hsl(231, 9%, 84%);
-}
-
-.circle5 {
   background: hsl(0, 87%, 47%);
 }
 
@@ -584,8 +576,23 @@ body.sun-theme {
   font-size: var(--h3-font-size);
   text-align: center;
   position: relative;
-  bottom: 4rem;
+  bottom: 23.2rem;
   right: 3rem;
+}
+
+.skills_card h4{
+  color: var(--text-color);
+  position: relative;
+  text-align: center;
+  bottom: 22rem;
+}
+
+.skills_card p{
+  position: relative;
+  text-align: center;
+  bottom: 21.2rem;
+  margin-left: .8rem;
+  margin-right: .8rem;
 }
 
 .skills_img {
@@ -1271,11 +1278,25 @@ body.sun-theme {
   }
 
   .skills_card {
-    width: 14rem;
+    width: 15rem;
+    height: 32rem;
   }
 
   .skills_img {
     left: 9rem;
+  }
+  
+   .skills_card h3  {
+    bottom: 28rem;
+    right: 3rem;
+  }
+  
+  .skills_card h4{
+    bottom: 27rem;
+  }
+  
+  .skills_card p{
+    bottom: 28rem;
   }
 
   .portfolios_container {
