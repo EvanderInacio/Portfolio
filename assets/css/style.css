@@ -613,11 +613,6 @@ body.sun-theme {
   row-gap: 0;
 }
 
-.qualification_list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-}
-
 .qualification_titles {
   margin-bottom: var(--mb-0-5);
   justify-content: space-between;
@@ -632,43 +627,10 @@ body.sun-theme {
   font-weight: var(--font-medium);
 }
 
-.qualification_tabs {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-3);
-}
-
-.qualification_button {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-  cursor: pointer;
-}
-
-.qualification_button:hover {
-  color: var(--first-color);
-}
-
-.qualification_icon {
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-2);
-}
-
 .qualification_calendar {
   font-size: var(--small-font-size);
   color: var(--first-color-lighter);
   margin-bottom: var(--mb-0-25);
-}
-
-.qualification [data-content] {
-  display: none;
-}
-
-.qualification_active[data-content] {
-  display: block;
-}
-
-.qualification_button.qualification_active {
-  color: var(--first-color);
 }
 
 .qualification_bar,
@@ -697,9 +659,7 @@ body.sun-theme {
 .qualification_rocket {
   width: 12%;
 }
-.qualification_portfolio {
-  width: 80%;
-}
+
 
 /*=============== PORTFOLIO =========================*/
 .portfolios_container {
