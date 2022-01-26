@@ -674,7 +674,7 @@ body.sun-theme {
 .portfolios_content {
   position: relative;
   background-color: var(--container-color);
-  padding: 1.5rem 0.5rem 1.25rem 1rem;
+  padding: 0 0 3rem 0;
   border-radius: 0.25rem;
   box-shadow: 1px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
@@ -685,27 +685,31 @@ body.sun-theme {
 }
 
 .portfolios_icon {
-  display: block;
+  justify-content: center;
   font-size: 1.5rem;
   color: var(--first-color);
-  margin-bottom: var(--mb-1);
 }
 
 .portfolio_img {
-  margin-left: -0.4rem;
-  border-radius: 15px;
+  width: 100%;
+  height: 12.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   margin-bottom: var(--mb-1-5);
 }
 
 .portfolios_title {
   font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-1-5);
   font-weight: var(--font-medium);
+   text-align: center;
 }
 
 .portfolios_button {
   cursor: pointer;
   font-size: var(--h3-font-size);
+  justify-content: center;
+  display: flex;
 }
 
 .portfolios_button:hover {
@@ -1263,10 +1267,6 @@ body.sun-theme {
     grid-template-columns: repeat(3, 245px);
   }
 
-  .portfolio_img {
-    height: 10rem;
-  }
-
   .portfolios_icon {
     font-size: 2rem;
   }
@@ -1436,10 +1436,6 @@ body.sun-theme {
     justify-content: center;
   }
 
-  .portfolio_img {
-    width: 20rem;
-  }
-
   .certificate_content {
     column-gap: 5rem;
   }
@@ -1493,13 +1489,5 @@ body.sun-theme {
   .portfolios_content{
     width: 20rem;
   }
-
-  .portfolio_img {
-   width: 20rem;
-   height: 200px;
-   margin-left: -4px;
-   align-items: center;
-   justify-content: center;
-  }
-  
+ 
 }
