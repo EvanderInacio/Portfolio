@@ -1,5 +1,5 @@
 <h1 align="center">
-  Meu Portfolio
+  Meu Portfolio 💻
 </h1>
 
 ![Resultado final do projeto](https://www.evanderinacio.com.br/assets/images/Portfolio.png)
