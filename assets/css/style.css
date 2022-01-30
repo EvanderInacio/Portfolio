@@ -571,6 +571,10 @@ body.sun-theme {
   background: hsl(0, 87%, 47%);
 }
 
+.circle4{
+  background-color: hsl(204, 88%, 52%);
+}
+
 .skills_card h3 {
   color: var(--title-color);
   font-size: var(--h3-font-size);
