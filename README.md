@@ -4,6 +4,10 @@
 
 ![Resultado final do projeto](https://www.evanderinacio.com.br/assets/images/Portfolio.png)
 
+## 📝 Descrição 
+
+Meu portfolio criado com o objetivo de mostrar meus projetos ao longo da minha carreira.
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
