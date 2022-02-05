@@ -26,6 +26,7 @@ function linkAction() {
 navLink.forEach(menu => menu.addEventListener('click', linkAction))
 
 
+
 /*==================== PORTFOLIO MODAL ====================*/
 const modalViews = document.querySelectorAll('.portfolios_modal'),
       modalBtns = document.querySelectorAll('.portfolios_button'),
@@ -48,6 +49,26 @@ modalCloses.forEach((modalClose) => {
         })
     })
 })
+
+
+/*==================== QUALIFICATION ====================*/
+function openTab(event, tabName) {
+  const tabContent = document.getElementsByClassName('tabcontent')
+  const tabLinks = document.getElementsByClassName('tablinks')
+
+  for (const tab of tabContent) {
+    tab.style.display = 'none'
+  }
+
+  for (const link of tabLinks) {
+    link.className = link.className.replace(' tabactive', '')
+  }
+
+  document.getElementById(tabName).style.display = 'block'
+  event.currentTarget.className = ' tabactive'
+}
+
+document.getElementById('defaultOpen').click()
 
 
 /*==================== SWIPER JS ====================*/
@@ -123,3 +144,17 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme())
   localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+/*==================== SCROLL REVEAL ====================*/
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '50px',
+  duration: 2000
+})
+
+scrollReveal.reveal('.delaySmallReveal', { delay: 200 })
+scrollReveal.reveal('.delayMediumReveal', { delay: 300 })
+scrollReveal.reveal('.delayLargeReveal', { delay: 400 })
+
+scrollReveal.reveal('.intervalCardReveal', { interval: 400 })
