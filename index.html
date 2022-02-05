@@ -2,8 +2,22 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0eff"/>
+  <meta name="copyright" content="evanderinacio 2022" />
+  <meta http-equiv="content-language" content="pt-BR" />
+  <meta
+  property="og:image"
+  content=""
+  />
+  <meta
+  property="og:title"
+  content="Evander Inácio - Desenvolvedor Front-End"
+  />
+  <meta
+  property="og:description"
+  content="Front-end developer"
+  />
 
   <!--============= Unicons css ===================-->
    <link
@@ -49,20 +63,20 @@
                   
         <li class="nav_item"> 
             <a href="#portfolio" class="nav_link">
-              <i class="uil uil-scenery nav_icon"></i> Portfolio
+              <i class="uil uil-scenery nav_icon"></i> Projetos
             </a>
+        </li>
+        
+        <li class="nav_item"> 
+          <a href="#service" class="nav_link">
+          <i class="uil uil-briefcase nav_icon"></i> Serviços
+          </a>
         </li>
                  
         <li class="nav_item"> 
           <a href="#contact" class="nav_link">
             <i class="uil uil-comment-alt-message nav_icon"></i> Contato
           </a> 
-        </li>
-
-        <li class="nav_item"> 
-          <a href="blog.html" class="nav_link">
-            <i class="uil uil-pen nav_icon"></i> Blog
-          </a>
         </li>
       </ul>
       <i class="uil uil-times nav_close" id="nav-close"></i>
@@ -88,13 +102,13 @@
           <div class="home_content grid">
 
             <div class="home_social">
-              <a href="https://www.linkedin.com/in/evander-inacio/" target="_blank" class="home_social-icon">
+              <a href="https://www.linkedin.com/in/evander-inacio/" target="_blank" class="home_social-icon delaySmallReveal">
                 <i class="uil uil-linkedin-alt"></i>
               </a>
-              <a href="https://api.whatsapp.com/send?phone=+5511995085916&text=Olá Evander! te achei através de seu portfólio." target="_blank" class="home_social-icon"> 
+              <a href="https://api.whatsapp.com/send?phone=+5511995085916&text=Olá Evander! te achei através de seu portfólio." target="_blank" class="home_social-icon delayMediumReveal"> 
                 <i class="uil uil-whatsapp"></i>
               </a>
-              <a href="https://github.com/EvanderInacio" target="_blank"  class="home_social-icon">
+              <a href="https://github.com/EvanderInacio" target="_blank"  class="home_social-icon delayLargeReveal">
                 <i class="uil uil-github-alt"></i>
               </a>
             </div>
@@ -109,8 +123,8 @@
 
             <div class="home_desktop">
               <div class="home_space">
-              <img  src="assets/images/space.svg" alt="">
-              <img class="home_people" src="assets/images/fundoPessoa.png" alt="">
+              <img  src="assets/images/space.svg" alt="espaço">
+              <img class="home_people" src="assets/images/fundoPessoa.png" alt="pessoa">
             </div>
             </div>
             
@@ -135,12 +149,11 @@
       <span class="section_subtitle">Um breve resumo</span>
 
       <div class="about_container container grid">
-        <img src="assets/images/Evander.jpg" alt="" class="about_img">
+        <img src="assets/images/Evander.jpg" alt="evander" class="about_img delaySmallReveal">
         
         <div class="about_data">
          <p class="about_description"> Desenvolvedor Front End, sou graduado em Análise e desenvolvimento de sistemas pela Unopar. <br><br>
-         Atualmente sigo estudando e desenvolvendo projetos web mais precisamente no Front-end, de modo a ampliar meus conhecimentos e assim aprimorar ainda mais as habilidades que possuo. <br>
-         Estou procurando oportunidades de trabalho para crescer profissionalmente.<br><br>
+         Atualmente sigo estudando e desenvolvendo projetos web mais precisamente no Front-end, de modo a ampliar meus conhecimentos e assim aprimorar ainda mais as habilidades que possuo.<br><br>
          Sempre aprendendo novas coisas rumo ao espaço. <i class="uil uil-rocket card_icon pont"></i> 
          </p> 
 
@@ -161,181 +174,198 @@
 
       <p class="skills_cursor"> Aqui estão as tecnologias que tenho contato no momento. <br>
       Sempre busco aprender novas tecnologias. </p> 
-      
+
       <div class="skills_container container grid">
-        <div class="skills_card" id="card">
+
+        
+        <div class="skills_card delaySmallReveal" id="card">
+          <span class="html"></span>
           <div class="circle">
-            <img class="skills_img" src="assets/images/html-card.png" alt="">
+            <img class="skills_img" src="assets/images/html-card.png" alt="html">
           </div>
-            <h3 class="section_subtitle">Html</h3>
+          <h3 class="card_title">Html</h3>  
           
-            <h4>3 meses de experiência <br>
+          <h4 class="card_subtitle">3 meses de experiência <br>
             Experiência não profissional <br>
               Nivel - Básico </h4>
                <br><br>
-               <p>
+               <p class="card_description">
               HTML é uma linguagem de marcação utilizada na construção de páginas na Web. 
             </p>
         </div>
 
-        <div class="skills_card card">
+        <div class="skills_card delayMediumReveal card">
+          <span class="css"></span>
          <div class="circle circle1">
-           <img class="skills_img" src="assets/images/css-card.png" alt="">
+           <img class="skills_img" src="assets/images/css-card.png" alt="css">
          </div>
-           <h3 class="section_subtitle">Css</h3>
-          
-          <h4>3 meses de experiência <br>
+           <h3 class="card_title">Css</h3>
+       
+           <h4 class="card_subtitle">3 meses de experiência <br>
             Experiência não profissional <br>
               Nivel - Básico </h4>
                <br><br>
-               <p>
+               <p class="card_description">
                 O CSS é uma linguagem de folhas de estilos, criada com o propósito de estilizar as páginas HTML. 
             </p>
         </div>
-        
-        <div class="skills_card card">
+
+        <div class="skills_card delayLargeReveal card">
+          <span class="js"></span>
          <div class="circle circle2">
-           <img class="skills_img" src="assets/images/js-card.png" alt="">
+           <img class="skills_img" src="assets/images/js-card.png" alt="JavaScript">
          </div>
-           <h3 class="section_subtitle">JavaScript</h3>
-          
-          <h4>2 meses de experiência <br>
+           <h3 class="card_title">JavaScript</h3>
+
+           <h4 class="card_subtitle">2 meses de experiência <br>
             Experiência não profissional <br>
               Nivel - Básico </h4>
                <br><br>
-               <p>
+               <p class="card_description">
                 JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
             </p>
-        </div>
-        
-       <div class="skills_card card">
+        </div> 
+
+        <div class="skills_card delaySmallReveal card">
+          <span class="react"></span>
           <div class="circle circle4">
-            <img class="skills_img" src="assets/images/card-reactjs.png" alt="">
+            <img class="skills_img" src="assets/images/card-reactjs.png" alt="react">
           </div>
-            <h3 class="section_subtitle">ReactJS</h3>
+            <h3 class="card_title">ReactJS</h3>
            
-           <h4> Pretendo estudar <br>
-             Não iniciado </h4>
+           <h4 class="card_subtitle"> Estudos iniciados <br>
+            Nivel - Básico </h4>
                 <br><br>
-                <p>
+                <p class="card_description">
                  O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
              </p>
          </div>
-        
-        <div class="skills_card ">  
-         <div class="circle circle3">
-         <img class="skills_img" src="assets/images/git-card.png" alt="">
-        </div>
-        <h3 class="section_subtitle">Git</h3>
-          
-          <h4>2 meses de experiência <br>
+
+        <div class="skills_card delayMediumReveal">  
+          <span class="git"></span>
+          <div class="circle circle3">
+          <img class="skills_img" src="assets/images/git-card.png" alt="git">
+         </div>
+         <h3 class="card_title">Git</h3>
+
+         <h4 class="card_subtitle">2 meses de experiência <br>
           Experiência não profissional <br>
             Nivel - Básico </h4>
              <br><br>
-             <p>
+             <p class="card_description">
               Um sistema de controle de versão de arquivos. Através deles podemos desenvolver projetos na qual diversas pessoas podem contribuir.
             </p>
-        </div>  
-       </div>
+        </div> 
  
       </div>
-     </div>
     </section>
 
     <!--================== QUALIFICATION ========================-->
-    <section class="qualification section">
-      <h2 class="section_title">Qualificações  <span class="score">.</span></h2>
-      <span class="section_subtitle">minha jornada pessoal </span>
-
-      <div class="qualification_container container">
-        <div class="grid">
-
-            <div class="qualification_list grid">
-              
-              <div class="qualification_data">
-
-                <div class="qualification_titles">
-                  <h3 class="qualification_name">Análise e Desenvolvimento de  Sistemas</h3>
-                  <p class="qualification_description">Universidade Unopar</p>
-
-                  <div class="qualification_calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2019 - 2021
-                  </div>
-                </div>
-
-                <div class="qualification_bar">
-                  <span class="qualification_percentage qualification_unopar"></span>
-                </div>
-
-                <div class="status">
-                  <span class="qualification_number">Status: <span class="pont">100%</span></span>
-                  </div>
-
-              </div>
-
-              <div class="qualification_data">
-
-                <div class="qualification_titles">
-                  <h3 class="qualification_name">Html e Css</h3>
-                  <p class="qualification_description">Fundação Bradesco</p>
-
-                  <div class="qualification_calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                     2021 
-                  </div>
-                </div>
-
-                <div class="qualification_bar">
-                  <span class="qualification_percentage qualification_bradesco"></span>
-                </div>
-
-                <div class="status">
-                  <span class="qualification_number">Status: <span class="pont">100%</span></span>
-                  </div>
-
-              </div>
-
-              <div class="qualification_data">
-
-                <div class="qualification_titles">
-                  <h3 class="qualification_name">Desenvolvimento Web</h3>
-                  <p class="qualification_description">Rocketseat</p>
-
-                  <div class="qualification_calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                     2021 - 2022
-                  </div>
-                </div>
-
-                <div class="qualification_bar">
-                  <span class="qualification_percentage qualification_rocket"></span>
-                </div>
-
-                <div class="status">
-                  <span class="qualification_number">Status: <span class="pont">12%</span></span>
-                  </div>
-
-              </div>
-              
+    <section class="app-section qualification section">
+        <div class="qualification_container container">
+          <h2 class="section_title">Qualificações  <span class="score">.</span></h2>
+          <span class="section_subtitle">minha jornada pessoal </span>
+  
+          <div class="tab-wrap">
+            <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'Formacao')" id="defaultOpen">Graduação</button>
+              <button class="tablinks" onclick="openTab(event, 'Cursos')">Cursos</button>
+              <button class="tablinks" onclick="openTab(event, 'Experiência')">Experiência</button>
             </div>
+            
+            <div id="Formacao" class="tabcontent">
+              <div class="qualification_titles">
+                <h3 class="qualification_name">Análise e Desenvolvimento de  Sistemas</h3>
+                <p class="qualification_description">Universidade Unopar</p>
+  
+                    <div class="status">
+                      <span class="qualification_number"><span class="pont-green">100%</span></span>
+                      </div>
+  
+                    <div class="qualification_calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                      2019 - 2021
+                    </div>
+                  </div>
 
+                  <div class="qualification_bar">
+                    <div class="qualification_percentage qualification_unopar">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+            </div>
+            
+            <div id="Cursos" class="tabcontent ">
+                 <div class="bradesco">    
+                  <div class="qualification_titles">
+                    <h3 class="qualification_name">Html e Css</h3>
+                    <p class="qualification_description">Fundação Bradesco</p>
+  
+                    <div class="status">
+                      <span class="qualification_number"> <span class="pont-green">100%</span></span>
+                    </div>
+  
+                    <div class="qualification_calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                       2021 
+                    </div>
+                  </div>
+  
+                  <div class="qualification_bar">
+                    <span class="qualification_percentage qualification_bradesco"></span>
+                  </div>
+                  </div>
+  
+                <div class="rocketseat">
+                  <div class="qualification_titles">
+                    <h3 class="qualification_name">Desenvolvimento Web</h3>
+                    <p class="qualification_description">Rocketseat</p>
+  
+                    <div class="status">
+                      <span class="qualification_number"> <span class="pont-red">12%</span></span>
+                      </div>
+  
+                    <div class="qualification_calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                       2021 - 2022
+                    </div>
+                  </div>
+  
+                  <div class="qualification_bar">
+                    <span class="qualification_percentage qualification_rocket"></span>
+                  </div>
+  
+  
+                </div>
+            </div> 
+    
+             <div id="Experiência" class="tabcontent">            
+                <div class="rocketseat">
+                <div class="qualification_titles">
+                  <h3 class="qualification_name">Buscando oportunidades</h3>
+                  <p class="qualification_description">No momento estou aprimorando meus conhecimentos e também buscando uma oportunidade no mercado de trabalho.</p>
+              </div>  
+            </div>
+            </div>
+  
           </div>
-        </div>
+      
     </section>
 
     <!--==================== PORTFOLIO ====================-->
     <section class="portfolios section" id="portfolio">
-      <h2 class="section_title">Portfolio <span class="score">.</span></h2>
+      <h2 class="section_title">Projetos <span class="score">.</span></h2>
       <span class="section_subtitle">Trabalhos mais recentes</span>
   
       <div class="portfolios_container container grid">
+
         <!--==================== PORTFOLIO 1 ====================-->
         <div class="portfolios_content">
               <div>
-                <img class="portfolio_img" src="assets/images/Tribal-Tattoo.png" alt="">
-                  <h3 class="portfolios_title"><i class="uil uil-pen portfolios_icon"></i> Tribal  Tattoo</h3>
+                <h3 class="portfolios_title"><i class="uil uil-pen portfolios_icon"></i>  Tribal  Tattoo</h3>
+                <img class="portfolio_img" src="assets/images/Tribal-Tattoo.png" alt="Tribal-Tattoo">        
               </div>
+
 
               <span class="button button--flex button--small button--link portfolios_button">
                 Ver detalhes 
@@ -344,7 +374,7 @@
 
               <div class="portfolios_modal">
                   <div class="portfolios_modal-content">
-                      <h4 class="portfolios_modal-title">Tribal Tattoo <i class="uil uil-pen button_icon pont"></i></h4>
+                      <h4 class="portfolios_modal-title">Tribal Tattoo <i class="uil uil-layers button_icon pont"></i></h4>
                       <i class="uil uil-times portfolios_modal-close"></i>
                   
                       <p>Website desenvolvido para um studio de tatuagens com base no modelo desenvolvido <br> durante o evento Next Level Week da Rocketseat. </p> <br>
@@ -363,7 +393,7 @@
                         <div class="portfolio_button">
                           <a href="https://github.com/EvanderInacio/TribalTattoo" target="_blank" class="button button--flex button--small button--link button--white"><i class="uil uil-github-alt button_icon"></i> Repositório do projeto</a><br>
 
-                          <a href="https://tribal-tattoo.netlify.app" target="_blank" class="button button--flex"> Acesse o Website
+                          <a href="https://evanderinacio.github.io/TribalTattoo/" target="_blank" class="button button--flex"> Acesse o Website
                           <i class="uil uil-signout button_icon"></i></a>
                         </div>
 
@@ -375,21 +405,22 @@
         <!--==================== PORTFOLIO 2 ====================-->
         <div class="portfolios_content">
                 <div>
-                  <img class="portfolio_img" src="assets/images/Portfolio.png" alt="">
-                    <h3 class="portfolios_title"><i class="uil uil-web-grid portfolios_icon"></i> Portfolio</h3>
+                  <h3 class="portfolios_title">  <i class="uil uil-web-grid portfolios_icon"></i> Portfólio</h3>
+                  <img class="portfolio_img" src="assets/images/Portfolio.png" alt="Portfólio">
+                  
                 </div>
   
                 <span class="button button--flex button--small button--link portfolios_button">
-                  Ver detalhes
+                  Ver mais
                   <i class="uil uil-arrow-right button_icon"></i>
                 </span>
   
                 <div class="portfolios_modal">
                     <div class="portfolios_modal-content">
-                        <h4 class="portfolios_modal-title">Portfolio <i class="uil uil-layers button_icon pont"></i></h4>
+                        <h4 class="portfolios_modal-title">Portfólio <i class="uil uil-layers button_icon pont"></i></h4>
                         <i class="uil uil-times portfolios_modal-close"></i>
                     
-                        <p>Meu portfolio criado com o objetivo de mostrar meus projetos ao longo da minha carreira. </p> <br>
+                        <p>Meu portfólio criado com o objetivo de mostrar meus projetos ao longo da minha carreira. </p> <br>
                         <p>Acompanhe aqui mesmo pelo site ou através do Repositório github.</p>  <br>
 
                         <ul class="portfolios_modal-portfolios grid">
@@ -414,10 +445,10 @@
         </div>
 
         <!--==================== PORTFOLIO 3 ====================-->
-          <div class="portfolios_content">
+        <div class="portfolios_content">
           <div>
-            <img class="portfolio_img" src="assets/images/calculadora.png" alt="">
-              <h3 class="portfolios_title"><i class="uil uil-calculator portfolios_icon"></i> Calculadora </h3>
+            <h3 class="portfolios_title"><i class="uil uil-calculator portfolios_icon"></i> Calculadora </h3>
+            <img class="portfolio_img" src="assets/images/calculadora.png" alt="Calculadora">
           </div>
 
           <span class="button button--flex button--small button--link portfolios_button">
@@ -450,14 +481,13 @@
           </div>
         </div>
       </div>
-        
 
         <!--==================== PORTFOLIO 4 ====================-->
-        <div class="portfolios_content">
-           <div>
-                <img class="portfolio_img" src="assets/images/space-portfolio.png" alt="">
-                  <h3 class="portfolios_title"><i class="uil uil-arrow portfolios_icon"></i> Em breve</h3>
-              </div>
+        <div class="portfolios_content visibility">
+          <div>
+              <h3 class="portfolios_title"> <i class="uil uil-arrow portfolios_icon"></i> Em breve</h3>
+            <img class="portfolio_img" src="assets/images/space-portfolio.png" alt="Observatorio">
+          </div>
 
           <span class="button button--flex button--small button--link portfolios_button">
               Ver mais
@@ -488,11 +518,11 @@
         </div>
 
         <!--==================== PORTFOLIO 5 ====================-->
-        <div class="portfolios_content visibility">
-           <div>
-                <img class="portfolio_img" src="assets/images/space-portfolio.png" alt="">
-                  <h3 class="portfolios_title"><i class="uil uil-arrow portfolios_icon"></i> Em breve</h3>
-              </div>
+        <div class="portfolios_content visibility ">
+          <div>
+              <h3 class="portfolios_title"> <i class="uil uil-arrow portfolios_icon"></i> Em breve</h3>
+            <img class="portfolio_img" src="assets/images/space-portfolio.png" alt="Observatorio">
+          </div>
 
           <span class="button button--flex button--small button--link portfolios_button">
               Ver mais
@@ -524,10 +554,10 @@
 
         <!--==================== PORTFOLIO 6 ====================-->
         <div class="portfolios_content visibility">
-           <div>
-                <img class="portfolio_img" src="assets/images/space-portfolio.png" alt="">
-                  <h3 class="portfolios_title"><i class="uil uil-arrow portfolios_icon"></i> Em breve</h3>
-              </div>
+          <div>
+              <h3 class="portfolios_title"> <i class="uil uil-arrow portfolios_icon"></i> Em breve</h3>
+            <img class="portfolio_img" src="assets/images/space-portfolio.png" alt="Observatorio">
+          </div>
 
           <span class="button button--flex button--small button--link portfolios_button">
               Ver mais
@@ -549,93 +579,68 @@
                       <li class="portfolios_modal-portfolio">
 
                           <div class="portfolio_button">
-                            <a href="https://github.com/EvanderInacio" target="_blank" class="button button--flex button--small button--link button--white"> <i class="uil uil-github-alt button_icon"> </i> Repositórios no GitHub</a><br>
+                            <a href="https://github.com/EvanderInacio" target="_blank" class="button button--flex button--small button--link button--white"><i class="uil uil-github-alt button_icon"></i> Github</a><br>
                           </div>
                       </li>
                   </ul>
               </div>
           </div>
         </div>
-
       </div>
       
-      <div>
-        <p class="portfolio_description "> Outros projetos meus estão no meu repositório.<br><br> <a href="https://github.com/EvanderInacio" class="portfolios_title  button--flex portfolios_button" target="_blank"> <i class="uil uil-github-alt button_icon"></i> GitHub </a></p>
-      </div>
-    </section>
-    
-    <!--================== CERTIFICATES ========================-->
-    <section class="certificate action section">
-      <h2 class="section_title">Certificados <span class="score">.</span></h2>
-      <span class="section_subtitle subtitle">Minhas certificações</span>
-      
-      <div class="certificate_container container swiper mySwiper">
-        
-        <div class="swiper-wrapper">
-
-          <!--======== CERTIFICATES 1 ========-->
-          <div class="certificate_content grid swiper-slide">
-            <img src="assets/images/Certificado Fundamentos de Lógica de Programação.png" alt="" class="certificate_img">
-            
-            <div class="certificate_data">
-              <h3 class="certificate_title">Fundamentos de Lógica de Programação</h3>
-              <p class="certificate_description"> Certificado obtido no curso online
-               de Lógica de Programação da fundação bradesco</p>
-              <a download="" href="assets/pdf/Certificado Logica de Programação.pdf" class="button button--flex button--small certificate_button">Download
-                <i class="uil uil-arrow-to-bottom button_icon"></i>
+      <!--=============  CARD GITHUB ==============-->
+        <div class="github grid">
+          <div class="github_data">
+            <h2 class="portfolios_title">Todos os projetos estão no meu repositório.</h2>
+            <a href="" class="button button--flex button--white">
+              Repositório Github <i class="uil uil-github-alt button_icon"></i>
               </a>
-            </div>
           </div>
+   
+            <img src="assets/images/astronaut_blog.png" alt="astronauta lendo" class="project_img">
+        </div>
+    </section>
 
-          <!--======== CERTIFICATES 2 ========-->
-          <div class="certificate_content grid swiper-slide">
-            <img src="assets/images/Certificado Html e Css  na pratica.png" alt="" class="certificate_img">
-            
-            <div class="certificate_data">
-              <h3 class="certificate_title">Html e Css  na prática</h3>
-              <p class="certificate_description">Certificado obtido no curso online da fundação bradesco </p>
-              <a download="" href="assets/pdf/Certificado Html e Css na pratica.pdf" target="_blank"
-              class="button button--flex button--small certificate_button">Download
-              <i class="uil uil-arrow-to-bottom button_icon"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!--======== CERTIFICATES 3 ========-->
-        <div class="certificate_content grid swiper-slide">
-          <img src="assets/images/Certificado Inovando com CSS.png" alt="" class="certificate_img">
-          
-          <div class="certificate_data">
-            <h3 class="certificate_title">Inovando com CSS</h3>
-            <p class="certificate_description"> Certificado obtido no curso online de CSS da fundação bradesco</p>
-            <a download="" href="assets/pdf/Certificado Inovando com Css.pdf" class="button button--flex button--small certificate_button">Download
-              <i class="uil uil-arrow-to-bottom button_icon"></i>
-             </a>
-            </div>
-          </div>
+    <!--================== SERVICES ========================-->
+    <section class="services section" id="service">
+      <h2 class="section_title">Serviços <span class="score">.</span></h2>
+      <span class="section_subtitle">Serviços que ofereço</span>
+     
+        <div class="service_content grid">
+          <div id="services">
+            <article class="intervalCardReveal">
+              <div>
+               <img class="service_img" src="assets/images/responsive.svg" alt="responsividade>
+              </div>
+              <h3 class="service_title">Sites Responsivos</h3>
+              <p class="service_description">
+                Criação de sites responsivos para a melhor visualização em todas as resoluções.
+              </p>
+            </article>
 
-           <!--======== CERTIFICATES 4 ========-->
-        <div class="certificate_content grid swiper-slide">
-          <img src="assets/images/space-certificates.jpg" alt="" class="certificate_img">
-          
-          <div class="certificate_data">
-            <h3 class="certificate_title">Aguarde</h3>
-            <p class="certificate_description"> Estou sempre buscando novas certificações.</p>
-            <a  class="button button--flex button--small certificate_button">Em breve
-              <i class="uil uil-clock-two button_icon"></i> 
-             </a>
-            </div>
+            <article class="intervalCardReveal">
+              <div>
+                <img class="service_img" src="assets/images/seo.svg" alt="seo">
+              </div>
+              <h3 class="service_title">SEO</h3>
+              <p class="service_description">
+                Implemento conjuntos de técnicas em seu código, fazendo com que
+                seu projeto apareça melhor nas buscas de pesquisas.
+              </p>
+            </article>
+
+            <article class="intervalCardReveal">
+              <div>
+                <img class="service_img" src="assets/images/animation.svg" alt="Animações">
+              </div class="service_description">
+              <h3 class="service_title">Animações</h3>
+              <p>
+                Crio interações que transmitem sensação de modernidade, além de
+                chamarem a atenção do usuário.
+              </p>
+            </article>
           </div>
         </div>
-        
-        <div class="swiper-button-next">
-          <i class="uil uil-angle-right-b swiper-certificate-icon"></i>
-        </div>
-       <div class="swiper-button-prev">
-         <i class="uil uil-angle-left-b swiper-certificate-icon"></i>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
     </section>
     
     <!--================== PROJECT CARD ========================-->
@@ -651,9 +656,72 @@
                   </a>
               </div>
        
-                <img src="assets/images/space-colony.png" alt="" class="project_img">
+                <img src="assets/images/space-colony.png" alt="astronauta na lua" class="project_img">
             </div>
           </div>
+    </section>
+ 
+    <!--================== CERTIFICATES ========================-->
+    <section class="certificate action section">
+      <h2 class="section_title">Certificados <span class="score">.</span></h2>
+      <span class="section_subtitle subtitle">Minhas certificações</span>
+      
+      <div class="certificate_container container swiper mySwiper">
+        
+        <div class="swiper-wrapper">
+
+          <!--======== CERTIFICATES 1 ========-->
+          <div class="certificate_content grid swiper-slide">
+            <img src="assets/images/Certificado Fundamentos de Lógica de Programação.png" alt="Certificado" class="certificate_img">
+            
+            <div class="certificate_data">
+              <h3 class="certificate_title">Fundamentos de Lógica de Programação</h3>
+              <p class="certificate_description"> Certificado obtido no curso online
+               de Lógica de Programação da fundação bradesco</p>
+              </a>
+            </div>
+          </div>
+
+          <!--======== CERTIFICATES 2 ========-->
+          <div class="certificate_content grid swiper-slide">
+            <img src="assets/images/Certificado Html e Css  na pratica.png" alt="Certificado" class="certificate_img">
+            
+            <div class="certificate_data">
+              <h3 class="certificate_title">Html e Css  na prática</h3>
+              <p class="certificate_description">Certificado obtido no curso online da fundação bradesco </p>
+            </a>
+          </div>
+        </div>
+        
+        <!--======== CERTIFICATES 3 ========-->
+        <div class="certificate_content grid swiper-slide">
+          <img src="assets/images/Certificado Inovando com CSS.png" alt="Certificado" class="certificate_img">
+          
+          <div class="certificate_data">
+            <h3 class="certificate_title">Inovando com CSS</h3>
+            <p class="certificate_description"> Certificado obtido no curso online de CSS da fundação bradesco</p>
+            </div>
+          </div>
+
+           <!--======== CERTIFICATES 4 ========-->
+        <div class="certificate_content grid swiper-slide">
+          <img src="assets/images/space-certificates.jpg" alt="astronauta" class="certificate_img">
+          
+          <div class="certificate_data">
+            <h3 class="certificate_title">Aguarde</h3>
+            <p class="certificate_description"> Estou sempre buscando novas certificações.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-certificate-icon"></i>
+        </div>
+       <div class="swiper-button-prev">
+         <i class="uil uil-angle-left-b swiper-certificate-icon"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
 
     <!--================== CONTACT ========================-->
@@ -722,30 +790,30 @@
           </form>
           
           <div class="contact_socials">
-            <h2 class="section_title">Redes Sociais <span class="score">.</span></h2>
+            <h2 class="section_title delaySmallReveal">Redes Sociais <span class="score">.</span></h2>
             
             <ul class="contact_social">
 
               <li>
-               <a href="https://www.linkedin.com/in/evander-inacio/" target='_blank' class="button button--small button--white">
+               <a href="https://www.linkedin.com/in/evander-inacio/" target='_blank' class="button button--small button--white delaySmallReveal">
                 <i class="uil uil-linkedin-alt"></i> 
                </a>
               </li>
 
               <li>
-               <a href="https://github.com/EvanderInacio" target="_blank"  class="button button--small button--white">
+               <a href="https://github.com/EvanderInacio" target="_blank"  class="button button--small button--white delayMediumReveal">
                 <i class="uil uil-github-alt"></i> 
                </a>
               </li>
         
               <li>
-               <a href="https://www.facebook.com/evandder.lopes/" target='_blank' class="button button--small button--white">
+               <a href="https://www.facebook.com/evandder.lopes/" target='_blank' class="button button--small button--white delayLargeReveal">
                <i class="uil uil-facebook-f"></i> 
                </a>
               </li>
         
               <li>
-               <a href="https://twitter.com/Evander_Inacio" target='_blank' class="button button--small button--white ">
+               <a href="https://twitter.com/Evander_Inacio" target='_blank' class="button button--small button--white delayLargeReveal">
                <i class="uil uil-twitter-alt"></i> 
                </a>
               </li>  
@@ -772,10 +840,10 @@
                   <a href="#about" class="footer_link">Sobre</a>
               </li>
               <li>
-                  <a href="#portfolio" class="footer_link">Portfolio</a>
+                  <a href="#portfolio" class="footer_link">Projetos</a>
               </li>
               <li>
-                <a href="blog.html" class="footer_link">Blog</a>
+                <a href="#service" class="footer_link">Serviços</a>
               </li>
             </ul>
  
@@ -810,6 +878,9 @@
 
   <!--============= Swipper js ===================-->
   <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--============= Scroll Reveal ===================-->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   <!--============= Main js ===================-->
   <script src="assets/js/main.js"></script>
