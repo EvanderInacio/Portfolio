@@ -1571,8 +1571,8 @@ body.sun-theme {
     display: flex;
   }
 
-  .home_container {
-    margin-bottom: 20rem;
+  .home_content{
+    position: relative;
   }
 
   .home_desktop,
@@ -1585,53 +1585,123 @@ body.sun-theme {
     order: 0;
   }
 
-  .home_space {
-    position: absolute;
-    right: 0;
-    top: 4rem;
-    width: 500px;
+  .home_people {
+    position: relative;
+    left: 31rem;
+    width: 350px;
   }
 
   .home_people {
-    position: absolute;
-    left: -1rem;
-    animation: people 5s ease-in-out infinite;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+  }
+  
+  .home_people:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
-  @keyframes people {
-    0% {
-      transform: translateY(0px);
-    }
-
-    50% {
-      transform: translateY(-30px);
-    }
-
-    100% {
-      transform: translateY(0px);
-    }
+ .home_people {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .home_data {
     position: absolute;
-    left: 2rem;
-    top: 22rem;
+    right: 24rem;
+    top: 15rem;
     width: 30rem;
   }
 
   .home_social {
-    position: absolute;
-    left: 0.6rem;
-    top: 15rem;
+   position: absolute;
+   left: -7rem;
+    top: 8rem;
   }
 
   .effect-1 {
-    top: 14%;
-    left: 5%;
+    top: -1%;
+    left: -10%;
   }
 
   .effect-3 {
-    display: none;
+  left: -13%;
+  bottom: -1%
+  }
+
+  .icon-one{
+    position: absolute;
+    top: -3rem;
+    width: 4rem;
+    right: 1rem;
+  }
+
+  .icon-two{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 4rem;
+  }
+
+  .icon-three{
+    position: absolute;
+    top: 13rem;
+    left: -5rem;
+    width: 4rem;
+  }
+
+   .home_icon .icon-one {
+    -webkit-animation: icon-move 3s ease 1.2s infinite alternate;
+            animation: icon-move 4s ease 1.3s infinite alternate;
+  }
+  
+   .home_icon .icon-two {
+    -webkit-animation: icon-move 3s ease 1.9s infinite alternate;
+            animation: icon-move 3s ease 1.9s infinite alternate;
+  }
+  
+   .home_icon .icon-three {
+    -webkit-animation: icon-move 3s ease 0.6s infinite alternate;
+            animation: icon-move 2s ease 0.6s infinite alternate;
+  }
+  
+  @-webkit-keyframes icon-move {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(10px, -40px, 0);
+              transform: translate3d(10px, -40px, 0);
+    }
+  }
+  
+  @keyframes icon-move {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(20px, -50px, 0);
+              transform: translate3d(20px, -50px, 0);
+    }
   }
 
   .skills_container {
@@ -1692,8 +1762,48 @@ body.sun-theme {
     column-gap: 6rem;
   }
 
-  .home_space {
-    width: 40rem;
+  .home_people {
+    position: relative;
+    left: 28rem;
+    width: 500px;
+  }
+
+  .home_data {
+    position: absolute;
+    right: 30rem;
+    top: 15rem;
+    width: 30rem;
+  }
+
+  .home_social {
+   position: absolute;
+   left: -14rem;
+    top: 8rem;
+  }
+
+  .effect-1 {
+    top: -1%;
+    left: -25%;
+  }
+
+  .effect-3 {
+  left: -25%;
+  bottom: 10%
+  }
+
+  .icon-one{
+    top: -1rem;
+    left: 5rem;
+  }
+
+  .icon-two{
+     top: -3rem;
+     left: 27rem;
+  }
+
+  .icon-three{
+    top: 13rem;
+    left: -5rem;
   }
 
   .portfolios_container {
