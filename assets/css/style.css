@@ -795,6 +795,10 @@ body.sun-theme {
   background-color: #442881a6;
 }
 
+.tab button.tabactive{
+  background: #0004fa28;
+}
+
 .tab button.tabactive::before {
   content: "";
   position: absolute;
