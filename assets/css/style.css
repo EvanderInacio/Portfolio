@@ -800,7 +800,7 @@ body.sun-theme {
   background: #3a00fa41;
 }
 
-.tab button.tabactive::before {
+.tab button.active::before {
   content: "";
   position: absolute;
   left: -2px;
