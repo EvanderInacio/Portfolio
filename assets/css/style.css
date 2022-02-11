@@ -795,7 +795,7 @@ body.sun-theme {
   background-color: #442881a6;
 }
 
-.tab button.tabactive{
+.tab button.tabactive:hover{
   background: #0004fa28;
 }
 
@@ -805,7 +805,7 @@ body.sun-theme {
   left: -2px;
   top: 0;
   height: 100%;
-  border-left: 2px solid #1900ff;
+  border-left: 3px solid #1900ff;
   z-index: 1;
 }
 
@@ -815,7 +815,7 @@ body.sun-theme {
   left: -2px;
   top: 0;
   height: 100%;
-  border-left: 2px solid #05f0d1 ;
+  border-left: 3px solid #373b3a;
 }
 
 .tabcontent {
