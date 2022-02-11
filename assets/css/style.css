@@ -1596,38 +1596,6 @@ body.sun-theme {
     width: 350px;
   }
 
-  .home_people {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    -webkit-transition: 1s all ease;
-    transition: 1s all ease;
-  }
-  
-  .home_people:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-
- .home_people {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
   .home_data {
     position: absolute;
     right: 24rem;
@@ -1646,26 +1614,26 @@ body.sun-theme {
     left: -10%;
   }
 
-  .effect-3 {
-  left: -13%;
-  bottom: -1%
+   .effect-3 {
+    left: -13%;
+    bottom: 15%;
   }
 
-  .icon-one{
+  .icon-one {
     position: absolute;
-    top: -3rem;
+    top: -1rem;
     width: 4rem;
     right: 1rem;
   }
 
-  .icon-two{
+  .icon-two {
     position: absolute;
-    top: 1rem;
+    top: -3rem;
     left: 1rem;
     width: 4rem;
   }
 
-  .icon-three{
+  .icon-three {
     position: absolute;
     top: 13rem;
     left: -5rem;
@@ -1792,23 +1760,29 @@ body.sun-theme {
   }
 
   .effect-3 {
-  left: -25%;
-  bottom: 10%
+    left: -25%;
+    bottom: 10%;
   }
 
-  .icon-one{
+  .icon-one {
+    position: absolute;
     top: -1rem;
-    left: 5rem;
+    width: 4rem;
+    right: 1rem;
   }
 
-  .icon-two{
-     top: -3rem;
-     left: 27rem;
+  .icon-two {
+    position: absolute;
+    top: -3rem;
+    left: 1rem;
+    width: 4rem;
   }
 
-  .icon-three{
+  .icon-three {
+    position: absolute;
     top: 13rem;
     left: -5rem;
+    width: 4rem;
   }
 
   .portfolios_container {
