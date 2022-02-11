@@ -417,7 +417,7 @@ body.sun-theme {
 
 .home_subtitle {
   font-size: var(--h3-font-size);
-  color: #0011ff;
+  color: var(--title-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
 }
@@ -425,14 +425,14 @@ body.sun-theme {
 .home_animation {
   animation: cursor 1s steps(40) infinite normal,
     line 5s steps(40) 1s normal both;
-  border-right: 3px solid rgb(8, 21, 204);
+  border-right: 3px solid var(--title-color);
   white-space: nowrap;
   overflow: hidden;
 }
 
 @keyframes cursor {
   from {
-    border-right-color: rgb(4, 20, 235);
+    border-right-color: var(--text-color);
   }
   to {
     border-right-color: transparent;
