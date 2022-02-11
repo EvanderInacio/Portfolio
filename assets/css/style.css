@@ -873,6 +873,7 @@ body.sun-theme {
 .portfolios_content:hover {
   -o-border-image: linear-gradient(225deg, #0004fa 0%, #bd0bd4 100%) 1;
   border-image: linear-gradient(225deg, #0400ff 0%, #8500aa 100%) 1;
+  transform: translateY(-1rem);
 }
 
 .portfolios_icon {
