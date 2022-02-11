@@ -432,7 +432,7 @@ body.sun-theme {
 
 @keyframes cursor {
   from {
-    border-right-color: var(--text-color);
+    border-right-color: #0004fa;
   }
   to {
     border-right-color: transparent;
@@ -443,7 +443,7 @@ body.sun-theme {
     width: 0;
   }
   to {
-    width: 13.2em;
+    width: 20.5rem;
   }
 }
 
