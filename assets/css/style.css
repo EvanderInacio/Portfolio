@@ -792,12 +792,12 @@ body.sun-theme {
 }
 
 .tab button:hover {
-  background-color: #0004fa36;
+  background-color: #3a00fa41;
 }
 
 .tab button.active{
   position: relative;
-  background: #3a00fa3a;
+  background: #3a00fa41;
 }
 
 .tab button.tabactive::before {
@@ -816,7 +816,7 @@ body.sun-theme {
   left: -2px;
   top: 0;
   height: 100%;
-  border-left: 3px solid #373b3a;
+   border-left: 3px solid #05f0d1;
 }
 
 .tabcontent {
