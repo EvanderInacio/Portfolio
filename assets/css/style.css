@@ -17,9 +17,9 @@
   --text-color: hsl(var(--hue-color), 8%, 85%);
   --text-color-lighter: hsl(var(--hue-color), 20%, 70%);
   --input-color: hsl(var(--hue-color), 55%, 25%);
-  --body-color: hsl(var(--hue-color), 80%, 12%);
-  --header-color: hsl(var(--hue-color), 80%, 16%);
-  --container-color: hsl(257, 100%, 8%);
+  --body-color: hsl(var(--hue-color), 80%, 11%);
+  --header-color: hsl(var(--hue-color), 80%, 17%);
+  --container-color: hsl(257, 100%, 5%);
   --qualification-bar-color: hsl(var(--hue-color), 92%, 85%);
   --qualification-color: hsl(var(--hue-color), 100%, 50%);
   --scroll-thumb-color: hsl(var(--hue-color), 10%, 75%);
