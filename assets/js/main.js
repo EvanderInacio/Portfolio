@@ -52,23 +52,23 @@ modalCloses.forEach((modalClose) => {
 
 
 /*==================== QUALIFICATION ====================*/
-function openTab(event, tabName) {
-  const tabContent = document.getElementsByClassName('tabcontent')
-  const tabLinks = document.getElementsByClassName('tablinks')
+function openTab(event, idtab) {
+  var tabContent = document.getElementsByClassName('tabcontent')
 
-  for (const tab of tabContent) {
-    tab.style.display = 'none'
+  for(var i = 0; i < tabContent.length; i++){
+    tabContent[i].style.display = 'none'
   }
 
-  for (const link of tabLinks) {
-    link.className = link.className.replace(' tabactive', '')
-  }
+  var tabs = document.getElementsByClassName('tab_button')
+   for(var i = 0; i < tabs.length; i++){
+    tabs[i].className = tabs[i].className.replace('active', '');
+   }
 
-  document.getElementById(tabName).style.display = 'block'
-  event.currentTarget.className = ' tabactive'
+  document.getElementById(idtab).style.display = 'block';
+  event.currentTarget.className += ' active'
 }
 
-document.getElementById('defaultOpen').click()
+document.getElementById('Open').click()
 
 
 /*==================== SWIPER JS ====================*/
