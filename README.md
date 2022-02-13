@@ -22,6 +22,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Google Fonts](https://fonts.google.com/)
 - [SwipeJS](https://github.com/nolimits4web/Swiper)
+- [ScrollReveal](https://scrollrevealjs.org/)
 - [Iconscout](https://iconscout.com/unicons/explore/line)
 
 ## 💻 Autor<br>
