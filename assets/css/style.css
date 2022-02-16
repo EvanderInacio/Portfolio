@@ -906,15 +906,6 @@ body.sun-theme {
   color: #f70606;
 }
 
-.portfolio_description {
-  text-align: center;
-  font-size: var(--h3-font-size);
-}
-
-.portfolio_description a {
-  color: #0011ff;
-}
-
 .portfolios_modal {
   position: fixed;
   top: 0;
@@ -943,10 +934,6 @@ body.sun-theme {
   row-gap: 1rem;
 }
 
-.portfolios_modal-portfolio {
-  display: flex;
-}
-
 .portfolios_modal-title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
@@ -962,9 +949,29 @@ body.sun-theme {
   cursor: pointer;
 }
 
+.portfolio_tech{
+  margin-top: var(--mb-0-75);
+  margin-bottom: var(--mb-1-5);
+}
+
+.portfolio_tech-icon a{
+  color: var(--first-color);
+}
+
+.portfolio_tech-icon a:hover {
+  color: red;
+}
+
 .portfolios_modal-icon {
   color: var(--first-color);
-  margin-right: var(--mb-0-5);
+}
+
+@media (min-width: 340px){
+  .portfolio_button{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+   }
 }
 
 .github{
