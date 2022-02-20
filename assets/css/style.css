@@ -430,6 +430,14 @@ body.sun-theme {
   overflow: hidden;
 }
 
+.line{
+  color: #dd00fa;
+}
+
+.pont_home{
+  color: #0004fa;
+}
+
 @keyframes cursor {
   from {
     border-right-color: #0004fa;
@@ -443,7 +451,7 @@ body.sun-theme {
     width: 0;
   }
   to {
-    width: 14em;
+     width: 13.7em;
   }
 }
 
