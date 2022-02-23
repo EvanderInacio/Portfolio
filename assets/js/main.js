@@ -154,7 +154,7 @@ const scrollReveal = ScrollReveal({
 })
 
 scrollReveal.reveal('.delaySmallReveal', { delay: 200 })
-scrollReveal.reveal('.delayMediumReveal', { delay: 300 })
-scrollReveal.reveal('.delayLargeReveal', { delay: 400 })
+scrollReveal.reveal('.delayMediumReveal', { delay: 400 })
+scrollReveal.reveal('.delayLargeReveal', { delay: 600 })
 
-scrollReveal.reveal('.intervalCardReveal', { interval: 400 })
+scrollReveal.reveal('.intervalCardReveal', { interval: 500 })
