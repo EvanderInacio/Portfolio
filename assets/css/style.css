@@ -1207,7 +1207,7 @@ body.sun-theme {
 }
 
 .button_envio {
-  border: 2px solid #0011ff;
+  font-size: medium;
 }
 
 .contact_socials h2 {
