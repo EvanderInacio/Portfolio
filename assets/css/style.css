@@ -895,7 +895,7 @@ body.sun-theme {
 }
 
 .portfolio_img {
-  width: 100%;
+  width: 100vw;
   height: 12.5rem;
   margin-bottom: var(--mb-2-5);
 }
