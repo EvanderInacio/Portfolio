@@ -528,13 +528,13 @@ body.sun-theme {
 /*=============== ABOUT =========================*/
 .about_img {
   width: 200px;
-  border-radius: 0.5rem;
+  border-radius: 3px;
   justify-self: center;
   align-self: center;
   position: relative;
-  
-  border-top: 6px solid #3c00ff;
-  border-left: 8px solid #9705ec;
+
+  border-top: 6px solid #0d0ada;
+  border-left: 8px solid #0905ec;
 }
 
 .about_img:hover{
