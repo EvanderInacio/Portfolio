@@ -16,6 +16,7 @@
   --title-color: hsl(var(--hue-color), 8%, 100%);
   --text-color: hsl(var(--hue-color), 8%, 85%);
   --text-color-lighter: hsl(var(--hue-color), 20%, 70%);
+  --text-color-button: hsl(var(--hue-color), 0%, 0%);
   --input-color: hsl(var(--hue-color), 55%, 25%);
   --body-color: hsl(var(--hue-color), 80%, 11%);
   --header-color: hsl(var(--hue-color), 80%, 17%);
@@ -473,6 +474,21 @@ body.sun-theme {
   background-color: #080808;
 }
 
+.button_main{
+  display: inline-block;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  padding: 1rem;
+
+  border: 3px solid;
+  border-image: linear-gradient(225deg, #00d9ff 0%, #c001fa 100%) 1;
+}
+
+.button_main:hover{
+  background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);
+  color: var(--text-color-button);
+}
+
 .button_icon {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
@@ -516,6 +532,9 @@ body.sun-theme {
   justify-self: center;
   align-self: center;
   position: relative;
+  
+  border-top: 6px solid #3c00ff;
+  border-left: 8px solid #9705ec;
 }
 
 .about_img:hover{
@@ -988,6 +1007,15 @@ body.sun-theme {
 
 .github{
   text-align: center;
+}
+
+.github_img{
+  width: 300px;
+  justify-self: center;
+}
+
+.github_img:hover{
+  transform: scale(1.1);
 }
 
 /*======== ACTIVE MODAL ============*/
