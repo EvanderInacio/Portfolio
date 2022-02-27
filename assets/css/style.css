@@ -1175,9 +1175,21 @@ body.sun-theme {
   font-size: var(--h3-font-size);
 }
 
+.contact_subtitle a{
+  color: var(--text-color);
+}
+
+.contact_subtitle a:hover{
+  color: red;
+}
+
 .contact_subtitle {
   font-size: var(--small-font-size);
-  color: var(--text-color-alt);
+  color: var(--text-color);
+}
+
+.contact_subtitle:hover{
+  color: red;
 }
 
 .contact_content {
