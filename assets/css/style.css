@@ -606,6 +606,17 @@ body.sun-theme {
   animation: barra 6s linear 0s infinite normal none running;
 }
 
+.skills_card .ts::before {
+  content: '';
+  position: absolute;
+  width: 8rem;
+  left: 4.5rem;
+  top: -50%;
+  height: 50rem;
+  background: hsl(217, 93%, 37%);
+  animation: barra 6s linear 0s infinite normal none running;
+}
+
 .skills_card .react::before {
   content: '';
   position: absolute;
@@ -670,6 +681,10 @@ body.sun-theme {
 
 .circle4 {
   background-color: hsl(204, 88%, 52%);
+}
+
+.circle5{
+  background-color: hsl(217, 93%, 37%);
 }
 
 .card_title {
