@@ -566,85 +566,21 @@ body.sun-theme {
   width: 17rem;
   height: 25rem;
   margin: var(--mb-0-5);
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: var(--container-color);
   overflow: hidden;
   transition: 0.5s;
   cursor: pointer;
 }
 
-.skills_card .html::before {
+.skills_card .card-border::before {
   content: '';
   position: absolute;
   width: 8rem;
   left: 4.5rem;
   top: -50%;
   height: 50rem;
-  background: hsl(16, 98%, 50%);
   animation: barra 6s linear 0s infinite normal none running;
-}
-
-.skills_card .css::before {
-  content: '';
-  position: absolute;
-  width: 8rem;
-  left: 4.5rem;
-  top: -50%;
-  height: 50rem;
-  background: hsl(231, 98%, 50%);
-  animation: barra 6s linear 0s infinite normal none running;
-}
-
-.skills_card .js::before {
-  content: '';
-  position: absolute;
-  width: 8rem;
-  left: 4.5rem;
-  top: -50%;
-  height: 50rem;
-  background: hsl(60, 99%, 50%);
-  animation: barra 6s linear 0s infinite normal none running;
-}
-
-.skills_card .ts::before {
-  content: '';
-  position: absolute;
-  width: 8rem;
-  left: 4.5rem;
-  top: -50%;
-  height: 50rem;
-  background: hsl(217, 93%, 37%);
-  animation: barra 6s linear 0s infinite normal none running;
-}
-
-.skills_card .react::before {
-  content: '';
-  position: absolute;
-  width: 8rem;
-  left: 4.5rem;
-  top: -50%;
-  height: 50rem;
-  background: hsl(204, 88%, 52%);
-  animation: barra 6s linear 0s infinite normal none running;
-}
-
-.skills_card .git::before {
-  content: '';
-  position: absolute;
-  width: 8rem;
-  left: 4.5rem;
-  top: -50%;
-  height: 50rem;
-  background: hsl(0, 87%, 47%);
-  animation: barra 6s linear 0s infinite normal none running;
-}
-
-.skills_card::after {
-  content: '';
-  position: absolute;
-  inset: 5px;
-  background: var(--container-color);
-  border-radius: 20px;
 }
 
 @keyframes barra {
@@ -655,6 +591,40 @@ body.sun-theme {
   100% {
     transform: rotate(350deg);
   }
+}
+
+/*==== border card ====*/
+
+.skills_card .html::before{
+  background: hsl(16, 98%, 50%);
+}
+
+.skills_card .css::before {
+  background: hsl(231, 98%, 50%);
+}
+
+.skills_card .js::before {
+  background: hsl(60, 99%, 50%);
+}
+
+.skills_card .ts::before {
+  background: hsl(217, 93%, 37%);
+}
+
+.skills_card .react::before {
+  background: hsl(204, 88%, 52%);
+}
+
+.skills_card .git::before {
+  background: hsl(0, 87%, 47%);
+}
+
+.skills_card::after {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  background: var(--container-color);
+  border-radius: 20px;
 }
 
 .circle {
