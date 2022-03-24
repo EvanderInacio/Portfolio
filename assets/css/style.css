@@ -209,7 +209,7 @@ body.sun-theme {
 /*================ NAVIGATION =========================*/
 .nav {
   max-width: 768px;
-  height: 3.5rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
