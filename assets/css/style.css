@@ -3,7 +3,7 @@
 
 /*============ VARIABLES ===============*/
 :root {
-  --header-height: 3rem;
+  --header-height: 3.5rem;
 
   /*====== Colors ======*/
   --hue-color: 240;
@@ -112,7 +112,7 @@ img {
 
 /*================ REUSABLE CSS CLASS (REUTILIZAVEL) =========================*/
 .section {
-  padding: 2rem 0 4rem;
+  padding: 2.5rem 0 4rem;
   margin-bottom: var(--mb-3);
 }
 
@@ -161,7 +161,7 @@ img {
 .header {
   width: 100%;
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--header-color);
@@ -209,7 +209,7 @@ body.sun-theme {
 /*================ NAVIGATION =========================*/
 .nav {
   max-width: 768px;
-  height: 4.2rem;
+  height: 3.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -241,10 +241,10 @@ body.sun-theme {
 @media screen and (max-width: 767px) {
   .nav_menu {
     position: fixed;
-    bottom: -100%;
+    top: -100%;
     left: 0;
     width: 100%;
-    opacity: 0.95;
+    opacity: 0.96;
     background-color: var(--header-color);
     padding: 3rem 2.5rem 5rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
@@ -278,7 +278,7 @@ body.sun-theme {
 .nav_close {
   position: absolute;
   right: 1.3rem;
-  bottom: 0.5rem;
+  top: 0.5rem;
   font-size: 2rem;
   cursor: pointer;
   color: var(--title-color);
@@ -290,7 +290,7 @@ body.sun-theme {
 
 /*======== Show menu =========*/
 .show-menu {
-  bottom: 0;
+  top: 0;
 }
 
 /*======== Active Link =========*/
@@ -1388,11 +1388,6 @@ body.sun-theme {
 
   .section_subtitle {
     margin-bottom: 4rem;
-  }
-
-  .header {
-    top: 0;
-    bottom: initial;
   }
 
   .header,
