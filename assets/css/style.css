@@ -255,7 +255,8 @@ body.sun-theme {
 }
 
 .nav_list {
-  gap: 1rem;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .nav_link {
@@ -1294,15 +1295,18 @@ body.sun-theme {
 }
 
 @media (min-width: 568px) {
-
+  
+   .nav_list {
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1-5);
   }
 
   .home_data {
-    order: 1;
-    grid-template-columns: 1fr 1fr;
     transform: translateX(1rem);
   }
 
