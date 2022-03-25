@@ -244,7 +244,6 @@ body.sun-theme {
     top: -100%;
     left: 0;
     width: 100%;
-    height: 100%;
     opacity: 0.98;
     background-color: var(--header-color);
     padding: 3rem 2.5rem 5rem;
