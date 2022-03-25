@@ -180,7 +180,7 @@ body.sun-theme {
   --text-color-alt: hsl(var(--hue-color), 90%, 50%);
   --input-color: hsl(var(--hue-color), 65%, 90%);
   --body-color: hsl(var(--hue-color), 98%, 97%);
-  --header-color: hsl(var(--hue-color), 8%, 90%);
+  --header-color: hsl(var(--hue-color), 98%, 97%);
   --container-color: hsl(var(--hue-color), 8%, 90%);
   --qualification-bar-color: hsl(var(--hue-color), 2%, 70%);
   --qualification-color: hsl(var(--hue-color), 100%, 42%);
