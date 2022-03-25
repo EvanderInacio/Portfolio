@@ -244,7 +244,8 @@ body.sun-theme {
     top: -100%;
     left: 0;
     width: 100%;
-    opacity: 0.96;
+    height: 100%;
+    opacity: 0.98;
     background-color: var(--header-color);
     padding: 3rem 2.5rem 5rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
@@ -254,7 +255,6 @@ body.sun-theme {
 }
 
 .nav_list {
-  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -262,17 +262,13 @@ body.sun-theme {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
 
 .nav_link:hover {
   color: var(--first-color);
-}
-
-.nav_icon {
-  font-size: 1.3rem;
 }
 
 .nav_close {
@@ -1298,10 +1294,6 @@ body.sun-theme {
 }
 
 @media (min-width: 568px) {
-  .nav_list {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
 
   .container {
     margin-left: var(--mb-1);
@@ -1390,7 +1382,7 @@ body.sun-theme {
 
   .nav_list {
     display: flex;
-    column-gap: 1.9rem;
+    column-gap: 1.8rem;
   }
 
   .nav_menu {
@@ -1673,6 +1665,10 @@ body.sun-theme {
 @media (min-width: 1200px) {
   .nav {
     column-gap: 6rem;
+  }
+
+  .nav_item a{
+    font-size: var(--h3-font-size);
   }
 
   .home_people {
