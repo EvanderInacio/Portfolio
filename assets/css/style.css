@@ -324,17 +324,6 @@ body.sun-theme {
   animation: cubo 5s linear infinite;
 }
 
-.effect-2 {
-  height: 180px;
-  width: 180px;
-  border: 25px solid #0011ff;
-  border-radius: 50%;
-  left: 20%;
-  top: -120px;
-  position: absolute;
-  animation: circle 5s ease-in-out infinite;
-}
-
 .effect-3 {
   position: absolute;
   left: 80%;
@@ -361,17 +350,6 @@ body.sun-theme {
 
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes circle {
-  0%,
-  100% {
-    transform: translateX(0px);
-  }
-
-  50% {
-    transform: translateX(60px);
   }
 }
 
@@ -876,8 +854,7 @@ body.sun-theme {
 .portfolios_content {
   position: relative;
   background-color: var(--container-color);
-  padding: 1.5rem 1.2rem 3rem 1.2rem;
-  border-radius: 3px;
+  border-radius: 10px;
   box-shadow: 1px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
   border: 4px solid var(--container-color);
@@ -896,8 +873,8 @@ body.sun-theme {
 
 .portfolio_img {
   width: 100vw;
-  height: 12.5rem;
-  margin-bottom: var(--mb-2-5);
+  height: 12rem;
+  margin-bottom: var(--mb-1);
 }
 
 .portfolios_title {
@@ -908,14 +885,23 @@ body.sun-theme {
 }
 
 .portfolios_button {
-  cursor: pointer;
-  font-size: var(--h2-font-size);
+  font-size: var(--h3-font-size);
   justify-content: center;
+  border: 3px solid;
+  border-image: linear-gradient(225deg, #c001fa 0%, #00d9ff 100%) 1;
+  padding: 5px;
+  color: var(--text-color);
+  margin: 0 2.2rem;
   display: flex;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
 }
 
 .portfolios_button:hover {
-  color: #f70606;
+  transition: 0.3s;
+  -o-border-image: linear-gradient(225deg, #0004fa 0%, #bd0bd4 100%) 1;
+  border-image: linear-gradient(225deg, #0400ff 0%, #8500aa 100%) 1;
+  color: var(--first-color);
 }
 
 .portfolios_modal {
@@ -1233,7 +1219,7 @@ body.sun-theme {
   font-size: var(--normal-font-size);
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .footer_title,
@@ -1268,7 +1254,7 @@ body.sun-theme {
 
 /*========= SHOW SCROLL =========*/
 .show-scroll {
-  bottom: 6rem;
+  bottom: 3rem;
 }
 
 /*========= SCROLL BAR =========*/
@@ -1306,10 +1292,6 @@ body.sun-theme {
     font-size: var(--h1-font-size);
   }
 
-  .effect-2 {
-    left: 10%;
-  }
-
   .contact_social {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1344,11 +1326,6 @@ body.sun-theme {
 
   .home_social-icon {
     font-size: var(--mb-1-5);
-  }
-
-  .effect-2 {
-    left: 40%;
-    padding: 1.5rem;
   }
 
   .effect-3 {
@@ -1436,10 +1413,6 @@ body.sun-theme {
   .home_data {
     transform: translateX(4.6rem);
     margin-top: -12rem;
-  }
-
-  .effect-2 {
-    display: none;
   }
 
   .effect-1 {
