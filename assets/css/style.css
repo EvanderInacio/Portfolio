@@ -184,8 +184,8 @@ body.sun-theme {
   --container-color: hsl(var(--hue-color), 8%, 90%);
   --qualification-bar-color: hsl(var(--hue-color), 2%, 70%);
   --qualification-color: hsl(var(--hue-color), 100%, 42%);
-  --scroll-thumb-color: hsl(var(--hue-color), 15%, 20%);
-  --scroll-bar-color: hsl(var(--hue-color), 98%, 70%);
+  --scroll-thumb-color: hsl(var(--hue-color), 8%, 12%);
+  --scroll-bar-color: hsl(var(--hue-color), 15%, 65%);
 }
 
 /*============== LIGHT BUTTON ===============*/
@@ -1261,11 +1261,11 @@ body.sun-theme {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb-color);
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #00ccff;
+  background-color: var(--first-color);
 }
 
 /*=============== MEDIA QUERIES =========================*/
