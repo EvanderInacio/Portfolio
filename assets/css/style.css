@@ -184,7 +184,7 @@ body.sun-theme {
   --container-color: hsl(var(--hue-color), 8%, 90%);
   --qualification-bar-color: hsl(var(--hue-color), 2%, 70%);
   --qualification-color: hsl(var(--hue-color), 100%, 42%);
-  --scroll-thumb-color: hsl(var(--hue-color), 8%, 12%);
+  --scroll-thumb-color: hsl(var(--hue-color), 8%, 30%);
   --scroll-bar-color: hsl(var(--hue-color), 15%, 65%);
 }
 
@@ -1256,12 +1256,11 @@ body.sun-theme {
 ::-webkit-scrollbar {
   width: 0.6rem;
   background-color: var(--scroll-bar-color);
-  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb-color);
-  border-radius: 0.6rem;
+  border-radius: 0.7rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
