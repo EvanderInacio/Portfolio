@@ -23,8 +23,8 @@
   --container-color: hsl(257, 10%, 5%);
   --qualification-bar-color: hsl(var(--hue-color), 92%, 85%);
   --qualification-color: hsl(var(--hue-color), 100%, 50%);
-  --scroll-thumb-color: hsl(var(--hue-color), 15%, 75%);
-  --scroll-bar-color: hsl(var(--hue-color), 8%, 35%);
+  --scroll-thumb-color: hsl(var(--hue-color), 68%, 50%);
+  
 
   /*====== Font alt  ======*/
   --body-font: 'Poppins', sans-serif;
@@ -184,8 +184,7 @@ body.sun-theme {
   --container-color: hsl(var(--hue-color), 8%, 90%);
   --qualification-bar-color: hsl(var(--hue-color), 2%, 70%);
   --qualification-color: hsl(var(--hue-color), 100%, 42%);
-  --scroll-thumb-color: hsl(var(--hue-color), 8%, 30%);
-  --scroll-bar-color: hsl(var(--hue-color), 15%, 65%);
+ 
 }
 
 /*============== LIGHT BUTTON ===============*/
@@ -778,12 +777,12 @@ body.sun-theme {
 }
 
 .tab button:hover {
-  background-color: #3a00fa41;
+  background-color: hsla(235, 87%, 33%, 0.181);
 }
 
 .tab button.active {
   position: relative;
-  background: #3a00fa41;
+  background: hsla(235, 87%, 33%, 0.181);
 }
 
 .tab button.active::before {
@@ -802,7 +801,7 @@ body.sun-theme {
   left: -2px;
   top: 0;
   height: 100%;
-  border-left: 3px solid #05f0d1;
+  border-left: 3px solid hsla(172, 84%, 36%, 0.738);
 }
 
 .tabcontent {
@@ -905,6 +904,7 @@ body.sun-theme {
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -921,6 +921,7 @@ body.sun-theme {
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
+  height: auto;
 }
 
 .portfolios_modal-portfolios {
@@ -985,6 +986,7 @@ body.sun-theme {
   opacity: 1;
   visibility: visible;
 }
+
 
 /*=============== SERVICES =========================*/
 .services {
@@ -1167,7 +1169,7 @@ body.sun-theme {
 
 /*=============== FOOTER =========================*/
 .footer {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 
 .footer_divider {
@@ -1188,17 +1190,6 @@ body.sun-theme {
   font-size: var(--smaller-font-size);
 }
 
-.footer_links {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.5rem;
-}
-
-.footer_link:hover {
-  color: var(--first-color);
-  border-bottom: 2px solid #0011ff;
-}
-
 .footer_social {
   font-size: 1.25rem;
   margin-right: var(--mb-2);
@@ -1207,7 +1198,6 @@ body.sun-theme {
 
 .footer_social:hover {
   color: var(--first-color-alt);
-  border-bottom: 2px solid #0011ff;
 }
 
 .footer_copy {
@@ -1219,7 +1209,6 @@ body.sun-theme {
 
 .footer_title,
 .footer_subtitle,
-.footer_link,
 .footer_social,
 .footer_copy {
   color: var(--text-color);
@@ -1255,7 +1244,6 @@ body.sun-theme {
 /*========= SCROLL BAR =========*/
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background-color: var(--scroll-bar-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1263,9 +1251,6 @@ body.sun-theme {
   border-radius: 0.7rem;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--first-color);
-}
 
 /*=============== MEDIA QUERIES =========================*/
 @media (max-width: 350px) {
@@ -1292,12 +1277,11 @@ body.sun-theme {
 }
 
 @media (min-width: 568px) {
-  
-   .nav_list {
+  .nav_list {
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1-5);
@@ -1468,30 +1452,24 @@ body.sun-theme {
   }
 
   .footer_container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .footer_links {
-    flex-direction: row;
-    column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer_socials {
-    justify-self: flex-end;
+    justify-content: flex-end;
   }
 
   .footer_copy {
     font-size: var(--normal-font-size);
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: var(--mb-1-5);
   }
 }
 
 @media (min-width: 994px) {
   .header,
-  .main,
-  .footer_container {
+  .main {
     margin: 0;
   }
 
@@ -1651,16 +1629,12 @@ body.sun-theme {
   .certificate_container .swiper-pagination-bullet-active {
     bottom: -4.5rem;
   }
-
-  .footer_links {
-    position: absolute;
-    left: 40%;
+ 
+  .footer_container{
+    display: flex;
+    justify-content: space-between;
   }
-
-  .footer_socials {
-    position: absolute;
-    right: 5%;
-  }
+ 
 }
 
 @media (min-width: 1200px) {
@@ -1668,7 +1642,7 @@ body.sun-theme {
     column-gap: 6rem;
   }
 
-  .nav_item a{
+  .nav_item a {
     font-size: var(--h3-font-size);
   }
 
@@ -1736,4 +1710,5 @@ body.sun-theme {
     grid-template-columns: repeat(3, 260px);
     justify-content: center;
   }
+
 }
