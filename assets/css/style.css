@@ -14,6 +14,9 @@
   --first-color-alt: hsl(var(--hue-color), 50%, 50%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 100%);
+   --title-color-gradient: linear-gradient(to left, #03001e, #9307f1,
+   #7109e7 , #1100ff );
+   --subtitle-section-gradient: linear-gradient(to left, #ffffff, #00ffdd, #fa0404);
   --text-color: hsl(var(--hue-color), 8%, 85%);
   --text-color-lighter: hsl(var(--hue-color), 20%, 70%);
   --text-color-button: hsl(var(--hue-color), 0%, 0%);
@@ -24,6 +27,7 @@
   --qualification-bar-color: hsl(var(--hue-color), 92%, 85%);
   --qualification-color: hsl(var(--hue-color), 100%, 50%);
   --scroll-thumb-color: hsl(var(--hue-color), 68%, 50%);
+  --scroll-bar-color: hsl(var(--hue-color), 10%, 15%);
   
 
   /*====== Font alt  ======*/
@@ -89,7 +93,15 @@ body {
   color: var(--text-color);
 }
 
-h1,
+h1 {
+  background-image: var(--title-color-gradient);
+  font-weight: var(--font-semi-bold);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  color: var(--title-color);
+}
+
 h2,
 h3,
 h4 {
@@ -118,18 +130,13 @@ img {
 
 .section_title {
   font-size: var(--h1-font-size);
+  background-image: var(--subtitle-section-gradient);
+  font-weight: var(--font-semi-bold);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
   color: var(--title-color);
-}
-
-.section_subtitle {
-  display: block;
-  font-size: var(--small-font-size);
-  color: var(--first-color);
   margin-bottom: var(--mb-3);
-}
-
-.section_title,
-.section_subtitle {
   text-align: center;
 }
 
@@ -176,6 +183,9 @@ body.sun-theme {
   --first-color-alt: hsl(var(--hue-color), 70%, 40%);
   --first-color-lighter: hsl(var(--hue-color), 2%, 5%);
   --title-color: hsl(var(--hue-color), 0%, 0%);
+  --title-color-gradient: linear-gradient(to left, #03001e, #9307f1,
+   #7109e7 , #1100ff );
+   --subtitle-section-gradient: linear-gradient(to left, #fb06c2, #7300ff, #04fa7f);
   --text-color: hsl(var(--hue-color), 2%, 1%);
   --text-color-alt: hsl(var(--hue-color), 90%, 50%);
   --input-color: hsl(var(--hue-color), 65%, 90%);
@@ -184,6 +194,7 @@ body.sun-theme {
   --container-color: hsl(var(--hue-color), 8%, 90%);
   --qualification-bar-color: hsl(var(--hue-color), 2%, 70%);
   --qualification-color: hsl(var(--hue-color), 100%, 42%);
+  --scroll-bar-color: hsl(var(--hue-color), 98%, 87%);
  
 }
 
@@ -404,17 +415,10 @@ body.sun-theme {
   overflow: hidden;
 }
 
-.line {
-  color: #dd00fa;
-}
-
-.pont_home {
-  color: #0004fa;
-}
 
 @keyframes cursor {
   from {
-    border-right-color: #0004fa;
+    border-right-color: var(--text-color);
   }
   to {
     border-right-color: transparent;
@@ -736,6 +740,10 @@ body.sun-theme {
   color: #ff0000;
 }
 
+.qualification_number .pont-yellow {
+  color: #fbff00;
+}
+
 .qualification_number .pont-green {
   color: rgb(0, 255, 0);
 }
@@ -747,7 +755,7 @@ body.sun-theme {
 }
 
 .qualification_rocket {
-  width: 12%;
+  width: 30%;
 }
 
 /*========= MENU LATERAL =============*/
@@ -895,7 +903,7 @@ body.sun-theme {
   transition: 0.3s;
   -o-border-image: linear-gradient(225deg, #0004fa 0%, #bd0bd4 100%) 1;
   border-image: linear-gradient(225deg, #0400ff 0%, #8500aa 100%) 1;
-  color: var(--first-color);
+  color: #ff0000;
 }
 
 .portfolios_modal {
@@ -978,6 +986,14 @@ body.sun-theme {
 
 .github {
   text-align: center;
+}
+
+.github_title{
+  background-image: var(--title-color-gradient);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  color: var(--text-color);
 }
 
 .github_img {
@@ -1226,6 +1242,7 @@ body.sun-theme {
 /*========= SCROLL BAR =========*/
 ::-webkit-scrollbar {
   width: 0.6rem;
+  background-color: var(--scroll-bar-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1332,10 +1349,6 @@ body.sun-theme {
 
   .section {
     padding: 6rem 0 2rem;
-  }
-
-  .section_subtitle {
-    margin-bottom: 4rem;
   }
 
   .header,
