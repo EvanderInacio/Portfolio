@@ -857,8 +857,6 @@ body.sun-theme {
 .portfolios_content {
   position: relative;
   background-color: var(--container-color);
-  border-radius: 10px;
-  box-shadow: 1px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
   border: 4px solid var(--container-color);
 }
@@ -877,6 +875,7 @@ body.sun-theme {
 .portfolio_img {
   width: 100vw;
   margin-bottom: var(--mb-1);
+  border-radius: 2px;
 }
 
 .portfolios_title {
