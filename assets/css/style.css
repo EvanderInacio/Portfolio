@@ -1192,6 +1192,11 @@ body.sun-theme {
   font-size: var(--mb-1-5);
 }
 
+.contact_socials li:hover{
+   transform: translateY(-8px);
+}
+
+
 /*=============== FOOTER =========================*/
 .footer_divider {
   height: 3.2px;
