@@ -235,8 +235,16 @@ body.sun-theme {
   font-size: 1.125rem;
 }
 
+.nav_logo:hover{
+  color: var(--first-color-alt);
+}
+
 .logo_cor {
   color: #0011ff;
+}
+
+.logo_cor:hover{
+  color: #d000fa;
 }
 
 .nav_toggle {
@@ -378,14 +386,12 @@ body.sun-theme {
 
 .home_social-icon {
   font-size: 1.25rem;
-  color: var(--first-color);
+  color: var(--text-color);
   margin-left: var(--mb-1);
 }
 
 .home_social-icon:hover {
-  color: var(--title-color);
-  transform: scale(1.4);
-  text-shadow: 0 0 3px #fff;
+  color: var(--first-color-alt);
 }
 
 .home_desktop {
@@ -505,13 +511,18 @@ body.sun-theme {
 /*=============== ABOUT =========================*/
 .about_img {
   width: 200px;
-  border-radius: 3px;
+  border-radius: 2px;
   justify-self: center;
   align-self: center;
   position: relative;
+  filter: opacity(85%);
+  transition: 0.4s;
+  border-left: 7px solid #0905ec;
+}
 
-  border-top: 6px solid #0d0ada;
-  border-left: 8px solid #0905ec;
+.about_img:hover{
+  filter: opacity(100%);
+  border-left: 7px solid #a705ec;
 }
 
 .about_description {
@@ -690,6 +701,25 @@ body.sun-theme {
   margin-bottom: var(--mb-0-25);
 }
 
+.qualification_exp{
+  margin-top: var(--mb-0-75);
+}
+
+.qualification_exp-a{
+  display: flex;
+  color: var(--first-color);
+  margin: var(--mb-0-25) 0;
+  gap: 10px;
+}
+
+.qualification_exp-a:hover{
+  color: var(--first-color-lighter);
+}
+
+.exp-text{
+  color: var(--text-color);
+}
+
 .qualification_tabs {
   margin-bottom: var(--mb-1);
 }
@@ -740,10 +770,6 @@ body.sun-theme {
   color: #ff0000;
 }
 
-.qualification_number .pont-yellow {
-  color: #fbff00;
-}
-
 .qualification_number .pont-green {
   color: rgb(0, 255, 0);
 }
@@ -755,7 +781,7 @@ body.sun-theme {
 }
 
 .qualification_rocket {
-  width: 30%;
+  width: 50%;
 }
 
 /*========= MENU LATERAL =============*/
@@ -1347,6 +1373,19 @@ body.sun-theme {
 }
 
 @media (min-width: 768px) {
+   nav ul li::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--first-color);
+    margin-top: 5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  nav ul li:hover::after {
+    transform: scaleX(1);
+  }
+  
   .container {
     margin-left: auto;
     margin-right: auto;
