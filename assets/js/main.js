@@ -147,6 +147,8 @@ themeButton.addEventListener('click', () => {
 
 
 /*==================== SCROLL REVEAL ====================*/
+
+/*=============== SCROLL TOP =========*/
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '50px',
@@ -156,5 +158,27 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal('.delaySmallReveal', { delay: 200 })
 scrollReveal.reveal('.delayMediumReveal', { delay: 400 })
 scrollReveal.reveal('.delayLargeReveal', { delay: 600 })
+scrollReveal.reveal('.delayCardRevealMedium', { delay: 800 })
+scrollReveal.reveal('.delayCardRevealLarge', { delay: 1000 })
 
 scrollReveal.reveal('.intervalCardReveal', { interval: 500 })
+
+
+/*=============== SCROLL LEFT =========*/
+const scrollLeft = ScrollReveal({
+  origin: 'left',
+  distance: '50px',
+  duration: 2000
+})
+
+scrollLeft.reveal('.delaySmallRevealLeft', { delay: 200 })
+
+
+/*=============== SCROLL RIGHT =========*/
+const scrollRight = ScrollReveal({
+  origin: 'right',
+  distance: '50px',
+  duration: 2000
+})
+
+scrollRight.reveal('.delaySmallRevealRight', { delay: 200 })
