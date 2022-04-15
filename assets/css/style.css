@@ -1186,7 +1186,7 @@ body.sun-theme {
 }
 
 .contact_content:hover{
-  border: 2px solid var(--first-color);
+  border-bottom: 1px solid var(--first-color);
   border-radius: 0.5rem;
 }
 
