@@ -1414,9 +1414,13 @@ body.sun-theme {
     display: none;
   }
 
+  .nav_item a{
+    font-size: var(--normal-font-size);
+  }
+
   .change-theme {
     margin-right: 0.8rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .nav_list {
@@ -1444,11 +1448,6 @@ body.sun-theme {
   .home_data {
     transform: translateX(4.6rem);
     margin-top: -12rem;
-  }
-
-  .effect-1 {
-    top: 15%;
-    left: 10%;
   }
 
   .effect-3 {
@@ -1515,6 +1514,11 @@ body.sun-theme {
 
   .nav_item a {
     font-size: var(--normal-font-size);
+  }
+  
+  .change-theme {
+    margin-right: 0.8rem;
+    font-size: 2rem;
   }
 
   .nav {
