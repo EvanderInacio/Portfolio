@@ -390,8 +390,8 @@ body.sun-theme {
   margin-left: var(--mb-1);
 }
 
-.home_social-icon:hover {
-  color: var(--first-color-alt);
+.home_social-icon:hover{
+  color: #0004fa;
 }
 
 .home_desktop {
@@ -1222,10 +1222,30 @@ body.sun-theme {
   font-size: var(--mb-1-5);
 }
 
-.contact_socials li:hover{
-   transform: translateY(-8px);
+.social_button:hover{
+  background: var(--text-color-button);
 }
 
+ .social-linkedin:hover{
+  color: #0059d5;
+  border-bottom: 2px solid #0059d5;
+}
+.social-github:hover{
+  color: #3F3F3F;
+  border-bottom: 2px solid #3F3F3F;
+}
+.social-facebook:hover{
+  color: #0026ff;
+  border-bottom: 2px solid #0026ff;
+}
+.social-twitter:hover{
+  color: #00bfff;
+  border-bottom: 2px solid #00bfff;
+}
+.social-whatsapp:hover{
+  color: #06f121;
+  border-bottom: 2px solid #06f121;
+} 
 
 /*=============== FOOTER =========================*/
 .footer_divider {
