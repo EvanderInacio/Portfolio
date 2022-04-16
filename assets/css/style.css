@@ -20,6 +20,7 @@
   --text-color: hsl(var(--hue-color), 8%, 85%);
   --text-color-lighter: hsl(var(--hue-color), 20%, 70%);
   --text-color-button: hsl(var(--hue-color), 0%, 0%);
+  --contact-color-button: hsl(var(--hue-color), 0%, 15%);
   --input-color: hsl(var(--hue-color), 8%, 5%);
   --body-color: hsl(var(--hue-color), 10%, 8%);
   --header-color: hsl(var(--hue-color), 10%, 8%);
@@ -188,6 +189,7 @@ body.sun-theme {
    --subtitle-section-gradient: linear-gradient(to left, #fb06c2, #7300ff, #04fa7f);
   --text-color: hsl(var(--hue-color), 2%, 1%);
   --text-color-alt: hsl(var(--hue-color), 90%, 50%);
+  --contact-color-button: hsl(var(--hue-color), 0%, 15%);
   --input-color: hsl(var(--hue-color), 65%, 90%);
   --body-color: hsl(var(--hue-color), 98%, 97%);
   --header-color: hsl(var(--hue-color), 98%, 97%);
@@ -1219,11 +1221,11 @@ body.sun-theme {
   grid-template-columns: repeat(3, .1fr);
   gap: 1rem;
   justify-content: center;
-  font-size: var(--mb-1-5);
+  font-size: var(--mb-2);
 }
 
 .social_button:hover{
-  background: var(--text-color-button);
+  background: var(--contact-color-button);
 }
 
  .social-linkedin:hover{
