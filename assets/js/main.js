@@ -168,17 +168,37 @@ scrollReveal.reveal('.intervalCardReveal', { interval: 500 })
 const scrollLeft = ScrollReveal({
   origin: 'left',
   distance: '50px',
-  duration: 2000
+  duration: 2200
 })
 
-scrollLeft.reveal('.delaySmallRevealLeft', { delay: 200 })
+scrollLeft.reveal(
+  '.about_description, .github_title',
+
+{ delay: 500 })
 
 
 /*=============== SCROLL RIGHT =========*/
 const scrollRight = ScrollReveal({
-  origin: 'right',
-  distance: '50px',
-  duration: 2000
+  origin: 'left',
+  distance: '-50px',
+  duration: 2200
 })
 
-scrollRight.reveal('.delaySmallRevealRight', { delay: 200 })
+ scrollRight.reveal(
+   '.about_img, .about_button-delay, .button_github-delay', 
+   { delay: 500 }
+)
+
+
+/*=============== SCROLL BOTTOM =========*/
+ const scrollbottom = ScrollReveal({
+  origin: 'bottom',
+  distance: '50px',
+  duration: 2400
+})
+
+ scrollRight.reveal(
+   '.github_img, .certificate_container, .contact_information, .button_envio',
+   { delay: 500 }
+ )
+
