@@ -927,10 +927,12 @@ body.sun-theme {
 }
 
 .portfolios_button:hover {
-  transition: 0.3s;
-  -o-border-image: linear-gradient(225deg, #0004fa 0%, #bd0bd4 100%) 1;
-  border-image: linear-gradient(225deg, #0400ff 0%, #8500aa 100%) 1;
-  color: #ff0000;
+  transition: 0.5s;
+  -o-border-image: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%) 1;
+  border-image: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%) 1;
+  background-color: #272727;
+  background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%); 
+  color: var(--text-color-button);
 }
 
 .portfolios_modal {
@@ -956,6 +958,21 @@ body.sun-theme {
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
+}
+
+.description-content{
+  overflow-y: scroll;
+  height: 55vh;
+  margin-bottom: var(--mb-1);
+}
+
+.portfolio-img{
+  overflow-y: hidden;
+  margin-bottom: var(--mb-0-75);  
+}
+
+.modal-desktop {
+  display: none;
 }
 
 .portfolios_modal-portfolios {
@@ -1001,6 +1018,15 @@ body.sun-theme {
 
 .portfolios_modal-icon {
   color: var(--first-color);
+}
+
+.portfolio_button a{
+  border: 0 solid;
+  border-radius: 8px;
+}
+
+.portfolio_button a:hover{
+  color: var(--text-color);
 }
 
 @media (min-width: 340px) {
@@ -1329,7 +1355,6 @@ body.sun-theme {
 
   .portfolios_modal-content {
     padding: 1rem;
-    height: 100vh;
   }
 
   .contact_social{
@@ -1375,6 +1400,29 @@ body.sun-theme {
   .skills_container,
   .portfolios_container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+   .description-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .portfolio_tech a{
+    display: inline-flex;
+  }
+
+  .modal-mobile{
+    display: none;
+  }
+
+  .modal-desktop{
+    display: block;
+  }
+
+  .portfolio-img{
+    overflow-y: scroll;
+    height: 50vh;
   }
 
   #services {
@@ -1502,6 +1550,16 @@ body.sun-theme {
 
   .portfolios_icon {
     font-size: 2rem;
+  }
+  
+  .description-content{
+    display: flex;
+    gap: 2rem;
+    overflow-y: hidden;
+  }
+
+  .portfolio-img{
+    width: 500px;
   }
 
   .visibility {
@@ -1675,6 +1733,10 @@ body.sun-theme {
     grid-template-columns: repeat(3, 255px);
     justify-content: center;
   }
+  
+  .portfolio-data p{
+    width: 350px;
+  }
 
   .certificate_content {
     column-gap: 5rem;
@@ -1766,6 +1828,11 @@ body.sun-theme {
   .portfolios_content {
     width: 20rem;
   }
+  
+  .portfolio_tech-icon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  } 
 
   #services {
     grid-template-columns: repeat(3, 260px);
