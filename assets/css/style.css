@@ -513,7 +513,7 @@ body.sun-theme {
 /*=============== ABOUT =========================*/
 .about_img {
   width: 200px;
-  border-radius: 2px;
+  border-radius: 1px;
   justify-self: center;
   align-self: center;
   position: relative;
