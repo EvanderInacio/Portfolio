@@ -172,7 +172,7 @@ const scrollLeft = ScrollReveal({
 })
 
 scrollLeft.reveal(
-  '.about_description, .github_title',
+  ' .github_title',
 
 { delay: 500 })
 
@@ -185,7 +185,7 @@ const scrollRight = ScrollReveal({
 })
 
  scrollRight.reveal(
-   '.about_img, .about_button-delay, .button_github-delay', 
+   '.button_github-delay',  
    { delay: 500 }
 )
 
@@ -198,7 +198,7 @@ const scrollRight = ScrollReveal({
 })
 
  scrollRight.reveal(
-   '.github_img, .certificate_container, .contact_information, .button_envio',
+   '.github_img, .certificate_container, .card-bottom',
    { delay: 500 }
  )
 
