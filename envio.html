@@ -15,11 +15,22 @@
   <style>
     .envio{
       text-align: center;
-      margin: 8rem 0;
+      margin: 7rem 0;
+    }
+    
+    .envio img{
+      width: 10rem;
     }
 
     .envio_description{
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    @media(min-width: 768px){
+     .envio img{
+      width: auto;
+     }
+
     }
   </style>
 
@@ -79,11 +90,11 @@
 
   <main class="main">
   <section class="envio">
+    <img src="/assets/images/envio.svg" alt="icone de email enviado.">
     <h2 class="section_title">Mensagem enviada com sucesso!! <span class="score">.</span></h2>
-    <span class="section_subtitle">Aguarde <i class="uil uil-coffee pont"></i></span>
 
     <p class="envio_description">
-      Obrigado pelo contato. Assim que possivel irei te retornar! 
+      Obrigado pelo contato. Assim que possível irei te retornar! 
     </p>
       
     <a href="/index.html#home" class="button button--flex">
