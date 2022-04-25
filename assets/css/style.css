@@ -1803,22 +1803,22 @@ body.sun-theme {
   .icon-one {
     position: absolute;
     top: -1rem;
-    width: 4rem;
     right: 1rem;
+    width: 5rem;
   }
 
   .icon-two {
     position: absolute;
     top: -3rem;
     left: 1rem;
-    width: 4rem;
+    width: 5rem;
   }
 
   .icon-three {
     position: absolute;
     top: 13rem;
     left: -5rem;
-    width: 4rem;
+    width: 5rem;
   }
 
   .portfolios_container {
