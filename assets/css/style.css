@@ -676,9 +676,9 @@ body.sun-theme {
 
 .skills_img {
   position: relative;
-  left: 11.8rem;
-  top: 0.3rem;
-  width: 5rem;
+  left: 12.2rem;
+  top: 0.8rem;
+  width: 4.3rem;
   z-index: 1;
 }
 
@@ -1680,7 +1680,7 @@ body.sun-theme {
   }
 
   .home_icon .icon-one {
-    -webkit-animation: icon-move 4s ease 1.8s infinite alternate;
+    -webkit-animation: icon-move 3s ease 1.8s infinite alternate;
     animation: icon-move 4s ease 1.8s infinite alternate;
   }
 
@@ -1726,7 +1726,9 @@ body.sun-theme {
   }
 
   .skills_img {
-    left: 11rem;
+    width: 4.8rem;
+    top: 0.3rem;
+    left: 11.1rem;
   }
 
   .portfolios_container {
