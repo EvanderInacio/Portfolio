@@ -650,6 +650,7 @@ body.sun-theme {
 .card_title {
   color: var(--title-color);
   font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
   text-align: center;
   position: relative;
   bottom: 23.2rem;
@@ -658,6 +659,9 @@ body.sun-theme {
 }
 
 .card_subtitle {
+  margin-top: var(--mb-1-5);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--body-font);
   color: var(--text-color);
   position: relative;
   text-align: center;
@@ -669,8 +673,7 @@ body.sun-theme {
   position: relative;
   text-align: center;
   bottom: 18rem;
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
+  margin: 0 0.5rem;
   z-index: 1;
 }
 
