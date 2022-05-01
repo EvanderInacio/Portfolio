@@ -1125,9 +1125,12 @@ body.sun-theme {
   justify-self: center;
 }
 
+.certificate_data{
+  text-align: center;
+}
+
 .certificate_title {
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-5);
 }
 
 .certificate_description {
@@ -1842,6 +1845,11 @@ body.sun-theme {
   #services {
     grid-template-columns: repeat(3, 260px);
     justify-content: center;
+  }
+  
+   .certificate_img {
+    width: 600px;
+    height: 420px;
   }
 
 }
