@@ -6,7 +6,9 @@
 
 ## 📝 Descrição 
 
-Meu portfolio criado com o objetivo de mostrar meus projetos ao longo da minha carreira.  [evanderinacio.com](https://www.evanderinacio.com/)
+Meu portfolio criado com o objetivo de mostrar meus projetos ao longo da minha carreira.  
+
+- site final: [evanderinacio.com](https://www.evanderinacio.com/)
 
 ## 🚀 Tecnologias
 
@@ -15,8 +17,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML
 - CSS
 - JavaScript
-
------
 
 ## 📚 Bibliotecas
 
@@ -37,3 +37,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
     </td>
   </tr>
 </table>
+
+-----
+
+  <h3 align="center"> Developed by <a href="https://www.linkedin.com/in/kennedybarros/">Evander Inácio</a> ☕</h3>
