@@ -261,21 +261,19 @@ body.sun-theme {
 @media screen and (max-width: 767px) {
   .nav_menu {
     position: fixed;
+    display: flex;
     top: -100%;
-    left: 0;
     width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     opacity: 0.98;
     background-color: var(--header-color);
-    padding: 3rem 2.5rem 5rem;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 1.5rem 1.5rem 0 0;
-    transition: 0.3s;
+    transition: 0.5s;
   }
-}
-
-.nav_list {
-  gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .nav_link {
@@ -1067,49 +1065,6 @@ body.sun-theme {
   visibility: visible;
 }
 
-
-/*=============== SERVICES =========================*/
-.services {
-  gap: 1.5rem;
-}
-
-#services {
-  display: grid;
-}
-
-.service_content article {
-  height: auto;
-  justify-content: center;
-  background-color: var(--container-color);
-  padding: 1.5rem 1.2rem 1.2rem;
-  border-radius: 3px;
-  margin: 10px;
-  border: 3px solid var(--container-color);
-  cursor: pointer;
-}
-
-.service_content article:hover {
-  -o-border-image: linear-gradient(225deg, #8306f8 0%, #2b00b9c5 100%) 1;
-  border-image: linear-gradient(225deg, #a00dda 0%, #1a018a 100%) 1;
-}
-
-.service_img {
-  max-width: 10rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: var(--mb-2);
-}
-
-.service_title {
-  text-align: center;
-  margin-bottom: var(--mb-1);
-}
-
-.service_description {
-  text-align: center;
-}
-
 /*=============== Certificates =========================*/
 .certificate_container {
   overflow: initial;
@@ -1256,29 +1211,28 @@ body.sun-theme {
   font-size: var(--mb-2);
 }
 
+.social_button{
+  border-radius: 10px;
+}
+
 .social_button:hover{
   background: var(--contact-color-button);
 }
 
  .social-linkedin:hover{
   color: #0059d5;
-  border-bottom: 2px solid #0059d5;
 }
 .social-github:hover{
   color: #9b9b9b;
-  border-bottom: 2px solid #9b9b9b;
 }
 .social-facebook:hover{
   color: #0026ff;
-  border-bottom: 2px solid #0026ff;
 }
 .social-twitter:hover{
   color: #00bfff;
-  border-bottom: 2px solid #00bfff;
 }
 .social-whatsapp:hover{
   color: #06f121;
-  border-bottom: 2px solid #06f121;
 } 
 
 /*=============== FOOTER =========================*/
@@ -1372,7 +1326,6 @@ body.sun-theme {
 @media (min-width: 568px) {
   .nav_list {
     gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .container {
@@ -1429,10 +1382,6 @@ body.sun-theme {
   .portfolio-img{
     overflow-y: scroll;
     height: 50vh;
-  }
-
-  #services {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .div_contact {
@@ -1572,10 +1521,6 @@ body.sun-theme {
     display: block;
   }
 
-  #services {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .certificate_img {
     width: 320px;
   }
@@ -1610,6 +1555,10 @@ body.sun-theme {
   .nav {
     height: calc(var(--header-height) + 1.6rem);
     column-gap: 4rem;
+  }
+
+  .nav_logo{
+    margin-left: -4rem;
   }
 
   .nav_list {
@@ -1770,7 +1719,7 @@ body.sun-theme {
 
 @media (min-width: 1200px) {
   .nav {
-    column-gap: 6rem;
+    column-gap: 10rem;
   }
 
   .nav_item a {
@@ -1842,12 +1791,8 @@ body.sun-theme {
     grid-template-columns: repeat(3, 1fr);
   } 
 
-  #services {
-    grid-template-columns: repeat(3, 260px);
-    justify-content: center;
-  }
-  
-   .certificate_img {
+
+ .certificate_img {
     width: 600px;
     height: 420px;
   }
