@@ -4,6 +4,8 @@
 
 ![Resultado final do projeto](https://www.evanderinacio.com/assets/images/Portfolio.webp)
 
+<br>
+
 ## 📝 Descrição 
 
 Meu portfolio criado com o objetivo de mostrar meus projetos ao longo da minha carreira.  
@@ -24,6 +26,24 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [SwipeJS](https://github.com/nolimits4web/Swiper)
 - [ScrollReveal](https://scrollrevealjs.org/)
 
+## 🔗 Links
+
+<p align="left">
+ 
+ <a href="https://www.linkedin.com/in/evander-inacio" alt="Linkedin">
+  <img src="https://img.shields.io/badge/-Linkedin-0A66C2?style=for-the-badge&logo=Linkedin&logoColor=FFFFFF&link=https://www.linkedin.com/in/evander-inacio"/> 
+ </a>
+ 
+ <a href="https://www.facebook.com/evandder.lopes" alt="Facebook">
+  <img src="https://img.shields.io/badge/-Facebook-000dff?style=for-the-badge&logo=Facebook&logoColor=FFFFFF&link=https://www.facebook.com/evandder.lopes"/> 
+ </a>
+ 
+ <a href="https://twitter.com/Evander_Inacio" alt="Twitter">
+  <img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=FFFFFF&link=https://twitter.com/Evander_Inacio"/> 
+ </a>
+
+ </p>
+ 
 ## 💻 Autor<br>
 <table>
   <tr>
