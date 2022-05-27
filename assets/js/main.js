@@ -26,6 +26,35 @@ function linkAction() {
 navLink.forEach(menu => menu.addEventListener('click', linkAction))
 
 
+/*==================== DARK LIGHT THEME ====================*/
+const themeButton = document.getElementById('theme-button')
+const sunTheme = 'sun-theme'
+const iconTheme = 'uil-sun'
+
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+
+if (selectedTheme) {
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](sunTheme)
+  themeButton.classList[selectedIcon === 'uil-sun' ? 'add' : 'remove'](
+    iconTheme
+  )
+}
+
+themeButton.addEventListener('click', () => {
+  // Adicionar ou remover o tema claro / ícone
+  document.body.classList.toggle(sunTheme)
+  themeButton.classList.toggle(iconTheme)
+
+  localStorage.setItem('selected-theme', getCurrentTheme())
+  localStorage.setItem('selected-icon', getCurrentIcon())
+})
+
 
 /*==================== PORTFOLIO MODAL ====================*/
 const modalViews = document.querySelectorAll('.portfolios_modal'),
@@ -53,14 +82,14 @@ modalCloses.forEach((modalClose) => {
 
 /*==================== QUALIFICATION ====================*/
 function openTab(event, idtab) {
-  var tabContent = document.getElementsByClassName('tabcontent')
+  let tabContent = document.getElementsByClassName('tabcontent')
 
-  for(var i = 0; i < tabContent.length; i++){
+  for(let i = 0; i < tabContent.length; i++){
     tabContent[i].style.display = 'none'
   }
 
-  var tabs = document.getElementsByClassName('tab_button')
-   for(var i = 0; i < tabs.length; i++){
+  let tabs = document.getElementsByClassName('tab_button')
+   for(let i = 0; i < tabs.length; i++){
     tabs[i].className = tabs[i].className.replace('active', '');
    }
 
@@ -114,36 +143,6 @@ function scrollUp(){
   if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
-
-
-/*==================== DARK LIGHT THEME ====================*/
-const themeButton = document.getElementById('theme-button')
-const sunTheme = 'sun-theme'
-const iconTheme = 'uil-sun'
-
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
-
-const getCurrentTheme = () =>
-  document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () =>
-  themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
-
-if (selectedTheme) {
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](sunTheme)
-  themeButton.classList[selectedIcon === 'uil-sun' ? 'add' : 'remove'](
-    iconTheme
-  )
-}
-
-themeButton.addEventListener('click', () => {
-  // Adicionar ou remover o tema claro / ícone
-  document.body.classList.toggle(sunTheme)
-  themeButton.classList.toggle(iconTheme)
-
-  localStorage.setItem('selected-theme', getCurrentTheme())
-  localStorage.setItem('selected-icon', getCurrentIcon())
-})
 
 
 /*==================== SCROLL REVEAL ====================*/
