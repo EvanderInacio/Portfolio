@@ -2,7 +2,7 @@
   Meu Portfolio 💻
 </h1>
 
-![Resultado final do projeto](https://www.evanderinacio.com/assets/images/Portfolio.webp)
+![Resultado final do projeto](https://www.evanderinacio.com/assets/images/Portfolio.png)
 
 <br>
 
