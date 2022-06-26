@@ -22,6 +22,7 @@
   --text-color-button: hsl(var(--hue-color), 0%, 0%);
   --contact-color-button: hsl(var(--hue-color), 0%, 15%);
   --input-color: hsl(var(--hue-color), 8%, 5%);
+  --input-color-selection: hsl(var(--hue-color), 20%, 25%);
   --body-color: hsl(var(--hue-color), 10%, 8%);
   --header-color: hsl(var(--hue-color), 10%, 8%);
   --container-color: hsl(257, 10%, 5%);
@@ -191,6 +192,7 @@ body.sun-theme {
   --text-color-alt: hsl(var(--hue-color), 90%, 50%);
   --contact-color-button: hsl(var(--hue-color), 0%, 15%);
   --input-color: hsl(var(--hue-color), 65%, 90%);
+  --input-color-selection: hsl(var(--hue-color), 8%, 5%);
   --body-color: hsl(var(--hue-color), 98%, 97%);
   --header-color: hsl(var(--hue-color), 98%, 97%);
   --container-color: hsl(var(--hue-color), 8%, 90%);
@@ -1174,11 +1176,6 @@ body.sun-theme {
   padding: 0.75rem 1rem 0.25rem;
 }
 
-.contact_content:hover{
-  border-bottom: 1px solid var(--first-color);
-  border-radius: 0.5rem;
-}
-
 .contact_label {
   font-size: var(--small-font-size);
   color: var(--title-color);
@@ -1197,6 +1194,7 @@ body.sun-theme {
 
 .button_envio {
   font-size: medium;
+  cursor: pointer;
 }
 
 .contact_socials h2 {
