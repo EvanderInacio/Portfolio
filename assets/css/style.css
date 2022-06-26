@@ -1213,6 +1213,7 @@ body.sun-theme {
 
 .social_button{
   border-radius: 10px;
+  cursor: pointer
 }
 
 .social_button:hover{
