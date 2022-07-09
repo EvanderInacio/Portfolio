@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--============= Unicons css ===================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--================== CSS ========================-->
+    <style>
+      .envio {
+        text-align: center;
+        margin-top: 7.5rem;
+        margin-bottom: 4rem;
+      }
+
+      .envio img {
+        width: 10rem;
+      }
+
+      .envio_description {
+        margin-top: -1rem;
+        margin-bottom: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        .envio img {
+          width: 17rem;
+        }
+
+        .envio_description {
+          margin-top: -2rem;
+        }
+      }
+    </style>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Obrigado | Evander Inácio</title>
+    <link rel="icon" href="../images/logo.webp" />
+  </head>
+
+  <body>
+    <!--================== HEADER ========================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="/index.html" class="nav_logo"
+          ><span class="logo_cor">{</span>Evander<span class="logo_cor"
+            >}</span
+          ></a
+        >
+
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list grid">
+            <li class="nav_item">
+              <a href="/index.html#home" class="nav_link active-link"> Home </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="/index.html#about" class="nav_link">Sobre </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="/index.html#skills" class="nav_link">Conhecimentos </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="/index.html#portfolio" class="nav_link">Projetos </a>
+            </li>
+
+            <li class="nav_item">
+              <a href="/index.html#contact" class="nav_link"> Contato </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav_close" id="nav-close"></i>
+        </div>
+
+        <div class="nav_btns">
+          <i class="uil uil-moon change-theme uil-sun" id="theme-button"></i>
+
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="uil uil-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="envio">
+        <img src="/assets/images/envio.webp" alt="icone de email enviado." />
+        <h2 class="section_title">
+          Mensagem enviada com sucesso!! <span class="score">.</span>
+        </h2>
+
+        <p class="envio_description">
+          Obrigado pelo contato. Assim que possível irei te retornar!
+        </p>
+
+        <a href="/index.html#home" class="button button--flex">
+          <i class="uil uil-arrow-left button_icon"></i> Voltar ao site
+        </a>
+      </section>
+    </main>
+
+    <div class="footer_divider"></div>
+    <!--================== FOOTER ========================-->
+    <footer class="footer">
+      <p class="footer_copy">
+        &#169; 2022 Evander Inácio <i class="uil uil-coffee pont"></i>
+      </p>
+    </footer>
+
+    <!--============= Main js ===================-->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
