@@ -356,7 +356,7 @@ body.sun-theme {
   left: -5%;
 }
 
-.effect-3 .semi-circle{
+.effect-3 .square{
   position: absolute;
   top: calc(50% - 100px);
   left: calc(50% - 100px);
@@ -1354,9 +1354,13 @@ body.sun-theme {
     transform: translateX(1rem);
   }
 
+  .effect-1{
+    left: 5%;
+  }
+
   .effect-3 {
     display: block;
-    top: 70%;
+    top: 80%;
     left: 90%;
   }
 
@@ -1765,11 +1769,20 @@ body.sun-theme {
   .effect-3 {
     display: flex;
     left: -15%;
+    opacity: 0.8;
     bottom: 10%;
   }
 
-  .effect-3 .semi-circle{
+  .effect-3 .square{
     border-top: 100px solid #5252e0;
+  }
+  
+  .square:hover{
+    border-top: 100px solid #5ee052;
+  }
+
+  .ball:hover{
+    background-color: #5ee052;
   }
 
   .icon-one {
