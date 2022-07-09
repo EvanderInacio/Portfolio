@@ -339,25 +339,6 @@ body.sun-theme {
   animation: cubo 5s linear infinite;
 }
 
-.effect-3 {
-  position: absolute;
-  left: 80%;
-  bottom: 55%;
-  width: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  animation: top 5s ease-in-out infinite;
-  display: none;
-}
-
-.effect-3 div {
-  height: 3px;
-  width: 3px;
-  background-color: #ff0707;
-  margin: 0 3px 8px;
-}
-
 @keyframes cubo {
   0% {
     transform: rotate(0deg);
@@ -368,14 +349,55 @@ body.sun-theme {
   }
 }
 
-@keyframes top {
-  0%,
+.effect-3 {
+  display: none;
+  position: absolute;
+  bottom: 50%;
+  left: -5%;
+}
+
+.effect-3 .semi-circle{
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  width: 50px;
+  height: 20px;
+  border-top: 150px solid #5252e0;
+  border-radius: 10%;
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate{
+  0% {
+    transform: rotate(360deg);
+  }
   100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ball {
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  width: 50px;
+  height: 50px;
+  background: #5252e0;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+  animation: ball 2s linear infinite;
+}
+
+@keyframes ball {
+  0%,100% {
     transform: translateY(0px);
   }
-
-  50% {
-    transform: translateY(30px);
+  30% {
+    transform: translateY(-200px);
+  }  
+  40% {
+    transform: translateY(-250px);
   }
 }
 
@@ -1333,7 +1355,9 @@ body.sun-theme {
   }
 
   .effect-3 {
-    display: flex;
+    display: block;
+    top: 70%;
+    left: 90%;
   }
 
   .about_container,
@@ -1453,8 +1477,7 @@ body.sun-theme {
   }
 
   .effect-3 {
-    left: 8%;
-    bottom: 1%;
+    display: none;
   }
 
   .home_desktop {
@@ -1603,11 +1626,6 @@ body.sun-theme {
     width: 30rem;
   }
 
-  .effect-3 {
-    left: -13%;
-    bottom: 15%;
-  }
-
   .effect-1{
     top: 1%;
     left: -10%;
@@ -1745,8 +1763,13 @@ body.sun-theme {
   }
 
   .effect-3 {
-    left: -25%;
+    display: flex;
+    left: -15%;
     bottom: 10%;
+  }
+
+  .effect-3 .semi-circle{
+    border-top: 100px solid #5252e0;
   }
 
   .icon-one {
