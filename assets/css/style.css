@@ -1756,33 +1756,14 @@ body.sun-theme {
 
   .home_data {
     position: absolute;
-    right: 30rem;
-    top: 15rem;
+    right: 34rem;
+    top: 16rem;
     width: 30rem;
   }
 
   .effect-1 {
     top: -1%;
     left: -25%;
-  }
-
-  .effect-3 {
-    display: flex;
-    left: -15%;
-    opacity: 0.8;
-    bottom: 10%;
-  }
-
-  .effect-3 .square{
-    border-top: 100px solid #5252e0;
-  }
-  
-  .square:hover{
-    border-top: 100px solid #5ee052;
-  }
-
-  .ball:hover{
-    background-color: #5ee052;
   }
 
   .icon-one {
