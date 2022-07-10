@@ -1701,6 +1701,17 @@ body.sun-theme {
     }
   }
 
+  @keyframes icon-move {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(10px, -40px, 0);
+      transform: translate3d(30px, -80px, 0);
+    }
+  }
+
   .skills_container {
     transform: translateX(-2rem);
     grid-template-columns: repeat(3, 1fr);
