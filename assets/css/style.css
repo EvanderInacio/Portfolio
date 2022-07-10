@@ -522,15 +522,15 @@ body.sun-theme {
   justify-self: center;
   align-self: center;
   position: relative;
-  filter: opacity(85%);
   transition: 0.4s;
   border-left: 7px solid #0905ec;
   margin-bottom: var(--mb-2);
+  transition: 1s all ease;
 }
 
 .about_img:hover{
-  filter: opacity(100%);
   border-left: 7px solid #a705ec;
+  transform: scale(1.1);
 }
 
 .about_social {
@@ -1480,8 +1480,10 @@ body.sun-theme {
     top: 20%;
   }
 
-  .effect-3 {
-    display: none;
+  .effect-3{
+    display: flex;
+    top: 142%;
+    left: 25%;
   }
 
   .home_desktop {
@@ -1499,6 +1501,19 @@ body.sun-theme {
     position: relative;
     left: 20rem;
     width: 300px;
+    -webkit-animation: icon-move-people 4s ease 2s infinite alternate;
+    animation: icon-move-people 5s ease 2s infinite alternate;
+  }
+
+  @keyframes icon-move-people {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(30px, 60px, 0);
+      transform: translate3d(-30px, -50px, 0);
+    }
   }
   
   .home_icon{
@@ -1635,6 +1650,10 @@ body.sun-theme {
     left: -10%;
   }
 
+  .effect-3{
+    top: 150%;
+  }
+
   .icon-one {
     position: absolute;
     top: -1rem;
@@ -1644,8 +1663,8 @@ body.sun-theme {
 
   .icon-two {
     position: absolute;
-    top: -3rem;
-    left: 1rem;
+    top: -1rem;
+    left: 8rem;
     width: 4rem;
   }
 
@@ -1662,13 +1681,13 @@ body.sun-theme {
   }
 
   .home_icon .icon-two {
-    -webkit-animation: icon-move 3s ease 1.9s infinite alternate;
-    animation: icon-move 3s ease 1.9s infinite alternate;
+    -webkit-animation: icon-move 3s ease 1.5s infinite alternate;
+    animation: icon-move 3s ease 1.5s infinite alternate;
   }
 
   .home_icon .icon-three {
-    -webkit-animation: icon-move 3s ease 0.6s infinite alternate;
-    animation: icon-move 2s ease 0.6s infinite alternate;
+    -webkit-animation: icon-move 3s ease 0.7s infinite alternate;
+    animation: icon-move 3s ease 0.7s infinite alternate;
   }
 
   @-webkit-keyframes icon-move {
@@ -1678,18 +1697,7 @@ body.sun-theme {
     }
     100% {
       -webkit-transform: translate3d(10px, -40px, 0);
-      transform: translate3d(10px, -40px, 0);
-    }
-  }
-
-  @keyframes icon-move {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-    100% {
-      -webkit-transform: translate3d(20px, -50px, 0);
-      transform: translate3d(20px, -50px, 0);
+      transform: translate3d(30px, -80px, 0);
     }
   }
 
@@ -1751,6 +1759,7 @@ body.sun-theme {
   .home_people {
     position: relative;
     left: 28rem;
+    top: -2.5rem;
     width: 500px;
   }
 
@@ -1766,24 +1775,29 @@ body.sun-theme {
     left: -25%;
   }
 
+  .effect-3{
+   top: 118%;
+   left: 5%
+  }
+
   .icon-one {
     position: absolute;
-    top: -1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 1.2rem;
     width: 5rem;
   }
 
   .icon-two {
     position: absolute;
-    top: -3rem;
-    left: 1rem;
+    top: 2rem;
+    left: 8rem;
     width: 5rem;
   }
 
   .icon-three {
     position: absolute;
-    top: 13rem;
-    left: -5rem;
+    top: 20rem;
+    left: -2.5rem;
     width: 5rem;
   }
 
