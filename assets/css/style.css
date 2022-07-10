@@ -368,6 +368,10 @@ body.sun-theme {
   animation: rotate 2s linear infinite;
 }
 
+.ball:hover, .square:hover{
+  animation-play-state: paused;
+}
+
 @keyframes rotate{
   0% {
     transform: rotate(360deg);
@@ -1095,6 +1099,53 @@ body.sun-theme {
   transform: scale(1.1);
 }
 
+.button-github{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.wavy{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  margin-left: -22rem;
+  margin-top: -0.5rem;
+  z-index: -1;
+  overflow: hidden;
+  display: none;
+}
+
+.wavy-1{
+  margin-left: 22rem;
+}
+
+.wavy-2{
+  margin-right: 1rem;
+}
+
+.wavy:before{
+  content: 'aaaaaaaaaa';
+  position: absolute;
+  top: -42px;
+  left: 0;
+  font-size: 4em;
+  color: transparent;
+  text-decoration: wavy;
+  text-decoration-color: var(--first-color);
+  text-decoration-line: underline;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-1px);
+  }
+  100% {
+    transform: translateX(-65px);
+  }
+}
+
 /*======== ACTIVE MODAL ============*/
 .active-modal {
   opacity: 1;
@@ -1517,6 +1568,10 @@ body.sun-theme {
     animation: icon-move-people 5s ease 2s infinite alternate;
   }
 
+  .home_people:hover{
+    animation-play-state: paused;
+  } 
+
   @keyframes icon-move-people {
     0% {
       -webkit-transform: translate3d(0, 0, 0);
@@ -1575,6 +1630,10 @@ body.sun-theme {
   }
 
   .visibility {
+    display: block;
+  }
+
+  .wavy{
     display: block;
   }
 
