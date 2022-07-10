@@ -743,6 +743,11 @@ body.sun-theme {
   color: var(--first-color-lighter);
 }
 
+.work{
+  margin: var(--mb-1-5);
+  font-weight: var(--font-semi-bold);
+}
+
 .exp-text{
   color: var(--text-color);
 }
@@ -797,6 +802,10 @@ body.sun-theme {
   color: #ff0000;
 }
 
+.qualification_number .pont-yellow {
+  color: #ffff00;
+}
+
 .qualification_number .pont-green {
   color: rgb(0, 255, 0);
 }
@@ -811,6 +820,9 @@ body.sun-theme {
   width: 50%;
 }
 
+.qualification_miranda {
+  width: 10%;
+}
 /*========= MENU LATERAL =============*/
 .tab-wrap {
   display: flex;
