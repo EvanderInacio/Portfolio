@@ -670,7 +670,7 @@ body.sun-theme {
 }
 
 .circle5 {
-  background-color: hsl(217, 93%, 37%);
+  background-color: hsl(217, 94%, 39%);
 }
 
 .card_title {
@@ -703,11 +703,11 @@ body.sun-theme {
   z-index: 1;
 }
 
-.skills_img {
+.skills_img{
   position: relative;
-  left: 12.2rem;
+  left: 12.5rem;
   top: 0.8rem;
-  width: 4.3rem;
+  width: 4rem;
   z-index: 1;
 }
 
@@ -1793,9 +1793,8 @@ body.sun-theme {
   }
 
   .skills_img {
-    width: 4.8rem;
-    top: 0.3rem;
-    left: 11.1rem;
+    top: 0.8rem;
+    left: 11.5rem;
   }
 
   .portfolios_container {
