@@ -1031,7 +1031,7 @@ body.sun-theme {
   cursor: pointer;
 }
 
-.portfolio_tech {
+.portfolio_tech, .breve {
   margin-top: var(--mb-0-75);
   margin-bottom: var(--mb-1-5);
 }
