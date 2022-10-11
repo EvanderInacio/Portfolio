@@ -57,8 +57,7 @@ export const NavMenu = styled.div< Click >`
     a {
       display: flex;
       gap: 3px;
-      font-weight: 500;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: var(--text-primary);
       height: 1rem;
       cursor: pointer;
