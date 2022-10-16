@@ -70,7 +70,7 @@ export const SkillsContent = styled.div`
       content: '';
       position: absolute;
       inset: 5px;
-      background: #0c0a13;
+      background: #0c0b0e;
       border-radius: 20px;
 
     }
