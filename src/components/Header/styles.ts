@@ -10,17 +10,14 @@ export const HeaderContainer = styled.div`
   position: relative;
   z-index: 1;
   background: var(--background);
-
   a {
     color: var(--text-primary);
   }
-
   @media(min-width: 995px) {
     display: flex;
     justify-content: space-around;
     padding-top: 1rem;
   }
-
   .mobile-content{
     font-weight: 700;
     font-size: 1.2rem;
@@ -36,7 +33,6 @@ export const HeaderContainer = styled.div`
 
 export const MobileIcon = styled.div`
   display: none;
-
   @media (max-width: 994px) {
     display: block;
     position: absolute;
@@ -59,11 +55,9 @@ export const NavMenu = styled.div< Click >`
     display: ${({click}) => (click ? 'block' : 'none')};
     opacity: 0.95;
   }
-
   ul {
     display: flex;
     gap: 1rem;
-
     a {
       display: flex;
       gap: 3px;

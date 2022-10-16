@@ -6,21 +6,21 @@ import { Links } from '../components/Links'
 
 import { Section } from './styles'
 
-export default function Home() {
+export default function Main() {
   return (
     <>
-      <Head>
-        <title>Evander Inácio | Desenvolvedor Front-End </title>
+    <Head>
+      <title>Evander Inácio | Desenvolvedor Front-End </title>
 
-        <meta name="description" content=" personal website and portfolio" />
-      </Head>
+      <meta name="description" content=" personal website and portfolio" />
+    </Head>
 
-      <Header />
-      <Section>
-        <Links />
-        <HomeHero />
-        <About />
-      </Section>
-    </>
+    <Header />
+    <Section>
+      <Links />
+      <HomeHero />
+      <About />
+    </Section>
+  </>
   )
 }

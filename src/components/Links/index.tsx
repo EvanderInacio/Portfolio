@@ -1,4 +1,3 @@
-
 import Link from "next/link"
 import { Icons } from "./styles"
 import { FiGithub, FiLinkedin, FiFacebook, FiTwitter } from 'react-icons/fi'

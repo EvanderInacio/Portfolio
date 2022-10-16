@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const Section = styled.section`
  margin-top: 5rem;
-
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -27,13 +26,10 @@ export const ButtonPrimary = styled.button`
   gap: 8px;
   cursor: pointer;
   margin-top: 2rem;
-
   border: 2px solid;
   border-image: linear-gradient(225deg, #00d9ff 0%, #c001fa 100%) 1;
-
   &:hover {
     background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);
     color: black;
   }
 `
-

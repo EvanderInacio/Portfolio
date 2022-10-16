@@ -12,21 +12,17 @@ export const Icons = styled.div`
   flex-direction: column;
   gap: 8px;
   font-size: 1.4rem;
-
   @media (min-width: 1100px) {
     left: 3%;
   }
-
   a {
     cursor: pointer;
-
     &:hover {
       color: #00d9ff;
       transform: translateY(-4px);
       transition: transform 0.2s;
     }
   }
-
   .barra {
     margin-top: 1.5rem;
     position: relative;
