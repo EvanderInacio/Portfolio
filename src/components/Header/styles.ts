@@ -8,7 +8,7 @@ export const HeaderContainer = styled.div`
   font-weight: 600;
   font-size: 1.2rem;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   background: var(--background);
   a {
     color: var(--text-primary);

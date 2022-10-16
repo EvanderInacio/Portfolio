@@ -12,6 +12,7 @@ export const Section = styled.section`
 export const Title = styled.h2`
   font-size: 2.2rem;
   font-weight: 700;
+  margin-top: 2.5rem;
   color: var(--second-color);
   
 `

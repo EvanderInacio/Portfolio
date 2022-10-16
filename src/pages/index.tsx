@@ -3,6 +3,7 @@ import { About } from '../components/About'
 import { Header } from '../components/Header'
 import { HomeHero } from '../components/Home'
 import { Links } from '../components/Links'
+import { Skills } from '../components/Skills'
 
 import { Section } from '../styles/styles'
 
@@ -20,6 +21,7 @@ export default function Home() {
         <Links />
         <HomeHero />
         <About />
+        <Skills />
       </Section>
     </>
   )
