@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import { DownloadSimple } from 'phosphor-react'
 import Evander from '../../assets/Evander.webp'
-import { Title } from '../../pages/styles'
-import { ButtonPrimary } from '../../pages/styles'
+import { Title } from '../../styles/styles'
+import { ButtonPrimary } from '../../styles/styles'
 import { AboutContainer } from './styles'
 
 export function About() {
@@ -27,7 +27,9 @@ export function About() {
             ampliar meus conhecimentos e assim aprimorar ainda mais as
             habilidades que possuo.
           </p>
-          <ButtonPrimary><b>Download CV</b> <DownloadSimple weight="bold" /></ButtonPrimary>
+          <ButtonPrimary>
+            <b>Download CV</b> <DownloadSimple weight="bold" />
+          </ButtonPrimary>
         </div>
       </AboutContainer>
     </>

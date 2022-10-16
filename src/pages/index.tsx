@@ -4,23 +4,23 @@ import { Header } from '../components/Header'
 import { HomeHero } from '../components/Home'
 import { Links } from '../components/Links'
 
-import { Section } from './styles'
+import { Section } from '../styles/styles'
 
-export default function Main() {
+export default function Home() {
   return (
     <>
-    <Head>
-      <title>Evander Inácio | Desenvolvedor Front-End </title>
+      <Head>
+        <title>Evander Inácio | Desenvolvedor Front-End </title>
 
-      <meta name="description" content=" personal website and portfolio" />
-    </Head>
+        <meta name="description" content=" personal website and portfolio" />
+      </Head>
 
-    <Header />
-    <Section>
-      <Links />
-      <HomeHero />
-      <About />
-    </Section>
-  </>
+      <Header />
+      <Section>
+        <Links />
+        <HomeHero />
+        <About />
+      </Section>
+    </>
   )
 }
