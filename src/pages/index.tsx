@@ -20,11 +20,11 @@ interface Projects {
 }
 
 
-interface ProjectsProps {
-  projects: Projects[]
+interface ProjectProps {
+  project: Projects[]
 }
 
-export default function Home({ projects }: ProjectsProps)  {
+export default function Home({project}: ProjectProps)  {
   return (
     <>
       <Head>
