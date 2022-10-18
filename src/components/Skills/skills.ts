@@ -30,12 +30,12 @@ const cardSkills = [
     img: '/skills/react.svg',
     color: '#61DAFB'
   },
-  {
-    id: 6,
-    title: 'Next JS',
-    img: '/skills/next-js.svg',
-    color: '#000'
-  },
+  // {
+  //   id: 6,
+  //   title: 'Next JS',
+  //   img: '/skills/next-js.svg',
+  //   color: '#fff'
+  // },
   {
     id: 7,
     title: 'Styled Components',
