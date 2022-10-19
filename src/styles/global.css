@@ -27,3 +27,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+  background-color: #1e1e25;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 0.5rem;
+  background-color: #5252e0;
+}

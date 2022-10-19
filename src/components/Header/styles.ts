@@ -10,21 +10,26 @@ export const HeaderContainer = styled.div`
   position: relative;
   z-index: 10;
   background: var(--background);
+
   a {
     color: var(--text-primary);
   }
+
   @media(min-width: 995px) {
     display: flex;
     justify-content: space-around;
     padding-top: 1rem;
   }
+
   .mobile-content{
     font-weight: 700;
     font-size: 1.2rem;
     margin-top: -2px;
+
     span {
       color:  #00d9ff;
     }
+
     @media(max-width: 994px) {
       margin: .8rem 1rem 1rem;
     }
@@ -57,11 +62,14 @@ export const NavMenu = styled.div< Click >`
   }
   ul {
     display: flex;
-    gap: 1rem;
-    a {
-      display: flex;
-      gap: 3px;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+
+    a { 
+      gap: 4px;
       font-size: 1.2rem;
+      font-weight: 600; 
       color: var(--text-primary);
       height: 1rem;
       cursor: pointer;

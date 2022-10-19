@@ -1,14 +1,15 @@
-/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
-import { GetStaticPaths, GetStaticProps } from 'next';
 import router, { useRouter } from 'next/router'
 import projects from './projects'
-import { ProjectsContent } from './styled'
+import { ProjectsContainer, ProjectsContent } from './styled'
+import { Title } from '../../styles/styles';
 
 interface Projects {
   slug: string
   url: string
   title: string
+  type: string
   img: string
   description: string
   tags?: [name: string, icon: string]
@@ -19,19 +20,27 @@ export function Projects() {
   const id = router.query.id as string
 
   return (
-    <div>
+    <>
+    <Title>Projetos</Title>
+      <ProjectsContainer>
       {projects.map(project => {
         return (
-          <Link href={`/project/${project.url}`} key={project.title}>
+          <Link href={`/project/${project.url}`} key={project.id}>
             <a>
-              <ProjectsContent img={project.img}>
-                <h3>{project.title}</h3>
+              <ProjectsContent >
+                <img src={project.img} alt={project.title} />
+                <div className='title'>
+                  <h2>{project.title}</h2>
+                  <span>{project.type}</span>
+                </div>
               </ProjectsContent>
             </a>
           </Link>
         )
       })}
-    </div>
+    </ProjectsContainer>
+    
+    </>
   )
 }
 

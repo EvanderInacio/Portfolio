@@ -8,6 +8,7 @@ import { Skills } from '../components/Skills'
 
 import { Section } from '../styles/styles'
 import Link from 'next/link'
+import { Footer } from '../components/Footer'
 
 
 interface Projects {
@@ -41,7 +42,7 @@ export default function Home({project}: ProjectProps)  {
         <Skills />
         <Projects />
 
-      
+        <Footer />
       </Section>
     </>
   )
