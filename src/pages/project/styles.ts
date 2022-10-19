@@ -1,11 +1,8 @@
 import styled from "styled-components"
 
-interface imgUrl {
-  imgUrl: string
-}
-
 export const ProjectContainer = styled.div`
-
+display: flex;
+flex-direction: column;
 `
 export const Banner = styled.div`
     position: relative;
