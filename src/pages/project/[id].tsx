@@ -4,7 +4,7 @@ import React from 'react'
 import { Header } from '../../components/Header'
 import projects from '../../components/Projects/projects'
 
-import { ProjectContainer, Banner } from './styles'
+import { ProjectContainer, Banner } from '../../styles/project'
 
 interface Project {
   icon: string 
