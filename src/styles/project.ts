@@ -3,12 +3,8 @@ import styled from 'styled-components'
 export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-
-  @media(min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-  }
 `
+
 export const Banner = styled.div`
   position: relative;
 
@@ -149,5 +145,76 @@ export const Description = styled.div`
         }
       }
     } 
+  }
+`
+
+export const PrintContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  
+  `
+
+export const Print = styled.div`
+ display: grid;
+ justify-items: center;
+ align-items: center;
+ width: 15rem;
+ height: 20rem;
+ padding: 2px;
+
+ background-color: #0c0b0e;
+ border: 5px solid #0c0b0e;
+ border-radius: 5px;
+ box-shadow: #0c0b0e 10px 20px 40px 16px;
+ overflow-y: scroll;
+
+ @media(min-width: 468px) {
+  width: 25rem;
+  padding: 1rem;
+ }
+
+ @media(min-width: 768px) {
+  width: 35rem;
+  padding: 1.5rem;
+  height: 30rem;
+ }
+
+ @media(min-width: 994px) {
+  width: 50rem;
+  padding: 1.5rem 1.7rem;
+ }
+ 
+  .print-content { 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h4 {
+      font-size: 1rem;
+      margin-bottom: .5rem;
+      color: #00d9ff;
+
+      @media(min-width: 468px) {
+        font-size: 1.5rem;
+      }
+    }
+    
+    img {
+      width: 13rem;
+
+      @media(min-width: 468px) {
+        width: 21rem;
+      }
+
+      @media(min-width: 768px) {
+        width: 30rem;
+      }
+
+      @media(min-width: 994px) {
+        width: 40rem;
+      }
+    }
   }
 `

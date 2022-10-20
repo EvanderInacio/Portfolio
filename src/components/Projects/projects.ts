@@ -11,7 +11,11 @@ const projects = [
       {name: "Next JS", icon: '/skills/next-js.svg' },
       {name: "Styled Components", icon: '/skills/styled-components.svg' },
     ],
-    
+    print: [
+      {name: 'Home', img:'/skills/ImgPortfolio.png'},
+      {name: 'About', img:'/projects/turtlemovie/turtle.png'},
+      {name: 'Skills', img:'/projects/playstation/playstation.webp'},
+    ],
   },
   {
     id: 2,
@@ -24,7 +28,12 @@ const projects = [
     tags: [
       {name: "React Js", icon: '/skills/react.svg' },
       {name: "Styled Components", icon: '/skills/styled-components.svg' },
-    ]
+    ],
+    print: [
+      {name: 'Home', img:'/skills/ImgPortfolio.png'},
+      {name: 'About', img:'/projects/turtlemovie/turtle.png'},
+      {name: 'Skills', img:'/projects/playstation/playstation.webp'},
+    ],
   },
   {
     id: 3,
@@ -38,7 +47,12 @@ const projects = [
       {name: "Html", icon: '/skills/html.svg' },
       {name: "Css", icon: '/skills/css.svg' },
       {name: "JavaScript", icon: '/skills/javascript.svg' },
-    ]
+    ],
+    print: [
+      {name: 'Home', img:'/skills/ImgPortfolio.png'},
+      {name: 'About', img:'/projects/turtlemovie/turtle.png'},
+      {name: 'Skills', img:'/projects/playstation/playstation.webp'},
+    ],
   },
 ]
 
