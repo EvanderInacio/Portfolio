@@ -4,7 +4,8 @@ import React from 'react'
 import { Header } from '../../components/Header'
 import projects from '../../components/Projects/projects'
 
-import { ProjectContainer, Banner } from '../../styles/project'
+import { ProjectContainer, Banner, Description } from '../../styles/project'
+import { Title } from '../../styles/styles'
 
 interface Project {
   icon: string 
@@ -60,22 +61,25 @@ export default function Projeto({ project }: ProjectProps) {
           </div>
         </Banner>
         
-        <div>
-          <p>{project.description}</p>
-           <div>
+        <Description>
+           <div className='description'>
+              <Title>Descrição</Title>
+              <p>{project.description}</p>
+           </div>
+           <div className='tags'>
+             <h4>Tecnologias</h4>
             {
-              
               project.tags && project.tags.map((tag: any) => {
                 return (
-                  <>
+                  <div className='tag-content' key={tag.id}>
+                    <img src={tag.icon} alt={tag.name} />
                     <span>{tag.name}</span>
-                    <img style={{width: '2rem'}} src={tag.icon} alt={tag.name} />
-                  </>
+                  </div>
                 )
               })
             }
            </div>
-        </div>
+        </Description>
         
       </ProjectContainer>
     </>
