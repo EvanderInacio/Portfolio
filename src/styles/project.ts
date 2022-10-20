@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
+
+  a {
+    cursor: pointer;
+  }
 `
 
 export const Banner = styled.div`
@@ -217,4 +221,43 @@ export const Print = styled.div`
       }
     }
   }
+`
+
+export const ContainerVideo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  margin-top: 3rem;
+.imageVideo{
+  img {
+    z-index: -1;
+      width: 100%;
+      opacity: 0.4;
+      object-fit: cover;
+    }
+  }
+  
+`
+
+export const Video = styled.div`
+z-index: 10;
+position: absolute;
+@media(min-width: 468px){
+  width: 25rem;
+  height: 13rem;
+ }
+ @media(min-width: 768px){
+  width: 35rem;
+  height: 20rem;
+ }
+ @media(min-width: 994px){
+  width: 40rem;
+  height: 30rem;
+ }
+ @media(min-width: 1200px){
+  width: 51rem;
+  height: 30rem;
+ }
 `
