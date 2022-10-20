@@ -3,14 +3,33 @@ import styled from 'styled-components'
 export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-
-  a {
-    cursor: pointer;
-  }
 `
 
 export const Banner = styled.div`
   position: relative;
+
+  .link {
+    position: relative;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+
+    @media (min-width: 468px) {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: end;
+      gap: 1rem;
+      right: 14%;
+    }
+
+    @media (min-width: 2000px) {
+      right: 20%;
+    }
+  }
 
   .bannerUrl {
     width: 100%;
@@ -228,22 +247,10 @@ export const ContainerVideo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
-  margin-top: 3rem;
-.imageVideo{
-  img {
-    z-index: -1;
-      width: 100%;
-      opacity: 0.4;
-      object-fit: cover;
-    }
-  }
-  
+  margin-top: 7rem;
 `
 
 export const Video = styled.div`
-z-index: 10;
-position: absolute;
 @media(min-width: 468px){
   width: 25rem;
   height: 13rem;

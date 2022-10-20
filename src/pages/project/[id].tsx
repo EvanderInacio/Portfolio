@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import React from 'react'
-import ReactPlayer from "react-player"
+import ReactPlayer from 'react-player'
 import { Footer } from '../../components/Footer'
 import { Header } from '../../components/Header'
 import projects from '../../components/Projects/projects'
 
+import { FiGithub, FiLink } from 'react-icons/fi'
 import {
   ProjectContainer,
   Banner,
@@ -15,22 +16,21 @@ import {
   ContainerVideo,
   Video
 } from '../../styles/project'
-
 import { ButtonPrimary, Title } from '../../styles/styles'
 
 interface Project {
-  icon: string,
-  imgUrl: string,
-  id: string,
-  title: string,
-  description: string,
-  type: string,
-  github: string,
-  web: string,
-  url: string,
-  tags: [string, string],
-  print: [string, string],
-  video: string,
+  icon: string
+  imgUrl: string
+  id: string
+  title: string
+  description: string
+  type: string
+  github: string
+  web: string
+  url: string
+  tags: [string, string]
+  print: [string, string]
+  video: string
 }
 
 interface ProjectProps {
@@ -52,7 +52,7 @@ export const getServerSideProps = async (context: any) => {
     description: project.description,
     tags: project.tags,
     print: project.print,
-    video: project.video,
+    video: project.video
   }))
 
   const idProject = project.find(project => project.link === id)
@@ -78,10 +78,16 @@ export default function Projeto({ project }: ProjectProps) {
               <p>{project.type}</p>
             </div>
           </div>
-        </Banner>
 
-        <a href={project.github}><ButtonPrimary>Github</ButtonPrimary></a>
-        <a href={project.web}><ButtonPrimary>Github</ButtonPrimary></a>
+        <div className='link'>
+          <Link href={project.web} target="_blank">
+            <a><ButtonPrimary>Live Demo <FiLink /></ButtonPrimary></a>
+          </Link>
+          <Link href={project.github} target="_blank">
+            <a><ButtonPrimary>Github <FiGithub /></ButtonPrimary></a>
+          </Link>
+        </div>
+        </Banner>
 
         <Description>
           <div className="description">
@@ -120,22 +126,16 @@ export default function Projeto({ project }: ProjectProps) {
         </PrintContainer>
 
         <ContainerVideo>
-        <Title>Video</Title>
-                <Video>
-                {/* <iframe src={project.video} 
-            title={project.title} frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen='true'>
-          </iframe> */}
-        <ReactPlayer
-          url={project.video}
-          width="100%"
-          height="100%"
-          pip
-          config={{ file: { forceHLS: true } }}
-        >
-        </ReactPlayer>
-        </Video>
+          <Title>Video</Title>
+          <Video>
+            <ReactPlayer
+              url={project.video}
+              width="100%"
+              height="100%"
+              pip
+              config={{ file: { forceHLS: true } }}
+            ></ReactPlayer>
+          </Video>
         </ContainerVideo>
       </ProjectContainer>
 
