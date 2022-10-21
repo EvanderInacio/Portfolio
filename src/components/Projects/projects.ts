@@ -35,9 +35,9 @@ const projects = [
       {name: "Styled Components", icon: '/skills/styled-components.svg' },
     ],
     print: [
-      {name: 'Home', img:'/skills/ImgPortfolio.png'},
-      {name: 'About', img:'/projects/turtlemovie/turtle.png'},
-      {name: 'Skills', img:'/projects/playstation/playstation.webp'},
+      { img:'/skills/ImgPortfolio.png'},
+      { img:'/projects/turtlemovie/turtle.png'},
+      { img:'/projects/playstation/playstation.webp'},
     ],
     video: 'https://www.youtube.com/watch?v=VZsm-NGse6M&ab_channel=EvanderIn%C3%A1cio'
   },

@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
-import router, { useRouter } from 'next/router'
 import projects from './projects'
 import { ProjectsContainer, ProjectsContent } from './styled'
 import { Title } from '../../styles/styles';
@@ -16,9 +15,6 @@ interface Projects {
 }
 
 export function Projects() {
-  const router = useRouter()
-  const id = router.query.id as string
-
   return (
     <>
     <Title>Projetos</Title>
@@ -43,51 +39,3 @@ export function Projects() {
     </>
   )
 }
-
-// export const getStaticProps: GetStaticProps = () => {
-  
-//   const project = projects.map(project => ({
-//     id: project.id,
-//     link: project.url,
-//     thumbnail: project.img,
-//     title: project.title,
-//     description: project.description,
-//   }))
-
-//   return {
-//     props: {
-//       project
-//     },
-//     revalidate: 86400
-//   }
-// }
-
-
-
-// export function Projects() {
-//   return (
-//     <div>
-//       {
-//         projects.map((project) => {
-//           return (
-//             <div key={project.id}>
-//               <h3>{project.title}</h3>
-//               <p>{project.description}</p>
-//                <div>
-//                 {
-//                   project.tags.map((tag) => {
-//                     return (
-//                       <span key={tag.name}>
-//                         {tag.name} <img src={tag.icon} alt={tag.name} />
-//                       </span>
-//                     )
-//                   })
-//                 }
-//                </div>
-//             </div>
-//           )
-//         })
-//       }
-//     </div>
-//   )
-// }

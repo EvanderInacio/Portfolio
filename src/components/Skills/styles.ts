@@ -72,11 +72,7 @@ export const SkillsContent = styled.div`
       inset: 5px;
       background: #0c0b0e;
       border-radius: 20px;
-
     }
-
-
   }
-
 
 `

@@ -7,25 +7,10 @@ import { Projects } from '../components/Projects'
 import { Skills } from '../components/Skills'
 
 import { Section } from '../styles/styles'
-import Link from 'next/link'
 import { Footer } from '../components/Footer'
 
 
-interface Projects {
-  slug: string
-  url: string
-  title: string
-  img: string
-  description: string
-  tags?: [name: string, icon: string]
-}
-
-
-interface ProjectProps {
-  project: Projects[]
-}
-
-export default function Home({project}: ProjectProps)  {
+export default function Home()  {
   return (
     <>
       <Head>
@@ -41,9 +26,9 @@ export default function Home({project}: ProjectProps)  {
         <About />
         <Skills />
         <Projects />
-
-        <Footer />
+    
       </Section>
+        <Footer />
     </>
   )
 }

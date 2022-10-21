@@ -71,26 +71,7 @@ export const ProjectsContent = styled.div`
       font-weight: 600;
       color: #5252e0;
     }
-    /* article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fef501;
-    font-size: 0.95rem;
-    font-weight: 800;
-    margin-bottom: 0.4rem;
-    span {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.2rem;
-    }
-  }
-  p {
-    font-style: italic;
-    font-size: 0.75rem;
-    margin-bottom: 0.25rem;
-  } */
   }
 
-  max-width: 350px;
+  max-width: 22rem;
 `

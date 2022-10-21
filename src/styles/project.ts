@@ -15,7 +15,7 @@ export const Banner = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     cursor: pointer;
 
     @media (min-width: 468px) {
@@ -86,7 +86,7 @@ export const Banner = styled.div`
 `
 
 export const Description = styled.div`
-  margin-top: -5rem;
+  margin-top: -8rem;
   text-align: center;
   padding: 0 1rem;
   display: grid;
@@ -94,15 +94,12 @@ export const Description = styled.div`
   align-items: center;
 
   @media (min-width: 768px) {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: flex-end;
-    align-items: center; */
+    margin-top: -5rem;
 
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   gap: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
   }
 
   .description {
@@ -116,12 +113,11 @@ export const Description = styled.div`
       margin-bottom: 1.8rem;
       max-width: 500px;
 
-      @media(min-width: 994px) {
+      @media (min-width: 994px) {
         font-size: 1.3rem;
       }
     }
   }
-
 
   .tags {
     border: 2px solid #0c0b0e;
@@ -134,7 +130,7 @@ export const Description = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
       width: 22rem;
       padding: 1rem 2rem;
     }
@@ -145,7 +141,7 @@ export const Description = styled.div`
       font-weight: 800;
       margin-bottom: 1.5rem;
 
-      @media(min-width: 768px) {
+      @media (min-width: 768px) {
         font-size: 2rem;
       }
     }
@@ -159,7 +155,7 @@ export const Description = styled.div`
         width: 1.5rem;
       }
 
-      @media(min-width: 994px) {
+      @media (min-width: 994px) {
         font-size: 1.3rem;
         gap: 15px;
 
@@ -167,7 +163,7 @@ export const Description = styled.div`
           width: 2.2rem;
         }
       }
-    } 
+    }
   }
 `
 
@@ -175,71 +171,31 @@ export const PrintContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 7rem;
-  
-  `
+  margin-top: 3rem;
+
+  @media (min-width: 768px) {
+    margin-top: 7rem;
+  }
+`
 
 export const Print = styled.div`
- display: grid;
- justify-items: center;
- align-items: center;
- width: 15rem;
- height: 20rem;
- padding: 2px;
+  border: 5px solid #0c0b0e;
+  border-radius: 5px;
+  box-shadow: #0c0b0e 0px 25px 40px 6px;
+  width: 18rem;
 
- background-color: #0c0b0e;
- border: 5px solid #0c0b0e;
- border-radius: 5px;
- box-shadow: #0c0b0e 10px 20px 40px 16px;
- overflow-y: scroll;
-
- @media(min-width: 468px) {
-  width: 25rem;
-  padding: 1rem;
- }
-
- @media(min-width: 768px) {
-  width: 35rem;
-  padding: 1.5rem;
-  height: 30rem;
- }
-
- @media(min-width: 994px) {
-  width: 50rem;
-  padding: 1.5rem 1.7rem;
- }
- 
-  .print-content { 
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    h4 {
-      font-size: 1rem;
-      margin-bottom: .5rem;
-      color: #00d9ff;
-
-      @media(min-width: 468px) {
-        font-size: 1.5rem;
-      }
-    }
-    
-    img {
-      width: 13rem;
-
-      @media(min-width: 468px) {
-        width: 21rem;
-      }
-
-      @media(min-width: 768px) {
-        width: 30rem;
-      }
-
-      @media(min-width: 994px) {
-        width: 40rem;
-      }
-    }
+  @media (min-width: 468px) {
+    width: 25rem;
   }
+
+  @media (min-width: 768px) {
+    width: 35rem;
+  }
+
+  @media (min-width: 994px) {
+    width: 50rem;
+  }
+
 `
 
 export const ContainerVideo = styled.div`
@@ -247,24 +203,36 @@ export const ContainerVideo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 7rem;
+  margin-top: 3rem;
+
+  @media (min-width: 768px) {
+    margin-top: 7rem;
+  }
+
+  .buttonHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const Video = styled.div`
-@media(min-width: 468px){
-  width: 25rem;
-  height: 13rem;
- }
- @media(min-width: 768px){
-  width: 35rem;
-  height: 20rem;
- }
- @media(min-width: 994px){
-  width: 40rem;
-  height: 30rem;
- }
- @media(min-width: 1200px){
-  width: 51rem;
-  height: 30rem;
- }
+  margin-bottom: 5rem;
+
+  @media (min-width: 468px) {
+    width: 25rem;
+    height: 13rem;
+  }
+  @media (min-width: 768px) {
+    width: 35rem;
+    height: 20rem;
+  }
+  @media (min-width: 994px) {
+    width: 40rem;
+    height: 30rem;
+  }
+  @media (min-width: 1200px) {
+    width: 51rem;
+    height: 30rem;
+  }
 `

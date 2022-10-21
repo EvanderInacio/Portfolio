@@ -7,6 +7,7 @@ import { Header } from '../../components/Header'
 import projects from '../../components/Projects/projects'
 
 import { FiGithub, FiLink } from 'react-icons/fi'
+import { BsArrowLeftShort } from 'react-icons/bs'
 import {
   ProjectContainer,
   Banner,
@@ -17,6 +18,9 @@ import {
   Video
 } from '../../styles/project'
 import { ButtonPrimary, Title } from '../../styles/styles'
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel'
 
 interface Project {
   icon: string
@@ -79,14 +83,22 @@ export default function Projeto({ project }: ProjectProps) {
             </div>
           </div>
 
-        <div className='link'>
-          <Link href={project.web} target="_blank">
-            <a><ButtonPrimary>Live Demo <FiLink /></ButtonPrimary></a>
-          </Link>
-          <Link href={project.github} target="_blank">
-            <a><ButtonPrimary>Github <FiGithub /></ButtonPrimary></a>
-          </Link>
-        </div>
+          <div className="link">
+            <Link href={project.web}>
+              <a target="_blank">
+                <ButtonPrimary>
+                  Live Demo <FiLink />
+                </ButtonPrimary>
+              </a>
+            </Link>
+            <Link href={project.github}>
+              <a target="_blank">
+                <ButtonPrimary>
+                  Github <FiGithub />
+                </ButtonPrimary>
+              </a>
+            </Link>
+          </div>
         </Banner>
 
         <Description>
@@ -109,19 +121,21 @@ export default function Projeto({ project }: ProjectProps) {
         </Description>
 
         <PrintContainer>
-          <Title>Print</Title>
+          <Title>Screenshot</Title>
           <Print>
-            <div className="print-content">
+            <Carousel
+              autoPlay={true}
+              infiniteLoop={true}
+              showStatus={false}
+              showIndicators={true}
+              showThumbs={false}
+              interval={4000}
+            >
               {project.print &&
                 project.print.map((print: string | any) => {
-                  return (
-                    <div key={print.id}>
-                      <h4>{print.name}</h4>
-                      <img src={print.img} alt={print.name} />
-                    </div>
-                  )
+                  return <img key={print.id} src={print.img} alt={print.name} />
                 })}
-            </div>
+            </Carousel>
           </Print>
         </PrintContainer>
 
@@ -132,10 +146,19 @@ export default function Projeto({ project }: ProjectProps) {
               url={project.video}
               width="100%"
               height="100%"
+              controls={true}
               pip
               config={{ file: { forceHLS: true } }}
             ></ReactPlayer>
           </Video>
+
+          <Link href={'/'}>
+            <a>
+              <ButtonPrimary>
+                <BsArrowLeftShort size={25} /> Voltar ao Início
+              </ButtonPrimary>
+            </a>
+          </Link>
         </ContainerVideo>
       </ProjectContainer>
 
