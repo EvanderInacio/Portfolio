@@ -61,6 +61,10 @@ export const Banner = styled.div`
       padding-left: 3rem;
     }
 
+    @media (min-width: 1500px) {
+      padding-left: 10%;
+    }
+
     h1 {
       color: #fff;
       font-weight: 800;

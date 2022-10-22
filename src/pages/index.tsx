@@ -8,6 +8,7 @@ import { Skills } from '../components/Skills'
 
 import { Section } from '../styles/styles'
 import { Footer } from '../components/Footer'
+import { Contact } from '../components/Contact'
 
 
 export default function Home()  {
@@ -26,9 +27,9 @@ export default function Home()  {
         <About />
         <Skills />
         <Projects />
-    
+        <Contact />
       </Section>
-        <Footer />
+      <Footer />
     </>
   )
 }
