@@ -63,6 +63,31 @@ const projects = [
     ],
     video: 'https://www.youtube.com/watch?v=VZsm-NGse6M&ab_channel=EvanderIn%C3%A1cio'
   },
+  {
+    id: 4,
+    url: 'ds-meta',
+    img: '/projects/dsmeta/dsmeta.png',
+    title: 'DS Meta',
+    type: "Website",
+    icon: "/projects/dsmeta/dsmeta-icon.svg",
+    github: 'https://github.com/EvanderInacio/DsMeta',
+    web: 'https://dsmeta-evander.netlify.app/',
+    description: 'Aplicação de listagem de vendas, com a opção de filtrar determinados períodos de vendas por data. Além de envio de notificações.',
+    tags: [
+      {name: "Java", icon: '/skills/java.svg' },
+      {name: "Spring", icon: '/skills/spring.svg' },
+      {name: "TypeScript", icon: '/skills/typescript.svg' },
+      {name: "React Js", icon: '/skills/react.svg' },
+      {name: "Axios", icon: '/skills/code.svg' },
+      {name: "API Rest", icon: '/skills/code.svg' },
+      {name: "H2 Database", icon: '/skills/database.svg' },
+    ],
+    print: [
+      {name: 'Home', img:'/projects/dsmeta/dsmeta.png'},
+      {name: 'Footer', img:'/projects/dsmeta/dsmeta-footer.png'},
+    ],
+    video: 'https://www.youtube.com/watch?v=VZsm-NGse6M&ab_channel=EvanderIn%C3%A1cio'
+  },
 ]
 
 export default projects

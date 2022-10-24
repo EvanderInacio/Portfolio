@@ -30,7 +30,12 @@ export const ProjectsContent = styled.div`
   transition: transform 0.3s;
   overflow: hidden;
 
-  border: 3px solid #1e1e25;
+  border: 3.5px solid var(--border-second-color);
+  box-shadow: var(--border-color) 0px 10px 15px 10px;
+
+  &:hover{
+    border-color: #00d9ff;
+  }
 
   img {
     width: 100%;

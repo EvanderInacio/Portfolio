@@ -115,10 +115,12 @@ export const Description = styled.div`
       font-size: 1rem;
       font-weight: 500;
       margin-bottom: 1.8rem;
-      max-width: 500px;
+      max-width: 600px;
 
       @media (min-width: 994px) {
         font-size: 1.3rem;
+        margin-bottom: 10rem;
+
       }
     }
   }
@@ -162,9 +164,13 @@ export const Description = styled.div`
       @media (min-width: 994px) {
         font-size: 1.3rem;
         gap: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
 
         img {
-          width: 2.2rem;
+          width: 1.8rem;
         }
       }
     }
