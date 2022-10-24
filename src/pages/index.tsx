@@ -10,8 +10,7 @@ import { Section } from '../styles/styles'
 import { Footer } from '../components/Footer'
 import { Contact } from '../components/Contact'
 
-
-export default function Home()  {
+export default function Home() {
   return (
     <>
       <Head>

@@ -13,12 +13,12 @@ export const Title = styled.h2`
   font-size: 2.2rem;
   font-weight: 700;
   margin-top: 2.5rem;
+  padding-top: 2rem;
   color: var(--second-color);
-  
 `
 
 export const ButtonPrimary = styled.button`
-  background-color: var(--background);
+  background-color: transparent;
   font-size: 1.1rem;
   color: #d6d6dc;
   padding: 1.1rem;

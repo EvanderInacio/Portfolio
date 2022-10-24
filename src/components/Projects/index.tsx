@@ -3,6 +3,7 @@ import Link from 'next/link'
 import projects from './projects'
 import { ProjectsContainer, ProjectsContent } from './styled'
 import { Title } from '../../styles/styles';
+import { AllProjects } from './Github';
 
 interface Projects {
   slug: string
@@ -35,7 +36,7 @@ export function Projects() {
         )
       })}
     </ProjectsContainer>
-    
+    <AllProjects />
     </>
   )
 }
