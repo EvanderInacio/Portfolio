@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { List, X } from 'phosphor-react'
 import { HeaderContainer, MobileIcon, NavMenu } from './styles'
+import { Icons } from '../Links/styles'
 
 export function Header() {
   const [click, setClick] = useState(false)

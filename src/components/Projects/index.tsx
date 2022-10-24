@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import projects from './projects'
-import { ProjectsContainer, ProjectsContent } from './styled'
+import { ProjectsContainer, ProjectsContent } from './styles'
 import { Title } from '../../styles/styles';
 import { AllProjects } from './Github';
 

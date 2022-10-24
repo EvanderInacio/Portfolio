@@ -7,8 +7,8 @@ import { Projects } from '../components/Projects'
 import { Skills } from '../components/Skills'
 
 import { Section } from '../styles/styles'
-import { Footer } from '../components/Footer'
 import { Contact } from '../components/Contact'
+import { Footer } from '../components/Footer'
 
 export default function Home() {
   return (
