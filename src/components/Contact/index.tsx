@@ -16,13 +16,19 @@ import { ContainerContact, ContactContent, Form } from './styles'
 export function Contact() {
   return (
     <Container id="contact">
-      <ContainerContact>
-        <Title>Contato</Title>
+      <ContainerContact>        
+          <Title>
+            Contato
+            <span><Envelope /> Contact</span>
+          </Title>
+
         <ContactContent>
           <div className="contact-content">
             <h4>WhatsApp</h4>
             <Link href="https://api.whatsapp.com/send?phone=5511995085916">
-              <a target="_blank"><span>+55 11 99508-5916</span></a>
+              <a target="_blank">
+                <span>+55 11 99508-5916</span>
+              </a>
             </Link>
           </div>
 

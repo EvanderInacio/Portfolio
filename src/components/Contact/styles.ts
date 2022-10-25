@@ -32,10 +32,9 @@ export const ContactContent = styled.div`
       margin-bottom: 8px;
     }
 
-   span {
-     opacity: 0.8;
+   span { 
+    color: var(--text-secondary);
     &:hover {
-      opacity: 1;
       color: var(--first-color);
     }
    }

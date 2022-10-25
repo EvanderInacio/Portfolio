@@ -1,12 +1,12 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Section = styled.section`
- margin-top: 5rem;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- gap: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 `
 
 export const Container = styled.section`
@@ -18,11 +18,39 @@ export const Container = styled.section`
 `
 
 export const Title = styled.h2`
+  position: relative;
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 800;
   margin: 2rem 0;
   padding-top: 2rem;
-  color: var(--second-color);
+  color: var(--first-color);
+  z-index: 1;
+  opacity: 1;
+
+  @media(min-width: 994px) {
+      font-size: 3.5rem;
+    }
+
+  span {
+    z-index: -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    right: 50%;
+    color: var(--second-color);
+    opacity: 0.2;
+    font-weight: 700;
+    font-size: 3rem;
+
+    @media(min-width: 994px) {
+      top: -0.4rem;
+      font-size: 4.5rem;
+    }
+  }
 `
 
 export const ButtonPrimary = styled.button`

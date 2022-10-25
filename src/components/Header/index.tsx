@@ -40,7 +40,7 @@ export function Header() {
           </Link>
           <Link href={'#skills'}>
             <a>
-              <span>Conhecimentos</span>
+              <span>Habilidades</span>
             </a>
           </Link>
           <Link href={'#projects'}>

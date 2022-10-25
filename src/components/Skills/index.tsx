@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { FileCode } from 'phosphor-react'
 import { Container, Title } from '../../styles/styles'
 import cardSkills from './skills'
 import { SkillsContainer, SkillsContent } from './styles'
@@ -13,7 +14,10 @@ interface Skills {
 export function Skills() {
   return (
     <Container id='skills'>
-      <Title>Conhecimentos</Title>
+      <Title>
+        Habilidades
+        <span><FileCode /> Skills</span>
+      </Title>
       <SkillsContainer>
       {cardSkills.map(skill => {
         return (

@@ -41,6 +41,7 @@ export const ImgHome = styled.div`
 
 export const HomeText = styled.div`
   h3 {
+    color: var(--text-secondary);
     @media (max-width: 350px) {
       font-size: 0.9rem;
     }
