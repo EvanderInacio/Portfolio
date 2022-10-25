@@ -6,6 +6,7 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 5rem;
 
   margin-left: 1rem;
   margin-right: 1rem;

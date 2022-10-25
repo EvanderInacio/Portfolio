@@ -3,12 +3,13 @@ import { PaperPlaneRight } from 'phosphor-react'
 import React from 'react'
 import Home from '../../assets/home.webp'
 
-import { ButtonPrimary } from '../../styles/styles'
+import { ButtonPrimary, Container } from '../../styles/styles'
 import { Content, ImgHome, HomeText } from './styles'
 
 export function HomeHero() {
   return (
-    <Content>
+    <Container>
+      <Content>
       <HomeText>
         <div className="cubo-animation"></div>
         <h3>Olá, eu sou</h3>
@@ -23,5 +24,6 @@ export function HomeHero() {
         <Image src={Home} alt="Home" />
       </ImgHome>
     </Content>
+    </Container>
   )
 }

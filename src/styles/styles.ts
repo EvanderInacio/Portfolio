@@ -9,10 +9,18 @@ export const Section = styled.section`
  gap: 5rem;
 `
 
+export const Container = styled.section`
+  padding-top: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
+
 export const Title = styled.h2`
   font-size: 2.2rem;
   font-weight: 700;
-  margin-top: 2.5rem;
+  margin: 2rem 0;
   padding-top: 2rem;
   color: var(--second-color);
 `

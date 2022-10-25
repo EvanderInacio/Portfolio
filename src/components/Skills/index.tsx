@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Title } from '../../styles/styles'
+import { Container, Title } from '../../styles/styles'
 import cardSkills from './skills'
 import { SkillsContainer, SkillsContent } from './styles'
 
@@ -12,7 +12,7 @@ interface Skills {
 
 export function Skills() {
   return (
-    <>
+    <Container id='skills'>
       <Title>Conhecimentos</Title>
       <SkillsContainer>
       {cardSkills.map(skill => {
@@ -31,6 +31,6 @@ export function Skills() {
         )
       })}
     </SkillsContainer>
-    </>
+    </Container>
   )
 }

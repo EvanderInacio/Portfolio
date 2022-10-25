@@ -1,10 +1,46 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const Container = styled.section`
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+export const ContainerContact = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
+export const ContactContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 994px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-content {
+    border-radius: 10px;
+    background-color: var(--border-color);
+    padding: 1rem 2rem;
+
+    h4 {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+   span {
+     opacity: 0.8;
+    &:hover {
+      opacity: 1;
+      color: var(--first-color);
+    }
+   }
+  }
+  margin-bottom: 3rem;
 `
 
 export const Form = styled.form`
@@ -15,11 +51,11 @@ export const Form = styled.form`
 
   .input-group {
     position: relative;
-    margin: 10px 0 ;
+    margin: 10px 0;
     width: 95vw;
     max-width: 500px;
   }
-  .input-group textarea{
+  .input-group textarea {
     max-width: 100%;
     min-width: 100%;
     max-height: 200px;
@@ -46,7 +82,8 @@ export const Form = styled.form`
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .input:focus, input:valid, 
+  .input:focus,
+  input:valid,
   textarea:valid {
     outline: none;
     border: 2px solid var(--second-color);
@@ -54,19 +91,21 @@ export const Form = styled.form`
   }
 
   .input:focus ~ label,
-  input:valid ~ label, input:not(:placeholder-shown) ~ label , textarea:valid ~ label {
+  input:valid ~ label,
+  input:not(:placeholder-shown) ~ label,
+  textarea:valid ~ label {
     transform: translateY(-50%) scale(0.8);
     background-color: var(--background);
     padding: 0 0.8em;
     color: var(--first-color);
   }
-  
+
   button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    
+
     text-align: center;
     margin: 50px auto;
     border: 0.25em solid var(--first-color);
@@ -78,15 +117,14 @@ export const Form = styled.form`
     border-radius: 1em;
     outline: none;
     box-shadow: 0 0 1em 0.25em var(--second-color),
-      0 0 4em 1em var(--first-color)
-      inset 0 0 0.75em 0.25em var(--second-color);
+      0 0 4em 1em var(--first-color) inset 0 0 0.75em 0.25em var(--second-color);
     position: relative;
     transition: all 0.3s;
   }
 
   button::after {
     pointer-events: none;
-    content: "";
+    content: '';
     position: absolute;
     top: 120%;
     left: 0;
@@ -101,14 +139,12 @@ export const Form = styled.form`
   button:hover {
     color: black;
     background-color: var(--white);
-    box-shadow: 0 0 1em 0.25em var(--white),
-      0 0 4em 2em var(--hover-color),
+    box-shadow: 0 0 1em 0.25em var(--white), 0 0 4em 2em var(--hover-color),
       inset 0 0 0.75em 0.25em var(--white);
   }
 
   button:active {
-    box-shadow: 0 0 0.6em 0.25em var(--white),
-      0 0 2.5em 2em var(--hover-color),
+    box-shadow: 0 0 0.6em 0.25em var(--white), 0 0 2.5em 2em var(--hover-color),
       inset 0 0 0.5em 0.25em var(--white);
   }
 `

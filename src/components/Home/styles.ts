@@ -12,7 +12,7 @@ export const Content = styled.div`
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: -1rem;
     padding-left: 2rem;
   }
 `
@@ -100,6 +100,13 @@ export const HomeText = styled.div`
     width: 30px;
     height: 30px;
     border: 4px solid #8543ff;
+
+    @media (min-width: 994px) {
+      width: 40px;
+      height: 40px;
+      border: 5px solid #8543ff;
+    }
+    
     top: 15%;
     animation: cubo 5s linear infinite;
     @keyframes cubo {

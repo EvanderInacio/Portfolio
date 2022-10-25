@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import { DownloadSimple } from 'phosphor-react'
 import Evander from '../../assets/Evander.webp'
-import { Title } from '../../styles/styles'
+import { Container, Title } from '../../styles/styles'
 import { ButtonPrimary } from '../../styles/styles'
 import { AboutContainer } from './styles'
 
 export function About() {
   return (
-    <>
+    <Container id="about">
       <Title>Sobre</Title>
       <AboutContainer>
         <div className="AboutImg">
@@ -32,6 +32,6 @@ export function About() {
           </ButtonPrimary>
         </div>
       </AboutContainer>
-    </>
+    </Container>
   )
 }
