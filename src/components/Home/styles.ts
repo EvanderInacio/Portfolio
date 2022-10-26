@@ -6,7 +6,7 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 4rem;
- 
+
   @media (min-width: 994px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -18,24 +18,26 @@ export const Content = styled.div`
 `
 
 export const ImgHome = styled.div`
-  display: none;
-  @media (min-width: 994px) {
-    display: block;
-    position: relative;
-    width: 32rem;
-    -webkit-animation: icon-move-people 4s ease 2s infinite alternate;
-    animation: icon-move-people 5s ease 2s infinite alternate;
-  
-  @keyframes icon-move-people {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
+  img {
+    display: none;
+    @media (min-width: 994px) {
+      display: block;
+      position: relative;
+      width: 32rem;
+      -webkit-animation: icon-move-people 4s ease 2s infinite alternate;
+      animation: icon-move-people 5s ease 2s infinite alternate;
+
+      @keyframes icon-move-people {
+        0% {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          -webkit-transform: translate3d(30px, 60px, 0);
+          transform: translate3d(-30px, -50px, 0);
+        }
+      }
     }
-    100% {
-      -webkit-transform: translate3d(30px, 60px, 0);
-      transform: translate3d(-30px, -50px, 0);
-    }
-  }
   }
 `
 
@@ -79,7 +81,7 @@ export const HomeText = styled.div`
     white-space: nowrap;
     overflow: hidden;
     margin-bottom: 2rem;
-    @keyframes cursor  {
+    @keyframes cursor {
       from {
         border-right-color: #00d9ff;
       }
@@ -107,7 +109,7 @@ export const HomeText = styled.div`
       height: 40px;
       border: 5px solid #8543ff;
     }
-    
+
     top: 15%;
     animation: cubo 5s linear infinite;
     @keyframes cubo {

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import React from 'react'
@@ -21,6 +22,7 @@ import { ButtonPrimary, Title } from '../../styles/styles'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel'
+import { ChatCenteredText, Image, YoutubeLogo } from 'phosphor-react'
 
 interface Project {
   icon: string
@@ -103,7 +105,10 @@ export default function Projeto({ project }: ProjectProps) {
 
         <Description>
           <div className="description">
-            <Title>Descrição</Title>
+            <Title>
+              Descrição
+              <span><ChatCenteredText /> Description</span>
+            </Title>
             <p>{project.description}</p>
           </div>
           <div className="tags">
@@ -121,7 +126,10 @@ export default function Projeto({ project }: ProjectProps) {
         </Description>
 
         <PrintContainer>
-          <Title>Screenshot</Title>
+          <Title>
+            Screenshot
+            <span><Image /> Screen</span>
+          </Title>
           <Print>
             <Carousel
               autoPlay={true}
@@ -140,7 +148,10 @@ export default function Projeto({ project }: ProjectProps) {
         </PrintContainer>
 
         <ContainerVideo>
-          <Title>Video</Title>
+          <Title>
+            Video
+            <span><YoutubeLogo /> Video</span>
+          </Title>
           <Video>
             <ReactPlayer
               url={project.video}

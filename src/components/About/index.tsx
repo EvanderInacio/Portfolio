@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import { DownloadSimple, User } from 'phosphor-react'
 import Evander from '../../assets/Evander.webp'
@@ -10,13 +11,15 @@ export function About() {
     <Container id="about">
       <Title>
         Sobre
-        <span><User /> About</span>
+        <span>
+          <User /> About
+        </span>
       </Title>
       <AboutContainer>
         <div className="AboutImg">
-          <Image
+          <img
             className="AboutImg"
-            src={Evander}
+            src="/Evander.webp"
             alt="Imagem de perfil Evander"
           />
         </div>

@@ -43,11 +43,11 @@ export const Title = styled.h2`
     right: 50%;
     color: var(--second-color);
     opacity: 0.2;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 3rem;
 
     @media(min-width: 994px) {
-      top: -0.4rem;
+      top: -0.8rem;
       font-size: 4.5rem;
     }
   }

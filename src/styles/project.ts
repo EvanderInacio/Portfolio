@@ -23,11 +23,11 @@ export const Banner = styled.div`
       justify-content: flex-end;
       align-items: end;
       gap: 1rem;
-      right: 14%;
+      right: 10%;
     }
 
     @media (min-width: 2000px) {
-      right: 20%;
+      right: 14%;
     }
   }
 
@@ -79,11 +79,19 @@ export const Banner = styled.div`
 
     img {
       box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 40px 6px;
-      width: 15rem;
+      width: 10rem;
+      height: 10rem;
       border-radius: 10px;
+      background: #101012;
 
       @media (min-width: 768px) {
-        width: 18rem;
+        width: 13rem;
+        height: 13rem;
+      }
+
+      @media (min-width: 994px) {
+        width: 15rem;
+        height: 15rem;
       }
     }
   }
@@ -115,11 +123,14 @@ export const Description = styled.div`
       font-size: 1rem;
       font-weight: 500;
       margin-bottom: 1.8rem;
-      max-width: 600px;
+      max-width: 500px;
 
       @media (min-width: 994px) {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-bottom: 10rem;
+        max-width: 800px;
+        text-align: center;
+
 
       }
     }

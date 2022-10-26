@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import { PaperPlaneRight } from 'phosphor-react'
 import React from 'react'
-import Home from '../../assets/home.webp'
+import Home from '../../../public/projects/portfolio/home.webp'
 
 import { ButtonPrimary, Container } from '../../styles/styles'
 import { Content, ImgHome, HomeText } from './styles'
@@ -21,7 +22,7 @@ export function HomeHero() {
         </ButtonPrimary>
       </HomeText>
       <ImgHome>
-        <Image src={Home} alt="Home" />
+        <img src='/projects/portfolio/home.webp' alt="Home" />
       </ImgHome>
     </Content>
     </Container>
