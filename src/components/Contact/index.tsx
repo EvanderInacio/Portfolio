@@ -10,7 +10,7 @@ import {
   TelegramLogo,
   User
 } from 'phosphor-react'
-import { Container, Title } from '../../styles/styles'
+import { ButtonSecondary, Container, Title } from '../../styles/styles'
 import { ContainerContact, ContactContent, Form } from './styles'
 
 export function Contact() {
@@ -112,9 +112,9 @@ export function Contact() {
             </label>
           </div>
 
-          <button type="submit">
+          <ButtonSecondary type="submit">
             Enviar <TelegramLogo size={15} weight="bold" />{' '}
-          </button>
+          </ButtonSecondary>
         </Form>
       </ContainerContact>
     </Container>

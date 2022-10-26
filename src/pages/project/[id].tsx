@@ -18,11 +18,11 @@ import {
   ContainerVideo,
   Video
 } from '../../styles/project'
-import { ButtonPrimary, Title } from '../../styles/styles'
+import { ButtonPrimary, ButtonSecondary, Title } from '../../styles/styles'
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
-import { ChatCenteredText, Image, YoutubeLogo } from 'phosphor-react'
+import { ArrowLeft, ChatCenteredText, Image, YoutubeLogo } from 'phosphor-react'
 
 interface Project {
   icon: string
@@ -107,7 +107,9 @@ export default function Projeto({ project }: ProjectProps) {
           <div className="description">
             <Title>
               Descrição
-              <span><ChatCenteredText /> Description</span>
+              <span>
+                <ChatCenteredText /> Description
+              </span>
             </Title>
             <p>{project.description}</p>
           </div>
@@ -128,7 +130,9 @@ export default function Projeto({ project }: ProjectProps) {
         <PrintContainer>
           <Title>
             Screenshot
-            <span><Image /> Screen</span>
+            <span>
+              <Image /> Screen
+            </span>
           </Title>
           <Print>
             <Carousel
@@ -150,7 +154,9 @@ export default function Projeto({ project }: ProjectProps) {
         <ContainerVideo>
           <Title>
             Video
-            <span><YoutubeLogo /> Video</span>
+            <span>
+              <YoutubeLogo /> Video
+            </span>
           </Title>
           <Video>
             <ReactPlayer
@@ -163,13 +169,17 @@ export default function Projeto({ project }: ProjectProps) {
             ></ReactPlayer>
           </Video>
 
-          <Link href={'/'}>
-            <a>
-              <ButtonPrimary>
-                <BsArrowLeftShort size={25} /> Voltar ao Início
-              </ButtonPrimary>
-            </a>
-          </Link>
+          <ButtonSecondary>
+            <Link href={'/'}>
+              <a>
+                <ArrowLeft 
+                  style={{marginBottom: '-0.2rem'}} 
+                  weight="bold"
+                  size={18} 
+                  /> Voltar
+              </a>
+            </Link>
+          </ButtonSecondary>
         </ContainerVideo>
       </ProjectContainer>
 

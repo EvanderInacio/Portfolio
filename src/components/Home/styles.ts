@@ -15,6 +15,11 @@ export const Content = styled.div`
     margin-top: -1rem;
     padding-left: 2rem;
   }
+
+  // teste 
+ 
+
+  // fim de teste
 `
 
 export const ImgHome = styled.div`

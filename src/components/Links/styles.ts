@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Icons = styled.div`
+  z-index: 10;
   @media (max-width: 768px) {
     display: none;
   }

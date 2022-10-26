@@ -37,6 +37,33 @@ export const AllContent = styled.div`
     gap: 8rem;
     padding-left: 2rem;
   }
+
+  button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    text-align: center;
+    border: 0.25em solid var(--second-color);
+    padding: 1em 3em;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 1em;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  button:hover {
+    color: black;
+    background-color: var(--white);
+    box-shadow: 0 0 1em 0.25em var(--hover-second-color), 0 0 4em 2em var(--hover-second-color),
+      inset 0 0 0.75em 0.25em var(--white);
+  }
+
 `
 
 export const Cubo = styled.div`

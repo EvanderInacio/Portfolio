@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link'
 import { FiGithub } from 'react-icons/fi'
-import { ButtonPrimary } from '../../../styles/styles'
+import { ButtonSecondary } from '../../../styles/styles'
 import { AllContainer, AllContent, Cubo } from './styles'
 
 export function AllProjects() {
@@ -9,7 +10,13 @@ export function AllProjects() {
       <AllContainer>
         <h4>Todos os projetos</h4>
         <AllContent>
-          <ButtonPrimary>Repositório  <FiGithub /></ButtonPrimary>
+          <Link href={'https://github.com/EvanderInacio?tab=repositories'}>
+              <a target="_blank">
+            <button>
+                Repositório <FiGithub />
+            </button>
+              </a>
+          </Link>
 
           <Cubo>
             <div className="stage-cube-cont">

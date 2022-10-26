@@ -27,9 +27,9 @@ export const Title = styled.h2`
   z-index: 1;
   opacity: 1;
 
-  @media(min-width: 994px) {
-      font-size: 3.5rem;
-    }
+  @media (min-width: 994px) {
+    font-size: 3.5rem;
+  }
 
   span {
     z-index: -1;
@@ -44,9 +44,14 @@ export const Title = styled.h2`
     color: var(--second-color);
     opacity: 0.2;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 2.6rem;
 
-    @media(min-width: 994px) {
+    @media (min-width: 370px) {
+      top: -0.8rem;
+      font-size: 3rem;
+    }
+
+    @media (min-width: 994px) {
       top: -0.8rem;
       font-size: 4.5rem;
     }
@@ -57,16 +62,104 @@ export const ButtonPrimary = styled.button`
   background-color: transparent;
   font-size: 1.1rem;
   color: #d6d6dc;
-  padding: 1.1rem;
+  padding: 1.2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 8px;
   cursor: pointer;
   margin-top: 2rem;
   border: 2px solid;
+  border-radius: 5px;
   border-image: linear-gradient(225deg, #00d9ff 0%, #c001fa 100%) 1;
-  &:hover {
+  display: block;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scale(0);
+  }
+
+  &:hover {
     color: black;
+    &:before {
+      transform: scale(1);
+      background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);
+    }
+  }
+
+  .btn {
+    &::before {
+    transform: scaleX(0);
+  }
+
+  &:hover {
+    color: black;
+    &:before {
+      transform: scaleX(1);
+      background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);
+    }
+  }
+  }
+`
+
+export const ButtonSecondary = styled.button`
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 50px auto;
+    border: 0.25em solid var(--first-color);
+    padding: 1rem 2rem;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em 0.25em var(--second-color),
+      0 0 4em 1em var(--first-color) inset 0 0 0.75em 0.25em var(--second-color);
+    position: relative;
+    transition: all 0.3s;
+    
+    
+    &::after {
+      pointer-events: none;
+      content: '';
+      position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--first-color);
+    filter: blur(2em);
+    opacity: 0.7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+  }
+  
+  &:hover {
+    cursor: pointer;
+    color: black;
+    background-color: var(--white);
+    box-shadow: 0 0 1em 0.25em var(--hover-color), 0 0 4em 2em var(--hover-color),
+      inset 0 0 0.75em 0.25em var(--white);
+  }
+
+  &:active {
+    box-shadow: 0 0 0.6em 0.25em var(--hover-color), 0 0 2.5em 2em var(--hover-color),
+      inset 0 0 0.5em 0.25em var(--white);
   }
 `
