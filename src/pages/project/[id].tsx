@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head';
 import Link from 'next/link'
 import React from 'react'
 import ReactPlayer from 'react-player'
@@ -73,6 +74,17 @@ export const getServerSideProps = async (context: any) => {
 export default function Projeto({ project }: ProjectProps) {
   return (
     <>
+      <Head>
+        <title>{project.title} | Evander Inácio </title>
+        <meta name="description" content={project.description} />
+        <meta property="og:title" content={project.title} />
+        <meta property="og:description" content={project.description} />
+        <meta property="og:image" content={project.imgUrl} />
+        <meta property="og:image:secure_url" content={project.imgUrl} />
+        <meta name="twitter:image" content={project.imgUrl} />
+        <meta name="twitter:image:src" content={project.imgUrl} />
+      </Head>
+
       <Header />
       <ProjectContainer>
         <Banner>
