@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   position: fixed;
   width: 100%;
   top: 0;
@@ -24,8 +24,7 @@ export const HeaderContainer = styled.div`
   .mobile-content{
     font-weight: 700;
     font-size: 1.2rem;
-    margin-top: -2px;
-
+   
     span {
       color:  #00d9ff;
     }

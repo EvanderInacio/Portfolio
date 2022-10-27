@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { List, X } from 'phosphor-react'
 import { HeaderContainer, MobileIcon, NavMenu } from './styles'
-import { Icons } from '../Links/styles'
 
 export function Header() {
   const [click, setClick] = useState(false)
@@ -12,7 +11,7 @@ export function Header() {
   }
 
   return (
-    <HeaderContainer style={{ position: 'fixed' }}>
+    <HeaderContainer style={{ position: 'fixed' }}> 
       <div className="mobile-content">
         <a href={'/'}>
           <span>E</span>vander
@@ -33,22 +32,22 @@ export function Header() {
               <span>Início</span>
             </a>
           </Link>
-          <Link href={'#about'}>
+          <Link href={'#about'} scroll={false}>
             <a>
               <span>Sobre</span>
             </a>
           </Link>
-          <Link href={'#skills'}>
+          <Link href={'#skills'} scroll={false}>
             <a>
               <span>Habilidades</span>
             </a>
           </Link>
-          <Link href={'#projects'}>
+          <Link href={'#projects'} scroll={false}>
             <a>
               <span>Projetos</span>
             </a>
           </Link>
-          <Link href={'#contact'}>
+          <Link href={'#contact'} scroll={false}>
             <a>
               <span>Contato</span>
             </a>

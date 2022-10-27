@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link'
-import { PaperPlaneRight } from 'phosphor-react'
 import React from 'react'
+import Link from 'next/link'
+import Typewriter from 'typewriter-effect';
+import { PaperPlaneRight } from 'phosphor-react'
 
 import { ButtonPrimary, Container } from '../../styles/styles'
 import { Content, ImgHome, HomeText } from './styles'
@@ -14,7 +15,16 @@ export function HomeHero() {
           <div className="cubo-animation"></div>
           <h3>Olá, eu sou</h3>
           <h1>Evander Inácio</h1>
-          <h2>Desenvolvedor Front-End.</h2>
+          <h2>
+            <Typewriter
+              options={{
+                strings: ['Front-End Developer.' , 'Desenvolvedor Front-End.'],
+                autoStart: true,
+                loop: true,
+                skipAddStyles: true,
+              }} 
+            />
+          </h2>
 
           <ButtonPrimary>
             <Link href={'#projects'}>

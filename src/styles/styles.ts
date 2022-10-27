@@ -10,7 +10,7 @@ export const Section = styled.section`
 `
 
 export const Container = styled.section`
-  padding-top: 1rem;
+  padding-top: 2rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ export const Title = styled.h2`
   font-size: 2.2rem;
   font-weight: 800;
   margin: 2rem 0;
-  padding-top: 2rem;
+  padding-top: 2.1rem;
   color: var(--first-color);
   z-index: 1;
   opacity: 1;

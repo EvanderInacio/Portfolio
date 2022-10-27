@@ -170,7 +170,7 @@ export default function Projeto({ project }: ProjectProps) {
           </Video>
 
           <ButtonSecondary>
-            <Link href={'/'}>
+            <Link href={'/#projects'}>
               <a>
                 <ArrowLeft 
                   style={{marginBottom: '-0.2rem'}} 

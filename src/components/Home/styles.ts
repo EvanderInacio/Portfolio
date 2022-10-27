@@ -16,10 +16,6 @@ export const Content = styled.div`
     padding-left: 2rem;
   }
 
-  // teste 
- 
-
-  // fim de teste
 `
 
 export const ImgHome = styled.div`
@@ -76,12 +72,12 @@ export const HomeText = styled.div`
       font-size: 1.2rem;
     }
     @media (min-width: 768px) {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
     color: #5252e0;
     font-weight: 600;
-    animation: line 8s steps(40) infinite alternate,
-      cursor 1s steps(40) infinite both;
+    /* animation: cursor 1s steps(40) infinite alternate ,
+      line 5s steps(40) 1s normal both;
     border-right: 4px solid #00d9ff;
     white-space: nowrap;
     overflow: hidden;
@@ -101,7 +97,7 @@ export const HomeText = styled.div`
       to {
         width: 13.7em;
       }
-    }
+    } */
   }
   .cubo-animation {
     position: absolute;

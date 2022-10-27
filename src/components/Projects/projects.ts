@@ -2,7 +2,7 @@ const projects = [
   {
     id: 1,
     url: 'portfolio',
-    img: '/skills/ImgPortfolio.png',
+    img: '/projects/portfolio/thumb.png',
     title: 'Portfolio',
     type: "Website",
     icon: "/projects/portfolio/home.webp",
