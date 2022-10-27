@@ -19,6 +19,7 @@ export default class MyDocument extends Document {
             content="Meu nome é Evander Inácio sou um Desenvolvedor Front-end. Confira meus projetos construídos."
           />
 
+          <meta httpEquiv="content-language" content="pt-br" />
           <link rel="canonical" href="https://evander.vercel.app" />
           <meta
             name="keywords"
@@ -41,8 +42,9 @@ export default class MyDocument extends Document {
           <meta property="og:url" content="https://evander.vercel.app" />
           <meta name="twitter:image" content="/ogimage.png" />
           <meta name="twitter:image:src" content="/ogimage.png" />
-
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta property="og:site_name" content="Evander Inácio - Portfolio" />
+          <meta name="rating" content="general" />
+          <meta property="og:locale" content="pt_BR" />
         </Head>
 
         <body>

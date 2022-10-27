@@ -48,7 +48,7 @@ const projects = [
       { img:'/projects/turtlemovie/detail-people.png'},
 
     ],
-    video: 'https://www.youtube.com/watch?v=VZsm-NGse6M&ab_channel=EvanderIn%C3%A1cio'
+    video: 'https://www.youtube.com/watch?v=wt2g4q2md9g&ab_channel=EvanderIn%C3%A1cio'
   },
   {
     id: 3,
@@ -97,7 +97,7 @@ const projects = [
       {img:'/projects/podcastr/podcastr-home-2.png'},    
       {img:'/projects/podcastr/podcastr-detail.png'},       
     ],
-    video: 'https://www.youtube.com/watch?v=VZsm-NGse6M&ab_channel=EvanderIn%C3%A1cio'
+    video: 'https://www.youtube.com/watch?v=a_OoBSceC80&ab_channel=EvanderIn%C3%A1cio'
   },
   {
     id: 5,
@@ -122,7 +122,7 @@ const projects = [
       {name: 'Home', img:'/projects/dsmeta/dsmeta.png'},
       {name: 'Footer', img:'/projects/dsmeta/dsmeta-footer.png'},
     ],
-    video: 'https://www.youtube.com/watch?v=VZsm-NGse6M&ab_channel=EvanderIn%C3%A1cio'
+    video: 'https://www.youtube.com/watch?v=CxHypCf8QYc&ab_channel=EvanderIn%C3%A1cio'
   },
   {
     id: 6,
@@ -145,7 +145,7 @@ const projects = [
       {name: 'Home', img:'/projects/github-blog/github-blog-detail.png'},
       {name: 'Home', img:'/projects/github-blog/github-blog-detail-2.png'},
     ],
-    video: 'https://www.youtube.com/watch?v=VZsm-NGse6M&ab_channel=EvanderIn%C3%A1cio'
+    video: 'https://www.youtube.com/watch?v=RcKQNz0n6Ts&ab_channel=EvanderIn%C3%A1cio'
   },
 ]
 

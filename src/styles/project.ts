@@ -15,7 +15,6 @@ export const Banner = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     cursor: pointer;
 
     @media (min-width: 468px) {

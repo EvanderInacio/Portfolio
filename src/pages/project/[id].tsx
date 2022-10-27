@@ -9,7 +9,6 @@ import { Header } from '../../components/Header'
 import projects from '../../components/Projects/projects'
 
 import { FiGithub, FiLink } from 'react-icons/fi'
-import { BsArrowLeftShort } from 'react-icons/bs'
 import {
   ProjectContainer,
   Banner,

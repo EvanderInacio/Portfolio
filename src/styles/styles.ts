@@ -61,6 +61,7 @@ export const Title = styled.h2`
 export const ButtonPrimary = styled.button`
   background-color: transparent;
   font-size: 1.1rem;
+  font-weight: 600;
   color: #d6d6dc;
   padding: 1.2rem;
   display: flex;
@@ -93,7 +94,7 @@ export const ButtonPrimary = styled.button`
   }
 
   &:hover {
-    color: black;
+    color: rgb(15, 10, 10);
     &:before {
       transform: scale(1);
       background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);

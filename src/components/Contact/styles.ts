@@ -26,6 +26,11 @@ export const ContactContent = styled.div`
     border-radius: 10px;
     background-color: var(--border-color);
     padding: 1rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     h4 {
       font-size: 1.3rem;
