@@ -56,14 +56,14 @@ export const Form = styled.form`
   .input-group {
     position: relative;
     margin: 10px 0;
-    width: 95vw;
-    max-width: 500px;
+    width: 90vw;
+    max-width: 650px;
   }
   .input-group textarea {
     max-width: 100%;
     min-width: 100%;
     max-height: 200px;
-    min-height: 100px;
+    min-height: 150px;
   }
 
   .input {

@@ -8,36 +8,29 @@ export const ProjectContainer = styled.div`
 export const Banner = styled.div`
   position: relative;
 
-  .link {
-    position: relative;
-    bottom: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
-    @media (min-width: 468px) {
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: end;
-      gap: 1rem;
-      right: 10%;
-    }
-
-    @media (min-width: 2000px) {
-      right: 14%;
-    }
-  }
-
   .bannerUrl {
     width: 100%;
-    height: 30rem;
+    height: 20rem;
     object-fit: cover;
     object-position: 0 30%;
     opacity: 0.5;
     border-bottom: 5px solid #141317;
     box-shadow: #101012 0px 10px 30px 1px;
+
+    @media (min-width: 768px) {
+    height: 27rem;
+    }
+
+    @media (min-width: 994px) {
+    height: 30rem;
+    }
+  }
+
+  .bannerContainer {
+    @media (min-width: 994px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .bannerContent {
@@ -92,6 +85,31 @@ export const Banner = styled.div`
         width: 15rem;
         height: 15rem;
       }
+    }
+  }
+
+  .link {
+    position: relative;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 468px) {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: end;
+      gap: 1rem;
+      right: 10%;
+    }
+    
+    @media (min-width: 768px) {
+      bottom: 10rem;
+    }
+
+    @media (min-width: 2000px) {
+      right: 14%;
     }
   }
 `

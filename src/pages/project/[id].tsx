@@ -1,11 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import Head from 'next/head';
+import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 import ReactPlayer from 'react-player'
 import { Footer } from '../../components/Footer'
-import { Header } from '../../components/Header'
 import projects from '../../components/Projects/projects'
 
 import { FiGithub, FiLink } from 'react-icons/fi'
@@ -84,33 +83,34 @@ export default function Projeto({ project }: ProjectProps) {
         <meta name="twitter:image:src" content={project.imgUrl} />
       </Head>
 
-      <Header />
       <ProjectContainer>
         <Banner>
           <img className="bannerUrl" src={project.imgUrl} alt={project.title} />
-          <div className="bannerContent">
-            <img src={project.icon} alt={project.title} />
-            <div>
-              <h1>{project.title}</h1>
-              <p>{project.type}</p>
+          <div className="bannerContainer">
+            <div className="bannerContent">
+              <img src={project.icon} alt={project.title} />
+              <div>
+                <h1>{project.title}</h1>
+                <p>{project.type}</p>
+              </div>
             </div>
-          </div>
 
-          <div className="link">
-            <Link href={project.web}>
-              <a target="_blank">
-                <ButtonPrimary>
-                  Live Demo <FiLink />
-                </ButtonPrimary>
-              </a>
-            </Link>
-            <Link href={project.github}>
-              <a target="_blank">
-                <ButtonPrimary>
-                  Github <FiGithub />
-                </ButtonPrimary>
-              </a>
-            </Link>
+            <div className="link">
+              <Link href={project.web}>
+                <a target="_blank">
+                  <ButtonPrimary>
+                    Live Demo <FiLink />
+                  </ButtonPrimary>
+                </a>
+              </Link>
+              <Link href={project.github}>
+                <a target="_blank">
+                  <ButtonPrimary>
+                    Github <FiGithub />
+                  </ButtonPrimary>
+                </a>
+              </Link>
+            </div>
           </div>
         </Banner>
 
@@ -183,11 +183,12 @@ export default function Projeto({ project }: ProjectProps) {
           <ButtonSecondary>
             <Link href={'/#projects'}>
               <a>
-                <ArrowLeft 
-                  style={{marginBottom: '-0.2rem'}} 
+                <ArrowLeft
+                  style={{ marginBottom: '-0.2rem' }}
                   weight="bold"
-                  size={18} 
-                  /> Voltar
+                  size={18}
+                />{' '}
+                Voltar
               </a>
             </Link>
           </ButtonSecondary>
