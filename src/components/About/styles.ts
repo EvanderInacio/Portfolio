@@ -27,6 +27,12 @@ export const AboutContainer = styled.section`
     text-align: start;
     max-width: 31rem;
   }
+  
+  .aboutDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
   @media (min-width: 994px) {
     display: grid;

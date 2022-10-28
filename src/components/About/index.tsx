@@ -25,14 +25,21 @@ export function About() {
         </div>
 
         <div className="aboutContent">
-          <p>
-            Meu nome é Evander Inácio, tenho 25 anos e moro em Mogi das Cruzes -
-            SP. Sou Desenvolvedor Front End, formado em Análise e
-            desenvolvimento de sistemas. Atualmente estou estudando e
-            desenvolvendo projetos web mais precisamente no Front-end, de modo a
-            ampliar meus conhecimentos e assim aprimorar ainda mais as
-            habilidades que possuo.
-          </p>
+          <div className="aboutDescription">
+            <p>
+              Sou um desenvolvedor Front-End que vive em Mogi das Cruzes-SP, sou
+              formado em Análise e desenvolvimento de sistemas.
+            </p>
+            <p>
+              Meu interesse e primeiro contato com desenvolvimento web começou
+              em 2022, com a criação de um site feito em Html, Css e JavaScript.
+            </p>
+            <p>
+              Atualmente estou estudando e desenvolvendo projetos web, de modo a
+              ampliar meus conhecimentos e assim aprimorar ainda mais as
+              habilidades que possuo.
+            </p>
+          </div>
           <ButtonPrimary>
             <b>Download CV</b> <DownloadSimple weight="bold" />
           </ButtonPrimary>
