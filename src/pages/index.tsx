@@ -15,7 +15,6 @@ export default function Home() {
     <>
       <Head>
         <title>Evander Inácio | Desenvolvedor Front-End </title>
-        <link rel="icon" href='/icon.svg'/>
       </Head>
 
       <Header />

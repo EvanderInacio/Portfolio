@@ -23,10 +23,10 @@ export default class MyDocument extends Document {
           <link rel="canonical" href="https://evander.vercel.app" />
           <meta
             name="keywords"
-            content="sites, web, desenvolvimento, programador, developer, frontend, front-end, website, portfolio, evander inacio, evander"
+            content="sites, web, desenvolvimento, programador, programação, developer, frontend, front-end, website, portfolio, evander inacio, evander"
           />
           <meta name="theme-color" content="#00d9ff" />
-          <meta name="copyright" content="evanderinacio 2022" />
+          <meta name="copyright" content="evander 2022" />
           <meta
             property="og:title"
             content="Evander Inácio - Desenvolvedor Front-End"
@@ -45,6 +45,8 @@ export default class MyDocument extends Document {
           <meta property="og:site_name" content="Evander Inácio - Portfolio" />
           <meta name="rating" content="general" />
           <meta property="og:locale" content="pt_BR" />
+
+          <link rel="icon" href='/icon.svg'/>
         </Head>
 
         <body>

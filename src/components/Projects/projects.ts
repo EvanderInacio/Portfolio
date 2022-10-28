@@ -6,8 +6,8 @@ const projects = [
     title: 'Portfolio',
     type: "Website",
     icon: "/projects/portfolio/home.webp",
-    github: 'https://github.com/EvanderInacio/PlayStation',
-    web: 'https://playstation-4.vercel.app/',
+    github: 'https://github.com/EvanderInacio/Portfolio',
+    web: 'https://evander.vercel.app/',
     description: 'Meu portfólio criado com o objetivo de mostrar meus projetos ao longo da minha carreira.',
     tags: [
       {name: "Next JS", icon: '/skills/next-js.svg' },
@@ -25,7 +25,7 @@ const projects = [
       {img:'/projects/portfolio/detail-3.png'},
       {img:'/projects/portfolio/detail-4.png'},
     ],
-    video: 'https://www.youtube.com/watch?v=lcThOxeERIE&ab_channel=EvanderIn%C3%A1cio'
+    video: 'https://www.youtube.com/watch?v=2ecQYkoziBM&ab_channel=EvanderIn%C3%A1cio'
   },
   {
     id: 2,
