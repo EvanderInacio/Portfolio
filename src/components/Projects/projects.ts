@@ -11,14 +11,21 @@ const projects = [
     description: 'Meu portfólio criado com o objetivo de mostrar meus projetos ao longo da minha carreira.',
     tags: [
       {name: "Next JS", icon: '/skills/next-js.svg' },
+      {name: "TypeScript", icon: '/skills/typescript.svg' },
       {name: "Styled Components", icon: '/skills/styled-components.svg' },
     ],
     print: [
-      {img:'/skills/ImgPortfolio.png'},
-      {img:'/projects/turtlemovie/turtle.png'},
-      {img:'/projects/playstation/playstation.webp'},
+      {img:'/projects/portfolio/thumb.png'},
+      {img:'/projects/portfolio/about.png'},
+      {img:'/projects/portfolio/skills.png'},
+      {img:'/projects/portfolio/projects.png'},
+      {img:'/projects/portfolio/contact.png'},
+      {img:'/projects/portfolio/detail-1.png'},
+      {img:'/projects/portfolio/detail-2.png'},
+      {img:'/projects/portfolio/detail-3.png'},
+      {img:'/projects/portfolio/detail-4.png'},
     ],
-    video: 'https://www.youtube.com/watch?v=VZsm-NGse6M&ab_channel=EvanderIn%C3%A1cio'
+    video: 'https://www.youtube.com/watch?v=lcThOxeERIE&ab_channel=EvanderIn%C3%A1cio'
   },
   {
     id: 2,
