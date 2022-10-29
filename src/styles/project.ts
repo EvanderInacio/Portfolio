@@ -14,8 +14,8 @@ export const Banner = styled.div`
     object-fit: cover;
     object-position: 0 30%;
     opacity: 0.5;
-    border-bottom: 5px solid #141317;
-    box-shadow: #101012 0px 10px 30px 1px;
+    border-bottom: 2px solid var(--border-color);
+    box-shadow: var(--border-color) 0px 10px 30px 1px;
 
     @media (min-width: 768px) {
     height: 27rem;
@@ -58,7 +58,7 @@ export const Banner = styled.div`
     }
 
     h1 {
-      color: #fff;
+      color: var(--white);
       font-weight: 800;
       font-size: 2.5rem;
     }
@@ -66,15 +66,15 @@ export const Banner = styled.div`
     p {
       font-size: 1.5rem;
       font-weight: 600;
-      color: #00d9ff;
+      color: var(--first-color);
     }
 
     img {
-      box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 40px 6px;
+      box-shadow: var(--border-color) 0px 28px 40px 6px;
       width: 10rem;
       height: 10rem;
       border-radius: 10px;
-      background: #101012;
+      background: #101014;
 
       @media (min-width: 768px) {
         width: 13rem;
@@ -154,12 +154,12 @@ export const Description = styled.div`
   }
 
   .tags {
-    border: 2px solid #0c0b0e;
-    box-shadow: #0c0b0e 0px 22px 40px 6px;
+    border: 2px solid var(--border-color);
+    box-shadow: var(--border-color) 0px 22px 40px 6px;
     border-radius: 10px;
     min-width: 12rem;
     padding: 1rem;
-    background-color: #0c0b0e;
+    background-color: var(--border-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -171,7 +171,7 @@ export const Description = styled.div`
 
     h4 {
       font-size: 1.5rem;
-      color: #00d9ff;
+      color: var(--first-color);
       font-weight: 800;
       margin-bottom: 1.5rem;
 
@@ -217,9 +217,9 @@ export const PrintContainer = styled.div`
 `
 
 export const Print = styled.div`
-  border: 5px solid #0c0b0e;
+  border: 5px solid var(--border-color);
   border-radius: 5px;
-  box-shadow: #0c0b0e 0px 25px 40px 6px;
+  box-shadow: var(--border-color) 0px 25px 40px 6px;
   width: 18rem;
 
   @media (min-width: 468px) {

@@ -26,7 +26,7 @@ export const HeaderContainer = styled.header`
     font-size: 1.2rem;
    
     span {
-      color:  #00d9ff;
+      color: var(--first-color);
     }
 
     @media(max-width: 994px) {

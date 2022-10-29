@@ -73,14 +73,14 @@ export const Form = styled.form`
     background: var(--border-color);
     padding: 1rem;
     font-size: 1rem;
-    color: #f5f5f5;
+    color: var(--text-primary);
     transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .user-label {
     position: absolute;
     text-align: center;
     left: 15px;
-    color: #e8e8e8;
+    color: var(--white);
     pointer-events: none;
     transform: translateY(1rem);
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -89,7 +89,7 @@ const projects = [
     img: '/projects/podcastr/podcastr-home.png',
     title: 'Podcastr',
     type: "Website",
-    icon: "/projects/podcastr/logo.svg",
+    icon: "/projects/podcastr/icon.svg",
     github: 'https://github.com/EvanderInacio/Podcastr',
     web: 'https://podcastr-evander.vercel.app/',
     description: 'Podcastr é uma plataforma construída para transmissão de podcast.',

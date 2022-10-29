@@ -55,7 +55,7 @@ export const HomeText = styled.div`
   h1 {
     font-size: 2.2rem;
     font-weight: 800;
-    color: #1100ff;
+    color: var(--first-color);
     background: linear-gradient(to left, #1f1670, #9307f1, #7109e7, #00d9ff);
     background-clip: text;
     -webkit-background-clip: text;
@@ -74,31 +74,10 @@ export const HomeText = styled.div`
     @media (min-width: 768px) {
       font-size: 2rem;
     }
-    color: #5252e0;
+    color: var(--second-color);
     font-weight: 600;
-    /* animation: cursor 1s steps(40) infinite alternate ,
-      line 5s steps(40) 1s normal both;
-    border-right: 4px solid #00d9ff;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-bottom: 2rem;
-    @keyframes cursor {
-      from {
-        border-right-color: #00d9ff;
-      }
-      to {
-        border-right-color: transparent;
-      }
-    }
-    @keyframes line {
-      from {
-        width: 0;
-      }
-      to {
-        width: 13.7em;
-      }
-    } */
   }
+  
   .cubo-animation {
     position: absolute;
     width: 30px;

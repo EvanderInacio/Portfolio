@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   margin-top: 5rem;
-  border-top: 4px solid #1e1e25;
+  border-top: 4px solid var(--border-second-color);
   padding: 1.3rem 0;
 
   display: flex;
@@ -24,7 +24,7 @@ export const FooterContainer = styled.footer`
 
     a {
       &:hover {
-        color: #00d9ff;
+        color: var(--first-color);
       }
     }
   }

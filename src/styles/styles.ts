@@ -62,7 +62,7 @@ export const ButtonPrimary = styled.button`
   background-color: transparent;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #d6d6dc;
+  color: var(--text-primary);
   padding: 1.2rem;
   display: flex;
   align-items: center;

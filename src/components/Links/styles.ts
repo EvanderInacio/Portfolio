@@ -19,7 +19,7 @@ export const Icons = styled.div`
   a {
     cursor: pointer;
     &:hover {
-      color: #00d9ff;
+      color: var(--first-color);
       transform: translateY(-4px);
       transition: transform 0.2s;
     }
@@ -30,7 +30,7 @@ export const Icons = styled.div`
     left: 8px;
     width: 3px;
     height: 6rem;
-    background: #00d9ff;
+    background: var(--first-color);
     border-radius: 5px;
   }
-`
+` 

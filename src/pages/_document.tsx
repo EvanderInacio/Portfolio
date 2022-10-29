@@ -6,6 +6,23 @@ export default class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head>
           <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          />
+          <meta
+            name="keywords"
+            content="Evander Inacio, programador, web, websites, Desenvolvedor Web Frontend, developer, desenvolvimento, programação, frontend, front-end, HTML, CSS, JavaScript, ReactJS, NextJS, website, portfolio, Profissional de TI, Desenvolvimento de Sites"
+          />
+          <meta
+            name="description"
+            content="Meu nome é Evander Inácio sou um Desenvolvedor Front-end. Confira meus projetos construídos."
+          />
+          <meta name="robots" content="index, follow" />
+          <meta name="rating" content="general" />
+          <meta name="language" content="pt-BR" />
+          <meta httpEquiv="content-language" content="pt-br" />
+
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
@@ -13,40 +30,28 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <meta name="author" content="Evander Inácio" />
-          <meta
-            name="description"
-            content="Meu nome é Evander Inácio sou um Desenvolvedor Front-end. Confira meus projetos construídos."
-          />
-
-          <meta httpEquiv="content-language" content="pt-br" />
           <link rel="canonical" href="https://evander.vercel.app" />
-          <meta
-            name="keywords"
-            content="sites, web, desenvolvimento, programador, programação, developer, frontend, front-end, website, portfolio, evander inacio, evander"
-          />
           <meta name="theme-color" content="#00d9ff" />
-          <meta name="copyright" content="evander 2022" />
+          <meta name="author" content="Evander Inácio" />
+          <meta name="creator" content="Evander Inácio" />
+          <meta name="copyright" content="© 2022 Evander Inácio" />
+
+          <meta property="og:site_name" content="Portfolio - Evander Inácio" />
           <meta
             property="og:title"
-            content="Evander Inácio - Desenvolvedor Front-End"
+            content="Evander Inácio | Desenvolvedor"
           />
           <meta
             property="og:description"
-            content="Portfolio - Front-End Web Developer"
+            content="Meu nome é Evander Inácio sou um Desenvolvedor Front-End. Confira meus projetos construídos."
           />
 
           <meta property="og:image" content="/ogimage.png" />
-          <meta property="og:image:secure_url" content="/ogimage.png" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://evander.vercel.app" />
           <meta name="twitter:image" content="/ogimage.png" />
-          <meta name="twitter:image:src" content="/ogimage.png" />
-          <meta property="og:site_name" content="Evander Inácio - Portfolio" />
-          <meta name="rating" content="general" />
-          <meta property="og:locale" content="pt_BR" />
 
-          <link rel="icon" href='/icon.svg'/>
+          <link rel="icon" href="/icon.svg" />
         </Head>
 
         <body>
