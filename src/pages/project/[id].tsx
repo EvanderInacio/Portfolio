@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-img-element */ 
 import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 import ReactPlayer from 'react-player'
-import { Footer } from '../../components/Footer'
 import projects from '../../components/Projects/projects'
+import { Footer } from '../../components/Footer'
 
 import { FiGithub, FiLink } from 'react-icons/fi'
 import {
@@ -68,7 +68,7 @@ export const getServerSideProps = async (context: any) => {
     }
   }
 }
-
+ 
 export default function Projeto({ project }: ProjectProps) {
   return (
     <>
@@ -83,7 +83,7 @@ export default function Projeto({ project }: ProjectProps) {
         <meta name="twitter:image:src" content={project.imgUrl} />
       </Head>
 
-      <ProjectContainer>
+      <ProjectContainer> 
         <Banner>
           <img className="bannerUrl" src={project.imgUrl} alt={project.title} />
           <div className="bannerContainer">

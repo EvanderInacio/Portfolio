@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from 'next/image'
 import { DownloadSimple, User } from 'phosphor-react'
-import Evander from '../../assets/Evander.webp'
 import { Container, Title } from '../../styles/styles'
 import { ButtonPrimary } from '../../styles/styles'
 import { AboutContainer } from './styles'

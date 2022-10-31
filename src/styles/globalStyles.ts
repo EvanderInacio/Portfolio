@@ -1,11 +1,18 @@
+import { createGlobalStyle } from 'styled-components'
+
+export const GlobalStyles = createGlobalStyle`
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
+}
+
+html.normal-scroll {
+  scroll-behavior: auto;
 }
 
 :root {
@@ -47,3 +54,4 @@ a {
 ::-webkit-scrollbar-thumb:hover{
   background-color: var(--first-color);
 }
+`
