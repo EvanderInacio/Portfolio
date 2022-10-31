@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router';
 import { useEffect } from 'react'
+import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../styles/GlobalStyles';
 
 function useNormalScrollRoutes() {
@@ -20,10 +21,10 @@ function useNormalScrollRoutes() {
 function MyApp({ Component, pageProps }: AppProps) {
   useNormalScrollRoutes();
   return (
-    <>
-      <GlobalStyles />
-      <Component {...pageProps} />
-    </>
+    <ThemeProvider theme={GlobalStyles}>
+       <GlobalStyles />
+        <Component {...pageProps} />
+    </ThemeProvider>
   )
 }
 
