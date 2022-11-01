@@ -9,17 +9,17 @@ export function Footer() {
       <h4> &copy; 2022 Evander Inácio</h4>
       <div className="links">
         <Link href={'https://github.com/EvanderInacio'}>
-          <a target="_blank">
+          <a target="_blank" aria-label="Link para o Github">
             <FiGithub />
           </a>
         </Link>
         <Link href={'https://www.linkedin.com/in/evander-inacio/'}>
-          <a target="_blank">
+          <a target="_blank" aria-label="Link para o Linkedin">
             <FiLinkedin />
           </a>
         </Link>
         <Link href={'https://api.whatsapp.com/send?phone=5511995085916'}>
-          <a target="_blank">
+          <a target="_blank" aria-label="Link para entrar em contato via whatsapp">
             <FaWhatsapp />
           </a>
         </Link>

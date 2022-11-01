@@ -11,7 +11,7 @@ export function Header() {
   }
 
   return (
-    <HeaderContainer style={{ position: 'fixed' }}> 
+    <HeaderContainer style={{ position: 'fixed' }}>
       <div className="mobile-content">
         <a href={'/'}>
           <span>E</span>vander
@@ -27,31 +27,45 @@ export function Header() {
 
       <NavMenu onClick={handleOpen} click={click}>
         <ul>
-          <Link href={'/'}>
-            <a>
-              <span>Início</span>
-            </a>
-          </Link>
-          <Link href={'#about'} scroll={false}>
-            <a>
-              <span>Sobre</span>
-            </a>
-          </Link>
-          <Link href={'#skills'} scroll={false}>
-            <a>
-              <span>Habilidades</span>
-            </a>
-          </Link>
-          <Link href={'#projects'} scroll={false}>
-            <a>
-              <span>Projetos</span>
-            </a>
-          </Link>
-          <Link href={'#contact'} scroll={false}>
-            <a>
-              <span>Contato</span>
-            </a>
-          </Link>
+          <li>
+            <Link href={'/'}>
+              <a>
+                <span>Início</span>
+              </a>
+            </Link>
+          </li>
+
+          <li>
+            <Link href={'#about'} scroll={false}>
+              <a>
+                <span>Sobre</span>
+              </a>
+            </Link>
+          </li>
+
+          <li>
+            <Link href={'#skills'} scroll={false}>
+              <a>
+                <span>Habilidades</span>
+              </a>
+            </Link>
+          </li>
+
+          <li>
+            <Link href={'#projects'} scroll={false}>
+              <a>
+                <span>Projetos</span>
+              </a>
+            </Link>
+          </li>
+          
+          <li>
+            <Link href={'#contact'} scroll={false}>
+              <a>
+                <span>Contato</span>
+              </a>
+            </Link>
+          </li>
         </ul>
       </NavMenu>
     </HeaderContainer>

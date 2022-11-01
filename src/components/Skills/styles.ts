@@ -35,7 +35,7 @@ export const SkillsContent = styled.div`
   flex-direction: column;
   gap: 1rem;
 
-  h5 {
+  h4 {
     z-index: 1;
   }
 

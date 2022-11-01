@@ -18,7 +18,14 @@ export const HeaderContainer = styled.header`
   @media(min-width: 995px) {
     display: flex;
     justify-content: space-around;
-    padding-top: 1rem;
+    padding: 1rem 0;
+    align-items: center;
+    box-shadow: var(--background-second) 0px 10px 30px 1px;
+  }
+
+  @media(min-width: 2000px) {
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .mobile-content{

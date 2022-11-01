@@ -29,7 +29,7 @@ export function Skills() {
               src={skill.img} 
               alt={skill.title}
               />
-              <h5>{skill.title}</h5>
+              <h4>{skill.title}</h4>
             <span className='border'></span>
           </SkillsContent>
         )

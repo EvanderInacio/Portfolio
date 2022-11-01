@@ -17,6 +17,7 @@ html.normal-scroll {
 
 :root {
   --background: #121216;
+  --background-second: #121016;
   --first-color:  #00d9ff;
   --second-color: #5252e0;
   --text-primary: #d6d6dc;

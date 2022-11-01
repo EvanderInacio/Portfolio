@@ -50,60 +50,71 @@ export function Contact() {
           method="POST"
         >
           <input type="hidden" name="_template" value="box" />
+          
           <div className="input-group">
             <input
-              placeholder=" "
-              required
               type="text"
               name="name"
+              id="name"
+              autoComplete="name"
+              placeholder=" "
+              required
               className="input"
             />
-            <label className="user-label">
+            <label htmlFor="name" className="user-label">
               Nome{' '}
               <span>
                 <User size={15} weight="bold" />
               </span>
             </label>
           </div>
+
           <div className="input-group">
             <input
-              placeholder=" "
-              required
               type="email"
               name="email"
+              autoComplete="email"
+              id="email"
+              placeholder=" "
+              required
               className="input"
             />
-            <label className="user-label">
+            <label htmlFor="email" className="user-label">
               Email{' '}
               <span>
                 <At size={15} weight="bold" />
               </span>
             </label>
           </div>
+
           <div className="input-group">
             <input
-              placeholder=" "
-              required
               type="text"
               name="subject"
+              id="subject"
+              autoComplete="subject"
+              placeholder=" "
+              required
               className="input"
             />
-            <label className="user-label">
+            <label htmlFor="subject" className="user-label">
               Assunto{' '}
               <span>
                 <ChatText size={15} weight="bold" />
               </span>
             </label>
           </div>
+
           <div className="input-group">
             <textarea
-              placeholder=" "
-              required
               name="description"
+              id="description"
+              autoComplete="description"
+              required
+              placeholder=" "
               className="input"
-              id=""
             ></textarea>
-            <label className="user-label">
+            <label htmlFor="description" className="user-label">
               Mensagem{' '}
               <span>
                 <ChatCircleText size={15} weight="bold" />
