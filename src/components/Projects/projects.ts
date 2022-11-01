@@ -25,7 +25,7 @@ const projects = [
       {img:'/projects/portfolio/detail-3.png'},
       {img:'/projects/portfolio/detail-4.png'},
     ],
-    video: 'https://www.youtube.com/watch?v=2ecQYkoziBM&ab_channel=EvanderIn%C3%A1cio'
+    video: 'https://www.youtube.com/watch?v=8Ek_BFSi8Pk&t=2s&ab_channel=EvanderIn%C3%A1cio'
   },
   {
     id: 2,
