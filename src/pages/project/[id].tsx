@@ -23,6 +23,18 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
 import { ArrowLeft, ChatCenteredText, Image, YoutubeLogo } from 'phosphor-react'
 
+interface Tag {
+  id: string
+  name: string
+  icon: string
+}
+
+interface Print {
+  id: string
+  img: string
+  name: string
+}
+
 interface Project {
   icon: string
   imgUrl: string
@@ -33,8 +45,8 @@ interface Project {
   github: string
   web: string
   url: string
-  tags: [string, string]
-  print: [string, string]
+  tags: Tag[]
+  print: Print[]
   video: string
 }
 
@@ -127,7 +139,7 @@ export default function Projeto({ project }: ProjectProps) {
           <div className="tags">
             <h4>Tecnologias</h4>
             {project.tags &&
-              project.tags.map((tag: string | any) => {
+              project.tags.map((tag) => {
                 return (
                   <div className="tag-content" key={tag.id}>
                     <img src={tag.icon} alt={tag.name} />
@@ -155,7 +167,7 @@ export default function Projeto({ project }: ProjectProps) {
               interval={4000}
             >
               {project.print &&
-                project.print.map((print: string | any) => {
+                project.print.map((print) => {
                   return <img key={print.id} src={print.img} alt={print.name} />
                 })}
             </Carousel>

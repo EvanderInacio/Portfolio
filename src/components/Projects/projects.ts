@@ -42,7 +42,6 @@ const projects = [
       {name: "React Router", icon: '/skills/code.svg' },
       {name: "TypeScript", icon: '/skills/typescript.svg' },
       {name: "Styled Components", icon: '/skills/styled-components.svg' },
-
     ],
     print: [
       { img:'/projects/turtlemovie/turtle-movie.png'},
@@ -53,7 +52,6 @@ const projects = [
       { img:'/projects/turtlemovie/detail-video.png'},
       { img:'/projects/turtlemovie/peoples.png'},
       { img:'/projects/turtlemovie/detail-people.png'},
-
     ],
     video: 'https://www.youtube.com/watch?v=wt2g4q2md9g&ab_channel=EvanderIn%C3%A1cio'
   },

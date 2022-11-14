@@ -12,8 +12,6 @@ interface Projects {
   title: string
   type: string
   img: string
-  description: string
-  tags?: [name: string, icon: string]
 }
 
 export function Projects() {
