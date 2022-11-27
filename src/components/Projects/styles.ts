@@ -36,6 +36,7 @@ export const ProjectsContent = styled.div`
 
   &:hover{
     border-color: #00d9ff;
+    border-radius: 15px;
   }
 
   img {
