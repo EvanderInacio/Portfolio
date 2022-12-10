@@ -29,11 +29,6 @@ html.normal-scroll {
   --border-second-color: #1e1e25;
 }
 
-:focus {
-  outline: transparent;
-  box-shadow: 0 0 0 2px var(--first-color);
-}
-
 body {
   background: var(--background);
   color: var(--text-primary);
