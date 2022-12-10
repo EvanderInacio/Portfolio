@@ -57,7 +57,7 @@ interface Click {
   readonly click : boolean; 
 }
 
-export const NavMenu = styled.div< Click >`
+export const NavMenu = styled.nav< Click >`
   @media (max-width: 994px) {
     height: 100vh;
     width: 100vw;
@@ -66,6 +66,7 @@ export const NavMenu = styled.div< Click >`
     display: ${({click}) => (click ? 'block' : 'none')};
     opacity: 0.95;
   }
+  
   ul {
     display: flex;
     gap: 1.2rem;

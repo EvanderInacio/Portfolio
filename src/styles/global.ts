@@ -23,10 +23,15 @@ html.normal-scroll {
   --text-primary: #d6d6dc;
   --text-secondary: #a9a9a9;
   --hover-color: rgb(0, 217, 255, 0.7);
-  --hover-second-color: rgb(80, 82, 224, 0.7);;
+  --hover-second-color: rgb(80, 82, 224, 0.7);
   --white: #f6f2f2;
   --border-color: #0c0b0e;
   --border-second-color: #1e1e25;
+}
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--first-color);
 }
 
 body {
