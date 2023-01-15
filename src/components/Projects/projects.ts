@@ -178,6 +178,31 @@ const projects = [
     ],
     video: 'https://www.youtube.com/watch?v=PZpp2sCm0zY&t=11s&ab_channel=EvanderIn%C3%A1cio'
   },
+  {
+    id: 7,
+    url: 'pomodoro',
+    img: '/projects/pomodoro/pomodoro-home.png',
+    title: 'Pomodoro Timer',
+    type: "App",
+    icon: "/projects/pomodoro/timer.png",
+    github: 'https://github.com/EvanderInacio/Pomodoro-Timer',
+    web: 'https://pomodoro-timer-evander.vercel.app/',
+    description: 'Pomodoro, o objetivo deste aplicativo é ajudá-lo a se concentrar em qualquer tarefa em que esteja trabalhando, como estudar, escrever ou codificar. Este aplicativo é inspirado na Técnica Pomodoro, que é um método de gerenciamento de tempo desenvolvido por Francesco Cirillo.',
+    tags: [
+      {name: "React JS", icon: '/skills/react.svg' },
+      {name: "Styled Components", icon: '/skills/styled-components.svg' },
+      {name: "TypeScript", icon: '/skills/typescript.svg' },
+      {name: "React-hook-form", icon: '/skills/code.svg' },
+    ],
+    print: [
+      {name: 'Login', img:'/projects/pomodoro/pomodoro-home.png'},
+      {name: 'Home-light', img:'/projects/pomodoro/pomodoro-home-action.png'},
+      {name: 'Home-dark', img:'/projects/pomodoro/pomodoro-history.png'},
+      {name: 'Chat', img:'/projects/pomodoro/pomodoro-history-2.png'},
+
+    ],
+    video: 'https://www.youtube.com/watch?v=c6fEo2CYj0k&ab_channel=EvanderIn%C3%A1cio'
+  },
 ]
 
 export default projects
