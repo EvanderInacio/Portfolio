@@ -54,7 +54,7 @@ export const Banner = styled.div`
     }
 
     @media (min-width: 1500px) {
-      padding-left: 10%;
+      padding-left: 15%;
     }
 
     h1 {

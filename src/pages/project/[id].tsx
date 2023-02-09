@@ -111,14 +111,14 @@ export default function Projeto({ project }: ProjectProps) {
               <Link href={project.web}>
                 <a target="_blank">
                   <ButtonPrimary>
-                    Live Demo <FiLink />
+                    Live Demo <FiLink size={18} />
                   </ButtonPrimary>
                 </a>
               </Link>
               <Link href={project.github}>
                 <a target="_blank">
                   <ButtonPrimary>
-                    Github <FiGithub />
+                    Github <FiGithub size={18} />
                   </ButtonPrimary>
                 </a>
               </Link>

@@ -203,6 +203,30 @@ const projects = [
     ],
     video: 'https://www.youtube.com/watch?v=c6fEo2CYj0k&ab_channel=EvanderIn%C3%A1cio'
   },
+  {
+    id: 8,
+    url: 'pokedex',
+    img: '/projects/pokedex/pokedex-home.png',
+    title: 'Pokedex',
+    type: "Website",
+    icon: "/projects/pokedex/logo.svg",
+    github: 'https://github.com/EvanderInacio/Pokedex',
+    web: 'https://pokedex-evander.vercel.app/',
+    description: 'O projeto consiste em uma plataforma web que tem como funcionalidade listar todos os Pokémons e exibir seus atributos. Todos os dados sobre os pokémons foram obtidos através da PokéApi.',
+    tags: [
+      {name: "Next JS", icon: '/skills/next-js.svg' },
+      {name: "TypeScript", icon: '/skills/typescript.svg' },
+      {name: "Styled Components", icon: '/skills/styled-components.svg' },
+    ],
+    print: [
+      {name: 'Home', img:'/projects/pokedex/pokedex-index.png'},
+      {name: 'Home-2', img:'/projects/pokedex/pokedex-home.png'},
+      {name: 'Detail', img:'/projects/pokedex/pokedex-detail.png'},
+      {name: 'Detail-2', img:'/projects/pokedex/pokedex-detail-about.png'},
+      {name: 'Detail-3', img:'/projects/pokedex/pokedex-detail-stats.png'},
+    ],
+    video: 'https://www.youtube.com/watch?v=gWCbt85ltto&ab_channel=EvanderIn%C3%A1cio'
+  },
 ]
 
 export default projects
