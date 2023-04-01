@@ -19,7 +19,7 @@ export function Works() {
             <ul>
               <h3>Ferramentas usadas</h3>
               {work.tags.map(tag => (
-                <img src={tag.icon} alt={tag.name} />
+                <img key={tag.name} src={tag.icon} alt={tag.name} />
               ))}
             </ul>
             <button>{work.github} <span><BiBlock /></span></button>
