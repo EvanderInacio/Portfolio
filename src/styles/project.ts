@@ -15,7 +15,7 @@ export const Banner = styled.div`
     object-position: 0 30%;
     opacity: 0.5;
     border-bottom: 2px solid ${props => props.theme.border};
-    box-shadow: ${props => props.theme.border} 0px 10px 30px 1px;
+    box-shadow: ${props => props.theme.border} 0px 15px 30px 1px;
 
     @media (min-width: 768px) {
     height: 27rem;
@@ -74,7 +74,7 @@ export const Banner = styled.div`
     }
 
     img {
-      box-shadow: ${props => props.theme.border} 0px 28px 40px 6px;
+      box-shadow: ${props => props.theme.border} 0 18px 40px 6px;
       width: 10rem;
       height: 10rem;
       border-radius: 10px;
@@ -163,7 +163,7 @@ export const Description = styled.div`
     border-radius: 10px;
     min-width: 12rem;
     padding: 1rem;
-    background-color: ${props => props.theme.border};
+    background-color: ${props => props.theme.backgroundSecond};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
