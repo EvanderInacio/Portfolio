@@ -8,10 +8,10 @@ export const Scroll = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-  color: var(--first-color);
+  color: ${props => props.theme.firstColor};
   z-index: 9;
 
   &:hover {
-    color: var(--second-color);
+    color: ${props => props.theme.secondColor};
   }
 `

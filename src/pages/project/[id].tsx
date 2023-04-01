@@ -2,21 +2,14 @@
 /* eslint-disable @next/next/no-img-element */ 
 import Head from 'next/head'
 import Link from 'next/link'
-import React from 'react'
+//import React from 'react'
 import ReactPlayer from 'react-player'
 import projects from '../../components/Projects/projects'
 import { Footer } from '../../components/Footer'
 
 import { FiGithub, FiLink } from 'react-icons/fi'
-import {
-  ProjectContainer,
-  Banner,
-  Description,
-  PrintContainer,
-  Print,
-  ContainerVideo,
-  Video
-} from '../../styles/project'
+import { ProjectContainer, Banner, Description, PrintContainer, Print, ContainerVideo,
+Video } from '../../styles/project'
 import { ButtonPrimary, ButtonSecondary, Title } from '../../styles/styles'
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
@@ -189,7 +182,7 @@ export default function Projeto({ project }: ProjectProps) {
               controls={true}
               pip
               config={{ file: { forceHLS: true } }}
-            ></ReactPlayer>
+            />
           </Video>
 
           <ButtonSecondary>

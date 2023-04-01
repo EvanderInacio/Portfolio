@@ -18,7 +18,7 @@ export const AllContainer = styled.div`
     font-weight: 900;
     font-size: 1.8rem;
     text-align: center;
-    color: #00d9ff;
+    color: ${props => props.theme.firstColor};
   }
 `
 
@@ -45,9 +45,9 @@ export const AllContent = styled.div`
     gap: 5px;
     cursor: pointer;
     text-align: center;
-    border: 0.25em solid var(--second-color);
+    border: 0.25em solid ${props => props.theme.secondColor};
     padding: 1em 3em;
-    color: var(--white);
+    color: ${props => props.theme.white};
     font-size: 15px;
     font-weight: 700;
     background-color: transparent;
@@ -59,11 +59,11 @@ export const AllContent = styled.div`
 
   button:hover {
     color: black;
-    background-color: var(--white);
-    box-shadow: 0 0 1em 0.25em var(--hover-second-color), 0 0 4em 2em var(--hover-second-color),
-      inset 0 0 0.75em 0.25em var(--white);
+    background-color: ${props => props.theme.white};
+    box-shadow: 0 0 1em 0.25em ${props => props.theme.hoverSecond},
+      0 0 4em 2em ${props => props.theme.hoverSecond},
+      inset 0 0 0.75em 0.25em ${props => props.theme.white};
   }
-
 `
 
 export const Cubo = styled.div`

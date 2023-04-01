@@ -19,7 +19,7 @@ export const Icons = styled.div`
   a {
     cursor: pointer;
     &:hover {
-      color: var(--first-color);
+      color: ${props => props.theme.firstColor};
       transform: translateY(-4px);
       transition: transform 0.2s;
     }
@@ -30,7 +30,7 @@ export const Icons = styled.div`
     left: 8px;
     width: 3px;
     height: 6rem;
-    background: var(--first-color);
+    background: ${props => props.theme.firstColor};
     border-radius: 5px;
   }
 ` 

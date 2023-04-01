@@ -23,7 +23,7 @@ export const Title = styled.h2`
   font-weight: 800;
   margin: 2rem 0;
   padding-top: 2.1rem;
-  color: var(--first-color);
+  color: ${props => props.theme.firstColor};
   z-index: 1;
   opacity: 1;
 
@@ -41,7 +41,7 @@ export const Title = styled.h2`
     top: 3px;
     left: 50%;
     right: 50%;
-    color: var(--second-color);
+    color: ${props => props.theme.secondColor};
     opacity: 0.2;
     font-weight: 800;
     font-size: 2.6rem;
@@ -62,7 +62,7 @@ export const ButtonPrimary = styled.button`
   background-color: transparent;
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: ${props => props.theme.textPrimary};
   padding: 1.2rem;
   display: flex;
   align-items: center;
@@ -103,64 +103,66 @@ export const ButtonPrimary = styled.button`
 
   .btn {
     &::before {
-    transform: scaleX(0);
-  }
-
-  &:hover {
-    color: black;
-    &:before {
-      transform: scaleX(1);
-      background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);
+      transform: scaleX(0);
     }
-  }
+
+    &:hover {
+      color: black;
+      &:before {
+        transform: scaleX(1);
+        background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);
+      }
+    }
   }
 `
 
 export const ButtonSecondary = styled.button`
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    margin: 50px auto;
-    border: 0.25em solid var(--first-color);
-    padding: 1rem 2rem;
-    color: var(--white);
-    font-size: 1rem;
-    font-weight: 700;
-    background-color: transparent;
-    border-radius: 1em;
-    outline: none;
-    box-shadow: 0 0 1em 0.25em var(--second-color),
-      0 0 4em 1em var(--first-color) inset 0 0 0.75em 0.25em var(--second-color);
-    position: relative;
-    transition: all 0.3s;
-    
-    
-    &::after {
-      pointer-events: none;
-      content: '';
-      position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin: 50px auto;
+  border: 0.25em solid ${props => props.theme.firstColor};
+  padding: 1rem 2rem;
+  color: ${props => props.theme.white};
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em ${props => props.theme.secondColor},
+    0 0 4em 1em ${props => props.theme.firstColor} inset 0 0 0.75em 0.25em
+      ${props => props.theme.secondColor};
+  position: relative;
+  transition: all 0.3s;
+
+  &::after {
+    pointer-events: none;
+    content: '';
+    position: absolute;
     top: 120%;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--first-color);
+    background-color: ${props => props.theme.firstColor};
     filter: blur(2em);
     opacity: 0.7;
     transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
   }
-  
+
   &:hover {
     cursor: pointer;
     color: black;
-    background-color: var(--white);
-    box-shadow: 0 0 1em 0.25em var(--hover-color), 0 0 4em 2em var(--hover-color),
-      inset 0 0 0.75em 0.25em var(--white);
+    background-color: ${props => props.theme.white};
+    box-shadow: 0 0 1em 0.25em ${props => props.theme.hover},
+      0 0 4em 2em ${props => props.theme.hover},
+      inset 0 0 0.75em 0.25em ${props => props.theme.white};
   }
 
   &:active {
-    box-shadow: 0 0 0.6em 0.25em var(--hover-color), 0 0 2.5em 2em var(--hover-color),
-      inset 0 0 0.5em 0.25em var(--white);
+    box-shadow: 0 0 0.6em 0.25em ${props => props.theme.hover},
+      0 0 2.5em 2em ${props => props.theme.hover},
+      inset 0 0 0.5em 0.25em ${props => props.theme.white};
   }
 `

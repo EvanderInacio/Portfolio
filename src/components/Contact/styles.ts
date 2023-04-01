@@ -24,7 +24,7 @@ export const ContactContent = styled.div`
 
   .contact-content {
     border-radius: 10px;
-    background-color: var(--border-color);
+    background-color: ${props => props.theme.border};
     padding: 1rem 2rem;
     text-align: center;
     display: flex;
@@ -37,12 +37,12 @@ export const ContactContent = styled.div`
       margin-bottom: 8px;
     }
 
-   span { 
-    color: var(--text-secondary);
-    &:hover {
-      color: var(--first-color);
+    span {
+      color: ${props => props.theme.textSecondary};
+      &:hover {
+        color: ${props => props.theme.firstColor};
+      }
     }
-   }
   }
   margin-bottom: 3rem;
 `
@@ -68,19 +68,19 @@ export const Form = styled.form`
 
   .input {
     width: 100%;
-    border: solid 2px var(--border-color);
+    border: solid 2px ${props => props.theme.border};
     border-radius: 10px;
-    background: var(--border-color);
+    background: ${props => props.theme.border};
     padding: 1rem;
     font-size: 1rem;
-    color: var(--text-primary);
+    color: ${props => props.theme.textPrimary};
     transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .user-label {
     position: absolute;
     text-align: center;
     left: 15px;
-    color: var(--white);
+    color: ${props => props.theme.white};
     pointer-events: none;
     transform: translateY(1rem);
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -90,8 +90,8 @@ export const Form = styled.form`
   input:valid,
   textarea:valid {
     outline: none;
-    border: 2px solid var(--second-color);
-    background: var(--background);
+    border: 2px solid ${props => props.theme.secondColor};
+    background: ${props => props.theme.background};
   }
 
   .input:focus ~ label,
@@ -99,9 +99,8 @@ export const Form = styled.form`
   input:not(:placeholder-shown) ~ label,
   textarea:valid ~ label {
     transform: translateY(-50%) scale(0.8);
-    background-color: var(--background);
+    background-color: ${props => props.theme.background};
     padding: 0 0.8em;
-    color: var(--first-color);
+    color: ${props => props.theme.firstColor};
   }
-
 `

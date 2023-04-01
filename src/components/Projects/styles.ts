@@ -31,11 +31,11 @@ export const ProjectsContent = styled.div`
   transition: transform 0.3s;
   overflow: hidden;
 
-  border: 3.5px solid var(--border-second-color);
-  box-shadow: var(--border-color) 0px 10px 15px 10px;
+  border: 3.5px solid ${props => props.theme.borderSecond};
+  box-shadow: ${props => props.theme.border} 0px 10px 15px 10px;
 
   &:hover{
-    border-color: #00d9ff;
+    border-color: ${props => props.theme.firstColor};
     border-radius: 15px;
   }
 
@@ -70,13 +70,13 @@ export const ProjectsContent = styled.div`
       font-weight: 900;
       font-size: 1.8rem;
       text-align: center;
-      color: #00d9ff;
+      color: ${props => props.theme.firstColor};
     }
 
     span {
       font-size: 1.1rem;
       font-weight: 600;
-      color: #5252e0;
+      color: ${props => props.theme.secondColor};
     }
   }
 

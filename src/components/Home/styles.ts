@@ -44,7 +44,7 @@ export const ImgHome = styled.div`
 
 export const HomeText = styled.div`
   h3 {
-    color: var(--text-secondary);
+    color: ${props => props.theme.secondColor};
     @media (max-width: 350px) {
       font-size: 0.9rem;
     }
@@ -55,7 +55,7 @@ export const HomeText = styled.div`
   h1 {
     font-size: 2.2rem;
     font-weight: 800;
-    color: var(--first-color);
+    color: ${props => props.theme.firstColor};
     background: linear-gradient(to left, #1f1670, #9307f1, #7109e7, #00d9ff);
     background-clip: text;
     -webkit-background-clip: text;
@@ -74,7 +74,7 @@ export const HomeText = styled.div`
     @media (min-width: 768px) {
       font-size: 2rem;
     }
-    color: var(--second-color);
+    color: ${props => props.theme.secondColor};
     font-weight: 600;
   }
   

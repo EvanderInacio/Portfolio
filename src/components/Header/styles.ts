@@ -9,35 +9,35 @@ export const HeaderContainer = styled.header`
   font-size: 1.2rem;
   position: relative;
   z-index: 10;
-  background: var(--background);
+  background: ${props => props.theme.background};
 
   a {
-    color: var(--text-primary);
+    color: ${props => props.theme.textPrimary};
   }
 
-  @media(min-width: 995px) {
+  @media (min-width: 995px) {
     display: flex;
     justify-content: space-around;
     padding: 1rem 0;
     align-items: center;
-    box-shadow: var(--background-second) 0px 10px 30px 1px;
+    box-shadow: ${props => props.theme.background} 0px 10px 30px 1px;
   }
 
-  @media(min-width: 2000px) {
+  @media (min-width: 2000px) {
     display: flex;
     justify-content: space-evenly;
   }
 
-  .mobile-content{
+  .mobile-content {
     font-weight: 700;
     font-size: 1.2rem;
-   
+
     span {
-      color: var(--first-color);
+      color: ${props => props.theme.firstColor};
     }
 
-    @media(max-width: 994px) {
-      margin: .8rem 1rem 1rem;
+    @media (max-width: 994px) {
+      margin: 0.8rem 1rem 1rem;
     }
   }
 `
@@ -53,44 +53,44 @@ export const MobileIcon = styled.div`
   }
 `
 
-interface Click {  
-  readonly click : boolean; 
+interface Click {
+  readonly click: boolean
 }
 
-export const NavMenu = styled.nav< Click >`
+export const NavMenu = styled.nav<Click>`
   @media (max-width: 994px) {
     height: 100vh;
     width: 100vw;
-    background: var(--background);
+    background: ${props => props.theme.background};
     z-index: 10;
-    display: ${({click}) => (click ? 'block' : 'none')};
+    display: ${({ click }) => (click ? 'block' : 'none')};
     opacity: 0.95;
   }
-  
+
   ul {
     display: flex;
     gap: 1.2rem;
     justify-content: center;
     align-items: center;
 
-    a { 
+    a {
       gap: 4px;
       font-size: 1.2rem;
-      font-weight: 600; 
-      color: var(--text-primary);
+      font-weight: 600;
+      color: ${props => props.theme.textPrimary};
       height: 1rem;
       cursor: pointer;
-      
+
       span {
         line-height: 1.08;
         white-space: nowrap;
         position: relative;
-        
+
         &:before {
           content: '';
           height: 2px;
           width: auto;
-          background-color: var(--first-color);
+          background-color: ${props => props.theme.firstColor};
           border-radius: 0px 0px 4px 4px;
           position: absolute;
           bottom: -6px;
@@ -104,7 +104,7 @@ export const NavMenu = styled.nav< Click >`
         }
       }
       &:hover {
-        color: var(--first-color);
+        color: ${props => props.theme.firstColor};
         span:before {
           transform: scaleX(1);
           visibility: visible;
@@ -112,8 +112,8 @@ export const NavMenu = styled.nav< Click >`
         }
       }
     }
-    
-    @media(max-width: 994px) {
+
+    @media (max-width: 994px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;

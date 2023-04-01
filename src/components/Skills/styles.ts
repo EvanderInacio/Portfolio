@@ -70,7 +70,7 @@ export const SkillsContent = styled.div`
       content: '';
       position: absolute;
       inset: 5px;
-      background: var(--border-color);
+      background: ${props => props.theme.border};
       border-radius: 20px;
     }
   }
