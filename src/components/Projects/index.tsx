@@ -5,6 +5,7 @@ import { ProjectsContainer, ProjectsContent } from './styles'
 import { Container, Title } from '../../styles/styles'
 import { AllProjects } from './Github'
 import { Briefcase } from 'phosphor-react'
+import { Works } from './Works'
 
 interface Projects {
   slug: string
@@ -21,6 +22,7 @@ export function Projects() {
         Projetos
         <span><Briefcase /> Projects</span>
       </Title>
+      <Works />
       <ProjectsContainer>
         {projects.map(project => {
           return (
