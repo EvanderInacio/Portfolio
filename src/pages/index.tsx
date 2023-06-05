@@ -9,6 +9,7 @@ import { ScrollTop } from '../components/ScrollTop'
 import { Section } from '../styles/styles'
 import { Contact } from '../components/Contact'
 import { Footer } from '../components/Footer'
+import { Education } from '../components/Education'
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <HomeHero />
         <About />
         <Skills />
+        <Education />
         <Projects />
         <Contact />
       </Section>
