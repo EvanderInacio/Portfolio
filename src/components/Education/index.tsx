@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */ 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
 
@@ -14,6 +15,7 @@ import {
 } from './styles'
 import educations from './educations'
 import certificates from './certificates'
+import Image from 'next/image'
 
 export function Education() {
   return (
@@ -34,7 +36,7 @@ export function Education() {
                     <img src={education.logo} alt={education.subTitle} />
                     <span>Nível: {education.level}</span>
                     <p>
-                      Status: <article>{education.status}</article>
+                      Status: <span>{education.status}</span>
                     </p>
                   </ListImage>
 
@@ -56,7 +58,7 @@ export function Education() {
           <img
             className="education-logo"
             src="/education/education.svg"
-            alt=""
+            alt="menino no computador"
           />
 
           <Carousel
@@ -70,7 +72,9 @@ export function Education() {
             {certificates &&
               certificates.map(certificate => {
                 return (
-                  <img
+                  <Image
+                    width={500}
+                    height={300}
                     className="carousel"
                     key={certificate.id}
                     src={certificate.image}

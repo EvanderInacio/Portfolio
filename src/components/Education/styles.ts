@@ -56,7 +56,7 @@ export const ListImage = styled.div`
   flex-direction: column;
   
   img {
-    width: 10rem;
+    width: 11rem;
     border-radius: 5px;
     padding: 1rem;
     background-color: ${props => props.theme.borderSecond};
@@ -105,29 +105,13 @@ export const EducationImage = styled.div`
   }
 
   max-width: 500px;
-  max-height: 665px;
+  max-height: 650px;
   display: inline-block;
   position: sticky;
   top: 1px;
 
   .education-logo {
-    width: 15rem;
-    margin-bottom: 1rem;
-    margin-left: 4rem;
-  }
-
-  .carousel img{
-    width: 20rem;
-  }
-
-  @media (min-width: 1200px) {
-    .education-logo {
-    width: 20rem;
-  }
-
-  .carousel img{
-    width: 25rem;
-    margin-bottom: 3rem;
-  }
+    width: 19rem;
+    margin-left: 5rem;
   }
 `;
