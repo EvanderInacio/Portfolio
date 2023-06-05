@@ -16,6 +16,7 @@ import {
 import educations from './educations'
 import certificates from './certificates'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function Education() {
   return (
@@ -43,9 +44,11 @@ export function Education() {
                   <ListContent>
                     <h2>{education.title}</h2>
                     <h3>
-                      <a href={education.link} target="_blank">
-                        {education.subTitle}
-                      </a>
+                      <Link href={education.link} >
+                        <a target="_blank">
+                          {education.subTitle}
+                        </a>
+                      </Link>
                     </h3>
                     <p>{education.description}</p>
                   </ListContent>

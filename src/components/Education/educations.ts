@@ -15,7 +15,7 @@ const educations = [
     subTitle: 'Udemy',
     status: 'Andamento',
     level: 'Profissionalizante',
-    link: 'udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/',
+    link: 'https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/',
     description: 'Aprenda Javascript moderno (ES6+), TypeScript para front-end (com Webpack, babel, React, React Hooks, Redux, HTML5, CSS3 e mais) e back-end (com Node, Express, MySQL / MariaDB, MongoDB, PostgreSQL, Next.Js, Strapi e mais) e se torne um(a) desenvolvedor(a) full stack. ',
     logo: '/education/logos/udemy.svg',
   },
