@@ -1,20 +1,28 @@
 /* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */ 
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import Link from 'next/link'
-//import React from 'react'
+import Image from 'next/image'
+
 import ReactPlayer from 'react-player'
 import projects from '../../components/Projects/projects'
 import { Footer } from '../../components/Footer'
-
-import { FiGithub, FiLink } from 'react-icons/fi'
-import { ProjectContainer, Banner, Description, PrintContainer, Print, ContainerVideo,
-Video } from '../../styles/project'
-import { ButtonPrimary, ButtonSecondary, Title } from '../../styles/styles'
-
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
-import { ArrowLeft, ChatCenteredText, Image, YoutubeLogo } from 'phosphor-react'
+
+import {
+  ProjectContainer,
+  Banner,
+  Description,
+  PrintContainer,
+  Print,
+  ContainerVideo,
+  Video
+} from '../../styles/project'
+import { ButtonPrimary, ButtonSecondary, Title } from '../../styles/styles'
+
+import { ArrowLeft, ChatCenteredText, Image as IconImage, YoutubeLogo } from 'phosphor-react'
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 
 interface Tag {
   id: string
@@ -73,7 +81,7 @@ export const getServerSideProps = async (context: any) => {
     }
   }
 }
- 
+
 export default function Projeto({ project }: ProjectProps) {
   return (
     <>
@@ -88,7 +96,7 @@ export default function Projeto({ project }: ProjectProps) {
         <meta name="twitter:image:src" content={project.imgUrl} />
       </Head>
 
-      <ProjectContainer> 
+      <ProjectContainer>
         <Banner>
           <img className="bannerUrl" src={project.imgUrl} alt={project.title} />
           <div className="bannerContainer">
@@ -104,14 +112,14 @@ export default function Projeto({ project }: ProjectProps) {
               <Link href={project.web}>
                 <a target="_blank">
                   <ButtonPrimary>
-                    Live Demo <FiLink size={18} />
+                    Live Demo <FaExternalLinkAlt size={15} />
                   </ButtonPrimary>
                 </a>
               </Link>
               <Link href={project.github}>
                 <a target="_blank">
                   <ButtonPrimary>
-                    Github <FiGithub size={18} />
+                    Github <FaGithub size={17}  />
                   </ButtonPrimary>
                 </a>
               </Link>
@@ -132,7 +140,7 @@ export default function Projeto({ project }: ProjectProps) {
           <div className="tags">
             <h4>Tecnologias</h4>
             {project.tags &&
-              project.tags.map((tag) => {
+              project.tags.map(tag => {
                 return (
                   <div className="tag-content" key={tag.id}>
                     <img src={tag.icon} alt={tag.name} />
@@ -147,7 +155,7 @@ export default function Projeto({ project }: ProjectProps) {
           <Title>
             Screenshot
             <span>
-              <Image /> Screen
+              <IconImage /> Screen
             </span>
           </Title>
           <Print>
@@ -160,8 +168,16 @@ export default function Projeto({ project }: ProjectProps) {
               interval={4000}
             >
               {project.print &&
-                project.print.map((print) => {
-                  return <img key={print.id} src={print.img} alt={print.name} />
+                project.print.map(print => {
+                  return (
+                    <Image 
+                      key={print.id} 
+                      width={800} 
+                      height={470} 
+                      src={print.img} 
+                      alt={print.name} 
+                    />
+                  )
                 })}
             </Carousel>
           </Print>
@@ -185,8 +201,8 @@ export default function Projeto({ project }: ProjectProps) {
             />
           </Video>
 
-          <ButtonSecondary>
-            <Link href={'/#projects'}>
+          <Link href={'/#projects'}>
+            <ButtonSecondary>
               <a>
                 <ArrowLeft
                   style={{ marginBottom: '-0.2rem' }}
@@ -195,8 +211,8 @@ export default function Projeto({ project }: ProjectProps) {
                 />{' '}
                 Voltar
               </a>
-            </Link>
-          </ButtonSecondary>
+            </ButtonSecondary>
+          </Link>
         </ContainerVideo>
       </ProjectContainer>
 

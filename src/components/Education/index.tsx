@@ -1,7 +1,11 @@
 /* eslint-disable @next/next/no-img-element */ 
+import Image from 'next/image'
+import Link from 'next/link'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
 
+import educations from './educations'
+import certificates from './certificates'
 import { GraduationCap } from 'phosphor-react'
 import { Title } from '../../styles/styles'
 import {
@@ -13,10 +17,6 @@ import {
   ListImage,
   ListContent
 } from './styles'
-import educations from './educations'
-import certificates from './certificates'
-import Image from 'next/image'
-import Link from 'next/link'
 
 export function Education() {
   return (
@@ -24,7 +24,7 @@ export function Education() {
       <Title>
         Educação
         <span>
-          <GraduationCap /> Educação
+          <GraduationCap /> Education
         </span>
       </Title>
       <EducationContent>

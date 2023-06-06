@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { DownloadSimple, User } from 'phosphor-react'
+import { FiDownload } from 'react-icons/fi'
 import { Container, Title } from '../../styles/styles'
 import { ButtonPrimary } from '../../styles/styles'
 import { AboutContainer } from './styles'
+import { DownloadSimple } from 'phosphor-react'
+import { BiUserPin } from 'react-icons/bi'
 
 export function About() {
   return (
@@ -10,7 +12,7 @@ export function About() {
       <Title>
         Sobre
         <span>
-          <User /> About
+          <BiUserPin /> About
         </span>
       </Title>
       <AboutContainer>
@@ -40,7 +42,7 @@ export function About() {
           </div>
           <a href="/pdf/Evander-CV.pdf" download>
             <ButtonPrimary>
-              <b>Download CV</b> <DownloadSimple weight="bold" />
+              <b>Download CV</b> <FiDownload size={20}  />
             </ButtonPrimary>
           </a>
         </div>

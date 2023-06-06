@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { FileCode } from 'phosphor-react'
+import { BsCodeSquare } from 'react-icons/bs'
 import { Container, Title } from '../../styles/styles'
 import cardSkills from './skills'
 import { SkillsContainer, SkillsContent } from './styles'
@@ -16,7 +16,7 @@ export function Skills() {
     <Container id='skills'>
       <Title>
         Habilidades
-        <span><FileCode /> Skills</span>
+        <span><BsCodeSquare /> Skills</span>
       </Title>
       <SkillsContainer>
       {cardSkills.map(skill => {

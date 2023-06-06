@@ -34,6 +34,7 @@ export const Title = styled.h2`
   span {
     z-index: -1;
     display: grid;
+    gap: .8rem;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
