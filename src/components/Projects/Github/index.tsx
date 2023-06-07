@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import { FiGithub } from 'react-icons/fi'
-import { ButtonSecondary } from '../../../styles/styles'
 import { AllContainer, AllContent, Cubo } from './styles'
 
 export function AllProjects() {

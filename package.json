@@ -16,6 +16,7 @@
     "react-icons": "^4.6.0",
     "react-player": "^2.11.0",
     "react-responsive-carousel": "^3.2.23",
+    "react-vertical-timeline-component": "^3.6.0",
     "styled-components": "^5.3.6",
     "typewriter-effect": "^2.19.0"
   },
@@ -23,6 +24,7 @@
     "@types/node": "18.11.0",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "@types/react-vertical-timeline-component": "^3.3.3",
     "@types/styled-components": "^5.1.26",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",

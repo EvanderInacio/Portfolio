@@ -10,6 +10,7 @@ import { Section } from '../styles/styles'
 import { Contact } from '../components/Contact'
 import { Footer } from '../components/Footer'
 import { Education } from '../components/Education'
+import { Work } from '../components/Work'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <About />
         <Skills />
         <Education />
+        <Work />
         <Projects />
         <Contact />
       </Section>
