@@ -72,20 +72,20 @@ export const NavMenu = styled.nav<Click>`
     gap: 1.2rem;
     justify-content: center;
     align-items: center;
-
+    
     a {
-      gap: 4px;
-      font-size: 1.2rem;
+      gap: 2px;
+      font-size: 1.1rem;
       font-weight: 600;
       color: ${props => props.theme.textPrimary};
       height: 1rem;
       cursor: pointer;
-
+      
       span {
         line-height: 1.08;
         white-space: nowrap;
         position: relative;
-
+        
         &:before {
           content: '';
           height: 2px;
@@ -108,7 +108,7 @@ export const NavMenu = styled.nav<Click>`
         span:before {
           transform: scaleX(1);
           visibility: visible;
-          opacity: 1 !important;
+          opacity: 1;
         }
       }
     }
@@ -117,8 +117,22 @@ export const NavMenu = styled.nav<Click>`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 5rem;
-      gap: 2rem;
+      padding-top: 1.2rem;
+      gap: 1.8rem;
     }
   }
+`
+
+export const Icons = styled.div`
+  @media (min-width: 995px) {
+    display: none;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  margin-top: 1.7rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 `

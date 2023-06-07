@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const Icons = styled.div`
-  z-index: 10;
-  @media (max-width: 768px) {
+  @media (max-width: 994px) {
     display: none;
   }
+
+  z-index: 10;
   display: block;
   position: fixed;
   bottom: 0;
@@ -12,10 +13,12 @@ export const Icons = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  
   @media (min-width: 1100px) {
     left: 3%;
   }
+
   a {
     cursor: pointer;
     &:hover {
@@ -24,8 +27,9 @@ export const Icons = styled.div`
       transition: transform 0.2s;
     }
   }
+
   .barra {
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     position: relative;
     left: 8px;
     width: 3px;

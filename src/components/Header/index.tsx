@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { List, X } from 'phosphor-react'
-import { HeaderContainer, MobileIcon, NavMenu } from './styles'
+import { HeaderContainer, MobileIcon, NavMenu, Icons } from './styles'
+import { FiGithub, FiLinkedin } from 'react-icons/fi'
+import { FaWhatsapp } from 'react-icons/fa'
 
 export function Header() {
   const [click, setClick] = useState(false)
@@ -52,13 +54,21 @@ export function Header() {
           </li>
 
           <li>
+            <Link href={'#experience'} scroll={false}>
+              <a>
+                <span>Experiência</span>
+              </a>
+            </Link>
+          </li>
+
+          <li>
             <Link href={'#projects'} scroll={false}>
               <a>
                 <span>Projetos</span>
               </a>
             </Link>
           </li>
-          
+
           <li>
             <Link href={'#contact'} scroll={false}>
               <a>
@@ -67,6 +77,27 @@ export function Header() {
             </Link>
           </li>
         </ul>
+
+        <Icons>
+          <Link href={'https://github.com/EvanderInacio'}>
+            <a target="_blank" aria-label="Link para o Github">
+              <FiGithub />
+            </a>
+          </Link>
+          <Link href={'https://www.linkedin.com/in/evander-inacio/'}>
+            <a target="_blank" aria-label="Link para o Linkedin">
+              <FiLinkedin />
+            </a>
+          </Link>
+          <Link href={'https://api.whatsapp.com/send?phone=5511995085916'}>
+            <a
+              target="_blank"
+              aria-label="Link para entrar em contato via whatsapp"
+            >
+              <FaWhatsapp />
+            </a>
+          </Link>
+        </Icons>
       </NavMenu>
     </HeaderContainer>
   )

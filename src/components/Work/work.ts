@@ -11,6 +11,8 @@ const works = [
       {name: "JavaScript", icon: '/skills/javascript.svg' },
       {name: "TypeScript", icon: '/skills/typescript.svg' },
       {name: "React JS", icon: '/skills/react.svg' },
+      {name: "Next JS", icon: '/skills/next-js.svg' },
+
     ],
     date: "Out 2022 - Presente"
   },
@@ -34,7 +36,7 @@ const works = [
     id: 3,
     img: '/works/spedisco-logo.png',
     title: 'Spedisco',
-    subTitle: 'Freelancer',
+    subTitle: 'Freelancer - (Ultronia)',
     description: 'Responsável pelo front-end e pela integração do back-end de uma plataforma de envio de mensagens via api do WhatsApp e e-mail, onde o cliente pode se cadastrar e se conectar via WhatsApp por meio de um qrcode. Podendo visualizar seus contatos do próprio whatsApp dentro da plataforma, assim como criar trabalhos e grupos de contatos em um trabalho específico e podendo enviar mensagens para seus contatos do whatsApp e e-mail.',
     tags: [
       {name: "Html", icon: '/skills/html.svg' },
