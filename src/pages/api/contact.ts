@@ -15,10 +15,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const data = await req.body
     const { name, email, message } = bodySchema.parse(data)
 
-    if (!email.trim() || !name.trim() || !message.trim()) {
-      return res.status(403).send('')
-    }
-
     const messageData = {
       embeds: [
         {

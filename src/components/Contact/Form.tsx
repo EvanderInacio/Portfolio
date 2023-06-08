@@ -27,6 +27,7 @@ export function Form() {
 
   const onSubmits = async (event: FormEvent) => {
     event.preventDefault()
+    
     try {
       await sendContactMail(name, email, message)
       toast.success('Mensagem enviada com sucesso!')
