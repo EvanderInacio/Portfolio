@@ -17,11 +17,6 @@ export const ContactContent = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 994px) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .contact-content {
     border-radius: 10px;
     background-color: ${props => props.theme.border};
@@ -47,7 +42,7 @@ export const ContactContent = styled.div`
   margin-bottom: 3rem;
 `
 
-export const Form = styled.form`
+export const FormContent = styled.form`
   text-align: center;
   display: flex;
   gap: 2px;

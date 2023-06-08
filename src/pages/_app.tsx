@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles }from '../styles/global';
 import { defaultTheme } from '../styles/themes/default'
+import { Toaster } from '../components/Toaster';
 
 function useNormalScrollRoutes() {
   const router = useRouter();
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider theme={defaultTheme}>
+        <Toaster />
         <GlobalStyles />
         <Component {...pageProps} />
     </ThemeProvider>
