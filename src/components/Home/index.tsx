@@ -12,9 +12,8 @@ export function HomeHero() {
     <Container>
       <Content>
         <HomeText>
-          <div className="cubo-animation"></div>
           <h3>Olá, eu sou</h3>
-          <h1>Evander Inácio</h1>
+          <h1>Evander Inácio <span><img className="animation" src="/vectors/triangle.svg" alt="" /></span></h1>
           <h2>
             <Typewriter
               options={{

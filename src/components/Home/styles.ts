@@ -44,7 +44,7 @@ export const ImgHome = styled.div`
 
 export const HomeText = styled.div`
   h3 {
-    color: ${props => props.theme.secondColor};
+    color: ${props => props.theme.textSecondary};
     @media (max-width: 350px) {
       font-size: 0.9rem;
     }
@@ -74,25 +74,30 @@ export const HomeText = styled.div`
     @media (min-width: 768px) {
       font-size: 2rem;
     }
-    color: ${props => props.theme.secondColor};
+    color: #772eff;
     font-weight: 600;
   }
   
-  .cubo-animation {
+  .animation {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    border: 4px solid #8543ff;
+    width: 70px;
+    height: 70px;
+    
+    @media (min-width: 468px) {
+      width: 90px;
+      height: 90px;
+      top: 14%;
+    }
 
     @media (min-width: 994px) {
-      width: 40px;
-      height: 40px;
-      border: 5px solid #8543ff;
+      width: 120px;
+      height: 120px;
       top: 15%;
     }
 
     top: 13%;
-    animation: cubo 5s linear infinite;
+    left: 5%;
+    animation: cubo 7s linear infinite;
     @keyframes cubo {
       0% {
         transform: rotate(0deg);
