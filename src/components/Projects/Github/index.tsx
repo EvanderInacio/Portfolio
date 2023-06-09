@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { FiGithub } from 'react-icons/fi'
 import { AllContainer, AllContent, Cubo } from './styles'
+import { ButtonAlt } from '../../../styles/styles'
 
 export function AllProjects() {
   return (
@@ -11,9 +12,9 @@ export function AllProjects() {
         <AllContent>
           <Link href={'https://github.com/EvanderInacio?tab=repositories'}>
               <a target="_blank">
-            <button>
+            <ButtonAlt>
                 Repositório <FiGithub />
-            </button>
+            </ButtonAlt>
               </a>
           </Link>
 

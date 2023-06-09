@@ -19,10 +19,11 @@ import {
   ContainerVideo,
   Video
 } from '../../styles/project'
-import { ButtonPrimary, ButtonSecondary, Title } from '../../styles/styles'
+import { ButtonAlt, ButtonSecondary, Title } from '../../styles/styles'
 
 import { ArrowLeft, ChatCenteredText, Image as IconImage, YoutubeLogo } from 'phosphor-react'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
+import { BsGlobe } from 'react-icons/bs'
 
 interface Tag {
   id: string
@@ -111,16 +112,16 @@ export default function Projeto({ project }: ProjectProps) {
             <div className="link">
               <Link href={project.web}>
                 <a target="_blank">
-                  <ButtonPrimary>
-                    Live Demo <FaExternalLinkAlt size={15} />
-                  </ButtonPrimary>
+                  <ButtonAlt>
+                    Projeto online <BsGlobe size={15} />
+                  </ButtonAlt>
                 </a>
               </Link>
               <Link href={project.github}>
                 <a target="_blank">
-                  <ButtonPrimary>
-                    Github <FaGithub size={17}  />
-                  </ButtonPrimary>
+                  <ButtonAlt>
+                    Repositório <FaGithub size={17}  />
+                  </ButtonAlt>
                 </a>
               </Link>
             </div>

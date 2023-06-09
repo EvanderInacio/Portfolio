@@ -167,3 +167,30 @@ export const ButtonSecondary = styled.button`
       inset 0 0 0.5em 0.25em ${props => props.theme.white};
   }
 `
+
+export const ButtonAlt = styled.button`
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    text-align: center;
+    border: 0.25em solid ${props => props.theme.secondColor};
+    padding: 1rem 2rem;
+    color: ${props => props.theme.white};
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 1em;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+
+  &:hover {
+    color: black;
+    background-color: ${props => props.theme.white};
+    box-shadow: 0 0 1em 0.25em ${props => props.theme.hoverSecond},
+      0 0 4em 2em ${props => props.theme.hoverSecond},
+      inset 0 0 0.75em 0.25em ${props => props.theme.white};
+  }
+`

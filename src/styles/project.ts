@@ -7,27 +7,26 @@ export const ProjectContainer = styled.main`
 
 export const Banner = styled.div`
   position: relative;
+  margin-bottom: 6rem;
 
   .bannerUrl {
     width: 100%;
     height: 20rem;
     object-fit: cover;
     object-position: 0 30%;
-    opacity: 0.5;
-    border-bottom: 2px solid ${props => props.theme.border};
-    box-shadow: ${props => props.theme.border} 0px 15px 30px 1px;
+    border-bottom: 1px solid ${props => props.theme.border};
 
     @media (min-width: 768px) {
     height: 27rem;
     }
 
     @media (min-width: 994px) {
-    height: 30rem;
+    height: 28rem;
     }
   }
 
   .bannerContainer {
-    @media (min-width: 994px) {
+    @media (min-width: 1300px) {
       display: flex;
       justify-content: space-between;
     }
@@ -35,21 +34,26 @@ export const Banner = styled.div`
 
   .bannerContent {
     position: relative;
-    bottom: 10rem;
+    bottom: 5rem;
     z-index: 2;
+    margin-bottom: 2rem;
+
+    @media(min-width: 994px){
+      bottom: 7.5rem;
+      margin-bottom: 3rem;
+    }
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    opacity: 1;
 
     @media (min-width: 768px) {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: flex-end;
       padding-left: 3rem;
     }
 
@@ -64,21 +68,31 @@ export const Banner = styled.div`
     h1 {
       color: ${props => props.theme.white};
       font-weight: 800;
-      font-size: 2.5rem;
+      font-size: 2rem;
+      
+      @media (min-width: 768px) {
+        font-size: 2.7rem;
+      }
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+
+      @media (min-width: 768px) {
+        font-size: 1.3rem;
+      }
+
       font-weight: 600;
       color: ${props => props.theme.firstColor};
     }
 
     img {
-      box-shadow: ${props => props.theme.border} 0 18px 40px 6px;
       width: 10rem;
       height: 10rem;
       border-radius: 10px;
-      background: ${props => props.theme.backgroundSecond};
+      padding: 1rem;
+      background: ${props => props.theme.borderSecond};
 
       @media (min-width: 768px) {
         width: 13rem;
@@ -94,22 +108,26 @@ export const Banner = styled.div`
 
   .link {
     position: relative;
-    bottom: 10rem;
+    bottom: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 
     @media (min-width: 468px) {
       flex-direction: row;
-      justify-content: flex-end;
       align-items: end;
-      gap: 1rem;
-      right: 10%;
+      justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 1rem;
     }
     
-    @media (min-width: 768px) {
-      bottom: 10rem;
+    @media (min-width: 1300px) {
+      bottom: 8.8rem;
+      right: 3%;
     }
 
     @media (min-width: 2000px) {
@@ -151,15 +169,12 @@ export const Description = styled.div`
         margin-bottom: 10rem;
         max-width: 800px;
         text-align: center;
-
-
       }
     }
   }
 
   .tags {
     border: 2px solid ${props => props.theme.border};
-    box-shadow: ${props => props.theme.border} 0px 22px 40px 6px;
     border-radius: 10px;
     min-width: 12rem;
     padding: 1rem;

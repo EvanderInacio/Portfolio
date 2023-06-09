@@ -88,9 +88,10 @@ export const HomeText = styled.div`
       width: 40px;
       height: 40px;
       border: 5px solid #8543ff;
+      top: 15%;
     }
 
-    top: 15%;
+    top: 13%;
     animation: cubo 5s linear infinite;
     @keyframes cubo {
       0% {

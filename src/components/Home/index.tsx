@@ -2,10 +2,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Typewriter from 'typewriter-effect';
-import { PaperPlaneRight } from 'phosphor-react'
 
 import { ButtonPrimary, Container } from '../../styles/styles'
 import { Content, ImgHome, HomeText } from './styles'
+import { FiArrowRight } from 'react-icons/fi';
 
 export function HomeHero() {
   return (
@@ -30,10 +30,9 @@ export function HomeHero() {
             <Link href={'#projects'}>
               <a>
                 <b>Conheça meu portfólio </b>
-                <PaperPlaneRight
+                <FiArrowRight
                   style={{ marginBottom: '-0.3rem' }}
-                  size={22}
-                  weight="bold"
+                  size={20}
                 />
               </a>
             </Link>
