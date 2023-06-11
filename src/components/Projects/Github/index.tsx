@@ -1,21 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
-import { FiGithub } from 'react-icons/fi'
+import { GrProjects } from 'react-icons/gr'
 import { AllContainer, AllContent, Cubo } from './styles'
 import { ButtonAlt } from '../../../styles/styles'
+import { BsFolderSymlink } from 'react-icons/bs'
 
-export function AllProjects() {
+interface AllContent {
+  title: string
+}
+
+export function AllProjects({ title }: AllContent ) {
   return (
     <>
       <AllContainer>
-        <h4>Todos os projetos</h4>
+        <h4>{title}</h4>
         <AllContent>
-          <Link href={'https://github.com/EvanderInacio?tab=repositories'}>
-              <a target="_blank">
+          <Link href={'/projects'}>
             <ButtonAlt>
-                Repositório <FiGithub />
+                Projetos <BsFolderSymlink size={20} />
             </ButtonAlt>
-              </a>
           </Link>
 
           <Cubo>

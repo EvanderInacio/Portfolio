@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { BsCodeSquare } from 'react-icons/bs'
 import { Container, Title } from '../../styles/styles'
 import cardSkills from './skills'
-import { SkillsContainer, SkillsContent } from './styles'
+import { SkillsContainer, SkillsContent, Vector } from './styles'
 
 interface Skills {
   title: string,
@@ -14,6 +14,10 @@ interface Skills {
 export function Skills() {
   return (
     <Container id='skills'>
+      <Vector>
+        <img className='js' src="/vectors/js.svg" alt="" />
+        <img className='html' src="/vectors/html.svg" alt="" />
+      </Vector>
       <Title>
         Habilidades
         <span><BsCodeSquare /> Skills</span>

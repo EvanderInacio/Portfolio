@@ -13,7 +13,16 @@ export function HomeHero() {
       <Content>
         <HomeText>
           <h3>Olá, eu sou</h3>
-          <h1>Evander Inácio <span><img className="animation" src="/vectors/triangle.svg" alt="" /></span></h1>
+          <h1>
+            Evander Inácio 
+            <span>
+              <img 
+                className="animation" 
+                src="/vectors/triangle.svg" 
+                alt="Imagem de um triangulo" 
+              />
+            </span>
+          </h1>
           <h2>
             <Typewriter
               options={{
@@ -38,7 +47,8 @@ export function HomeHero() {
           </ButtonPrimary>
         </HomeText>
         <ImgHome>
-          <img src="/projects/portfolio/home.webp" alt="Home" />
+          <img className='home-img' src="/projects/portfolio/home.webp" alt="Home" />
+          <img className='code' src="/vectors/dino.svg" alt="" />
         </ImgHome>
       </Content>
     </Container>

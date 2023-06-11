@@ -6,20 +6,20 @@ import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
 
 export function Header() {
-  const [click, setClick] = useState(false)
+  const [open, setOpen] = useState(false)
 
   const handleOpen = () => {
-    setClick(!click)
+    setOpen(!open)
   }
 
   return (
     <HeaderContainer style={{ position: 'fixed' }}>
       <div className="mobile-content">
         <a href={'/'}>
-          <span>E</span>vander
+         <img src="/icon.svg" alt="logo" /> <span>E</span>vander
         </a>
         <MobileIcon onClick={handleOpen}>
-          {click ? (
+          {open ? (
             <X size={24} weight="bold" />
           ) : (
             <List size={24} weight="bold" />
@@ -27,7 +27,7 @@ export function Header() {
         </MobileIcon>
       </div>
 
-      <NavMenu onClick={handleOpen} click={click}>
+      <NavMenu onClick={handleOpen} open={open}>
         <ul>
           <li>
             <Link href={'/'}>

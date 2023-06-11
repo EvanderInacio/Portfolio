@@ -18,30 +18,6 @@ export const Content = styled.div`
 
 `
 
-export const ImgHome = styled.div`
-  img {
-    display: none;
-    @media (min-width: 994px) {
-      display: block;
-      position: relative;
-      width: 32rem;
-      -webkit-animation: icon-move-people 4s ease 2s infinite alternate;
-      animation: icon-move-people 5s ease 2s infinite alternate;
-
-      @keyframes icon-move-people {
-        0% {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-        }
-        100% {
-          -webkit-transform: translate3d(30px, 60px, 0);
-          transform: translate3d(-30px, -50px, 0);
-        }
-      }
-    }
-  }
-`
-
 export const HomeText = styled.div`
   h3 {
     color: ${props => props.theme.textSecondary};
@@ -52,6 +28,7 @@ export const HomeText = styled.div`
       font-size: 1.3rem;
     }
   }
+
   h1 {
     font-size: 2.2rem;
     font-weight: 800;
@@ -67,6 +44,7 @@ export const HomeText = styled.div`
       font-size: 3.5rem;
     }
   }
+  
   h2 {
     @media (max-width: 350px) {
       font-size: 1.2rem;
@@ -91,8 +69,7 @@ export const HomeText = styled.div`
 
     @media (min-width: 994px) {
       width: 120px;
-      height: 120px;
-      top: 15%;
+      height: 120px; 
     }
 
     top: 13%;
@@ -107,4 +84,56 @@ export const HomeText = styled.div`
       }
     }
   }
+`
+
+export const ImgHome = styled.div`
+  position: relative;
+
+  .code {
+    position: absolute;
+    z-index: -1;
+    width: 5rem;
+    top: 3rem;
+    
+    
+    @media (min-width: 768px) {
+      width: 8rem;
+      left: 25vw;
+    }
+
+    @media (min-width: 994px) {
+      left: 70%;
+      top: 80%;
+    }
+
+    @media (min-width: 1300px) {
+      left: 85%;
+      top: 73%;
+      width: 10rem;
+    }
+  } 
+
+  .home-img {
+    display: none;
+    @media (min-width: 994px) {
+      display: block;
+      position: relative;
+      width: 32rem;
+      -webkit-animation: icon-move-people 4s ease 2s infinite alternate;
+      animation: icon-move-people 5s ease 2s infinite alternate;
+
+      @keyframes icon-move-people {
+        0% {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          -webkit-transform: translate3d(30px, 60px, 0);
+          transform: translate3d(-30px, -50px, 0);
+        }
+      }
+    }
+  }
+
+  
 `

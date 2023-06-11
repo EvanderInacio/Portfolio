@@ -21,9 +21,15 @@ import {
 } from '../../styles/project'
 import { ButtonAlt, ButtonSecondary, Title } from '../../styles/styles'
 
-import { ArrowLeft, ChatCenteredText, Image as IconImage, YoutubeLogo } from 'phosphor-react'
+import {
+  ArrowLeft,
+  ChatCenteredText,
+  Image as IconImage,
+  YoutubeLogo
+} from 'phosphor-react'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 import { BsGlobe } from 'react-icons/bs'
+import { AllProjects } from '../../components/Projects/Github'
 
 interface Tag {
   id: string
@@ -120,7 +126,7 @@ export default function Projeto({ project }: ProjectProps) {
               <Link href={project.github}>
                 <a target="_blank">
                   <ButtonAlt>
-                    Repositório <FaGithub size={17}  />
+                    Repositório <FaGithub size={17} />
                   </ButtonAlt>
                 </a>
               </Link>
@@ -171,12 +177,12 @@ export default function Projeto({ project }: ProjectProps) {
               {project.print &&
                 project.print.map(print => {
                   return (
-                    <Image 
-                      key={print.id} 
-                      width={800} 
-                      height={470} 
-                      src={print.img} 
-                      alt={print.name} 
+                    <Image
+                      key={print.id}
+                      width={800}
+                      height={470}
+                      src={print.img}
+                      alt={print.name}
                     />
                   )
                 })}
@@ -185,11 +191,15 @@ export default function Projeto({ project }: ProjectProps) {
         </PrintContainer>
 
         <ContainerVideo>
-          <Title>
+          <div className="imageVideo">
+            <img src={'/projects/turtlemovie/peoples.png'} alt="" />
+          </div>
+          <Title className="title-video">
             Video
             <span>
               <YoutubeLogo /> Video
             </span>
+            <img className="vector" src="/vectors/youtube.svg" alt="" />
           </Title>
           <Video>
             <ReactPlayer
@@ -201,20 +211,23 @@ export default function Projeto({ project }: ProjectProps) {
               config={{ file: { forceHLS: true } }}
             />
           </Video>
-
-          <Link href={'/#projects'}>
-            <ButtonSecondary>
-              <a>
-                <ArrowLeft
-                  style={{ marginBottom: '-0.2rem' }}
-                  weight="bold"
-                  size={18}
-                />{' '}
-                Voltar
-              </a>
-            </ButtonSecondary>
-          </Link>
         </ContainerVideo>
+
+        <div className="allProjects">
+          <AllProjects title={'Veja outros projetos'} />
+        </div>
+        <Link href={'/#projects'}>
+          <ButtonSecondary>
+            <a>
+              <ArrowLeft
+                style={{ marginBottom: '-0.2rem' }}
+                weight="bold"
+                size={18}
+              />{' '}
+              Voltar
+            </a>
+          </ButtonSecondary>
+        </Link>
       </ProjectContainer>
 
       <Footer />

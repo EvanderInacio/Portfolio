@@ -16,7 +16,7 @@ export const Icons = styled.div`
   font-size: 1.5rem;
   
   @media (min-width: 1100px) {
-    left: 3%;
+    left: 2%;
   }
 
   a {

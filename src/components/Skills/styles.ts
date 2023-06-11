@@ -76,3 +76,34 @@ export const SkillsContent = styled.div`
   }
 
 `
+
+export const Vector = styled.div`
+  position: relative;
+  z-index: -10;
+  width: 90vw;
+  top: -20vw;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
+  }
+
+  @media (min-width: 468px) {
+    top: 1vw;
+  }
+
+  .js {
+    position: absolute;
+    right: 0vw;
+  }
+
+  .html {
+    position: absolute;
+    left: 0vw;
+  }
+`

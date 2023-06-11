@@ -3,6 +3,11 @@ import styled from 'styled-components'
 export const ProjectContainer = styled.main`
   display: flex;
   flex-direction: column;
+
+  .allProjects{
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
 `
 
 export const Banner = styled.div`
@@ -93,6 +98,7 @@ export const Banner = styled.div`
       border-radius: 10px;
       padding: 1rem;
       background: ${props => props.theme.borderSecond};
+      mix-blend-mode: multiply;
 
       @media (min-width: 768px) {
         width: 13rem;
@@ -229,7 +235,8 @@ export const PrintContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
-
+  margin-bottom: 14rem;
+  
   @media (min-width: 768px) {
     margin-top: 7rem;
   }
@@ -238,7 +245,6 @@ export const PrintContainer = styled.div`
 export const Print = styled.div`
   border: 5px solid ${props => props.theme.border};
   border-radius: 5px;
-  box-shadow: ${props => props.theme.border} 0px 25px 40px 6px;
   width: 18rem;
 
   @media (min-width: 468px) {
@@ -260,8 +266,9 @@ export const ContainerVideo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
-
+  position: relative;
+  margin-bottom: 10rem;
+  
   @media (min-width: 768px) {
     margin-top: 7rem;
   }
@@ -271,10 +278,28 @@ export const ContainerVideo = styled.div`
     justify-content: center;
     align-items: center;
   }
-`
+  
+  .imageVideo{
+    img {
+        z-index: -1;
+        width: 100%;
+        opacity: 0.4;
+        object-fit: cover; 
+      }
+    }
+    
+    .title-video {
+      z-index: 10;
+      position: absolute;
+      top: -10rem;
+    }
+    `
 
 export const Video = styled.div`
   margin-bottom: 5rem;
+  z-index: 10;
+  position: absolute;
+  opacity: 1;
 
   @media (min-width: 468px) {
     width: 25rem;

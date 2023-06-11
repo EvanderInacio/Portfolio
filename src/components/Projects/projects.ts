@@ -33,13 +33,13 @@ const projects = [
     img: '/projects/turtlemovie/turtle.png',
     title: 'Turtle Movie',
     type: "Website",
-    icon: "https://imgur.com/f0pqZyp.png",
+    icon: "/projects/turtlemovie/icon.png",
     github: 'https://github.com/EvanderInacio/Turtle-Movie',
     web: 'https://turtle-movie.vercel.app/',
     description: 'Website usando a API TMDB para fazer a listagem de filmes e series com as melhores notas da semana/dia, além de trazer as obras populares e também com as maiores notas da plataforma da TMDB. Podendo ver detalhes das obras, como Lançamento da obra, duração no caso de filmes, produção, idioma além do pais de origem. Ainda conta com uma listagem de atores populares com a opção de consultar os filmes que determinada pessoa participou.',
     tags: [
       {name: "React Js", icon: '/skills/react.svg' },
-      {name: "React Router", icon: '/skills/code.svg' },
+      {name: "React Router", icon: '/skills/react-router.svg' },
       {name: "TypeScript", icon: '/skills/typescript.svg' },
       {name: "Styled Components", icon: '/skills/styled-components.svg' },
     ],
@@ -106,31 +106,6 @@ const projects = [
   },
   {
     id: 5,
-    url: 'ds-meta',
-    img: '/projects/dsmeta/dsmeta.png',
-    title: 'DS Meta',
-    type: "Website",
-    icon: "/projects/dsmeta/dsmeta-icon.svg",
-    github: 'https://github.com/EvanderInacio/DsMeta',
-    web: 'https://dsmeta-evander.netlify.app/',
-    description: 'Aplicação de listagem de vendas, com a opção de filtrar determinados períodos de vendas por data. Além de envio de notificações.',
-    tags: [
-      {name: "Java", icon: '/skills/java.svg' },
-      {name: "Spring", icon: '/skills/spring.svg' },
-      {name: "TypeScript", icon: '/skills/typescript.svg' },
-      {name: "React Js", icon: '/skills/react.svg' },
-      {name: "Axios", icon: '/skills/code.svg' },
-      {name: "API Rest", icon: '/skills/code.svg' },
-      {name: "H2 Database", icon: '/skills/database.svg' },
-    ],
-    print: [
-      {name: 'Home', img:'/projects/dsmeta/dsmeta.png'},
-      {name: 'Footer', img:'/projects/dsmeta/dsmeta-footer.png'},
-    ],
-    video: 'https://www.youtube.com/watch?v=CxHypCf8QYc&ab_channel=EvanderIn%C3%A1cio'
-  },
-  {
-    id: 6,
     url: 'github-blog',
     img: '/projects/github-blog/github-blog-home.png',
     title: 'Github Blog',
@@ -142,7 +117,7 @@ const projects = [
     tags: [
       {name: "Next JS", icon: '/skills/next-js.svg' },
       {name: "TypeScript", icon: '/skills/typescript.svg' },
-      {name: "Stitches", icon: '/skills/code.svg' },
+      {name: "Stitches", icon: '/skills/stitches.svg' },
     ],
     print: [
       {name: 'Home', img:'/projects/github-blog/github-blog-home.png'},
@@ -192,7 +167,7 @@ const projects = [
       {name: "React JS", icon: '/skills/react.svg' },
       {name: "Styled Components", icon: '/skills/styled-components.svg' },
       {name: "TypeScript", icon: '/skills/typescript.svg' },
-      {name: "React-hook-form", icon: '/skills/code.svg' },
+      {name: "React-hook-form", icon: '/skills/react-hook-form.svg' },
     ],
     print: [
       {name: 'Login', img:'/projects/pomodoro/pomodoro-home.png'},

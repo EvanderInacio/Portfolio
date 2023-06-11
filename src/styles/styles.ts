@@ -57,6 +57,40 @@ export const Title = styled.h2`
       font-size: 4.5rem;
     }
   }
+
+  .vector {
+    position: absolute;
+    width: 2rem;
+    bottom: 5rem;
+    z-index: -10;
+
+    animation: bounce 1s infinite;
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      }
+      50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      }
+    }
+
+    @media (min-width: 468px) {
+      bottom: 7rem;
+      width: 3rem;
+    }
+
+    @media (min-width: 944px) {
+      width: 5rem;
+    }
+
+    @media (min-width: 1300px) {
+      width: 8rem;
+      bottom: 7.5rem;
+    }
+  }
 `
 
 export const ButtonPrimary = styled.button`
@@ -172,9 +206,9 @@ export const ButtonAlt = styled.button`
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-    cursor: pointer;
     text-align: center;
+    gap: 7px;
+    cursor: pointer;
     border: 0.25em solid ${props => props.theme.secondColor};
     padding: 1rem 2rem;
     color: ${props => props.theme.white};

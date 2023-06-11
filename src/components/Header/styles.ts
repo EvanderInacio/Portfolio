@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const HeaderContainer = styled.header`
   position: fixed;
@@ -33,7 +33,12 @@ export const HeaderContainer = styled.header`
     font-size: 1.2rem;
 
     span {
-      color: ${props => props.theme.firstColor};
+      color: #04C4C2;
+    }
+
+    img {
+      width: 1.3rem;
+      margin-bottom: -0.2rem;
     }
 
     @media (max-width: 994px) {
@@ -50,21 +55,25 @@ export const MobileIcon = styled.div`
     top: 1.045rem;
     right: 1rem;
     cursor: pointer;
+    z-index: 20;
   }
 `
 
 interface Click {
-  readonly click: boolean
+  readonly open: boolean
 }
 
-export const NavMenu = styled.nav<Click>`
+export const NavMenu = styled.nav<Click>`  
   @media (max-width: 994px) {
     height: 100vh;
     width: 100vw;
     background: ${props => props.theme.background};
     z-index: 10;
-    display: ${({ click }) => (click ? 'block' : 'none')};
     opacity: 0.95;
+    position: fixed;
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    transition: transform 0.5s ease-in-out; 
+    //display: ${({ open }) => (open ? 'block' : 'none')};
   }
 
   ul {
@@ -103,6 +112,7 @@ export const NavMenu = styled.nav<Click>`
           visibility: hidden;
         }
       }
+      
       &:hover {
         color: ${props => props.theme.firstColor};
         span:before {

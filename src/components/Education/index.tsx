@@ -83,11 +83,16 @@ export function Education() {
                     src={certificate.image}
                     alt={certificate.name}
                   />
-                )
+                  )
               })}
           </Carousel>
         </EducationImage>
       </EducationContent>
+      <img 
+        className='vector-circle' 
+        src="/vectors/circle-spin.svg" 
+        alt="circulo animado" 
+      />
     </ContainerEducation>
   )
 }

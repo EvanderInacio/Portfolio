@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerEducation = styled.div`
-  background-color: ${props => props.theme.backgroundSecond};
+  background-color: ${props => props.theme.border};
   position: relative;
   width: 100%;
   display: inline-flex;
@@ -9,6 +9,39 @@ export const ContainerEducation = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 2rem 1.5rem;
+  
+  @media(min-width: 1100px) {
+    margin-bottom: 6rem;
+  }
+  
+  .vector-circle{
+    position: absolute;
+    left: 1rem;
+    z-index: -999;
+    bottom: -5.5rem;
+    width: 10rem;
+
+    @media(min-width: 768px) {
+      bottom: -9rem;
+      width: 30rem;
+    }
+    
+    @media(min-width: 1100px) {
+      bottom: -15.5rem;
+      left: 5rem;
+      width: auto;
+    }
+
+    animation: cubo 7s linear infinite;
+    @keyframes cubo {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
 `
 
 export const EducationContent = styled.div`
@@ -39,7 +72,7 @@ export const List = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border: 2px solid ${props => props.theme.border};
+  border: 2px solid ${props => props.theme.borderSecond};
   background-color: ${props => props.theme.background};
   border-radius: 8px;
   padding: 2rem;

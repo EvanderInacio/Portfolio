@@ -16,7 +16,7 @@ export const ProjectsContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 994px) {
+  @media (min-width: 1200px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -43,11 +43,16 @@ export const ProjectsContent = styled.div`
     width: 100%;
     height: auto;
     border-radius: 10px;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   .title {
     position: absolute;
-    padding: 0 1rem 2rem 1rem;
+    padding: 0 1rem 2.2rem 1rem;
 
     bottom: 0;
     height: 100%;
@@ -56,7 +61,7 @@ export const ProjectsContent = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    background: linear-gradient(rgb(0, 0, 0, 0) -20%, rgb(4, 0, 1, 10));
+    background: linear-gradient(rgb(0, 0, 0, 0) -60%, rgb(8, 2, 5, 15));
 
     opacity: 0;
     transition: 0.4s ease-in-out;
@@ -68,17 +73,28 @@ export const ProjectsContent = styled.div`
 
     h2 {
       font-weight: 900;
-      font-size: 1.8rem;
+      font-size: 1.9rem;
       text-align: center;
       color: ${props => props.theme.firstColor};
     }
 
     span {
-      font-size: 1.1rem;
-      font-weight: 600;
+      font-size: 1.2rem;
+      font-weight: 700;
       color: ${props => props.theme.secondColor};
+      margin-bottom: .8rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-direction: row;
+      gap: 9px;
     }
   }
 
-  max-width: 22rem;
+  @media(min-width: 1300px) {
+    max-width: 25rem;
+  }
+
+  max-width: 24rem;
 `
