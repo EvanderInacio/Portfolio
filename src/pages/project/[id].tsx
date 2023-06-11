@@ -56,6 +56,7 @@ interface Project {
   tags: Tag[]
   print: Print[]
   video: string
+  backgroundImage: string
 }
 
 interface ProjectProps {
@@ -77,7 +78,8 @@ export const getServerSideProps = async (context: any) => {
     description: project.description,
     tags: project.tags,
     print: project.print,
-    video: project.video
+    video: project.video,
+    backgroundImage: project.backgroundImage
   }))
 
   const idProject = project.find(project => project.link === id)
@@ -192,7 +194,7 @@ export default function Projeto({ project }: ProjectProps) {
 
         <ContainerVideo>
           <div className="imageVideo">
-            <img src={'/projects/turtlemovie/peoples.png'} alt="" />
+            <img src={project.backgroundImage} alt={project.title} />
           </div>
           <Title className="title-video">
             Video

@@ -25,6 +25,7 @@ const projects = [
       {name: 'Detail-3', img:'/projects/portfolio/detail-3.png'},
       {name: 'Detail-4', img:'/projects/portfolio/detail-4.png'},
     ],
+    backgroundImage: '/projects/portfolio/thumb.png',
     video: 'https://www.youtube.com/watch?v=8Ek_BFSi8Pk&t=2s&ab_channel=EvanderIn%C3%A1cio'
   },
   {
@@ -53,6 +54,7 @@ const projects = [
       {name: 'Peoples', img:'/projects/turtlemovie/peoples.png'},
       {name: 'Detail-people', img:'/projects/turtlemovie/detail-people.png'},
     ],
+    backgroundImage: '/projects/turtlemovie/detail-home.png',
     video: 'https://www.youtube.com/watch?v=wt2g4q2md9g&ab_channel=EvanderIn%C3%A1cio'
   },
   {
@@ -79,6 +81,7 @@ const projects = [
       {name: 'Buy', img:'/projects/playstation/playstation-buy.png'},
       {name: 'Contact', img:'/projects/playstation/playstation-contact.png'},      
     ],
+    backgroundImage: '/projects/playstation/playstation-home.png',
     video: 'https://www.youtube.com/watch?v=VZsm-NGse6M&ab_channel=EvanderIn%C3%A1cio'
   },
   {
@@ -102,6 +105,7 @@ const projects = [
       {name:'Home-2', img:'/projects/podcastr/podcastr-home-2.png'},    
       {name:'Detail', img:'/projects/podcastr/podcastr-detail.png'},       
     ],
+    backgroundImage: '/projects/podcastr/podcastr-home.png',
     video: 'https://www.youtube.com/watch?v=a_OoBSceC80&ab_channel=EvanderIn%C3%A1cio'
   },
   {
@@ -125,6 +129,7 @@ const projects = [
       {name: 'Detail', img:'/projects/github-blog/github-blog-detail.png'},
       {name: 'Detail-2', img:'/projects/github-blog/github-blog-detail-2.png'},
     ],
+    backgroundImage: '/projects/github-blog/github-blog-home.png',
     video: 'https://www.youtube.com/watch?v=RcKQNz0n6Ts&ab_channel=EvanderIn%C3%A1cio'
   },
   {
@@ -151,6 +156,7 @@ const projects = [
       {name: 'New-chat', img:'/projects/whatsapp/new-chat.png'},
 
     ],
+    backgroundImage: '/projects/whatsapp/home-dark.png',
     video: 'https://www.youtube.com/watch?v=PZpp2sCm0zY&t=11s&ab_channel=EvanderIn%C3%A1cio'
   },
   {
@@ -176,6 +182,7 @@ const projects = [
       {name: 'Chat', img:'/projects/pomodoro/pomodoro-history-2.png'},
 
     ],
+    backgroundImage: '/projects/pomodoro/pomodoro-home.png',
     video: 'https://www.youtube.com/watch?v=c6fEo2CYj0k&ab_channel=EvanderIn%C3%A1cio'
   },
   {
@@ -200,6 +207,7 @@ const projects = [
       {name: 'Detail-2', img:'/projects/pokedex/pokedex-detail-about.png'},
       {name: 'Detail-3', img:'/projects/pokedex/pokedex-detail-stats.png'},
     ],
+    backgroundImage: '/projects/pokedex/pokedex-index.png',
     video: 'https://www.youtube.com/watch?v=gWCbt85ltto&ab_channel=EvanderIn%C3%A1cio'
   },
 ]
