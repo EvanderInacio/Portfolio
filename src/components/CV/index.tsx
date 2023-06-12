@@ -17,7 +17,7 @@ export function CV() {
 
         <CVContent>
           <CVDescription>
-              <div className="aspas">"</div>
+              <div className="aspas">&ldquo;</div>
               <p>
                 Aqui você pode baixar meu currículo clicando no botão de download.
               </p>
