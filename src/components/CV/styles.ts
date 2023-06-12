@@ -85,8 +85,13 @@ export const Curriculum = styled.div`
   display: flex;
   gap: 1rem;
 
+  @media (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
+
   img {
-    @media (max-width: 360px) {
+    @media (max-width: 380px) {
       display: none;
     }
 
