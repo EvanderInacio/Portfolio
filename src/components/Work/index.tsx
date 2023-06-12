@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   VerticalTimeline,
   VerticalTimelineElement
 } from 'react-vertical-timeline-component'
-
 import 'react-vertical-timeline-component/style.min.css'
 import { Container, Title } from '../../styles/styles'
 import { Briefcase } from 'phosphor-react'

@@ -33,8 +33,8 @@ export const WorkContent = styled.div`
     }
 
     img {
-      width: 2rem;
-      margin-left: 1rem;
+      width: 2.1rem;
+      margin-left: .8rem;
     }
   }
 

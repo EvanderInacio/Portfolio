@@ -11,6 +11,7 @@ export const ContactContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -29,6 +30,10 @@ export const ContactContent = styled.div`
     h4 {
       font-size: 1.3rem;
       margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: .4rem;
     }
 
     span {

@@ -4,6 +4,7 @@ import { List, X } from 'phosphor-react'
 import { HeaderContainer, MobileIcon, NavMenu, Icons } from './styles'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
+import Image from 'next/image'
 
 export function Header() {
   const [open, setOpen] = useState(false)
@@ -16,7 +17,7 @@ export function Header() {
     <HeaderContainer style={{ position: 'fixed' }}>
       <div className="mobile-content">
         <a href={'/'}>
-         <img src="/icon.svg" alt="logo" /> <span>E</span>vander
+         <Image width={20} height={20} src="/icon.svg" alt="logo" /> <span>E</span>vander
         </a>
         <MobileIcon onClick={handleOpen}>
           {open ? (

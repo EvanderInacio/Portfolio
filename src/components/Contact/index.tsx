@@ -1,3 +1,4 @@
+/* eslint-disable-next-line import/no-anonymous-default-export */
 import Link from 'next/link'
 import { Envelope, TelegramLogo } from 'phosphor-react'
 import { Container, Title } from '../../styles/styles'

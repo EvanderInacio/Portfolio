@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import { BsCodeSquare } from 'react-icons/bs'
 import { Container, Title } from '../../styles/styles'
