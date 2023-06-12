@@ -1,9 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import { FiDownload } from 'react-icons/fi'
 import { Container, Title } from '../../styles/styles'
-import { ButtonPrimary } from '../../styles/styles'
 import { AboutContainer } from './styles'
-import { DownloadSimple } from 'phosphor-react'
 import { BiUserPin } from 'react-icons/bi'
 
 export function About() {
@@ -40,11 +37,6 @@ export function About() {
               habilidades que possuo.
             </p>
           </div>
-          <a href="/pdf/Evander-CV.pdf" download>
-            <ButtonPrimary>
-              <b>Download CV</b> <FiDownload size={20}  />
-            </ButtonPrimary>
-          </a>
         </div>
       </AboutContainer>
     </Container>

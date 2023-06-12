@@ -5,21 +5,20 @@ export const ContainerContact = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`
+  `
 
 export const ContactContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
   .contact-content {
     border-radius: 10px;
-    background-color: ${props => props.theme.border};
+    background-color: ${props => props.theme.backgroundSecond};
     padding: 1rem 2rem;
     text-align: center;
     display: flex;
@@ -63,9 +62,9 @@ export const FormContent = styled.form`
 
   .input {
     width: 100%;
-    border: solid 2px ${props => props.theme.border};
+    border: solid 2px ${props => props.theme.backgroundSecond};
     border-radius: 10px;
-    background: ${props => props.theme.border};
+    background: ${props => props.theme.backgroundSecond};
     padding: 1rem;
     font-size: 1rem;
     color: ${props => props.theme.textPrimary};

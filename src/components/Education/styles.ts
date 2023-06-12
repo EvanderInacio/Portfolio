@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerEducation = styled.div`
-  background-color: ${props => props.theme.border};
+  background-color: ${props => props.theme.backgroundContact};
   position: relative;
   width: 100%;
   display: inline-flex;

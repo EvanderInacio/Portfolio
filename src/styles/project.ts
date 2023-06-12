@@ -97,7 +97,8 @@ export const Banner = styled.div`
       height: 10rem;
       border-radius: 10px;
       padding: 1rem;
-      background: ${props => props.theme.borderSecond};
+      background: ${props => props.theme.backgroundAlt};
+      border: 1px solid ${props => props.theme.borderSecond};
       mix-blend-mode: multiply;
 
       @media (min-width: 768px) {
@@ -180,11 +181,11 @@ export const Description = styled.div`
   }
 
   .tags {
-    border: 2px solid ${props => props.theme.border};
+    border: 2px solid ${props => props.theme.borderSecond};
     border-radius: 10px;
     min-width: 12rem;
     padding: 1rem;
-    background-color: ${props => props.theme.backgroundSecond};
+    background-color: ${props => props.theme.backgroundSecondAlt};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -243,7 +244,7 @@ export const PrintContainer = styled.div`
 `
 
 export const Print = styled.div`
-  border: 5px solid ${props => props.theme.border};
+  border: 5px solid ${props => props.theme.backgroundSecondAlt};
   border-radius: 5px;
   width: 18rem;
 
@@ -268,7 +269,8 @@ export const ContainerVideo = styled.div`
   align-items: center;
   position: relative;
   margin-bottom: 10rem;
-  
+  border: 1px solid ${props => props.theme.backgroundAlt};
+
   @media (min-width: 768px) {
     margin-top: 7rem;
   }

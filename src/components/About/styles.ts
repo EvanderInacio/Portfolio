@@ -46,7 +46,10 @@ export const AboutContainer = styled.section`
 
     .aboutContent {
       width: 31rem;
+      margin-bottom: 3rem;
       font-weight: 500;
+      align-items: center;
+
     }
   }
 `

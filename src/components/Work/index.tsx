@@ -31,8 +31,8 @@ export function Work() {
               return (
                 <VerticalTimelineElement
                   contentStyle={{
-                    background: theme.border,
-                    borderBottom: `7px solid ${theme.border}`,
+                    background: theme.backgroundSecondAlt,
+                    borderBottom: `7px solid ${theme.backgroundSecondAlt}`,
                     boxShadow: `0px 5px 0px 0px ${theme.firstColor}`
                   }}
                   contentArrowStyle={{ borderRight: '10px solid  #0c0b0e' }}

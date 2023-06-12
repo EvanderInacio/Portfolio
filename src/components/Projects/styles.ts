@@ -30,13 +30,11 @@ export const ProjectsContent = styled.div`
   align-items: center;
   transition: transform 0.3s;
   overflow: hidden;
-
   border: 3.5px solid ${props => props.theme.borderSecond};
-  box-shadow: ${props => props.theme.border} 0px 10px 15px 10px;
 
   &:hover{
     border-color: ${props => props.theme.firstColor};
-    border-radius: 15px;
+    border-radius: 11px;
   }
 
   img {

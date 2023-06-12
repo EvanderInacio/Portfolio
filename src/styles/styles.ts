@@ -228,3 +228,23 @@ export const ButtonAlt = styled.button`
       inset 0 0 0.75em 0.25em ${props => props.theme.white};
   }
 `
+
+export const ButtonSecondAlt = styled.button`
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  gap: 5px;
+  background: transparent;
+  border: 0.25em solid ${props => props.theme.firstColor};
+  border-radius: 10px;
+  color: ${props => props.theme.white};
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+    background-color: ${props => props.theme.white};
+  }
+`

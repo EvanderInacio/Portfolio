@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const WorkContainer = styled.div`
   display: flex;
-  background-color: ${props => props.theme.border};
+  background-color: ${props => props.theme.backgroundSecondAlt};
 `
 
 export const WorkContent = styled.div`

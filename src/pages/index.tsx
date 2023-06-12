@@ -4,6 +4,7 @@ import { Header } from '../components/Header'
 import { HomeHero } from '../components/Home'
 import { Links } from '../components/Links'
 import { Projects } from '../components/Projects'
+import { CV } from '../components/CV'
 import { Skills } from '../components/Skills'
 import { ScrollTop } from '../components/ScrollTop'
 import { Section } from '../styles/styles'
@@ -29,6 +30,7 @@ export default function Home() {
         <Education />
         <Work />
         <Projects />
+        <CV />
         <Contact />
       </Section>
       <Footer />
