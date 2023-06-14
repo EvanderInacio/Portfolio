@@ -17,7 +17,7 @@ export function Header() {
     <HeaderContainer style={{ position: 'fixed' }}>
       <div className="mobile-content">
         <a href={'/'}>
-         <Image width={20} height={20} src="/icon.svg" alt="logo" /> <span>E</span>vander
+          <Image className='logo' width={40} height={30} src="/icon.svg" alt="logo" />
         </a>
         <MobileIcon onClick={handleOpen}>
           {open ? (

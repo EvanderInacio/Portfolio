@@ -72,7 +72,7 @@ export const ProjectsContent = styled.section`
 `
 
 export const ProjectsItem = styled.div`
-  border: 3px solid ${props => props.theme.backgroundSecondAlt};
+  border: 3px solid ${props => props.theme.backgroundWork};
   border-radius: 10px;
   max-width: 24rem;
   cursor: pointer;
@@ -91,6 +91,7 @@ export const ProjectsItem = styled.div`
     object-fit: cover;
     transition: all;
     transition-duration: 500ms;
+    border-radius: 10px;
 
     &:hover {
       transform: scale(1.1);
@@ -99,7 +100,7 @@ export const ProjectsItem = styled.div`
 
   .description {
     margin-top: -1rem;
-    background-color: ${props => props.theme.backgroundSecondAlt};
+    background-color: ${props => props.theme.backgroundWork};
     padding: 2rem 1rem;
 
     h2 {

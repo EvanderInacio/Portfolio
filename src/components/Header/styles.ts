@@ -31,18 +31,9 @@ export const HeaderContainer = styled.header`
   .mobile-content {
     font-weight: 700;
     font-size: 1.2rem;
-
-    span {
-      color: #04C4C2;
-    }
-
-    img {
-      width: 1.3rem;
-      margin-bottom: -0.2rem;
-    }
-
+    
     @media (max-width: 994px) {
-      margin: 0.8rem 1rem 1rem;
+      margin: 0.5rem 1rem;
     }
   }
 `

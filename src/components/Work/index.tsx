@@ -34,7 +34,7 @@ export function Work() {
                     borderBottom: `7px solid ${theme.backgroundSecondAlt}`,
                     boxShadow: `0px 5px 0px 0px ${theme.firstColor}`
                   }}
-                  contentArrowStyle={{ borderRight: "12 px solid #030712" }}
+                  contentArrowStyle={{ borderRight: `10px solid ${theme.backgroundSecondAlt}`}}
                   date={work.date}
                   icon={
                     <Image
