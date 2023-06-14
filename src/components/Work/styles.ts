@@ -37,10 +37,4 @@ export const WorkContent = styled.div`
       margin-left: .8rem;
     }
   }
-
-  span {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: ${props => props.theme.textSecondary};
-  }
 `

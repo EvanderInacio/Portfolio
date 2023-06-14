@@ -6,10 +6,9 @@ import {
 import 'react-vertical-timeline-component/style.min.css'
 import { Container, Title } from '../../styles/styles'
 import { Briefcase } from 'phosphor-react'
-import works from './work'
+import works from '../../data/work'
 import Image from 'next/image'
 import { WorkContainer, WorkContent } from './styles'
-import { BiBlock } from 'react-icons/bi'
 import { useTheme } from 'styled-components'
 
 export function Work() {
@@ -35,7 +34,8 @@ export function Work() {
                     borderBottom: `7px solid ${theme.backgroundSecondAlt}`,
                     boxShadow: `0px 5px 0px 0px ${theme.firstColor}`
                   }}
-                  contentArrowStyle={{ borderRight: '10px solid  #0c0b0e' }}
+                  contentArrowStyle={{ borderRight: "12 px solid #030712" }}
+                  date={work.date}
                   icon={
                     <Image
                       style={{ borderRadius: '50%' }}
@@ -62,7 +62,6 @@ export function Work() {
                           <img key={tag.name} src={tag.icon} alt={tag.name} />
                         ))}
                       </ul>
-                      <span>{work.date}</span>
                     </WorkContent>
                   </WorkContainer>
                 </VerticalTimelineElement>

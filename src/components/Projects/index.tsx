@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
-import projects from './projects'
+import projects from '../../data/projects'
 import { AllProjects } from './Github'
 import { ProjectsContainer, ProjectsContent } from './styles'
 import { Container, Title } from '../../styles/styles'
@@ -20,11 +20,13 @@ export function Projects() {
     <Container id="projects">
       <Title>
         Projetos
-        <span><HiOutlineDesktopComputer /> Projects</span>
-        <img className='vector' src="/vectors/code.svg" alt="" />
+        <span>
+          <HiOutlineDesktopComputer /> Projects
+        </span>
+        <img className="vector" src="/vectors/code.svg" alt="" />
       </Title>
       <ProjectsContainer>
-        {projects.map(project => {
+        {projects.slice(0, 9).map(project => {
           return (
             <Link href={`/project/${project.url}`} key={project.id}>
               <a>
@@ -33,15 +35,15 @@ export function Projects() {
                   <div className="title">
                     <h2>{project.title}</h2>
                     <span>{project.type}</span>
-                    <div className='tags' >
-                      {project.tags.map((tag) => {
+                    <div className="tags">
+                      {project.tags.map(tag => {
                         return (
                           <Image
                             width={32}
-                            height={32} 
-                            key={tag.name} 
-                            src={tag.icon} 
-                            alt={tag.name} 
+                            height={32}
+                            key={tag.name}
+                            src={tag.icon}
+                            alt={tag.name}
                           />
                         )
                       })}
@@ -54,7 +56,7 @@ export function Projects() {
         })}
       </ProjectsContainer>
 
-      <AllProjects title={"Todos os projetos"} />
+      <AllProjects title={'Todos os projetos'} />
     </Container>
   )
 }

@@ -1,83 +1,78 @@
-import styled from "styled-components";
-import { ButtonAlt } from "../../styles/styles";
-import { ArrowLeft } from "phosphor-react";
-import Link from "next/link";
-
-const Styles404 = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 1rem;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    margin-top: 5rem;
-  }
-  
-  img {
-    width: 15rem;
-    margin-bottom: 3rem;
-
-    @media (min-width: 768px) {
-      width: 20rem;
-    }
-    
-    @media (min-width: 1100px) {
-      width: 40rem;
-    }
-  }
-
-`
-
-const Content = styled.div`
-  span {
-    color: ${ props => props.theme.textSecondary};
-    margin-bottom: 1rem;
-    font-size: small;
-
-    @media (min-width: 468px) {
-      font-size: 1rem;
-    }
-
-    @media (min-width: 768px) {
-      font-size: 1.5rem;
-    }
-
-  }
-
-  h1 {
-    color: ${ props => props.theme.firstColor};
-    margin-bottom: 2rem;
-    font-size: 2rem;
-
-    @media (min-width: 768px) {
-      font-size: 2.5rem;
-    }
-
-    @media (min-width: 1100px) {
-      font-size: 3rem;
-    }
-  }
-  
-`
+import { ArrowLeft } from 'phosphor-react'
+import {
+  ProjectsContainer,
+  ProjectsTitle,
+  ProjectsContent,
+  ProjectsItem
+} from '../../styles/projects'
+import projects from '../../data/projects'
+import Link from 'next/link'
+import Image from 'next/image'
+import { Contact } from '../../components/Contact'
+import { Footer } from '../../components/Footer'
 
 export default function Projects() {
   return (
-      <Styles404>
-        <img src="/vectors/404.svg" alt="404" />
+    <ProjectsContainer>
+      <ProjectsTitle>
+        <h3>../Projetos</h3>
+        <h1>Meus Projetos</h1>
+        <p>
+          Aqui você poderá ver alguns dos trabalhos que eu desenvolvi. Navegue à
+          vontade e explore os projetos para ver como foram criados, as
+          tecnologias utilizadas e as funcionalidades implementadas.
+        </p>
+        <Link href={'/'}>
+          <a>
+            <button>
+              <ArrowLeft
+                style={{ marginBottom: '-0.1rem' }}
+                weight="bold"
+                size={16}
+              />
+              Voltar para home
+            </button>
+          </a>
+        </Link>
+      </ProjectsTitle>
 
-        <Content>
-          <span>Ei! Parece que você está perdido :(</span>
-          <h1> 404 <br /> Pagina não encontrada</h1>
-          <Link href={"/"}>
-            <ButtonAlt>
-              <ArrowLeft weight="bold" size={18} /> 
-              Voltar
-            </ButtonAlt>
-          </Link>
-        </Content>
-      </Styles404>
+      <ProjectsContent>
+        {projects.map(project => {
+          return (
+            <ProjectsItem key={project.id}>
+              <Link href={`/project/${project.url}`} key={project.id}>
+                <a>
+                  <Image
+                    className="banner"
+                    width={380}
+                    height={210}
+                    src={project.img}
+                    alt={project.title}
+                    unoptimized
+                  />
+                  <div className="description">
+                    <h2>{project.title}</h2>
+                    <p>{project.description}</p>
+                    <div className="tags">
+                      {project.tags.map(tag => {
+                        return (
+                          <Image
+                            width={35}
+                            height={35}
+                            key={tag.name}
+                            src={tag.icon}
+                            alt={tag.name}
+                          />
+                        )
+                      })}
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            </ProjectsItem>
+          )
+        })}
+      </ProjectsContent>
+    </ProjectsContainer>
   )
 }

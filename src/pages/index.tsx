@@ -27,9 +27,9 @@ export default function Home() {
         <HomeHero />
         <About />
         <Skills />
-        <Education />
         <Work />
         <Projects />
+        <Education />
         <CV />
         <Contact />
       </Section>

@@ -4,8 +4,8 @@ import Link from 'next/link'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
 
-import educations from './educations'
-import certificates from './certificates'
+import educations from '../../data/educations'
+import certificates from '../../data/certificates'
 import { GraduationCap } from 'phosphor-react'
 import { Title } from '../../styles/styles'
 import {

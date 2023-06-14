@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { BsCodeSquare } from 'react-icons/bs'
 import { Container, Title } from '../../styles/styles'
-import cardSkills from './skills'
+import cardSkills from '../../data/skills'
 import { SkillsContainer, SkillsContent, Vector } from './styles'
 
 interface Skills {

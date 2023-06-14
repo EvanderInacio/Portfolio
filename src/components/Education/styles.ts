@@ -9,9 +9,13 @@ export const ContainerEducation = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 2rem 1.5rem;
+
+  @media(min-width: 768px) {
+    margin-bottom: 8rem;
+  }
   
   @media(min-width: 1100px) {
-    margin-bottom: 6rem;
+    margin-bottom: 11rem;
   }
   
   .vector-circle{
@@ -19,7 +23,7 @@ export const ContainerEducation = styled.div`
     left: 1rem;
     z-index: -999;
     bottom: -5.5rem;
-    width: 10rem;
+    width: 15rem;
 
     @media(min-width: 768px) {
       bottom: -9rem;
@@ -28,7 +32,7 @@ export const ContainerEducation = styled.div`
     
     @media(min-width: 1100px) {
       bottom: -15.5rem;
-      left: 5rem;
+      left: 10rem;
       width: auto;
     }
 
@@ -60,8 +64,6 @@ export const EducationList = styled.div`
   display: inline-block;
   vertical-align: top;
   justify-content: center;
-
-  
 `;
 
 export const List = styled.div`
@@ -92,7 +94,7 @@ export const ListImage = styled.div`
     width: 11rem;
     border-radius: 5px;
     padding: 1rem;
-    background-color: ${props => props.theme.borderSecond};
+    background-color: ${props => props.theme.backgroundSecond};
     margin-bottom: 1rem;
   }
 
@@ -105,7 +107,7 @@ export const ListImage = styled.div`
     gap: .5rem;
     font-size: 1rem;
     
-    article {
+    span {
       color: ${props => props.theme.firstColor};
     }
   }
@@ -113,22 +115,23 @@ export const ListImage = styled.div`
 `
 
 export const ListContent = styled.div`
-  max-width: 20rem;
+  max-width: 25rem;
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 800;
     color: ${props => props.theme.firstColor};
   }
 
   h3 {
     color: ${props => props.theme.secondColor};
-    margin-bottom: 1rem;
+    margin-bottom: 1.1rem;
     font-size: 1rem;
   }
   
   p {
     white-space: break-spaces;
+    font-size: 15px;
   }
 `
 

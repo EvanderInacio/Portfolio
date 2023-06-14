@@ -244,7 +244,7 @@ export const PrintContainer = styled.div`
 `
 
 export const Print = styled.div`
-  border: 5px solid ${props => props.theme.backgroundSecondAlt};
+  border: 3px solid ${props => props.theme.backgroundSecondAlt};
   border-radius: 5px;
   width: 18rem;
 

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import ReactPlayer from 'react-player'
-import projects from '../../components/Projects/projects'
+import projects from '../../data/projects'
 import { Footer } from '../../components/Footer'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
