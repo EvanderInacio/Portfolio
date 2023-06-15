@@ -31,6 +31,14 @@ export const Title = styled.h2`
     font-size: 3.5rem;
   }
 
+  p {
+    font-size: 1.5rem;
+    position: absolute;
+    text-align: center;
+    top: -2rem;
+    color: ${props => props.theme.secondColor};
+  }
+
   span {
     z-index: -1;
     display: grid;

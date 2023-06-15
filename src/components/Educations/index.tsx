@@ -18,10 +18,11 @@ import {
   ListContent
 } from './styles'
 
-export function Education() {
+export function Educations() {
   return (
     <ContainerEducation>
       <Title>
+        <p>../educations</p>
         Educação
         <span>
           <GraduationCap /> Education

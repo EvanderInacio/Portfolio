@@ -11,12 +11,13 @@ import Image from 'next/image'
 import { WorkContainer, WorkContent } from './styles'
 import { useTheme } from 'styled-components'
 
-export function Work() {
+export function Work({ exp }: any) {
   const theme = useTheme()
 
   return (
     <Container id="experience">
       <Title>
+        <p>{exp}</p>
         Experiência
         <span>
           <Briefcase /> Experience

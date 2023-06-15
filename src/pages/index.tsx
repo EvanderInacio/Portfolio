@@ -8,9 +8,8 @@ import { CV } from '../components/CV'
 import { Skills } from '../components/Skills'
 import { ScrollTop } from '../components/ScrollTop'
 import { Section } from '../styles/styles'
-import { Contact } from '../components/Contact'
+import { ContactForm } from '../components/ContactForm'
 import { Footer } from '../components/Footer'
-import { Education } from '../components/Education'
 import { Work } from '../components/Work'
 
 export default function Home() {
@@ -27,11 +26,9 @@ export default function Home() {
         <HomeHero />
         <About />
         <Skills />
-        <Work />
+        <Work exp={''} />
         <Projects />
-        <Education />
-        <CV />
-        <Contact />
+        <ContactForm contact={''} />
       </Section>
       <Footer />
     </>

@@ -39,23 +39,15 @@ export function Header() {
           </li>
 
           <li>
-            <Link href={'#about'} scroll={false}>
+            <Link href={'/about'} scroll={false}>
               <a>
                 <span>Sobre</span>
               </a>
             </Link>
           </li>
-
+          
           <li>
-            <Link href={'#skills'} scroll={false}>
-              <a>
-                <span>Habilidades</span>
-              </a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href={'#experience'} scroll={false}>
+            <Link href={'/experience'} scroll={false}>
               <a>
                 <span>Experiência</span>
               </a>
@@ -63,7 +55,15 @@ export function Header() {
           </li>
 
           <li>
-            <Link href={'#projects'} scroll={false}>
+            <Link href={'/education'} scroll={false}>
+              <a>
+                <span>Educação</span>
+              </a>
+            </Link>
+          </li>
+
+          <li>
+            <Link href={'/projects'} scroll={false}>
               <a>
                 <span>Projetos</span>
               </a>
@@ -71,7 +71,7 @@ export function Header() {
           </li>
 
           <li>
-            <Link href={'#contact'} scroll={false}>
+            <Link href={'/contact'} scroll={false}>
               <a>
                 <span>Contato</span>
               </a>

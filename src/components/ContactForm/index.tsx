@@ -6,11 +6,12 @@ import { ContainerContact, ContactContent } from './styles'
 import { BsWhatsapp } from 'react-icons/bs'
 import { Form } from './Form'
 
-export function Contact() {
+export function ContactForm({ contact }: any) {
   return (
     <Container id="contact">
       <ContainerContact>        
           <Title>
+            <p>{contact}</p>
             Contato
             <span><Envelope /> Contact</span>
           </Title>

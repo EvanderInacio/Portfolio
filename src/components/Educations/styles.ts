@@ -15,7 +15,7 @@ export const ContainerEducation = styled.div`
   }
   
   @media(min-width: 1100px) {
-    margin-bottom: 11rem;
+    margin-bottom: 15rem;
   }
   
   .vector-circle{
