@@ -1,4 +1,4 @@
-import { useTheme } from 'styled-components'
+import Head from 'next/head'
 import Link from 'next/link'
 import { BiUserPin } from 'react-icons/bi'
 import { AiFillGithub } from 'react-icons/ai'
@@ -7,9 +7,10 @@ import {
   AboutContainer,
   AboutContent,
   AboutImage,
+  AboutContact,
   AboutDescription
 } from '../styles/about'
-import { Container, Section, Title } from '../styles/styles'
+import { ButtonAlt, Section, Title } from '../styles/styles'
 import { Links } from '../components/Links'
 import { RiWhatsappFill } from 'react-icons/ri'
 import { BsLinkedin } from 'react-icons/bs'
@@ -19,10 +20,17 @@ import { Footer } from '../components/Footer'
 import { ScrollTop } from '../components/ScrollTop'
 
 export default function About() {
-  const theme = useTheme()
-
   return (
     <>
+      <Head>
+        <title>About | Evander Inácio </title>
+        <meta
+            name="description"
+            content="Meu nome é Evander Inácio, sou um desenvolvedor front-end React
+            do Brasil."
+          />
+      </Head>
+
       <Header />
       <Links />
       <ScrollTop />
@@ -83,50 +91,60 @@ export default function About() {
                   </Link>
                 </ul>
               </div>
+
+              <AboutContact>
+                <h3>Vamos conversar, quem sabe criar um projeto incrível juntos?</h3>
+                <p>Me mande uma mensagem! 😉</p>
+                <Link href={"/contact"}>
+                  <a><ButtonAlt>Contato</ButtonAlt></a>
+                </Link>
+              </AboutContact>
             </AboutImage>
             <AboutDescription>
               <p>
-                Eu sou Evander Inácio. Um desenvolvedor front-end React do
-                Brasil que adora projetar e codificar. Eu uso React.js ou
-                Next.js para construir as interfaces de aplicativos da web e as
-                funcionalidades.
+                Meu nome é Evander Inácio, sou um desenvolvedor front-end React
+                do Brasil, apaixonado por projetar e codificar. Minha
+                especialidade é a criação de interfaces e funcionalidades para
+                aplicativos da web usando React.js e Next.js.
               </p>
               <p>
-                Gosto de pensar que vivi uma vida cheia de histórias. Fui para a
-                universidade inicialmente para fazer graduação em Analise e
-                Desenvolvimento de Sistemas, depois que sair do emprego de
-                repositor. Como ja gostava de computadores e sempre tive uma
-                leve curiosidade de como era feito as páginas web. Então unir as
-                duas coisas e fui para faculdade não com o plano de me torna um
-                desenvolvedor, mas para me achar dentro da área de TI.
+                Iniciei minha jornada na universidade com o objetivo inicial de
+                cursar Análise e Desenvolvimento de Sistemas. Sempre tive interesse por computadores e uma curiosidade em relação à criação de páginas web. Então,
+                decidi unir essas duas paixões e ingressei na faculdade, não com
+                o plano de me tornar um desenvolvedor, mas para explorar as
+                possibilidades da área de TI.
               </p>
               <p>
-                Minha jornada de programação começou seriamente em 2021, no
-                penúltimo semestre da faculdade, com minha primeira tentativa de
-                aprender HTML e CSS. Desisti depois de alguns meses devido à
-                falta de tempo livre...
+                Foi somente em 2021, no penúltimo semestre da faculdade, que
+                comecei a levar a programação mais a sério. Iniciei minha
+                primeira tentativa de aprender HTML e CSS, porém acabei
+                dando uma pausa após alguns meses devido à falta de tempo livre.
               </p>
               <p>
-                Em 2022 percebi que precisava de um objetivo, então foquei nas
-                em HTML, CSS e Javascript para poder construir aplicações web e
-                alimentar meu aprendizado com o sonho de me tornar um
+                No ano seguinte, em 2022, percebi que precisava definir um
+                objetivo claro. Foi então que direcionei meus esforços para
+                aprimorar minhas habilidades em HTML, CSS e JavaScript, com o
+                objetivo de construir aplicações web e aprofundar meu
+                aprendizado. Esse foi o ponto de partida para me tornar um
                 desenvolvedor web.
               </p>
               <p>
-                Atualmente trabalho como desenvolvedor front-end freelancer
-                utilizando ReactJS e Material UI, assim como integração com o
-                back-end feito em NodeJS.
+                Atualmente, trabalho como desenvolvedor front-end freelancer,
+                utilizando ReactJS e Material UI, além de fazer integração com o
+                back-end em NodeJS.
               </p>
               <p>
-                Além disso, continuo a estudar e desenvolver projetos, de modo a
-                ampliar meus conhecimentos em específico no front-end ReactJS,
-                NextJS, JavaScript, TypeScript, HTML + CSS e Git.
+                Além do trabalho, continuo estudando e desenvolvendo projetos
+                pessoais para expandir meus conhecimentos, focado no ecossistema Javascript para desenvolvimento Front-end utilizando ReactJS, Typescript, Next.js, entre outros.
+              </p>
+              <p>
+                Estou sempre em busca de desafios e oportunidades para crescer
+                profissionalmente, e estou animado para contribuir com projetos
+                interessantes e inovadores no campo do desenvolvimento web.
               </p>
             </AboutDescription>
           </AboutContent>
         </AboutContainer>
-
-        
       </Section>
       <Footer />
     </>

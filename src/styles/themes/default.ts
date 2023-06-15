@@ -2,7 +2,7 @@
 export const defaultTheme = {
   background: "#050816",
   backgroundSecond: "#151030",
-  backgroundAlt: "#080612",
+  backgroundAlt: "#080610",
   backgroundSecondAlt: "#080909",
   backgroundContact: "#030712",
   backgroundWork: '#1F2137',

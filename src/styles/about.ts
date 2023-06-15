@@ -17,6 +17,8 @@ export const AboutContent = styled.section`
   @media(min-width: 994px) {
     flex-direction: row-reverse;
     gap: 3rem;
+    align-items: start;
+    margin-top: 3rem;
   }
 `
 export const AboutImage = styled.div`
@@ -28,12 +30,12 @@ export const AboutImage = styled.div`
   
   @media(min-width: 994px) {
     align-items: flex-start;
-    margin-bottom: 10rem;
   }
-
+  
   img {
     width: 15rem;
     margin-bottom: 2rem;
+    border-radius: 15px;
 
     @media (min-width: 468px) {
       width: 20rem;
@@ -48,7 +50,7 @@ export const AboutImage = styled.div`
     ul {
       display: flex;
       flex-direction: column;
-      color: ${props => props.theme.white};
+      color: ${props => props.theme.textSecondary};
       border-top: 2px solid ${props => props.theme.firstColor};
       border-bottom: 2px solid ${props => props.theme.firstColor};
       padding: 2rem 0;
@@ -84,10 +86,39 @@ export const AboutImage = styled.div`
     }
   }
 `
+export const AboutContact = styled.div`
+  @media(max-width: 993px) {
+    display: none;
+  }
+
+  max-width: 23rem;
+  margin-top: 1rem;
+  background: ${props => props.theme.backgroundAlt};
+  border-radius: 5px;
+  padding: 1.6rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 1.2rem;
+  }
+
+  p {
+    color: ${props => props.theme.firstColor};
+    margin-bottom: .8rem;
+  }
+`
 
 export const AboutDescription = styled.div`
   padding: 0 1rem;
-  
+
+  @media (min-width: 994px) {
+    margin-top: 1.5rem;
+  }
+
   p {
     text-align: start;
     margin-bottom: 1.5rem;
