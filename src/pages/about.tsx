@@ -16,6 +16,7 @@ import { BsLinkedin } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
 import { FaDiscord } from 'react-icons/fa'
 import { Footer } from '../components/Footer'
+import { ScrollTop } from '../components/ScrollTop'
 
 export default function About() {
   const theme = useTheme()
@@ -24,6 +25,7 @@ export default function About() {
     <>
       <Header />
       <Links />
+      <ScrollTop />
       <Section>
         <AboutContainer>
           <Title>

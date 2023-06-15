@@ -1,6 +1,5 @@
-import Link from 'next/link'
-import { ArrowUp } from 'phosphor-react'
 import { useState, useEffect } from 'react'
+import { ArrowUp } from 'phosphor-react'
 import { Scroll } from './styles'
 
 export function ScrollTop() {
@@ -24,9 +23,9 @@ export function ScrollTop() {
     <>
       {up && (
         <Scroll>
-          <Link href={'/'} onClick={handleScroll}>
+          <button onClick={handleScroll}>
             <ArrowUp weight='bold' />
-          </Link>
+          </button>
         </Scroll>
       )}
     </>

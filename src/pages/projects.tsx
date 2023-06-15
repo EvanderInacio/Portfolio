@@ -14,6 +14,7 @@ import { Links } from '../components/Links'
 import { Section, Title } from '../styles/styles'
 import { Footer } from '../components/Footer'
 import { HiOutlineDesktopComputer } from 'react-icons/hi'
+import { ScrollTop } from '../components/ScrollTop'
 
 
 export default function Projects() {
@@ -21,6 +22,7 @@ export default function Projects() {
     <>
       <Header />
       <Links />
+      <ScrollTop />
       <Section>
       <Title>
         <p>../projects</p>
