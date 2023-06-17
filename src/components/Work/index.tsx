@@ -17,7 +17,6 @@ export function Work({ exp }: any) {
   return (
     <Container id="experience">
       <Title>
-        <p>{exp}</p>
         Experiência
         <span>
           <Briefcase /> Experience
@@ -56,6 +55,7 @@ export function Work({ exp }: any) {
                     <WorkContent>
                       <h1>{work.title}</h1>
                       <h2>{work.subTitle}</h2>
+                      <span>{work.office}</span>
                       <p>{work.description}</p>
                       <ul>
                         <h3>Techs:</h3>

@@ -101,6 +101,15 @@ export const Title = styled.h2`
   }
 `
 
+export const Description = styled.h4`
+  margin-top: -5rem;
+  margin-bottom: 3rem;
+  max-width: 45rem;
+  text-align: start;
+  padding: 0 1rem;
+  color: ${props => props.theme.textSecondary};
+`
+
 export const ButtonPrimary = styled.button`
   background-color: transparent;
   font-size: 1.1rem;

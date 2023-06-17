@@ -22,7 +22,6 @@ export function Educations() {
   return (
     <ContainerEducation>
       <Title>
-        <p>../educations</p>
         Educação
         <span>
           <GraduationCap /> Education
@@ -89,11 +88,6 @@ export function Educations() {
           </Carousel>
         </EducationImage>
       </EducationContent>
-      <img 
-        className='vector-circle' 
-        src="/vectors/circle-spin.svg" 
-        alt="circulo animado" 
-      />
     </ContainerEducation>
   )
 }

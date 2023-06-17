@@ -53,15 +53,7 @@ export function Header() {
               </a>
             </Link>
           </li>
-
-          <li>
-            <Link href={'/education'}>
-              <a>
-                <span>Educação</span>
-              </a>
-            </Link>
-          </li>
-
+          
           <li>
             <Link href={'/projects'}>
               <a>

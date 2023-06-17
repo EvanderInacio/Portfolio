@@ -72,7 +72,7 @@ export const ProjectsContent = styled.section`
 `
 
 export const ProjectsItem = styled.div`
-  border: 3px solid ${props => props.theme.backgroundWork};
+  border: 3px solid ${props => props.theme.backgroundSecond};
   border-radius: 10px;
   max-width: 24rem;
   cursor: pointer;
@@ -100,7 +100,7 @@ export const ProjectsItem = styled.div`
 
   .description {
     margin-top: -1rem;
-    background-color: ${props => props.theme.backgroundWork};
+    background-color: ${props => props.theme.backgroundSecond};
     padding: 2rem 1rem;
 
     h2 {

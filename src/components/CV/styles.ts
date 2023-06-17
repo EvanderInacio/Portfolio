@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CVContainer = styled.div`
-  background: ${props => props.theme.backgroundSecond};
+  background: ${props => props.theme.backgroundContact};
   border-radius: 20px;
   text-align: center;
 `
@@ -10,7 +10,7 @@ export const CVContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: ${props => props.theme.border};
+  background: ${props => props.theme.backgroundContact};
   border-radius: 10px;
   padding: 1rem;
 
@@ -28,7 +28,8 @@ export const CVContent = styled.div`
 `
 
 export const CVDescription = styled.div`
-  background: ${props => props.theme.backgroundContact};
+  background: ${props => props.theme.background};
+  border: 1px solid ${props => props.theme.backgroundSecond};
   border-radius: 5px;
   padding: 1rem;
   position: relative;
@@ -39,14 +40,15 @@ export const CVDescription = styled.div`
   
   .aspas{
     position: absolute;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: ${props => props.theme.hoverSecond};
   }
 
   p {
     max-width: 20rem;
     font-size: 1.1rem;
-    margin: 2rem 0; 
+    margin-top: 2.8rem;
+    margin-bottom: 2.2rem;
     color: ${props => props.theme.textSecondary};
 
     @media(min-width: 994px) {
@@ -54,32 +56,30 @@ export const CVDescription = styled.div`
     }
   }
  
-
   .profile {
     display: flex;
-    gap: 13px;
-
+    gap: .8rem;
 
     h3 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       color: ${props => props.theme.firstColor};
     }
 
     span {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: ${props => props.theme.secondColor};
     }
 
     img {
       width: 3.5rem;
-      border-radius: 9999px;
+      border-radius: 100%;
     }
   }
-
 `
 
 export const Curriculum = styled.div`
-  background: ${props => props.theme.backgroundContact};
+  background: ${props => props.theme.background};
+  border: 1px solid ${props => props.theme.backgroundSecond};
   border-radius: 5px;
   padding: 1rem 1.5rem;
   display: flex;

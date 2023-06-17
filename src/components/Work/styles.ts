@@ -17,6 +17,12 @@ export const WorkContent = styled.div`
     font-weight: semi-bold;
     color: ${props => props.theme.secondColor};
   }
+  
+    span {
+      font-size: .9rem;
+      font-weight: 500;
+      color: ${props => props.theme.textSecondary};
+    }
 
   p { 
     margin-top: 1.3rem;

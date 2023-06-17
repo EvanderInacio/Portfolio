@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContainerEducation = styled.div`
-  background-color: ${props => props.theme.backgroundContact};
   position: relative;
   width: 100%;
   display: inline-flex;
@@ -9,49 +8,17 @@ export const ContainerEducation = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 2rem 1.5rem;
-
-  @media(min-width: 768px) {
-    margin-bottom: 8rem;
-  }
-  
-  @media(min-width: 1100px) {
-    margin-bottom: 15rem;
-  }
-  
-  .vector-circle{
-    position: absolute;
-    left: 1rem;
-    z-index: -999;
-    bottom: -5.5rem;
-    width: 15rem;
-
-    @media(min-width: 768px) {
-      bottom: -9rem;
-      width: 30rem;
-    }
-    
-    @media(min-width: 1100px) {
-      bottom: -15.5rem;
-      left: 10rem;
-      width: auto;
-    }
-
-    animation: cubo 7s linear infinite;
-    @keyframes cubo {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  }
 `
 
 export const EducationContent = styled.div`
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
   gap: 2rem;
+
+  @media(min-width: 994px) {
+    flex-direction: row;
+  }
 
   ::before ::after {
     content: '';
@@ -75,7 +42,7 @@ export const List = styled.div`
   flex-direction: column;
   gap: 1rem;
   border: 2px solid ${props => props.theme.borderSecond};
-  background-color: ${props => props.theme.background};
+  background-color: ${props => props.theme.backgroundContact};
   border-radius: 8px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -136,17 +103,19 @@ export const ListContent = styled.div`
 `
 
 export const EducationImage = styled.div`
-  @media (max-width: 1100px) {
-    display: none;
-  }
-
   max-width: 500px;
   max-height: 650px;
   display: inline-block;
   position: sticky;
   top: 1px;
+  margin: 0 auto;
 
   .education-logo {
+    @media(max-width: 994px) {
+      display: none;
+    }
+
+    display: block;
     width: 19rem;
     margin-left: 5rem;
   }

@@ -21,6 +21,7 @@
     "react-icons": "^4.6.0",
     "react-player": "^2.11.0",
     "react-responsive-carousel": "^3.2.23",
+    "react-tabs": "^6.0.1",
     "react-vertical-timeline-component": "^3.6.0",
     "styled-components": "^5.3.6",
     "typewriter-effect": "^2.19.0",

@@ -1,19 +1,120 @@
-import { CV } from "../components/CV";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
-import { Links } from "../components/Links";
-import { ScrollTop } from "../components/ScrollTop";
-import { Work } from "../components/Work";
-import { Section } from "../styles/styles";
+import { useState } from 'react'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import { CV } from '../components/CV'
+import { Footer } from '../components/Footer'
+import { Header } from '../components/Header'
+import { Links } from '../components/Links'
+import { ScrollTop } from '../components/ScrollTop'
+import works from '../data/work'
+import { Section, Title, Description } from '../styles/styles'
+import { Educations } from '../components/Educations'
+import { Briefcase } from 'phosphor-react'
+import { TabButton, TabContent, TabsContainer } from '../styles/experience'
+import Head from 'next/head'
 
 export default function Experience() {
+  const [tabIndex, setTabIndex] = useState(0)
+  let numbering = 0
+
   return (
     <>
+      <Head>
+        <title>Experience | Evander Inácio </title>
+        <meta
+            name="description"
+            content="Minha experiência como desenvolvedor web e profissional de trabalho."
+          />
+      </Head>
+
+
       <Header />
       <Links />
       <ScrollTop />
       <Section>
-        <Work exp={'../experience'} />
+        <Title>
+          <p>../experience</p>
+          Experiência
+          <span>
+            <Briefcase /> Experience
+          </span>
+        </Title>
+
+        <Description>Sou apaixonado por criar interfaces interativas e funcionais, buscando sempre aprimorar minhas habilidades e aprender novas tecnologias. Estou sempre aberto a novos desafios e projetos desfiadores.</Description>
+
+        <TabsContainer>
+          <img
+            className="vector-circle"
+            src="/vectors/circle-spin.svg"
+            alt="circulo animado"
+          />
+
+          <Tabs
+            className="tabs"
+            selectedIndex={tabIndex}
+            onSelect={index => setTabIndex(index)}
+            selectedTabClassName={'is-active'}
+            selectedTabPanelClassName={'is-active'}
+          >
+            <TabButton>
+              <TabList className="tab__list">
+                {works.map(work => {
+                  if (work.id) {
+                    numbering += 1
+                    return (
+                      <>
+                        <h2 key={work.id}>
+                          {numbering >= 0 && numbering <= 10
+                            ? `0${numbering - 1}`
+                            : `${numbering - 1}`}
+                        </h2>
+                        <Tab className="tab" >
+                          <button>{work.title}</button>
+                        </Tab>
+                      </>
+                    )
+                  }
+                })}
+              </TabList>
+            </TabButton>
+
+            <TabContent>
+              {works.map(work => {
+                return (
+                  <TabPanel className="tab__panel" key={work.id}>
+                    <div className="title-container">
+                      <div className="title-content">
+                        <div>
+                          <img src={work.img} alt={work.title} />
+                        </div>
+                        <div className="title">
+                          <h1>{work.title}</h1>
+                          <div className="sub"></div>
+                          <h2>{work.subTitle}</h2>
+                          <h3>{work.office}</h3>
+                        </div>
+                      </div>
+                      <h5>{work.date}</h5>
+                    </div>
+                    <p>{work.description}</p>
+                    <div className="techs">
+                      <h3>Techs:</h3>
+                      <ul>
+                        {work.tags.map(tag => (
+                          <div className="tags" key={tag.name}>
+                            <img src={tag.icon} alt={tag.name} />
+                            <h4>{tag.name}</h4>
+                          </div>
+                        ))}
+                      </ul>
+                    </div>
+                  </TabPanel>
+                )
+              })}
+            </TabContent>
+          </Tabs>
+        </TabsContainer>
+
+        <Educations />
         <CV />
       </Section>
       <Footer />
