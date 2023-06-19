@@ -70,7 +70,7 @@ export const SkillsContent = styled.div`
       content: '';
       position: absolute;
       inset: 5px;
-      background: ${props => props.theme.backgroundSecondAlt};
+      background: ${props => props.theme.backgroundAlt};
       border-radius: 20px;
     }
   }

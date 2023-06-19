@@ -22,10 +22,9 @@ export default function Experience() {
         <title>Experience | Evander Inácio </title>
         <meta
             name="description"
-            content="Minha experiência como desenvolvedor web e profissional de trabalho."
+            content="Minha experiência como desenvolvedor web."
           />
       </Head>
-
 
       <Header />
       <Links />
@@ -90,10 +89,12 @@ export default function Experience() {
                           <h1>{work.title}</h1>
                           <div className="sub"></div>
                           <h2>{work.subTitle}</h2>
-                          <h3>{work.office}</h3>
                         </div>
                       </div>
-                      <h5>{work.date}</h5>
+                      <div className='office'>
+                        <h3>{work.office}</h3>
+                        <h4>{work.date}</h4>
+                      </div>
                     </div>
                     <p>{work.description}</p>
                     <div className="techs">

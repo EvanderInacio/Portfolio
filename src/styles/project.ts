@@ -71,7 +71,7 @@ export const Banner = styled.div`
     }
 
     h1 {
-      color: ${props => props.theme.white};
+      color: ${props => props.theme.text};
       font-weight: 800;
       font-size: 2rem;
       
@@ -181,11 +181,11 @@ export const Description = styled.div`
   }
 
   .tags {
-    border: 2px solid ${props => props.theme.borderSecond};
+    border: 1px solid ${props => props.theme.border};
     border-radius: 10px;
     min-width: 12rem;
     padding: 1rem;
-    background-color: ${props => props.theme.backgroundSecondAlt};
+    background-color: ${props => props.theme.dark};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -244,7 +244,7 @@ export const PrintContainer = styled.div`
 `
 
 export const Print = styled.div`
-  border: 3px solid ${props => props.theme.backgroundSecondAlt};
+  border: 3px solid ${props => props.theme.backgroundAlt};
   border-radius: 5px;
   width: 18rem;
 

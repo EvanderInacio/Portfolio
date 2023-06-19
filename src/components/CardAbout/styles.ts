@@ -5,21 +5,16 @@ export const AboutContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
 
   .AboutImg {
-    width: 200px;
+    width: 10rem;
     display: flex;
     justify-self: center;
     align-self: center;
-    position: relative;
-    transition: 0.4s;
-    transition: 1s all ease;
     border-radius: 5px;
     margin-bottom: 2rem;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
   .aboutContent {
@@ -27,11 +22,12 @@ export const AboutContainer = styled.section`
     text-align: start;
     max-width: 31rem;
   }
-  
+
   .aboutDescription {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 2.5rem;
   }
 
   @media (min-width: 994px) {
@@ -49,7 +45,6 @@ export const AboutContainer = styled.section`
       margin-bottom: 3rem;
       font-weight: 500;
       align-items: center;
-
     }
   }
 `

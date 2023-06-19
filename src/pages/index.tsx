@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { About } from '../components/About'
+import { About } from '../components/CardAbout'
 import { Header } from '../components/Header'
 import { HomeHero } from '../components/Home'
 import { Links } from '../components/Links'
@@ -8,7 +8,7 @@ import { CV } from '../components/CV'
 import { Skills } from '../components/Skills'
 import { ScrollTop } from '../components/ScrollTop'
 import { Section } from '../styles/styles'
-import { ContactForm } from '../components/ContactForm'
+import { Contact } from '../components/Contact'
 import { Footer } from '../components/Footer'
 import { Work } from '../components/Work'
 
@@ -28,7 +28,7 @@ export default function Home() {
         <Skills />
         <Work exp={''} />
         <Projects />
-        <ContactForm contact={''} />
+        <Contact />
       </Section>
       <Footer />
     </>

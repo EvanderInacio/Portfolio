@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
   position: fixed;
   width: 100%;
   top: 0;
-  height: 4rem;
+  height: 3.5rem;
   font-weight: 600;
   font-size: 1.2rem;
   position: relative;
@@ -17,6 +17,7 @@ export const HeaderContainer = styled.header`
 
   @media (min-width: 995px) {
     display: flex;
+    height: 4rem;
     justify-content: space-around;
     padding: 1rem 0;
     align-items: center;
@@ -32,6 +33,27 @@ export const HeaderContainer = styled.header`
     font-weight: 700;
     font-size: 1.2rem;
     
+    a {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        margin-right: .5rem;
+      }
+
+      .logo-name {
+        font-size: 1.2rem;
+        transition: all;
+        transition-duration: 500ms;
+
+        &:hover {
+          color: ${props => props.theme.firstColor};
+          transition-duration: 100ms;
+          margin-top: -.5rem;
+        }
+      }
+    }
+
     @media (max-width: 994px) {
       margin: 0.5rem 1rem;
     }
@@ -43,7 +65,7 @@ export const MobileIcon = styled.div`
   @media (max-width: 994px) {
     display: block;
     position: absolute;
-    top: 1.045rem;
+    top: 1rem;
     right: 1rem;
     cursor: pointer;
     z-index: 20;
@@ -54,7 +76,7 @@ interface Click {
   readonly open: boolean
 }
 
-export const NavMenu = styled.nav<Click>`  
+export const NavMenu = styled.nav<Click>`
   @media (max-width: 994px) {
     height: 100vh;
     width: 100vw;
@@ -62,8 +84,8 @@ export const NavMenu = styled.nav<Click>`
     z-index: 10;
     opacity: 0.95;
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    transition: transform 0.5s ease-in-out; 
+    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
+    transition: transform 0.5s ease-in-out;
     //display: ${({ open }) => (open ? 'block' : 'none')};
   }
 
@@ -72,7 +94,7 @@ export const NavMenu = styled.nav<Click>`
     gap: 1.2rem;
     justify-content: center;
     align-items: center;
-    
+
     a {
       gap: 2px;
       font-size: 1.1rem;
@@ -80,12 +102,12 @@ export const NavMenu = styled.nav<Click>`
       color: ${props => props.theme.textPrimary};
       height: 1rem;
       cursor: pointer;
-      
+
       span {
         line-height: 1.08;
         white-space: nowrap;
         position: relative;
-        
+
         &:before {
           content: '';
           height: 2px;
@@ -103,7 +125,7 @@ export const NavMenu = styled.nav<Click>`
           visibility: hidden;
         }
       }
-      
+
       &:hover {
         color: ${props => props.theme.firstColor};
         span:before {

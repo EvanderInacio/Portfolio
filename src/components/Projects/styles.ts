@@ -30,7 +30,7 @@ export const ProjectsContent = styled.div`
   align-items: center;
   transition: transform 0.3s;
   overflow: hidden;
-  border: 3.5px solid ${props => props.theme.borderSecond};
+  border: 2px solid ${props => props.theme.border};
 
   &:hover{
     border-color: ${props => props.theme.firstColor};
@@ -39,9 +39,10 @@ export const ProjectsContent = styled.div`
 
   img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 100%;
+    border-radius: 5px;
     opacity: 1;
+    object-fit: cover;
 
     &:hover {
       opacity: 0.5;

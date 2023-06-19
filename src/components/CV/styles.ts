@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const CVContainer = styled.div`
-  background: ${props => props.theme.backgroundContact};
-  border-radius: 20px;
+  background: ${props => props.theme.dark};
+  border: 1px solid ${props => props.theme.border};
+  border-radius: 10px;
   text-align: center;
 `
 
@@ -10,7 +11,7 @@ export const CVContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: ${props => props.theme.backgroundContact};
+  background: ${props => props.theme.dark};
   border-radius: 10px;
   padding: 1rem;
 
@@ -28,8 +29,7 @@ export const CVContent = styled.div`
 `
 
 export const CVDescription = styled.div`
-  background: ${props => props.theme.background};
-  border: 1px solid ${props => props.theme.backgroundSecond};
+  background: ${props => props.theme.backgroundSecond};
   border-radius: 5px;
   padding: 1rem;
   position: relative;
@@ -49,7 +49,7 @@ export const CVDescription = styled.div`
     font-size: 1.1rem;
     margin-top: 2.8rem;
     margin-bottom: 2.2rem;
-    color: ${props => props.theme.textSecondary};
+    color: ${props => props.theme.gray};
 
     @media(min-width: 994px) {
       font-size: 1.3rem;
@@ -78,8 +78,7 @@ export const CVDescription = styled.div`
 `
 
 export const Curriculum = styled.div`
-  background: ${props => props.theme.background};
-  border: 1px solid ${props => props.theme.backgroundSecond};
+  background: ${props => props.theme.backgroundSecond};
   border-radius: 5px;
   padding: 1rem 1.5rem;
   display: flex;

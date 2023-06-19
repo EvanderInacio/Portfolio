@@ -30,11 +30,11 @@ export function Work({ exp }: any) {
               return (
                 <VerticalTimelineElement
                   contentStyle={{
-                    background: theme.backgroundSecondAlt,
-                    borderBottom: `7px solid ${theme.backgroundSecondAlt}`,
+                    background: theme.backgroundAlt,
+                    borderBottom: `7px solid ${theme.backgroundAlt}`,
                     boxShadow: `0px 5px 0px 0px ${theme.firstColor}`
                   }}
-                  contentArrowStyle={{ borderRight: `10px solid ${theme.backgroundSecondAlt}`}}
+                  contentArrowStyle={{ borderRight: `10px solid ${theme.backgroundAlt}`}}
                   date={work.date}
                   icon={
                     <Image
@@ -47,7 +47,7 @@ export function Work({ exp }: any) {
                   }
                   iconStyle={{
                     boxShadow: `0px 0px 0px 3px ${theme.firstColor}`,
-                    background: theme.border
+                    background: theme.backgroundAlt
                   }}
                   key={work.id}
                 >

@@ -1,127 +1,95 @@
 import styled from 'styled-components'
+import { rgba } from 'polished'
 
-export const ProjectsContainer = styled.section`
+export const ProjectsContainer = styled.section``
+
+export const ProjectsContent = styled.section`
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .border {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border-top: 1px solid ${props => props.theme.gray_easy};
+  }
 `
 
-export const ProjectsTitle = styled.div`
-  background: ${props => props.theme.backgroundSecond};
-  width: 100%;
+export const ProjectsItem = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 0;
-  margin-bottom: 5rem;
+  gap: 3rem;
+  padding: 0 2rem;
 
-  h3 {
-    font-size: 15px;
-    color: ${props => props.theme.secondColor};
-    font-weight: 300;
+  @media(min-width: 994px) {
+    flex-direction: row;
   }
 
-  h1 {
-    font-size: 2rem;
-    color: ${props => props.theme.firstColor};
-    margin-bottom: 1.5rem;
-  }
-
-  p {
-    text-align: center;
-    max-width: 30rem;
-    margin-bottom: 1.3rem;
+  .banner {
+    img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 0.5rem;
+   }
   }
 
   button {
     border: none;
     background: transparent;
-    color: ${props => props.theme.white};
+    color: ${props => props.theme.gray};
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: flex;
-    gap: .3rem;
-
+    
 
     &:hover {
       color: ${props => props.theme.firstColor};
     }
   }
-`
 
-export const ProjectsContent = styled.section`
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 1rem;
-  gap: 1rem;
-  margin-bottom: 8rem;
- 
+  .title {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
 
-  @media(min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media(min-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-`
-
-export const ProjectsItem = styled.div`
-  border: 3px solid ${props => props.theme.backgroundSecond};
-  border-radius: 10px;
-  max-width: 24rem;
-  cursor: pointer;
-  margin: 1rem 0;
-  opacity: 0.8;
-  
-  &:hover {
-    border: 3px solid ${props => props.theme.firstColor};
-    border-radius: 5px;
-    opacity: 1;
-  }
-
-  .banner {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all;
-    transition-duration: 500ms;
-    border-radius: 10px;
-
-    &:hover {
-      transform: scale(1.1);
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: ${props => props.theme.white};
     }
   }
 
   .description {
-    margin-top: -1rem;
-    background-color: ${props => props.theme.backgroundSecond};
-    padding: 2rem 1rem;
-
-    h2 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: ${props => props.theme.firstColor};
-      margin-bottom: 1rem;
-    }
+    max-width: 30rem;
 
     p {
+      margin: 1.5rem 0;
+      color: ${props => props.theme.gray_easy};
+
       overflow: hidden;
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
-      margin-bottom: 1rem;
+      -webkit-line-clamp: 4;
     }
 
     .tags {
       display: flex;
-      gap: .8rem;  
+      flex-wrap: wrap;
+      column-gap: 0.5rem;
+      row-gap: 0.5rem;
+      margin-bottom: 2.5rem;
+      
+      span { 
+        background: ${props => rgba(props.theme.color, 0.8)};
+        padding: 0.25rem 0.75rem;
+        color: ${props => props.theme.text};
+        border-radius: 0.5rem;
+        font-size: 0.875rem; 
+        line-height: 1.25rem;
+      }
     }
-
   }
 `

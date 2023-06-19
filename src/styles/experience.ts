@@ -73,7 +73,7 @@ export const TabButton = styled.div`
     border: 2px solid ${props => props.theme.secondColor};
     border-radius: 7px;
     background: none;
-    color: ${props => props.theme.white};
+    color: ${props => props.theme.text};
     width: 100%;
     font-size: 1rem;
     font-weight: 600;
@@ -96,7 +96,7 @@ export const TabContent = styled.div`
   .tab__panel {
     display: none;
     padding: 2rem;
-    background-color: ${props => props.theme.backgroundSecondAlt};
+    background-color: ${props => props.theme.backgroundAlt};
     border-radius: 10px;
   }
 
@@ -136,23 +136,21 @@ export const TabContent = styled.div`
         }
 
         h2 {
-          font-size: 1.2rem;
-          color: ${props => props.theme.secondColor};
+          font-size: 1rem;
+          color: ${props => props.theme.blue};
         }
 
-        h3 {
-          font-size: 1.1rem;
-          color: ${props => props.theme.textSecondary};
-        }
       }
     }
-
-    h5 {
-      align-items: end;
+    
+    .office {
+      font-size: 1rem;
       font-style: italic;
-      color: ${props => props.theme.textPrimary};
       font-weight: 700;
+      align-items: end;
+      color: ${props => props.theme.gray_easy};
     }
+
   }
 
   p {
@@ -160,6 +158,7 @@ export const TabContent = styled.div`
     max-width: 40rem;
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
+    color: ${props => props.theme.text};
   }
 
   .techs {

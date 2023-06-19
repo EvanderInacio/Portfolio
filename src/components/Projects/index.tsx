@@ -31,7 +31,7 @@ export function Projects() {
             <Link href={`/project/${project.url}`} key={project.id}>
               <a>
                 <ProjectsContent>
-                  <img src={project.img} alt={project.title} />
+                  <Image width={400} height={210} src={project.img} alt={project.title} />
                   <div className="title">
                     <h2>{project.title}</h2>
                     <span>{project.type}</span>

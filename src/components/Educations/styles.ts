@@ -41,8 +41,8 @@ export const List = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border: 2px solid ${props => props.theme.borderSecond};
-  background-color: ${props => props.theme.backgroundContact};
+  border: 1px solid ${props => props.theme.border};
+  background-color: ${props => props.theme.dark};
   border-radius: 8px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -73,9 +73,10 @@ export const ListImage = styled.div`
     display: flex;
     gap: .5rem;
     font-size: 1rem;
+    color: ${props => props.theme.gray_easy};
     
     span {
-      color: ${props => props.theme.firstColor};
+      color: ${props => props.theme.gray};
     }
   }
 
@@ -91,7 +92,7 @@ export const ListContent = styled.div`
   }
 
   h3 {
-    color: ${props => props.theme.secondColor};
+    color: ${props => props.theme.color};
     margin-bottom: 1.1rem;
     font-size: 1rem;
   }
@@ -99,6 +100,7 @@ export const ListContent = styled.div`
   p {
     white-space: break-spaces;
     font-size: 15px;
+    color: ${props => props.theme.text};
   }
 `
 

@@ -6,7 +6,7 @@ import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
 import Image from 'next/image'
 
-export function Header() {
+export function Header({ currentPage }: any) {
   const [open, setOpen] = useState(false)
 
   const handleOpen = () => {
@@ -16,14 +16,33 @@ export function Header() {
   return (
     <HeaderContainer style={{ position: 'fixed' }}>
       <div className="mobile-content">
-        <a href={'/'}>
-          <Image className='logo' width={40} height={30} src="/icon.svg" alt="logo" />
-        </a>
+        <Link href={'/'}>
+          <a>
+            <div className="logo">
+              <Image
+                className="logo"
+                width={30}
+                height={30}
+                src="/icon.svg"
+                alt="logo"
+              />
+            </div>
+
+            {'Evander'.split('').map((letter, index) => {
+              return (
+                <span key={index} className="logo-name">
+                  {letter}
+                </span>
+              )
+            })}
+          </a>
+        </Link>
+
         <MobileIcon onClick={handleOpen}>
           {open ? (
-            <X size={24} weight="bold" />
+            <X size={25} weight="bold" />
           ) : (
-            <List size={24} weight="bold" />
+            <List size={25} weight="bold" />
           )}
         </MobileIcon>
       </div>
@@ -45,7 +64,7 @@ export function Header() {
               </a>
             </Link>
           </li>
-          
+
           <li>
             <Link href={'/experience'}>
               <a>
@@ -53,7 +72,7 @@ export function Header() {
               </a>
             </Link>
           </li>
-          
+
           <li>
             <Link href={'/projects'}>
               <a>

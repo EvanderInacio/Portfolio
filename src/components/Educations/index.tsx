@@ -35,7 +35,9 @@ export function Educations() {
                 <List key={education.id}>
                   <ListImage>
                     <img src={education.logo} alt={education.subTitle} />
-                    <span>Nível: {education.level}</span>
+                    <p>
+                      Nível: <span>{education.level} </span>
+                    </p>
                     <p>
                       Status: <span>{education.status}</span>
                     </p>

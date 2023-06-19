@@ -104,10 +104,10 @@ export const Title = styled.h2`
 export const Description = styled.h4`
   margin-top: -5rem;
   margin-bottom: 3rem;
-  max-width: 45rem;
+  max-width: 35rem;
   text-align: start;
   padding: 0 1rem;
-  color: ${props => props.theme.textSecondary};
+  color: ${props => props.theme.gray};
 `
 
 export const ButtonPrimary = styled.button`
@@ -177,7 +177,7 @@ export const ButtonSecondary = styled.button`
   margin: 50px auto;
   border: 0.25em solid ${props => props.theme.firstColor};
   padding: 1rem 2rem;
-  color: ${props => props.theme.white};
+  color: ${props => props.theme.text};
   font-size: 1rem;
   font-weight: 700;
   background-color: transparent;
@@ -228,7 +228,7 @@ export const ButtonAlt = styled.button`
     cursor: pointer;
     border: 0.25em solid ${props => props.theme.secondColor};
     padding: 1rem 2rem;
-    color: ${props => props.theme.white};
+    color: ${props => props.theme.text};
     font-size: 1rem;
     font-weight: 700;
     background-color: transparent;
@@ -262,6 +262,6 @@ export const ButtonSecondAlt = styled.button`
 
   &:hover {
     color: black;
-    background-color: ${props => props.theme.white};
+    background-color: ${props => props.theme.firstColor};
   }
 `

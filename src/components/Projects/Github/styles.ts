@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const AllContainer = styled.div`
   border-radius: 15px;
-  background: ${props => props.theme.backgroundAlt};
-  border: 1px solid ${props => props.theme.borderSecond};
+  background: ${props => props.theme.dark};
+  border: 1px solid ${props => props.theme.border};
   display: flex;
   justify-content: center;
   align-items: center;

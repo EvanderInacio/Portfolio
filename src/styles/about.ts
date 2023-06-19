@@ -50,7 +50,7 @@ export const AboutImage = styled.div`
     ul {
       display: flex;
       flex-direction: column;
-      color: ${props => props.theme.textSecondary};
+      color: ${props => props.theme.gray};
       border-top: 2px solid ${props => props.theme.firstColor};
       border-bottom: 2px solid ${props => props.theme.firstColor};
       padding: 2rem 0;
@@ -75,7 +75,7 @@ export const AboutImage = styled.div`
         
         
         &:hover {
-          color: ${props => props.theme.firstColor};
+          color: ${props => props.theme.cyan};
         }
         
         @media (min-width: 468px) {
@@ -104,10 +104,11 @@ export const AboutContact = styled.div`
 
   h3 {
     margin-bottom: 1.2rem;
+    color: ${props => props.theme.textSecondary};
   }
 
   p {
-    color: ${props => props.theme.firstColor};
+    color: ${props => props.theme.cyan};
     margin-bottom: .8rem;
   }
 `
@@ -123,6 +124,7 @@ export const AboutDescription = styled.div`
     text-align: start;
     margin-bottom: 1.5rem;
     max-width: 31rem;
+    color: ${props => props.theme.text};
   }
 
 `

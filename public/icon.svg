@@ -1,1 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#00fffb" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="64 88 16 128 64 168" fill="none" stroke="#00fffb" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="192 88 240 128 192 168" fill="none" stroke="#00fffb" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><line x1="160" y1="40" x2="96" y2="216" fill="none" stroke="#00fffb" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.75001L5.5 0.5H15.5L10 9.75001H0ZM10 9.75001L4.5 19.5H14.5L20 9.74999L10 9.75001Z" fill="#00d9ff"/>
+</svg>
