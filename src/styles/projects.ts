@@ -43,7 +43,6 @@ export const ProjectsItem = styled.div`
     cursor: pointer;
     font-size: 1.1rem;
     display: flex;
-    
 
     &:hover {
       color: ${props => props.theme.firstColor};

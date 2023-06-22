@@ -5,6 +5,9 @@ export const AboutContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: ${props => props.theme.backgroundSecond};
+  border-radius: 10px;
+  padding: 1.5rem;
   margin-top: 5rem;
   margin-bottom: 2.5rem;
 
@@ -21,6 +24,40 @@ export const AboutContainer = styled.section`
     padding: 0 1rem;
     text-align: start;
     max-width: 31rem;
+
+    h2 {
+      color: ${props => props.theme.color};
+    }
+
+    p {
+      color: ${props => props.theme.textPrimary};
+    }
+
+    strong {
+      color: ${props => props.theme.gray_easy};
+
+      a {
+        color: ${props => props.theme.gray};
+        border-bottom: 1px solid ${props => props.theme.gray};
+
+
+        &:hover {
+          color: ${props => props.theme.color};
+          border-bottom: 1px solid ${props => props.theme.color};
+        }
+      }
+    }
+
+    .aboutButton{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 1.5rem;
+
+      @media(max-width: 468px) {
+        flex-direction: column;
+      }
+    }
   }
 
   .aboutDescription {
@@ -37,11 +74,11 @@ export const AboutContainer = styled.section`
     grid-template-columns: repeat(2, 1fr);
 
     .AboutImg {
-      width: 300px;
+      width: 320px;
     }
 
     .aboutContent {
-      width: 31rem;
+      width: 40rem;
       margin-bottom: 3rem;
       font-weight: 500;
       align-items: center;

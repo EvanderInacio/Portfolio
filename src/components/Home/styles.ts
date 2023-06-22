@@ -19,8 +19,8 @@ export const Content = styled.div`
 `
 
 export const HomeText = styled.div`
-  h3 {
-    color: ${props => props.theme.textSecondary};
+  p {
+    color: ${props => props.theme.gray_light};
     @media (max-width: 350px) {
       font-size: 0.9rem;
     }
@@ -33,15 +33,17 @@ export const HomeText = styled.div`
     font-size: 2.2rem;
     font-weight: 800;
     color: ${props => props.theme.firstColor};
-    background: linear-gradient(to left, #1f1670, #9307f1, #7109e7, #00d9ff);
+    background: linear-gradient(90deg, #9442FE, #3378FF);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
     @media (max-width: 350px) {
       font-size: 1.8rem;
     }
+
     @media (min-width: 768px) {
-      font-size: 3.5rem;
+      font-size: 3.3rem;
     }
   }
   
@@ -52,7 +54,7 @@ export const HomeText = styled.div`
     @media (min-width: 768px) {
       font-size: 2rem;
     }
-    color: #772eff;
+    color: ${props => props.theme.blue};
     font-weight: 600;
   }
   
@@ -108,13 +110,13 @@ export const ImgHome = styled.div`
 
     @media (min-width: 1300px) {
       left: 85%;
-      top: 73%;
+      top: 69%;
       width: 10rem;
     }
   } 
 
-  .home-img {
-    display: none;
+  .home-img {  
+    display: none;  
     @media (min-width: 994px) {
       display: block;
       position: relative;

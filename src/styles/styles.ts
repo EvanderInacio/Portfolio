@@ -42,7 +42,7 @@ export const Title = styled.h2`
   span {
     z-index: -1;
     display: grid;
-    gap: .8rem;
+    gap: 0.8rem;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
@@ -75,7 +75,8 @@ export const Title = styled.h2`
     animation: bounce 1s infinite;
 
     @keyframes bounce {
-      0%, 100% {
+      0%,
+      100% {
         transform: translateY(-25%);
         animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
       }
@@ -220,22 +221,22 @@ export const ButtonSecondary = styled.button`
 `
 
 export const ButtonAlt = styled.button`
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 7px;
-    cursor: pointer;
-    border: 0.25em solid ${props => props.theme.secondColor};
-    padding: 1rem 2rem;
-    color: ${props => props.theme.text};
-    font-size: 1rem;
-    font-weight: 700;
-    background-color: transparent;
-    border-radius: 1em;
-    outline: none;
-    position: relative;
-    transition: all 0.3s;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 7px;
+  cursor: pointer;
+  border: 0.25em solid ${props => props.theme.secondColor};
+  padding: 1rem 2rem;
+  color: ${props => props.theme.text};
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 1em;
+  outline: none;
+  position: relative;
+  transition: all 0.3s;
 
   &:hover {
     color: black;
@@ -263,5 +264,21 @@ export const ButtonSecondAlt = styled.button`
   &:hover {
     color: black;
     background-color: ${props => props.theme.firstColor};
+  }
+`
+
+export const ButtonAlternatives = styled.button`
+  border: none;
+  background: transparent;
+  color: ${props => props.theme.gray};
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  &:hover {
+    color: ${props => props.theme.firstColor};
   }
 `
