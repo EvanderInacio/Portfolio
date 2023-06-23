@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
+import NextNprogress from 'nextjs-progressbar';
 import { GlobalStyles }from '../styles/global';
 import { defaultTheme } from '../styles/themes/default'
 import { Toaster } from '../components/Toaster';
@@ -25,6 +26,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider theme={defaultTheme}>
+        <NextNprogress 
+          color={defaultTheme.firstColor}
+          startPosition={0.3}
+          stopDelayMs={300}
+          height={4}
+          showOnShallow
+        />
+
         <Toaster />
         <GlobalStyles />
         <Component {...pageProps} />

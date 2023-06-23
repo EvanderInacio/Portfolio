@@ -40,7 +40,7 @@ export function About() {
           </div>
 
           <div className='aboutButton'>
-            <Link href={'/contato'}>
+            <Link href={'/contact'}>
               <a>
                 <ButtonAlt>
                   Entre em contato

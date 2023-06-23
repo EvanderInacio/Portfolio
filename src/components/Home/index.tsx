@@ -11,7 +11,7 @@ export function HomeHero() {
     <Container>
       <Content>
         <HomeText>
-          <p>👋🏻 Olá, eu sou</p>
+          <p>👋🏻 Olá, o meu nome é</p>
           <h1>
             Evander Inácio
             <span>
