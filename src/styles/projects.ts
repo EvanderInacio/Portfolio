@@ -26,6 +26,17 @@ export const ProjectsContainer = styled.section`
       }
     } */
   }
+
+  .pc {
+    @media (max-width: 994px) {
+      display: none;
+    }
+
+    width: 15rem;
+    right: 0;
+    position: absolute;
+    top: -20rem;
+  }
 `
 
 export const ProjectsContent = styled.section`
