@@ -1,13 +1,39 @@
 import styled from 'styled-components'
 import { rgba } from 'polished'
 
-export const ProjectsContainer = styled.section``
+export const ProjectsContainer = styled.section`
+  position: relative;
+
+  .laptop {
+    @media (max-width: 994px) {
+      display: none;
+    }
+
+    width: 15rem;
+    position: absolute;
+    top: -20rem;
+
+    /* animation: icons 5s ease 2s infinite alternate;
+    @keyframes icons {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(10px);
+      }
+    } */
+  }
+`
 
 export const ProjectsContent = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   .border {
     width: 100%;
@@ -23,17 +49,17 @@ export const ProjectsItem = styled.div`
   gap: 3rem;
   padding: 0 2rem;
 
-  @media(min-width: 994px) {
+  @media (min-width: 994px) {
     flex-direction: row;
   }
 
   .banner {
     img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     border-radius: 0.5rem;
-   }
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
   }
 
   button {
@@ -80,13 +106,13 @@ export const ProjectsItem = styled.div`
       column-gap: 0.5rem;
       row-gap: 0.5rem;
       margin-bottom: 2.5rem;
-      
-      span { 
+
+      span {
         background: ${props => rgba(props.theme.color, 0.8)};
         padding: 0.25rem 0.75rem;
         color: ${props => props.theme.text};
         border-radius: 0.5rem;
-        font-size: 0.875rem; 
+        font-size: 0.875rem;
         line-height: 1.25rem;
       }
     }

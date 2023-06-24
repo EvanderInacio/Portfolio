@@ -1,14 +1,15 @@
 import Link from 'next/link'
 import { TelegramLogo } from 'phosphor-react'
-import { ButtonAlt } from '../../styles/styles'
+import { ButtonAlt, Section } from '../../styles/styles'
 import { CardContactContainer, CardContactContent } from './styles'
 
 export function CardContact() {
   return (
-    <CardContactContainer>
+   <Section>
+       <CardContactContainer>
       <CardContactContent>
         <div className="description">
-          <h2>Conte-me mais sobre seu projeto</h2>
+          <h2>Vamos conversar!</h2>
           <p>
             Se você tiver dúvidas ou apenas gostaria de dizer olá, entre em
             contato comigo. Farei o possível para entrar em contato com você!
@@ -35,5 +36,6 @@ export function CardContact() {
       </Link>
 
     </CardContactContainer>
+   </Section>
   )
 }

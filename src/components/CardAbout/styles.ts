@@ -26,7 +26,7 @@ export const AboutContainer = styled.section`
     max-width: 31rem;
 
     h2 {
-      color: ${props => props.theme.color};
+      color: ${props => props.theme.cyan_500};
     }
 
     p {
@@ -42,8 +42,8 @@ export const AboutContainer = styled.section`
 
 
         &:hover {
-          color: ${props => props.theme.color};
-          border-bottom: 1px solid ${props => props.theme.color};
+          color: ${props => props.theme.cyan_400};
+          border-bottom: 1px solid ${props => props.theme.cyan_400};
         }
       }
     }

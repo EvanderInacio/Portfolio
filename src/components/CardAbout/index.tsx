@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import Link from 'next/link'
-import { ButtonAlt, Container, ButtonAlternatives } from '../../styles/styles'
+import { Button, Container, ButtonAlternatives } from '../../styles/styles'
 import { AboutContainer } from './styles'
 import { ArrowRight, TelegramLogo } from 'phosphor-react'
 
@@ -42,7 +42,7 @@ export function About() {
           <div className='aboutButton'>
             <Link href={'/contact'}>
               <a>
-                <ButtonAlt>
+                <Button>
                   Entre em contato
                   <TelegramLogo
                     style={{
@@ -52,7 +52,7 @@ export function About() {
                     size={16}
                     weight="bold"
                   />
-                </ButtonAlt>
+                </Button>
               </a>
             </Link>
             <Link href={'/about'}>

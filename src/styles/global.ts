@@ -39,6 +39,6 @@ a {
   background-color: ${props => props.theme.secondColor};
 }
 ::-webkit-scrollbar-thumb:hover{
-  background-color: ${props => props.theme.firstColor};
+  background-color: ${props => props.theme.hoverSecond};
 }
 `

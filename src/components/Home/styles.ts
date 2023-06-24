@@ -48,12 +48,14 @@ export const HomeText = styled.div`
   }
   
   h2 {
-    @media (max-width: 350px) {
+    @media (max-width: 668px) {
       font-size: 1.2rem;
     }
+
     @media (min-width: 768px) {
       font-size: 2rem;
     }
+
     color: ${props => props.theme.blue};
     font-weight: 600;
   }

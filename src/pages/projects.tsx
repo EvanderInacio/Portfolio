@@ -44,12 +44,13 @@ export default function Projects() {
         </Description>
 
         <ProjectsContainer>
+          <img className="laptop" src="/vectors/laptop.svg" alt="laptop" />
           <ProjectsContent>
             {projects.map(project => {
               return (
                 <>
-                  <div className="border" />
-                  <ProjectsItem key={project.id}>
+                  <div className="border" key={project.id} />
+                  <ProjectsItem>
                     <div className="banner">
                       <Image
                         width={500}

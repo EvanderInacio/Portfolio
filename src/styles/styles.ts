@@ -111,6 +111,24 @@ export const Description = styled.h4`
   color: ${props => props.theme.gray};
 `
 
+export const Button = styled.button`
+  background: ${props => props.theme.secondColor};
+  color: ${props => props.theme.text};
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  border: none;
+  border-radius: .5rem;
+  gap: 0.4rem;
+
+  &:hover {
+    background: ${props => props.theme.hoverSecond};
+  } 
+`
+
 export const ButtonPrimary = styled.button`
   background-color: transparent;
   font-size: 1.1rem;

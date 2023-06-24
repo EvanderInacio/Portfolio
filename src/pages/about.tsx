@@ -71,13 +71,13 @@ export default function About() {
                       <RiWhatsappFill size={25} /> +55 (11) 99508-5916
                     </a>
                   </Link>
-                  <Link href={'https://www.discordapp.com/users/Evander#8942'}>
+                  <Link href={'https://www.discordapp.com/users/evander_inacio'}>
                     <a
                       className="dc"
                       target="_blank"
                       aria-label="Link para o Discord"
                     >
-                      <FaDiscord size={25} /> @Evander#8942
+                      <FaDiscord size={25} /> @evander_inacio
                     </a>
                   </Link>
                   <Link href={'mailto:evander.20112@hotmail.com'}>

@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           color={defaultTheme.firstColor}
           startPosition={0.3}
           stopDelayMs={300}
-          height={4}
+          height={3}
           showOnShallow
         />
 

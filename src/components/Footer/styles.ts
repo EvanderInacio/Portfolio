@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   margin-top: 5rem;
-  border-top: 4px solid ${props => props.theme.borderSecond};
-  padding: 1.3rem 0;
+  border-top: 1px solid ${props => props.theme.gray_easy};
+  padding: 1.4rem 0;
 
   display: flex;
   flex-direction: column;
@@ -16,11 +16,17 @@ export const FooterContainer = styled.footer`
     justify-content: space-around;
   }
 
+  h4 {
+    font-size: 1.1rem;
+    color: ${props => props.theme.gray};
+  }
+
   .links {
     cursor: pointer;
     display: flex;
-    gap: 8px;
-    font-size: 1.3rem;
+    gap: 9px;
+    font-size: 1.4rem;
+    color: ${props => props.theme.gray};
 
     a {
       &:hover {
