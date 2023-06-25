@@ -44,8 +44,22 @@ export default function Projects() {
         </Description>
 
         <ProjectsContainer>
-          <img className="laptop" src="/vectors/laptop.svg" alt="laptop" />
-          <img className="pc" src="/vectors/pc.svg" alt="monitor" />
+          <div className="laptop">
+            <Image
+              width={400}
+              height={400}
+              src="/vectors/laptop.svg"
+              alt="laptop"
+            />
+          </div>
+          <div className="pc">
+            <Image
+              width={400}
+              height={400}
+              src="/vectors/pc.svg"
+              alt="monitor"
+            />
+          </div>
 
           <ProjectsContent>
             {projects.map(project => {

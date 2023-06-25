@@ -11,6 +11,8 @@ export const defaultTheme = {
   cyan_400: '#22d3ee',
   cyan_500: '#06b6d4',
 
+  emerald_400: 'rgb(52 211 153)',
+
   blue: '#208CFC',
   color: 'rgb(29 78 216)',
   white: '#f6f2f2',

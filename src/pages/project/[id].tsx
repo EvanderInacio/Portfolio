@@ -13,21 +13,32 @@ import { Carousel } from 'react-responsive-carousel'
 import {
   ProjectContainer,
   Banner,
-  Description,
+  DescriptionProject,
   PrintContainer,
   Print,
+  PrintContent,
+  Gif,
   ContainerVideo,
-  Video
+  Video,
+  Tags,
+  TagsContent,
+  TagsContainer
 } from '../../styles/project'
-import { ButtonAlt, ButtonSecondary, Title } from '../../styles/styles'
+import {
+  ButtonAlt,
+  ButtonSecondary,
+  Title,
+  Description
+} from '../../styles/styles'
 
 import {
   ArrowLeft,
   ChatCenteredText,
   Image as IconImage,
-  YoutubeLogo
+  YoutubeLogo,
+  Hash
 } from 'phosphor-react'
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 import { BsGlobe } from 'react-icons/bs'
 import { AllProjects } from '../../components/Projects/Github'
 
@@ -35,6 +46,8 @@ interface Tag {
   id: string
   name: string
   icon: string
+  color: string
+  rgb: string
 }
 
 interface Print {
@@ -55,6 +68,9 @@ interface Project {
   url: string
   tags: Tag[]
   print: Print[]
+  gif: string
+  year: string
+  status: string
   video: string
   backgroundImage: string
 }
@@ -78,6 +94,9 @@ export const getServerSideProps = async (context: any) => {
     description: project.description,
     tags: project.tags,
     print: project.print,
+    gif: project.gif,
+    year: project.year,
+    status: project.status,
     video: project.video,
     backgroundImage: project.backgroundImage
   }))
@@ -136,7 +155,7 @@ export default function Projeto({ project }: ProjectProps) {
           </div>
         </Banner>
 
-        <Description>
+        <DescriptionProject>
           <div className="description">
             <Title>
               Descrição
@@ -146,19 +165,45 @@ export default function Projeto({ project }: ProjectProps) {
             </Title>
             <p>{project.description}</p>
           </div>
-          <div className="tags">
-            <h4>Tecnologias</h4>
+        </DescriptionProject>
+
+        <Tags>
+          <Title>
+            Tags
+            <span>
+              <Hash /> Skills
+            </span>
+          </Title>
+
+          <Description>
+            Tecnologias usadas no desenvolvimento do projeto.
+          </Description>
+
+          <TagsContainer>
             {project.tags &&
               project.tags.map(tag => {
                 return (
-                  <div className="tag-content" key={tag.id}>
-                    <img src={tag.icon} alt={tag.name} />
-                    <span>{tag.name}</span>
-                  </div>
+                  <TagsContent key={tag.id} color={tag.color}>
+                    <div
+                      className="card-icon"
+                      style={{
+                        backgroundColor: `rgba(${tag.rgb}, .1)`,
+                        border: `1px solid ${tag.color}`
+                      }}
+                    >
+                      <Image
+                        src={tag.icon}
+                        alt={tag.name}
+                        width={50}
+                        height={50}
+                      />
+                    </div>
+                    <h3>{tag.name}</h3>
+                  </TagsContent>
                 )
               })}
-          </div>
-        </Description>
+          </TagsContainer>
+        </Tags>
 
         <PrintContainer>
           <Title>
@@ -167,29 +212,35 @@ export default function Projeto({ project }: ProjectProps) {
               <IconImage /> Screen
             </span>
           </Title>
-          <Print>
-            <Carousel
-              autoPlay={true}
-              infiniteLoop={true}
-              showStatus={false}
-              showIndicators={true}
-              showThumbs={false}
-              interval={4000}
-            >
+
+          <PrintContent>
+            <Gif>
+              <h2>Detalhes</h2>
+              <p>Nome: <span>{project.title}</span></p>
+              <p>Status: <span>{project.status}</span></p>
+              <p>Ano: <span>{project.year}</span></p>
+              <h5>Preview</h5>
+              <Image width={500} height={300} src={project.gif} alt={project.title} />
+            </Gif>
+
+            <Print>
               {project.print &&
                 project.print.map(print => {
                   return (
-                    <Image
-                      key={print.id}
-                      width={800}
-                      height={470}
-                      src={print.img}
-                      alt={print.name}
-                    />
+                    <div className="print-list">
+                      <h3 key={print.id} >{print.name}</h3>
+                      <Image
+                        width={800}
+                        height={470}
+                        src={print.img}
+                        alt={print.name}
+                      />
+                    </div>
                   )
                 })}
-            </Carousel>
-          </Print>
+            </Print>
+          </PrintContent>
+
         </PrintContainer>
 
         <ContainerVideo>

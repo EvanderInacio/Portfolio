@@ -4,7 +4,7 @@ export const ProjectContainer = styled.main`
   display: flex;
   flex-direction: column;
 
-  .allProjects{
+  .allProjects {
     margin: 0 auto;
     margin-bottom: 5rem;
   }
@@ -22,11 +22,11 @@ export const Banner = styled.div`
     border-bottom: 1px solid ${props => props.theme.border};
 
     @media (min-width: 768px) {
-    height: 27rem;
+      height: 27rem;
     }
 
     @media (min-width: 994px) {
-    height: 28rem;
+      height: 28rem;
     }
   }
 
@@ -43,7 +43,7 @@ export const Banner = styled.div`
     z-index: 2;
     margin-bottom: 2rem;
 
-    @media(min-width: 994px){
+    @media (min-width: 994px) {
       bottom: 7.5rem;
       margin-bottom: 3rem;
     }
@@ -74,7 +74,7 @@ export const Banner = styled.div`
       color: ${props => props.theme.text};
       font-weight: 800;
       font-size: 2rem;
-      
+
       @media (min-width: 768px) {
         font-size: 2.7rem;
       }
@@ -131,7 +131,7 @@ export const Banner = styled.div`
     @media (min-width: 768px) {
       margin-bottom: 1rem;
     }
-    
+
     @media (min-width: 1300px) {
       bottom: 8.8rem;
       right: 3%;
@@ -143,22 +143,13 @@ export const Banner = styled.div`
   }
 `
 
-export const Description = styled.div`
+export const DescriptionProject = styled.div`
   margin-top: -8rem;
   text-align: center;
   padding: 0 1rem;
   display: grid;
   justify-items: center;
   align-items: center;
-
-  @media (min-width: 768px) {
-    margin-top: -5rem;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
-  }
 
   .description {
     display: flex;
@@ -231,21 +222,150 @@ export const Description = styled.div`
   }
 `
 
+export const Tags = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+
+  h4 {
+    padding-top: 2.3rem;
+  }
+`
+
+export const TagsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
+`
+
+export const TagsContent = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .card-icon {
+    padding: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+
+    img {
+      border-radius: 0.25rem;
+      width: 40px;
+    }
+    &:hover {
+      transform: scale(0.9);
+      border-color: transparent !important;
+    }
+    &:active {
+      transform: scale(0.8);
+      border-color: transparent !important;
+    }
+  }
+
+  h3 {
+    
+    color: ${(props) => props.color};
+  }
+`
+
 export const PrintContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  justify-content: start;
+  
   margin-top: 3rem;
   margin-bottom: 14rem;
-  
+
   @media (min-width: 768px) {
     margin-top: 7rem;
   }
 `
 
+export const PrintContent = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+
+
+  @media(min-width: 994px) {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+  }
+`
+
+export const Gif = styled.div`
+  padding: 3rem 1rem 0 1rem;
+  margin: 0 auto;
+  
+  @media(min-width: 994px) {
+    display: inline-block;
+    position: sticky;
+    top: 1px;
+    max-width: 500px;
+    max-height: 650px;
+  }
+
+  h2 {
+    color: ${props => props.theme.secondColor};
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  p {
+    color: ${props => props.theme.gray};
+    font-size: 1.1rem;
+    
+    span {
+      color: ${props => props.theme.emerald_400};
+      font-weight: 600;
+    }
+  }
+
+  h5 {
+    margin-top: 2rem;
+    color: ${props => props.theme.gray_medium};
+    font-size: 1rem;
+  }
+`
+
 export const Print = styled.div`
-  border: 3px solid ${props => props.theme.backgroundAlt};
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .print-list{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  
+
+  h3 {
+    color: ${props => props.theme.firstColor};
+    margin: 1.2rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
   width: 18rem;
 
   @media (min-width: 468px) {
@@ -259,7 +379,6 @@ export const Print = styled.div`
   @media (min-width: 994px) {
     width: 50rem;
   }
-
 `
 
 export const ContainerVideo = styled.div`
@@ -280,22 +399,22 @@ export const ContainerVideo = styled.div`
     justify-content: center;
     align-items: center;
   }
-  
-  .imageVideo{
+
+  .imageVideo {
     img {
-        z-index: -1;
-        width: 100%;
-        opacity: 0.4;
-        object-fit: cover; 
-      }
+      z-index: -1;
+      width: 100%;
+      opacity: 0.4;
+      object-fit: cover;
     }
-    
-    .title-video {
-      z-index: 10;
-      position: absolute;
-      top: -10rem;
-    }
-    `
+  }
+
+  .title-video {
+    z-index: 10;
+    position: absolute;
+    top: -10rem;
+  }
+`
 
 export const Video = styled.div`
   margin-bottom: 5rem;
