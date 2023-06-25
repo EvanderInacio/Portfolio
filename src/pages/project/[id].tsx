@@ -227,8 +227,8 @@ export default function Projeto({ project }: ProjectProps) {
               {project.print &&
                 project.print.map(print => {
                   return (
-                    <div className="print-list">
-                      <h3 key={print.id} >{print.name}</h3>
+                    <div className="print-list" key={print.id}>
+                      <h3>{print.name}</h3>
                       <Image
                         width={800}
                         height={470}
