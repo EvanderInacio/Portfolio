@@ -180,9 +180,6 @@ const projects = [
         rgb: '204, 102, 153'
       }
     ],
-    status: 'Completo',
-    year: '2022',
-    gif: ' ',
     print: [
       { name: 'Home', img: '/projects/podcastr/podcastr-home.png' },
       { name: 'Home-2', img: '/projects/podcastr/podcastr-home-2.png' },
