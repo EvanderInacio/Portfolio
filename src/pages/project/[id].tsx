@@ -54,6 +54,7 @@ interface Print {
   id: string
   img: string
   name: string
+  description: string
 }
 
 interface Project {
@@ -232,6 +233,7 @@ export default function Projeto({ project }: ProjectProps) {
                   return (
                     <div className="print-list" key={print.id}>
                       <h3>{print.name}</h3>
+                      <p>{print.description}</p>
                       <Image
                         width={780}
                         style={{ borderRadius: '10px' }}

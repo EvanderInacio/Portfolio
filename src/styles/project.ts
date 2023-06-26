@@ -373,12 +373,17 @@ export const Print = styled.div`
     flex-direction: column;
   }
   
-
   h3 {
-    color: ${props => props.theme.firstColor};
-    margin: 1.2rem 0;
+    color: ${props => props.theme.secondColor};
+    margin-top: 2.4rem;
     font-size: 2rem;
     font-weight: 700;
+  }
+
+  p {
+    color: ${props => props.theme.gray};
+    padding: 0 1rem;
+    margin-bottom: .7rem;
   }
 
   width: 18rem;
