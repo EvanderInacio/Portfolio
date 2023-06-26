@@ -300,10 +300,8 @@ export const PrintContent = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
 
-
-  @media(min-width: 994px) {
+  @media(min-width: 1300px) {
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
@@ -314,7 +312,7 @@ export const Gif = styled.div`
   padding: 3rem 1rem 0 1rem;
   margin: 0 auto;
   
-  @media(min-width: 994px) {
+  @media(min-width: 1300px) {
     display: inline-block;
     position: sticky;
     top: 1px;
@@ -343,6 +341,23 @@ export const Gif = styled.div`
     color: ${props => props.theme.gray_medium};
     font-size: 1rem;
   }
+
+  .preview {
+    width: 15rem;
+    border-radius: 4px;
+
+    @media (min-width: 468px) {
+      width: 25rem;
+    }
+
+    @media (min-width: 768px) {
+      width: 28rem;
+    }
+
+    @media (min-width: 1300px) {
+      width: 30rem;
+    }
+  }
 `
 
 export const Print = styled.div`
@@ -353,9 +368,9 @@ export const Print = styled.div`
 
   .print-list{
     display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   
 

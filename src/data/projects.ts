@@ -93,7 +93,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2022',
-    gif: '/projects/turtlemovie/turtle-movie.gif',
+    gif: '/projects/turtlemovie/turtle_movie.mp4',
     backgroundImage: '/projects/turtlemovie/detail-home.png',
     video:
       'https://www.youtube.com/watch?v=wt2g4q2md9g&ab_channel=EvanderIn%C3%A1cio'
@@ -143,7 +143,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2022',
-    gif: 'https://i.imgur.com/5fUE4Pg.gif',
+    gif: '/projects/playstation/playstation.mp4',
     backgroundImage: '/projects/playstation/playstation-home.png',
     video:
       'https://www.youtube.com/watch?v=VZsm-NGse6M&ab_channel=EvanderIn%C3%A1cio'
@@ -187,7 +187,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2022',
-    gif: 'https://i.imgur.com/hhEjXv3.gif',
+    gif: '/projects/podcastr/podcastr.mp4',
     backgroundImage: '/projects/podcastr/podcastr-home.png',
     video:
       'https://www.youtube.com/watch?v=a_OoBSceC80&ab_channel=EvanderIn%C3%A1cio'
@@ -235,7 +235,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2022',
-    gif: 'https://i.imgur.com/85Q0Qrf.gif',
+    gif: '/projects/github-blog/github-blog.mp4',
     backgroundImage: '/projects/github-blog/github-blog-home.png',
     video:
       'https://www.youtube.com/watch?v=RcKQNz0n6Ts&ab_channel=EvanderIn%C3%A1cio'
@@ -288,7 +288,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2022',
-    gif: 'https://i.imgur.com/5AUWTmm.gif',
+    gif: '/projects/whatsapp/whatsapp.mp4',
     backgroundImage: '/projects/whatsapp/home-dark.png',
     video:
       'https://www.youtube.com/watch?v=PZpp2sCm0zY&t=11s&ab_channel=EvanderIn%C3%A1cio'
@@ -342,7 +342,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2023',
-    gif: 'https://i.imgur.com/sbcCJiO.gif',
+    gif: '/projects/pomodoro/pomodoro.mp4',
     backgroundImage: '/projects/pomodoro/pomodoro-home.png',
     video:
       'https://www.youtube.com/watch?v=c6fEo2CYj0k&ab_channel=EvanderIn%C3%A1cio'
@@ -388,7 +388,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2023',
-    gif: 'https://i.imgur.com/jRawfWn.gif',
+    gif: '/projects/pokedex/pokedex.mp4',
     backgroundImage: '/projects/pokedex/pokedex-index.png',
     video:
       'https://www.youtube.com/watch?v=gWCbt85ltto&ab_channel=EvanderIn%C3%A1cio'

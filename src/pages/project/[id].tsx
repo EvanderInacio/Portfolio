@@ -220,7 +220,10 @@ export default function Projeto({ project }: ProjectProps) {
               <p>Status: <span>{project.status}</span></p>
               <p>Ano: <span>{project.year}</span></p>
               <h5>Preview</h5>
-              <Image width={500} height={300} src={project.gif} alt={project.title} />
+              {/* <Image width={500} height={300} src={project.gif} alt={project.title} /> */}
+              <video className='preview' loop autoPlay muted playsInline>
+                <source src={project.gif}/>
+              </video>
             </Gif>
 
             <Print>
@@ -230,7 +233,8 @@ export default function Projeto({ project }: ProjectProps) {
                     <div className="print-list" key={print.id}>
                       <h3>{print.name}</h3>
                       <Image
-                        width={800}
+                        width={780}
+                        style={{ borderRadius: '10px' }}
                         height={470}
                         src={print.img}
                         alt={print.name}
