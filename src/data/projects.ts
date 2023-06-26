@@ -93,7 +93,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2022',
-    gif: 'https://i.imgur.com/ozULlTf.gif',
+    gif: '/projects/turtlemovie/turtle-movie.gif',
     backgroundImage: '/projects/turtlemovie/detail-home.png',
     video:
       'https://www.youtube.com/watch?v=wt2g4q2md9g&ab_channel=EvanderIn%C3%A1cio'
