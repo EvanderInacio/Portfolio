@@ -1,45 +1,45 @@
 const projects = [
-  {
-    id: 1,
-    url: 'portfolio',
-    img: '/404.gif',
-    title: 'Portfolio',
-    type: 'Website',
-    icon: '/construtor.svg',
-    github: 'https://github.com/EvanderInacio/Portfolio',
-    web: 'https://evander.vercel.app/',
-    description:
-      'Meu portfólio criado com o objetivo de mostrar meus projetos ao longo da minha carreira.',
-    tags: [
-      {
-        name: 'Next JS',
-        icon: '/skills/next-js.svg',
-        color: '#FFFFFF',
-        rgb: '255, 255, 255'
-      },
-      {
-        name: 'TypeScript',
-        icon: '/skills/typescript.svg',
-        color: '#3178C6',
-        rgb: '49, 120, 198'
-      },
-      {
-        name: 'Styled Components',
-        icon: '/skills/styled-components.svg',
-        color: '#C476AE',
-        rgb: '196, 118, 174'
-      }
-    ],
-    print: [
-      { name: '404', img: '/construtor.svg' },
-    ],
-    status: 'Em andamento',
-    year: '2023',
-    gif: '/404.gif',
-    backgroundImage: '/construtor.svg',
-    video:
-      '/404.svg'
-  },
+  // {
+  //   id: 1,
+  //   url: 'portfolio',
+  //   img: '/projects/portfolio/thumb.png',
+  //   title: 'Portfolio',
+  //   type: 'Website',
+  //   icon: '/construtor.svg',
+  //   github: 'https://github.com/EvanderInacio/Portfolio',
+  //   web: 'https://evander.vercel.app/',
+  //   description:
+  //     'Meu portfólio criado com o objetivo de mostrar meus projetos ao longo da minha carreira.',
+  //   tags: [
+  //     {
+  //       name: 'Next JS',
+  //       icon: '/skills/next-js.svg',
+  //       color: '#FFFFFF',
+  //       rgb: '255, 255, 255'
+  //     },
+  //     {
+  //       name: 'TypeScript',
+  //       icon: '/skills/typescript.svg',
+  //       color: '#3178C6',
+  //       rgb: '49, 120, 198'
+  //     },
+  //     {
+  //       name: 'Styled Components',
+  //       icon: '/skills/styled-components.svg',
+  //       color: '#C476AE',
+  //       rgb: '196, 118, 174'
+  //     }
+  //   ],
+  //   print: [
+  //     { name: '404', img: '/construtor.svg' },
+  //   ],
+  //   status: 'Em andamento',
+  //   year: '2023',
+  //   gif: 'https://i.imgur.com/vEn0VYV.gif',
+  //   backgroundImage: '/construtor.svg',
+  //   video:
+  //     '/404.svg'
+  // },
 
   {
     id: 2,
@@ -93,7 +93,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2022',
-    gif: '/projects/turtlemovie/turtle-movie.gif',
+    gif: 'https://i.imgur.com/ozULlTf.gif',
     backgroundImage: '/projects/turtlemovie/detail-home.png',
     video:
       'https://www.youtube.com/watch?v=wt2g4q2md9g&ab_channel=EvanderIn%C3%A1cio'
@@ -143,7 +143,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2022',
-    gif: '/projects/playstation/playstation.gif',
+    gif: 'https://i.imgur.com/5fUE4Pg.gif',
     backgroundImage: '/projects/playstation/playstation-home.png',
     video:
       'https://www.youtube.com/watch?v=VZsm-NGse6M&ab_channel=EvanderIn%C3%A1cio'
@@ -187,7 +187,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2022',
-    gif: '/projects/podcastr/podcastr.gif',
+    gif: 'https://i.imgur.com/hhEjXv3.gif',
     backgroundImage: '/projects/podcastr/podcastr-home.png',
     video:
       'https://www.youtube.com/watch?v=a_OoBSceC80&ab_channel=EvanderIn%C3%A1cio'
@@ -235,7 +235,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2022',
-    gif: '/projects/github-blog/github-blog.gif',
+    gif: 'https://i.imgur.com/85Q0Qrf.gif',
     backgroundImage: '/projects/github-blog/github-blog-home.png',
     video:
       'https://www.youtube.com/watch?v=RcKQNz0n6Ts&ab_channel=EvanderIn%C3%A1cio'
@@ -288,7 +288,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2022',
-    gif: '/projects/whatsapp/whatsapp.gif',
+    gif: 'https://i.imgur.com/5AUWTmm.gif',
     backgroundImage: '/projects/whatsapp/home-dark.png',
     video:
       'https://www.youtube.com/watch?v=PZpp2sCm0zY&t=11s&ab_channel=EvanderIn%C3%A1cio'
@@ -342,7 +342,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2023',
-    gif: '/projects/pomodoro/pomodoro-timer.gif',
+    gif: 'https://i.imgur.com/sbcCJiO.gif',
     backgroundImage: '/projects/pomodoro/pomodoro-home.png',
     video:
       'https://www.youtube.com/watch?v=c6fEo2CYj0k&ab_channel=EvanderIn%C3%A1cio'
@@ -388,7 +388,7 @@ const projects = [
     ],
     status: 'Completo',
     year: '2023',
-    gif: '/projects/pokedex/pokedex.gif',
+    gif: 'https://i.imgur.com/jRawfWn.gif',
     backgroundImage: '/projects/pokedex/pokedex-index.png',
     video:
       'https://www.youtube.com/watch?v=gWCbt85ltto&ab_channel=EvanderIn%C3%A1cio'

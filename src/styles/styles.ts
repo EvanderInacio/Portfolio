@@ -165,7 +165,7 @@ export const ButtonPrimary = styled.button`
   }
 
   &:hover {
-    color: rgb(15, 10, 10);
+    color: ${props => props.theme.dark};
     &:before {
       transform: scale(1);
       background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);
@@ -178,7 +178,7 @@ export const ButtonPrimary = styled.button`
     }
 
     &:hover {
-      color: black;
+      color: ${props => props.theme.dark};
       &:before {
         transform: scaleX(1);
         background: linear-gradient(225deg, #00d9ffe1 0%, #d502face 100%);

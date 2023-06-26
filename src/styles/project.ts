@@ -387,11 +387,14 @@ export const ContainerVideo = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 5rem;
   margin-bottom: 10rem;
-  border: 1px solid ${props => props.theme.backgroundAlt};
+  border-top: 2px solid ${props => props.theme.dark};
+  border-bottom: 2px solid ${props => props.theme.dark};
 
-  @media (min-width: 768px) {
-    margin-top: 7rem;
+
+  @media(min-width: 468px) {
+    margin-top: 10rem;
   }
 
   .buttonHome {
@@ -401,10 +404,13 @@ export const ContainerVideo = styled.div`
   }
 
   .imageVideo {
+    @media(max-width: 468px) {
+      display: none;
+    }
     img {
       z-index: -1;
       width: 100%;
-      opacity: 0.4;
+      opacity: 0.5;
       object-fit: cover;
     }
   }
@@ -412,30 +418,34 @@ export const ContainerVideo = styled.div`
   .title-video {
     z-index: 10;
     position: absolute;
-    top: -10rem;
+    top: -15rem;
+
+    @media(min-width: 468px) {
+      top: -10rem;
+    }
   }
 `
 
 export const Video = styled.div`
-  margin-bottom: 5rem;
+  //margin-bottom: 5rem;
   z-index: 10;
   position: absolute;
   opacity: 1;
 
   @media (min-width: 468px) {
     width: 25rem;
-    height: 13rem;
+    height: 13.3rem;
   }
   @media (min-width: 768px) {
     width: 35rem;
-    height: 20rem;
+    height: 18.6rem;
   }
   @media (min-width: 994px) {
     width: 40rem;
-    height: 30rem;
+    height: 21.2rem;
   }
   @media (min-width: 1200px) {
-    width: 51rem;
-    height: 30rem;
+    width: 60rem;
+    height: 32.1rem;
   }
 `
