@@ -1,23 +1,17 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import * as S from '../styles/about'
+import { ButtonAlt, Section, Title } from '../styles/styles'
+import { Header } from '../components/Header'
+import { Footer } from '../components/Footer'
+import { ScrollTop } from '../components/ScrollTop'
+import { Links } from '../components/Links'
 import { BiUserPin } from 'react-icons/bi'
 import { AiFillGithub } from 'react-icons/ai'
-import { Header } from '../components/Header'
-import {
-  AboutContainer,
-  AboutContent,
-  AboutImage,
-  AboutContact,
-  AboutDescription
-} from '../styles/about'
-import { ButtonAlt, Section, Title } from '../styles/styles'
-import { Links } from '../components/Links'
 import { RiWhatsappFill } from 'react-icons/ri'
 import { BsLinkedin } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
 import { FaDiscord } from 'react-icons/fa'
-import { Footer } from '../components/Footer'
-import { ScrollTop } from '../components/ScrollTop'
 
 export default function About() {
   return (
@@ -35,7 +29,7 @@ export default function About() {
       <Links />
       <ScrollTop />
       <Section>
-        <AboutContainer>
+        <S.AboutContainer>
           <Title>
             <p>../about</p>
             Sobre
@@ -44,8 +38,8 @@ export default function About() {
             </span>
           </Title>
 
-          <AboutContent>
-            <AboutImage>
+          <S.AboutContent>
+            <S.AboutImage>
               <img
                 className="AboutImg"
                 src="/Evander.webp"
@@ -92,15 +86,15 @@ export default function About() {
                 </ul>
               </div>
 
-              <AboutContact>
+              <S.AboutContact>
                 <h3>Vamos conversar, quem sabe criar um projeto incrível juntos?</h3>
                 <p>Me mande uma mensagem! 😉</p>
                 <Link href={"/contact"}>
                   <a><ButtonAlt>Contato</ButtonAlt></a>
                 </Link>
-              </AboutContact>
-            </AboutImage>
-            <AboutDescription>
+              </S.AboutContact>
+            </S.AboutImage>
+            <S.AboutDescription>
               <p>
                 Meu nome é Evander Inácio, sou um desenvolvedor front-end React
                 do Brasil, apaixonado por projetar e codificar. Minha
@@ -142,9 +136,9 @@ export default function About() {
                 profissionalmente, e estou animado para contribuir com projetos
                 interessantes e inovadores no campo do desenvolvimento web.
               </p>
-            </AboutDescription>
-          </AboutContent>
-        </AboutContainer>
+            </S.AboutDescription>
+          </S.AboutContent>
+        </S.AboutContainer>
       </Section>
       <Footer />
     </>

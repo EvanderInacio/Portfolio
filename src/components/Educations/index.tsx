@@ -1,39 +1,30 @@
 /* eslint-disable @next/next/no-img-element */ 
 import Image from 'next/image'
 import Link from 'next/link'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Carousel } from 'react-responsive-carousel'
-
 import educations from '../../data/educations'
 import certificates from '../../data/certificates'
-import { GraduationCap } from 'phosphor-react'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Carousel } from 'react-responsive-carousel'
 import { Title } from '../../styles/styles'
-import {
-  ContainerEducation,
-  EducationContent,
-  EducationList,
-  EducationImage,
-  List,
-  ListImage,
-  ListContent
-} from './styles'
+import * as S from './styles'
+import { GraduationCap } from 'phosphor-react'
 
 export function Educations() {
   return (
-    <ContainerEducation>
+    <S.ContainerEducation>
       <Title>
         Educação
         <span>
           <GraduationCap /> Education
         </span>
       </Title>
-      <EducationContent>
-        <EducationList>
+      <S.EducationContent>
+        <S.EducationList>
           {educations &&
             educations.map(education => {
               return (
-                <List key={education.id}>
-                  <ListImage>
+                <S.List key={education.id}>
+                  <S.ListImage>
                     <img src={education.logo} alt={education.subTitle} />
                     <p>
                       Nível: <span>{education.level} </span>
@@ -41,9 +32,9 @@ export function Educations() {
                     <p>
                       Status: <span>{education.status}</span>
                     </p>
-                  </ListImage>
+                  </S.ListImage>
 
-                  <ListContent>
+                  <S.ListContent>
                     <h2>{education.title}</h2>
                     <h3>
                       <Link href={education.link} >
@@ -53,13 +44,13 @@ export function Educations() {
                       </Link>
                     </h3>
                     <p>{education.description}</p>
-                  </ListContent>
-                </List>
+                  </S.ListContent>
+                </S.List>
               )
             })}
-        </EducationList>
+        </S.EducationList>
 
-        <EducationImage>
+        <S.EducationImage>
           <img
             className="education-logo"
             src="/education/education.svg"
@@ -88,8 +79,8 @@ export function Educations() {
                   )
               })}
           </Carousel>
-        </EducationImage>
-      </EducationContent>
-    </ContainerEducation>
+        </S.EducationImage>
+      </S.EducationContent>
+    </S.ContainerEducation>
   )
 }

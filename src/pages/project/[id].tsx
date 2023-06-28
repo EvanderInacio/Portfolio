@@ -4,81 +4,23 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Project } from '../../types/Project'
+import projects from '../../data/projects'
 
 import ReactPlayer from 'react-player'
-import projects from '../../data/projects'
 import { Footer } from '../../components/Footer'
-
-import {
-  ProjectContainer,
-  Banner,
-  DescriptionProject,
-  PrintContainer,
-  Print,
-  PrintContent,
-  Gif,
-  ContainerVideo,
-  Video,
-  Tags,
-  TagsContent,
-  TagsContainer
-} from '../../styles/project'
-import {
-  ButtonAlt,
-  ButtonSecondary,
-  Title,
-  Description
-} from '../../styles/styles'
-
-import {
-  ArrowLeft,
-  ChatCenteredText,
-  Image as IconImage,
-  YoutubeLogo,
-  Hash
-} from 'phosphor-react'
-import { FaGithub } from 'react-icons/fa'
-import { BsGlobe } from 'react-icons/bs'
 import { AllProjects } from '../../components/Projects/Github'
 
-interface Tag {
-  id: string
-  name: string
-  icon: string
-  color: string
-  rgb: string
-}
-
-interface Print {
-  id: string
-  img: string
-  name: string
-  description: string
-}
-
-interface Project {
-  icon: string
-  imgUrl: string
-  id: string
-  title: string
-  description: string
-  type: string
-  github: string
-  web: string
-  url: string
-  tags: Tag[]
-  print: Print[]
-  gif: string
-  year: string
-  status: string
-  video: string
-  backgroundImage: string
-}
+import * as S from '../../styles/project'
+import { ButtonAlt, ButtonSecondary, Title, Description } from '../../styles/styles'
+import { FaGithub } from 'react-icons/fa'
+import { BsGlobe } from 'react-icons/bs'
+import { ArrowLeft, ChatCenteredText, Image as IconImage, 
+YoutubeLogo, Hash } from 'phosphor-react'
 
 interface ProjectProps {
   project: Project
 }
-
 
 export default function Projeto({ project }: ProjectProps) {
   return (
@@ -94,8 +36,8 @@ export default function Projeto({ project }: ProjectProps) {
         <meta name="twitter:image:src" content={project.imgUrl} />
       </Head>
 
-      <ProjectContainer>
-        <Banner>
+      <S.ProjectContainer>
+        <S.Banner>
           <img className="bannerUrl" src={project.imgUrl} alt={project.title} />
           <div className="bannerContainer">
             <div className="bannerContent">
@@ -123,9 +65,9 @@ export default function Projeto({ project }: ProjectProps) {
               </Link>
             </div>
           </div>
-        </Banner>
+        </S.Banner>
 
-        <DescriptionProject>
+        <S.DescriptionProject>
           <div className="description">
             <Title>
               Descrição
@@ -135,9 +77,9 @@ export default function Projeto({ project }: ProjectProps) {
             </Title>
             <p>{project.description}</p>
           </div>
-        </DescriptionProject>
+        </S.DescriptionProject>
 
-        <Tags>
+        <S.Tags>
           <Title>
             Tags
             <span>
@@ -149,11 +91,11 @@ export default function Projeto({ project }: ProjectProps) {
             Tecnologias usadas no desenvolvimento do projeto.
           </Description>
 
-          <TagsContainer>
+          <S.TagsContainer>
             {project.tags &&
               project.tags.map(tag => {
                 return (
-                  <TagsContent key={tag.id} color={tag.color}>
+                  <S.TagsContent key={tag.id} color={tag.color}>
                     <div
                       className="card-icon"
                       style={{
@@ -169,13 +111,13 @@ export default function Projeto({ project }: ProjectProps) {
                       />
                     </div>
                     <h3>{tag.name}</h3>
-                  </TagsContent>
+                  </S.TagsContent>
                 )
               })}
-          </TagsContainer>
-        </Tags>
+          </S.TagsContainer>
+        </S.Tags>
 
-        <PrintContainer>
+        <S.PrintContainer>
           <Title>
             Screenshot
             <span>
@@ -183,20 +125,19 @@ export default function Projeto({ project }: ProjectProps) {
             </span>
           </Title>
 
-          <PrintContent>
-            <Gif>
+          <S.PrintContent>
+            <S.Gif>
               <h2>Detalhes</h2>
               <p>Nome: <span>{project.title}</span></p>
               <p>Status: <span>{project.status}</span></p>
               <p>Ano: <span>{project.year}</span></p>
               <h5>Preview</h5>
-              {/* <Image width={500} height={300} src={project.gif} alt={project.title} /> */}
               <video className='preview' loop autoPlay muted playsInline>
                 <source src={project.gif}/>
               </video>
-            </Gif>
+            </S.Gif>
 
-            <Print>
+            <S.Print>
               {project.print &&
                 project.print.map(print => {
                   return (
@@ -213,12 +154,12 @@ export default function Projeto({ project }: ProjectProps) {
                     </div>
                   )
                 })}
-            </Print>
-          </PrintContent>
+            </S.Print>
+          </S.PrintContent>
 
-        </PrintContainer>
+        </S.PrintContainer>
 
-        <ContainerVideo>
+        <S.ContainerVideo>
           <div className="imageVideo">
             <img src={project.backgroundImage} alt={project.title} />
           </div>
@@ -229,7 +170,7 @@ export default function Projeto({ project }: ProjectProps) {
             </span>
             <img className="vector" src="/vectors/youtube.svg" alt="" />
           </Title>
-          <Video>
+          <S.Video>
             <ReactPlayer
               url={project.video}
               width="100%"
@@ -238,8 +179,8 @@ export default function Projeto({ project }: ProjectProps) {
               pip
               config={{ file: { forceHLS: true } }}
             />
-          </Video>
-        </ContainerVideo>
+          </S.Video>
+        </S.ContainerVideo>
 
         <div className="allProjects">
           <AllProjects title={'Veja outros projetos'} />
@@ -256,7 +197,7 @@ export default function Projeto({ project }: ProjectProps) {
             </a>
           </ButtonSecondary>
         </Link>
-      </ProjectContainer>
+      </S.ProjectContainer>
 
       <Footer />
     </>
@@ -264,8 +205,6 @@ export default function Projeto({ project }: ProjectProps) {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }: any) => {
-  //const { id } = context.params
-
   const project = projects.map(project => ({
     id: project.id,
     link: project.url,
@@ -289,7 +228,7 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
 
   return {
     props: {
-      project: idProject || null
+      project: idProject,
     },
     revalidate: 10,
   }

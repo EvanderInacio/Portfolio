@@ -1,21 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
+import { useTheme } from 'styled-components'
+import works from '../../data/work'
 import {
   VerticalTimeline,
   VerticalTimelineElement
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import { Container, Title } from '../../styles/styles'
-import { Briefcase } from 'phosphor-react'
-import works from '../../data/work'
-import Image from 'next/image'
 import { WorkContainer, WorkContent } from './styles'
-import { useTheme } from 'styled-components'
+import { Briefcase } from 'phosphor-react'
 
-export function Work({ exp }: any) {
+export function Work() {
   const theme = useTheme()
 
   return (
-    <Container id="experience">
+    <Container>
       <Title>
         Experiência
         <span>

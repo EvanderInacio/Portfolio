@@ -1,16 +1,16 @@
+import Head from 'next/head'
 import { useState } from 'react'
+import works from '../data/work'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import { CV } from '../components/CV'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { Links } from '../components/Links'
 import { ScrollTop } from '../components/ScrollTop'
-import works from '../data/work'
-import { Section, Title, Description } from '../styles/styles'
 import { Educations } from '../components/Educations'
-import { Briefcase } from 'phosphor-react'
+import { Section, Title, Description } from '../styles/styles'
 import { TabButton, TabContent, TabsContainer } from '../styles/experience'
-import Head from 'next/head'
+import { Briefcase } from 'phosphor-react'
 
 export default function Experience() {
   const [tabIndex, setTabIndex] = useState(0)

@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 import Link from 'next/link'
 import projects from '../../data/projects'
 import { AllProjects } from './Github'
 import { ProjectsContainer, ProjectsContent } from './styles'
 import { Container, Title } from '../../styles/styles'
 import { HiOutlineDesktopComputer } from 'react-icons/hi'
-import Image from 'next/image'
 
 interface Projects {
   slug: string

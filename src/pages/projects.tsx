@@ -1,19 +1,15 @@
-import { ArrowLeft, ArrowRight } from 'phosphor-react'
-import {
-  ProjectsContainer,
-  ProjectsContent,
-  ProjectsItem
-} from '../styles/projects'
-import projects from '../data/projects'
+import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import projects from '../data/projects'
+import * as S from '../styles/projects'
+import { Description, Section, Title } from '../styles/styles'
 import { Header } from '../components/Header'
 import { Links } from '../components/Links'
-import { Description, Section, Title } from '../styles/styles'
 import { Footer } from '../components/Footer'
-import { HiOutlineDesktopComputer } from 'react-icons/hi'
 import { ScrollTop } from '../components/ScrollTop'
-import Head from 'next/head'
+import { HiOutlineDesktopComputer } from 'react-icons/hi'
+import { ArrowRight } from 'phosphor-react'
 
 export default function Projects() {
   return (
@@ -43,7 +39,7 @@ export default function Projects() {
           tecnologias utilizadas e as funcionalidades implementadas.
         </Description>
 
-        <ProjectsContainer>
+        <S.ProjectsContainer>
           <div className="laptop">
             <Image
               width={400}
@@ -61,12 +57,12 @@ export default function Projects() {
             />
           </div>
 
-          <ProjectsContent>
+          <S.ProjectsContent>
             {projects.map(project => {
               return (
                 <>
                   <div className="border" key={project.id} />
-                  <ProjectsItem>
+                  <S.ProjectsItem>
                     <div className="banner">
                       <Image
                         width={500}
@@ -111,12 +107,12 @@ export default function Projects() {
                         </button>
                       </Link>
                     </div>
-                  </ProjectsItem>
+                  </S.ProjectsItem>
                 </>
               )
             })}
-          </ProjectsContent>
-        </ProjectsContainer>
+          </S.ProjectsContent>
+        </S.ProjectsContainer>
       </Section>
       <Footer />
     </>

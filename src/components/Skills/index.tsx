@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
-import { BsCodeSquare } from 'react-icons/bs'
-import { Container, Title } from '../../styles/styles'
 import cardSkills from '../../data/skills'
+import { Container, Title } from '../../styles/styles'
 import { SkillsContainer, SkillsContent, Vector } from './styles'
+import { BsCodeSquare } from 'react-icons/bs'
 
 interface Skills {
   title: string,
@@ -14,7 +14,7 @@ interface Skills {
 
 export function Skills() {
   return (
-    <Container id='skills'>
+    <Container>
       <Vector>
         <img className='js' src="/vectors/js.svg" alt="" />
         <img className='html' src="/vectors/html.svg" alt="" />

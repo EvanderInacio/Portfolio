@@ -86,7 +86,6 @@ export const NavMenu = styled.nav<Click>`
     position: fixed;
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     transition: transform 0.5s ease-in-out;
-    //display: ${({ open }) => (open ? 'block' : 'none')};
   }
 
   ul {
@@ -140,7 +139,7 @@ export const NavMenu = styled.nav<Click>`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 1.2rem;
+      padding-top: 1.5rem;
       gap: 1.8rem;
     }
   }

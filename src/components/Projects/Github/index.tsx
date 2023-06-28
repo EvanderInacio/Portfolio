@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
-import { GrProjects } from 'react-icons/gr'
 import { AllContainer, AllContent, Cubo } from './styles'
 import { ButtonAlt } from '../../../styles/styles'
 import { BsFolderSymlink } from 'react-icons/bs'

@@ -1,10 +1,10 @@
 /* eslint-disable-next-line import/no-anonymous-default-export */
 import Link from 'next/link'
-import { Envelope, TelegramLogo } from 'phosphor-react'
-import { Container, Description, Section, Title } from '../../styles/styles'
+import { Form } from './Form'
+import { Description, Section, Title } from '../../styles/styles'
 import { ContainerContact, ContactContent } from './styles'
 import { BsWhatsapp } from 'react-icons/bs'
-import { Form } from './Form'
+import { Envelope, TelegramLogo } from 'phosphor-react'
 
 export function Contact() {
   return (

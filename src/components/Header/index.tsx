@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import { List, X } from 'phosphor-react'
+import Image from 'next/image'
 import { HeaderContainer, MobileIcon, NavMenu, Icons } from './styles'
+import { List, X } from 'phosphor-react'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
-import Image from 'next/image'
 
 export function Header({ currentPage }: any) {
   const [open, setOpen] = useState(false)
@@ -52,7 +52,7 @@ export function Header({ currentPage }: any) {
           <li>
             <Link href={'/'}>
               <a>
-                <span>Início</span>
+                <span>Home</span>
               </a>
             </Link>
           </li>
