@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
+import { GetStaticProps, GetStaticPaths } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -7,8 +8,6 @@ import Image from 'next/image'
 import ReactPlayer from 'react-player'
 import projects from '../../data/projects'
 import { Footer } from '../../components/Footer'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Carousel } from 'react-responsive-carousel'
 
 import {
   ProjectContainer,
@@ -80,36 +79,6 @@ interface ProjectProps {
   project: Project
 }
 
-export const getServerSideProps = async (context: any) => {
-  const { id } = context.params
-
-  const project = projects.map(project => ({
-    id: project.id,
-    link: project.url,
-    imgUrl: project.img,
-    icon: project.icon,
-    title: project.title,
-    type: project.type,
-    github: project.github,
-    web: project.web,
-    description: project.description,
-    tags: project.tags,
-    print: project.print,
-    gif: project.gif,
-    year: project.year,
-    status: project.status,
-    video: project.video,
-    backgroundImage: project.backgroundImage
-  }))
-
-  const idProject = project.find(project => project.link === id)
-
-  return {
-    props: {
-      project: idProject || null
-    }
-  }
-}
 
 export default function Projeto({ project }: ProjectProps) {
   return (
@@ -292,4 +261,43 @@ export default function Projeto({ project }: ProjectProps) {
       <Footer />
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async ({ params }: any) => {
+  //const { id } = context.params
+
+  const project = projects.map(project => ({
+    id: project.id,
+    link: project.url,
+    imgUrl: project.img,
+    icon: project.icon,
+    title: project.title,
+    type: project.type,
+    github: project.github,
+    web: project.web,
+    description: project.description,
+    tags: project.tags,
+    print: project.print,
+    gif: project.gif,
+    year: project.year,
+    status: project.status,
+    video: project.video,
+    backgroundImage: project.backgroundImage
+  }))
+
+  const idProject = project.find(project => project.link === params.id)
+
+  return {
+    props: {
+      project: idProject || null
+    },
+    revalidate: 10,
+  }
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: 'blocking',
+  }
 }
