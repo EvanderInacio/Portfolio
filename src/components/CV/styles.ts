@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const CVContainer = styled.div`
   background: ${props => props.theme.dark};
-  border: 1px solid ${props => props.theme.border};
   border-radius: 10px;
   text-align: center;
 `
@@ -19,7 +18,7 @@ export const CVContent = styled.div`
     padding: 1.5rem;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 994px) {
     flex-direction: row;
   }
 
@@ -48,7 +47,7 @@ export const CVDescription = styled.div`
     max-width: 20rem;
     font-size: 1.1rem;
     margin-top: 2.8rem;
-    margin-bottom: 2.2rem;
+    margin-bottom: 2.5rem;
     color: ${props => props.theme.gray};
 
     @media(min-width: 994px) {
@@ -58,21 +57,35 @@ export const CVDescription = styled.div`
  
   .profile {
     display: flex;
-    gap: .8rem;
+    gap: 0.9rem;
+    align-items: center;
 
-    h3 {
-      font-size: 1.4rem;
-      color: ${props => props.theme.firstColor};
+    .name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: start;
+
+      h3 {
+        font-size: 1.5rem;
+        color: ${props => props.theme.firstColor};
+      }
+  
+      span {
+        font-size: 0.9rem;
+        color: ${props => props.theme.secondColor};
+      }
     }
 
-    span {
-      font-size: 0.9rem;
-      color: ${props => props.theme.secondColor};
-    }
 
     img {
-      width: 3.5rem;
-      border-radius: 100%;
+      @media(max-width: 468px) {
+        width: 3.5rem;
+      }
+
+      width: 4rem;
+      border-radius: 999px;
     }
   }
 `

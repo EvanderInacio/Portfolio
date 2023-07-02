@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { useState } from 'react'
 import works from '../data/work'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
-import { CV } from '../components/CV'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { Links } from '../components/Links'
@@ -116,7 +115,6 @@ export default function Experience() {
         </TabsContainer>
 
         <Educations />
-        <CV />
       </Section>
       <Footer />
     </>

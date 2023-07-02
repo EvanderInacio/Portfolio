@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { AllContainer, AllContent, Cubo } from './styles'
 import { ButtonAlt } from '../../../styles/styles'
-import { BsFolderSymlink } from 'react-icons/bs'
+import { AiOutlineAppstore } from 'react-icons/ai'
 
 interface AllContent {
   title: string
@@ -16,7 +16,7 @@ export function AllProjects({ title }: AllContent ) {
         <AllContent>
           <Link href={'/projects'}>
             <ButtonAlt>
-                Projetos <BsFolderSymlink size={20} />
+                Projetos <AiOutlineAppstore size={20} />
             </ButtonAlt>
           </Link>
 

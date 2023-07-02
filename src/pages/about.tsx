@@ -12,7 +12,6 @@ import { RiWhatsappFill } from 'react-icons/ri'
 import { BsLinkedin } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
 import { FaDiscord } from 'react-icons/fa'
-import { CV } from '../components/CV'
 
 export default function About() {
   return (
@@ -139,8 +138,6 @@ export default function About() {
               </p>
             </S.AboutDescription>
           </S.AboutContent>
-
-          <CV />
         </S.AboutContainer>
       </Section>
       <Footer />

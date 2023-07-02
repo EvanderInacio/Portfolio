@@ -2,13 +2,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Typewriter from 'typewriter-effect'
-import {
-  ButtonAlternatives,
-  ButtonPrimary,
-  Container
-} from '../../styles/styles'
+import { ButtonPrimary, Container } from '../../styles/styles'
 import { Content, ImgHome, HomeText } from './styles'
-import { FiArrowRight, FiDownload } from 'react-icons/fi'
+import { FiArrowRight } from 'react-icons/fi'
 
 export function HomeHero() {
   return (
@@ -46,12 +42,6 @@ export function HomeHero() {
                 </a>
               </Link>
             </ButtonPrimary>
-
-            <a href="/pdf/Evander-CV.pdf" download className='download'>
-              <ButtonAlternatives>
-                <b>Download CV</b> <FiDownload size={20} />
-              </ButtonAlternatives>
-            </a>
           </div>
         </HomeText>
         <ImgHome>

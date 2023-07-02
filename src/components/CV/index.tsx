@@ -8,10 +8,9 @@ export function CV() {
   return (
     <Container>
       <CVContainer>
-        <Title>
-          Currículo
+        <Title style={{ marginBottom: '3rem' }}>
           <span>
-            <BsFileText /> Curriculum
+            <FiDownload /> Download
           </span>
         </Title>
 
@@ -23,7 +22,7 @@ export function CV() {
               </p>
               <div className="profile">
                 <img src="https://github.com/EvanderInacio.png" alt="Imagem de perfil" />
-                <div>
+                <div className="name">
                   <h3>Evander Inacio</h3>
                   <span>Desenvolvedor Front end</span>
                 </div>
@@ -38,10 +37,7 @@ export function CV() {
               </ButtonSecondAlt>
             </a>
           </Curriculum>
-        </CVContent>
-
-
-        
+        </CVContent>        
       </CVContainer>
     </Container>
   )

@@ -82,6 +82,14 @@ export function Header() {
           </li>
 
           <li>
+            <Link href={'/resume'}>
+              <a>
+                <span>Resume</span>
+              </a>
+            </Link>
+          </li>
+
+          <li>
             <Link href={'/contact'}>
               <a>
                 <span>Contato</span>

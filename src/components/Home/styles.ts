@@ -102,10 +102,6 @@ export const HomeText = styled.div`
     @media(min-width: 1200px) {
       gap: 1.5rem;
     }
-
-    .download {
-      margin-top: 2.1rem;
-    }
   }
 `
 
