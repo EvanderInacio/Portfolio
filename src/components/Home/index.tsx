@@ -2,9 +2,13 @@
 import React from 'react'
 import Link from 'next/link'
 import Typewriter from 'typewriter-effect'
-import { ButtonPrimary, Container } from '../../styles/styles'
+import {
+  ButtonAlternatives,
+  ButtonPrimary,
+  Container
+} from '../../styles/styles'
 import { Content, ImgHome, HomeText } from './styles'
-import { FiArrowRight } from 'react-icons/fi'
+import { FiArrowRight, FiDownload } from 'react-icons/fi'
 
 export function HomeHero() {
   return (
@@ -33,14 +37,22 @@ export function HomeHero() {
             />
           </h2>
 
-          <ButtonPrimary>
-            <Link href={'#projects'}>
-              <a>
-                <b>Conheça meu portfólio </b>
-                <FiArrowRight style={{ marginBottom: '-0.3rem' }} size={20} />
-              </a>
-            </Link>
-          </ButtonPrimary>
+          <div className='button'>
+            <ButtonPrimary>
+              <Link href={'#projects'}>
+                <a>
+                  <b>Conheça meu portfólio </b>
+                  <FiArrowRight style={{ marginBottom: '-0.3rem' }} size={20} />
+                </a>
+              </Link>
+            </ButtonPrimary>
+
+            <a href="/pdf/Evander-CV.pdf" download className='download'>
+              <ButtonAlternatives>
+                <b>Download CV</b> <FiDownload size={20} />
+              </ButtonAlternatives>
+            </a>
+          </div>
         </HomeText>
         <ImgHome>
           <img className="code" src="/vectors/dino.svg" alt="dinossauro" />

@@ -88,6 +88,25 @@ export const HomeText = styled.div`
       }
     }
   }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(min-width: 768px) {
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+    @media(min-width: 1200px) {
+      gap: 1.5rem;
+    }
+
+    .download {
+      margin-top: 2.1rem;
+    }
+  }
 `
 
 export const ImgHome = styled.div`

@@ -41,11 +41,11 @@ export default function Experience() {
         <Description>Sou apaixonado por criar interfaces interativas e funcionais, buscando sempre aprimorar minhas habilidades e aprender novas tecnologias. Estou sempre aberto a novos desafios e projetos desfiadores.</Description>
 
         <TabsContainer>
-          <img
+          {/* <img
             className="vector-circle"
             src="/vectors/circle-spin.svg"
             alt="circulo animado"
-          />
+          /> */}
 
           <Tabs
             className="tabs"

@@ -10,8 +10,19 @@ import { Footer } from '../components/Footer'
 import { ScrollTop } from '../components/ScrollTop'
 import { HiOutlineDesktopComputer } from 'react-icons/hi'
 import { ArrowRight } from 'phosphor-react'
+import { useState } from 'react'
+
+interface ProjectsProps {
+  target: HTMLInputElement;
+}
 
 export default function Projects() {
+  const [query, setQuery] = useState('')
+
+  const handleChange = (e: ProjectsProps) => {
+    setQuery(e.target.value)
+  }
+
   return (
     <>
       <Head>
@@ -40,7 +51,7 @@ export default function Projects() {
         </Description>
 
         <S.ProjectsContainer>
-          <div className="laptop">
+          {/* <div className="laptop">
             <Image
               width={400}
               height={400}
@@ -55,62 +66,76 @@ export default function Projects() {
               src="/vectors/pc.svg"
               alt="monitor"
             />
-          </div>
+          </div> */}
+
 
           <S.ProjectsContent>
-            {projects.map(project => {
-              return (
-                <>
-                  <div className="border" key={project.id} />
-                  <S.ProjectsItem>
-                    <div className="banner">
-                      <Image
-                        width={500}
-                        height={300}
-                        src={project.img}
-                        alt={project.title}
-                      />
-                    </div>
 
-                    <div>
-                      <div className="title">
+            <div className='search'>
+              <p>Pesquise pelo nome do projeto</p>
+              <input 
+                type="text" 
+                placeholder='Pesquisar projetos' 
+                value={query} 
+                onChange={handleChange} 
+              />
+            </div>
+
+            {projects
+              .filter(e => e.title.toLowerCase().includes(query.toLowerCase()))
+              .map(project => {
+                return (
+                  <>
+                    <div className="border" key={project.id} />
+                    <S.ProjectsItem>
+                      <div className="banner">
                         <Image
-                          width={20}
-                          height={20}
-                          src={'/icon.svg'}
+                          width={500}
+                          height={300}
+                          src={project.img}
                           alt={project.title}
                         />
-                        <h2>{project.title}</h2>
                       </div>
-                      <div className="description">
-                        <p>{project.description}</p>
 
-                        <div className="tags">
-                          {project.tags.map(tag => {
-                            return <span key={tag.name}>{tag.name}</span>
-                          })}
+                      <div>
+                        <div className="title">
+                          <Image
+                            width={20}
+                            height={20}
+                            src={'/icon.svg'}
+                            alt={project.title}
+                          />
+                          <h2>{project.title}</h2>
                         </div>
+                        <div className="description">
+                          <p>{project.description}</p>
+
+                          <div className="tags">
+                            {project.tags.map(tag => {
+                              return <span key={tag.name}>{tag.name}</span>
+                            })}
+                          </div>
+                        </div>
+                        <Link href={`/project/${project.url}`}>
+                          <button>
+                            <a>
+                              Ver projeto
+                              <ArrowRight
+                                style={{
+                                  marginBottom: '-0.1rem',
+                                  marginLeft: '0.5rem'
+                                }}
+                                weight="bold"
+                                size={16}
+                              />
+                            </a>
+                          </button>
+                        </Link>
                       </div>
-                      <Link href={`/project/${project.url}`}>
-                        <button>
-                          <a>
-                            Ver projeto
-                            <ArrowRight
-                              style={{
-                                marginBottom: '-0.1rem',
-                                marginLeft: '0.5rem'
-                              }}
-                              weight="bold"
-                              size={16}
-                            />
-                          </a>
-                        </button>
-                      </Link>
-                    </div>
-                  </S.ProjectsItem>
-                </>
-              )
-            })}
+                    </S.ProjectsItem>
+                  </>
+                )
+              })}
           </S.ProjectsContent>
         </S.ProjectsContainer>
       </Section>

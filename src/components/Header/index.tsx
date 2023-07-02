@@ -6,7 +6,7 @@ import { List, X } from 'phosphor-react'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
 
-export function Header({ currentPage }: any) {
+export function Header() {
   const [open, setOpen] = useState(false)
 
   const handleOpen = () => {

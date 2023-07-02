@@ -45,6 +45,36 @@ export const ProjectsContent = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top: -3rem;
+
+  .search {
+    margin-bottom: 1rem;
+    width: 90vw;
+    max-width: 650px;
+
+    p {
+      color: ${props => props.theme.gray_easy};
+      margin-bottom: 1rem;
+    }
+
+    input {
+      width: 100%;
+      border: solid 2px ${props => props.theme.backgroundSecond};
+      border-radius: 10px;
+      background: ${props => props.theme.backgroundSecond};
+      padding: 1rem;
+      font-size: 1rem;
+      color: ${props => props.theme.gray};
+
+      &:focus {
+        outline: none;
+        border: 2px solid ${props => props.theme.secondColor};
+        background: ${props => props.theme.backgroundSecond};
+      }
+    }
+
+    
+  }
 
   .border {
     width: 100%;

@@ -13,10 +13,10 @@ import { AllProjects } from '../../components/Projects/Github'
 
 import * as S from '../../styles/project'
 import { ButtonAlt, ButtonSecondary, Title, Description } from '../../styles/styles'
+import { ArrowLeft, ChatCenteredText, Image as IconImage,
+YoutubeLogo, Hash } from 'phosphor-react'
 import { FaGithub } from 'react-icons/fa'
 import { BsGlobe } from 'react-icons/bs'
-import { ArrowLeft, ChatCenteredText, Image as IconImage, 
-YoutubeLogo, Hash } from 'phosphor-react'
 
 interface ProjectProps {
   project: Project
@@ -87,7 +87,7 @@ export default function Projeto({ project }: ProjectProps) {
             </span>
           </Title>
 
-          <Description>
+          <Description style={{ textAlign: 'center' }}>
             Tecnologias usadas no desenvolvimento do projeto.
           </Description>
 
@@ -128,12 +128,18 @@ export default function Projeto({ project }: ProjectProps) {
           <S.PrintContent>
             <S.Gif>
               <h2>Detalhes</h2>
-              <p>Nome: <span>{project.title}</span></p>
-              <p>Status: <span>{project.status}</span></p>
-              <p>Ano: <span>{project.year}</span></p>
+              <p>
+                Nome: <span>{project.title}</span>
+              </p>
+              <p>
+                Status: <span>{project.status}</span>
+              </p>
+              <p>
+                Ano: <span>{project.year}</span>
+              </p>
               <h5>Preview</h5>
-              <video className='preview' loop autoPlay muted playsInline>
-                <source src={project.gif}/>
+              <video className="preview" loop autoPlay muted playsInline>
+                <source src={project.gif} />
               </video>
             </S.Gif>
 
@@ -145,8 +151,8 @@ export default function Projeto({ project }: ProjectProps) {
                       <h3>{print.name}</h3>
                       <p>{print.description}</p>
                       <Image
-                        width={780}
                         style={{ borderRadius: '10px' }}
+                        width={780}
                         height={470}
                         src={print.img}
                         alt={print.name}
@@ -156,7 +162,6 @@ export default function Projeto({ project }: ProjectProps) {
                 })}
             </S.Print>
           </S.PrintContent>
-
         </S.PrintContainer>
 
         <S.ContainerVideo>
@@ -168,7 +173,11 @@ export default function Projeto({ project }: ProjectProps) {
             <span>
               <YoutubeLogo /> Video
             </span>
-            <img className="vector" src="/vectors/youtube.svg" alt="" />
+            <img
+              className="vector"
+              src="/vectors/youtube.svg"
+              alt="logo do YouTube"
+            />
           </Title>
           <S.Video>
             <ReactPlayer
@@ -228,15 +237,15 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
 
   return {
     props: {
-      project: idProject,
+      project: idProject
     },
-    revalidate: 10,
+    revalidate: 10
   }
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [],
-    fallback: 'blocking',
+    fallback: 'blocking'
   }
 }
