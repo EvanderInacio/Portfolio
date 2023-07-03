@@ -19,10 +19,15 @@ export default function About() {
       <Head>
         <title>About | Evander Inácio </title>
         <meta
-            name="description"
-            content="Meu nome é Evander Inácio, sou um desenvolvedor front-end React
+          name="description"
+          content="Meu nome é Evander Inácio, sou um desenvolvedor front-end React
             do Brasil."
-          />
+        />
+        <meta property="og:title" content="About | Evander Inácio" />
+        <meta
+          property="og:description"
+          content="Meu nome é Evander Inácio, sou um desenvolvedor front-end React do Brasil."
+        />
       </Head>
 
       <Header />
@@ -65,7 +70,9 @@ export default function About() {
                       <RiWhatsappFill size={25} /> +55 (11) 99508-5916
                     </a>
                   </Link>
-                  <Link href={'https://www.discordapp.com/users/evander_inacio'}>
+                  <Link
+                    href={'https://www.discordapp.com/users/evander_inacio'}
+                  >
                     <a
                       className="dc"
                       target="_blank"
@@ -87,10 +94,14 @@ export default function About() {
               </div>
 
               <S.AboutContact>
-                <h3>Vamos conversar, quem sabe criar um projeto incrível juntos?</h3>
+                <h3>
+                  Vamos conversar, quem sabe criar um projeto incrível juntos?
+                </h3>
                 <p>Me mande uma mensagem! 😉</p>
-                <Link href={"/contact"}>
-                  <a><ButtonAlt>Contato</ButtonAlt></a>
+                <Link href={'/contact'}>
+                  <a>
+                    <ButtonAlt>Contato</ButtonAlt>
+                  </a>
                 </Link>
               </S.AboutContact>
             </S.AboutImage>
@@ -103,16 +114,18 @@ export default function About() {
               </p>
               <p>
                 Iniciei minha jornada na universidade com o objetivo inicial de
-                cursar Análise e Desenvolvimento de Sistemas. Sempre tive interesse por computadores e uma curiosidade em relação à criação de páginas web. Então,
-                decidi unir essas duas paixões e ingressei na faculdade, não com
-                o plano de me tornar um desenvolvedor, mas para explorar as
-                possibilidades da área de TI.
+                cursar Análise e Desenvolvimento de Sistemas. Sempre tive
+                interesse por computadores e uma curiosidade em relação à
+                criação de páginas web. Então, decidi unir essas duas paixões e
+                ingressei na faculdade, não com o plano de me tornar um
+                desenvolvedor, mas para explorar as possibilidades da área de
+                TI.
               </p>
               <p>
                 Foi somente em 2021, no penúltimo semestre da faculdade, que
                 comecei a levar a programação mais a sério. Iniciei minha
-                primeira tentativa de aprender HTML e CSS, porém acabei
-                dando uma pausa após alguns meses devido à falta de tempo livre.
+                primeira tentativa de aprender HTML e CSS, porém acabei dando
+                uma pausa após alguns meses devido à falta de tempo livre.
               </p>
               <p>
                 No ano seguinte, em 2022, percebi que precisava definir um
@@ -129,7 +142,9 @@ export default function About() {
               </p>
               <p>
                 Além do trabalho, continuo estudando e desenvolvendo projetos
-                pessoais para expandir meus conhecimentos, focado no ecossistema Javascript para desenvolvimento Front-end utilizando ReactJS, Typescript, Next.js, entre outros.
+                pessoais para expandir meus conhecimentos, focado no ecossistema
+                Javascript para desenvolvimento Front-end utilizando ReactJS,
+                Typescript, Next.js, entre outros.
               </p>
               <p>
                 Estou sempre em busca de desafios e oportunidades para crescer

@@ -121,12 +121,12 @@ export const Button = styled.button`
   align-items: center;
   padding: 1rem 1.2rem;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   gap: 0.4rem;
 
   &:hover {
     background: ${props => props.theme.hoverSecond};
-  } 
+  }
 `
 
 export const ButtonPrimary = styled.button`
@@ -296,7 +296,17 @@ export const ButtonAlternatives = styled.button`
   align-items: center;
   gap: 0.4rem;
 
+  border-bottom-width: 0;
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#00d9ff, #00d9ff);
+
   &:hover {
     color: ${props => props.theme.firstColor};
+    background-size: 100% 3px;
+    background-position: 0 100%;
   }
 `

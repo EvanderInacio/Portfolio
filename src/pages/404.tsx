@@ -1,7 +1,8 @@
-import styled from "styled-components";
-import { ArrowLeft } from "phosphor-react";
-import Link from "next/link";
-import { ButtonAlt } from "../styles/styles";
+import Head from 'next/head'
+import Link from 'next/link'
+import { ArrowLeft } from 'phosphor-react'
+import { ButtonAlt } from '../styles/styles'
+import styled from 'styled-components'
 
 const Styles404 = styled.div`
   display: flex;
@@ -15,7 +16,7 @@ const Styles404 = styled.div`
     flex-direction: row;
     margin-top: 5rem;
   }
-  
+
   img {
     width: 15rem;
     margin-bottom: 3rem;
@@ -23,17 +24,16 @@ const Styles404 = styled.div`
     @media (min-width: 768px) {
       width: 20rem;
     }
-    
+
     @media (min-width: 1100px) {
       width: 40rem;
     }
   }
-
 `
 
 const Content = styled.div`
   span {
-    color: ${ props => props.theme.textSecondary};
+    color: ${props => props.theme.textSecondary};
     margin-bottom: 1rem;
     font-size: small;
 
@@ -44,11 +44,10 @@ const Content = styled.div`
     @media (min-width: 768px) {
       font-size: 1.5rem;
     }
-
   }
 
   h1 {
-    color: ${ props => props.theme.firstColor};
+    color: ${props => props.theme.firstColor};
     margin-bottom: 2rem;
     font-size: 2rem;
 
@@ -60,24 +59,38 @@ const Content = styled.div`
       font-size: 3rem;
     }
   }
-  
 `
 
 export default function Error() {
   return (
+    <>
+      <Head>
+        <title>404</title>
+        <meta name="description" content="Ei! Parece que você está perdido" />
+        <meta property="og:title" content="404" />
+        <meta
+          property="og:description"
+          content="Ei! Parece que você está perdido"
+        />
+      </Head>
+      
       <Styles404>
         <img src="/vectors/404.svg" alt="404" />
 
         <Content>
           <span>Ei! Parece que você está perdido :(</span>
-          <h1> 404 <br /> Pagina não encontrada</h1>
-          <Link href={"/"}>
+          <h1>
+            {' '}
+            404 <br /> Pagina não encontrada
+          </h1>
+          <Link href={'/'}>
             <ButtonAlt>
-              <ArrowLeft weight="bold" size={18} /> 
+              <ArrowLeft weight="bold" size={18} />
               Voltar
             </ButtonAlt>
           </Link>
         </Content>
       </Styles404>
+    </>
   )
 }

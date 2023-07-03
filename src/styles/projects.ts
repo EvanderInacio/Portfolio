@@ -103,7 +103,7 @@ export const ProjectsItem = styled.div`
     }
   }
 
-  button {
+  /* button {
     border: none;
     background: transparent;
     color: ${props => props.theme.gray};
@@ -114,7 +114,7 @@ export const ProjectsItem = styled.div`
     &:hover {
       color: ${props => props.theme.firstColor};
     }
-  }
+  } */
 
   .title {
     display: flex;

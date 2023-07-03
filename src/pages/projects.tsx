@@ -3,7 +3,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import projects from '../data/projects'
 import * as S from '../styles/projects'
-import { Description, Section, Title } from '../styles/styles'
+import {
+  Description,
+  Section,
+  Title,
+  ButtonAlternatives
+} from '../styles/styles'
 import { Header } from '../components/Header'
 import { Links } from '../components/Links'
 import { Footer } from '../components/Footer'
@@ -13,7 +18,7 @@ import { ArrowRight } from 'phosphor-react'
 import { useState } from 'react'
 
 interface ProjectsProps {
-  target: HTMLInputElement;
+  target: HTMLInputElement
 }
 
 export default function Projects() {
@@ -29,6 +34,11 @@ export default function Projects() {
         <title>Projects | Evander Inácio </title>
         <meta
           name="description"
+          content="Adoro codificar usando ferramentas como React, NextJS, Tailwind, Styled Components e muito mais! Aqui estão alguns dos meus projetos favoritos."
+        />
+        <meta property="og:title" content="Projects | Evander Inácio" />
+        <meta
+          property="og:description"
           content="Adoro codificar usando ferramentas como React, NextJS, Tailwind, Styled Components e muito mais! Aqui estão alguns dos meus projetos favoritos."
         />
       </Head>
@@ -68,16 +78,14 @@ export default function Projects() {
             />
           </div> */}
 
-
           <S.ProjectsContent>
-
-            <div className='search'>
+            <div className="search">
               <p>Pesquise pelo nome do projeto</p>
-              <input 
-                type="text" 
-                placeholder='Pesquisar projetos' 
-                value={query} 
-                onChange={handleChange} 
+              <input
+                type="text"
+                placeholder="Pesquisar projetos"
+                value={query}
+                onChange={handleChange}
               />
             </div>
 
@@ -117,19 +125,18 @@ export default function Projects() {
                           </div>
                         </div>
                         <Link href={`/project/${project.url}`}>
-                          <button>
-                            <a>
+                          <a>
+                            <ButtonAlternatives>
                               Ver projeto
                               <ArrowRight
                                 style={{
                                   marginBottom: '-0.1rem',
-                                  marginLeft: '0.5rem'
                                 }}
                                 weight="bold"
                                 size={16}
                               />
-                            </a>
-                          </button>
+                            </ButtonAlternatives>
+                          </a>
                         </Link>
                       </div>
                     </S.ProjectsItem>

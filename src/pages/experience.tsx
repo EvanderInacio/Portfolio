@@ -20,9 +20,14 @@ export default function Experience() {
       <Head>
         <title>Experience | Evander Inácio </title>
         <meta
-            name="description"
-            content="Minha experiência como desenvolvedor web."
-          />
+          name="description"
+          content="Minha experiência como desenvolvedor web."
+        />
+        <meta property="og:title" content="Experience | Evander Inácio" />
+        <meta
+          property="og:description"
+          content="Minha experiência como desenvolvedor web."
+        />
       </Head>
 
       <Header />
@@ -37,7 +42,11 @@ export default function Experience() {
           </span>
         </Title>
 
-        <Description>Sou apaixonado por criar interfaces interativas e funcionais, buscando sempre aprimorar minhas habilidades e aprender novas tecnologias. Estou sempre aberto a novos desafios e projetos desfiadores.</Description>
+        <Description>
+          Sou apaixonado por criar interfaces interativas e funcionais, buscando
+          sempre aprimorar minhas habilidades e aprender novas tecnologias.
+          Estou sempre aberto a novos desafios e projetos desfiadores.
+        </Description>
 
         <TabsContainer>
           {/* <img
@@ -65,7 +74,7 @@ export default function Experience() {
                             ? `0${numbering - 1}`
                             : `${numbering - 1}`}
                         </h2>
-                        <Tab className="tab" >
+                        <Tab className="tab">
                           <button>{work.title}</button>
                         </Tab>
                       </>
@@ -90,7 +99,7 @@ export default function Experience() {
                           <h2>{work.subTitle}</h2>
                         </div>
                       </div>
-                      <div className='office'>
+                      <div className="office">
                         <h3>{work.office}</h3>
                         <h4>{work.date}</h4>
                       </div>
