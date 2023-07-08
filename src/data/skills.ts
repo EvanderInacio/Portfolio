@@ -47,7 +47,26 @@ const cardSkills = [
     title: 'Tailwind',
     img: '/skills/tailwindcss.svg',
     color: '#38BDF8'
-  }
+  },
+  {
+    id: 9,
+    title: 'Material UI',
+    img: '/skills/material-ui.svg',
+    color: '#007fff'
+  },
+  // {
+  //   id: 10,
+  //   title: 'Chakra UI',
+  //   img: '/skills/chakra-ui.svg',
+  //   color: '#51c8c5'
+  // },
+  {
+    id: 11,
+    title: 'Git',
+    img: '/skills/git.svg',
+    color: '#de4736'
+  },
+
 ]
 
 export default cardSkills

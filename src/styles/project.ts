@@ -371,20 +371,25 @@ export const Print = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    h3 {
+      color: ${props => props.theme.secondColor};
+      margin-top: 2.4rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+
+      @media(min-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+  
+    p {
+      color: ${props => props.theme.gray};
+      padding: 0 1rem;
+      margin-bottom: .7rem;
+    }
   }
   
-  h3 {
-    color: ${props => props.theme.secondColor};
-    margin-top: 2.4rem;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-
-  p {
-    color: ${props => props.theme.gray};
-    padding: 0 1rem;
-    margin-bottom: .7rem;
-  }
 
   width: 18rem;
 

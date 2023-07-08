@@ -32,10 +32,12 @@ export const Title = styled.h2`
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.25rem;
+    font-family: monospace;
     position: absolute;
     text-align: center;
-    top: -2rem;
+    top: -1.5rem;
     color: ${props => props.theme.secondColor};
   }
 

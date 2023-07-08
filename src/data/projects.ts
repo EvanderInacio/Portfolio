@@ -86,44 +86,44 @@ const projects = [
         img: '/projects/turtlemovie/turtle-movie.png'
       },
       {
-        name: 'Popular Movie',
+        name: 'Filmes Populares',
         description:
-          'Pagina que contem os filmes mais populares, assim como aqueles com a maior nota de todos os tempos.',
+          'Pagina que tem os filmes mais populares, assim como aqueles com a maior nota de todos os tempos.',
         img: '/projects/turtlemovie/movie-popular.png'
       },
       {
-        name: 'Popular Series',
+        name: 'Séries Populares',
         description:
-          'Pagina que contem os series mais populares, assim como aqueles com a maior nota de todos os tempos.',
+          'Pagina que contem as séries mais populares, assim como aqueles com a maior nota de todos os tempos.',
         img: '/projects/turtlemovie/series-popular.png'
       },
       {
-        name: 'Page Detail',
+        name: 'Pagina Detalhes',
         description:
           'Pagina que contem os detalhes de um filme/serie especifico. Como a data de lançamento, a duração (no caso de filmes), a produção, o idioma e o país de origem. ',
         img: '/projects/turtlemovie/detail-home.png'
       },
       {
-        name: 'Detail Cast',
+        name: 'Detalhes Atores',
         description:
-          'Pagina que contem os detalhes dos personagens assim como a opção de ver a ficha técnica de cada pessoa especifica.',
+          'Pagina que contem os detalhes dos personagens assim como a opção de ver a ficha técnica de cada pessoa específica.',
         img: '/projects/turtlemovie/detail-elenco.png'
       },
       {
-        name: 'Detail Video',
+        name: 'Detalhes Video',
         description: 'Pagina que contem o trailer do filme/serie especifico',
         img: '/projects/turtlemovie/detail-video.png'
       },
       {
-        name: 'Popular Actors',
+        name: 'Atores Populares',
         description:
           'Explore também a lista de atores populares e descubra quais filmes e séries eles já participaram.',
         img: '/projects/turtlemovie/peoples.png'
       },
       {
-        name: 'Detail Actors',
+        name: 'Atores Detalhes',
         description:
-          'Pagina que contem os detalhes dos personagens assim como a ficha técnica de cada pessoa especifica. Você poderá acompanhar a carreira de seus atores favoritos e encontrar novas obras para assistir',
+          'Pagina que contem os detalhes dos personagens assim como a ficha técnica de cada pessoa específica. Você poderá acompanhar a carreira de seus atores favoritos e encontrar novas obras para assistir.',
         img: '/projects/turtlemovie/detail-people.png'
       }
     ],
@@ -179,31 +179,31 @@ const projects = [
         img: '/projects/playstation/playstation-home-2.png'
       },
       {
-        name: 'About',
+        name: 'Sobre',
         description:
-          'Pagina sobre que mostra uma geral dos controles disponíveis no site.',
+          'Pagina que mostra uma geral dos controles disponíveis no site.',
         img: '/projects/playstation/playstation-about.png'
       },
       {
-        name: 'Product',
+        name: 'Produtos',
         description:
-          'Pagina de produtos mostra a lista com mais detalhes sobre a diferença de cada controle.',
+          'Pagina de produtos que mostra uma lista com mais detalhes sobre a diferença de cada controle.',
         img: '/projects/playstation/playstation-product.png'
       },
       {
-        name: 'Product Details',
+        name: 'Produto Detalhes',
         description:
           'Segunda parte da pagina de produtos mostra a lista com mais detalhes sobre a diferença de cada controle.',
         img: '/projects/playstation/playstation-product-2.png'
       },
       {
-        name: 'Buy',
+        name: 'Venda',
         description:
-          'Pagina de compra onde existe um formulário que mostra a opção escolhida e o cadastro de compra.',
+          'Pagina de compra onde existe um formulário com a opção escolhida e o cadastro de compra.',
         img: '/projects/playstation/playstation-buy.png'
       },
       {
-        name: 'Contact',
+        name: 'Contato',
         description: 'Pagina de contato com formulário de contato.',
         img: '/projects/playstation/playstation-contact.png'
       }
@@ -251,17 +251,17 @@ const projects = [
       {
         name: 'Home',
         description:
-          'Pagina inicial que mostra os podcast em destaque e ao lado o player onde vc pode selecionar e escutar um determinado podcast.',
+          'Pagina inicial que mostra os podcast em destaque e ao lado o player onde pode selecionar e escutar um determinado podcast.',
         img: '/projects/podcastr/podcastr-home.png'
       },
       {
-        name: 'Podcast List',
+        name: 'Lista de Podcast',
         description:
           'Segunda parte da pagina inicial que mostra todos os podcasts.',
         img: '/projects/podcastr/podcastr-home-2.png'
       },
       {
-        name: 'Detail',
+        name: 'Detalhes',
         description:
           'Pagina de detalhes onde mostra os detalhes de um determinado podcast como a data que foi publicado, seus participates e um breve descrição dos temas abordados.',
         img: '/projects/podcastr/podcastr-detail.png'
@@ -314,19 +314,19 @@ const projects = [
         img: '/projects/github-blog/github-blog-home.png'
       },
       {
-        name: 'Blog List',
+        name: 'Blog Lista',
         description:
           'Segunda parte da pagina inicial lista as postagens publicadas através de issues do repositório github onde ela está atrelado, utilizando a própria api do github para buscar esses dados.',
         img: '/projects/github-blog/github-blog-home-2.png'
       },
       {
-        name: 'Detail',
+        name: 'Detalhes',
         description:
           'Pagina de detalhes atrás a informação completa postada em uma determinada issues, mostrando como se fosse um blog.',
         img: '/projects/github-blog/github-blog-detail.png'
       },
       {
-        name: 'Detail Images',
+        name: 'Detalhes Images',
         description:
           'Segunda parte da pagina de detalhes mostrando a possibilidade de exibir imagens.',
         img: '/projects/github-blog/github-blog-detail-2.png'
@@ -387,7 +387,7 @@ const projects = [
       {
         name: 'Home Light',
         description:
-          'Pagina de inicio apos o usuário se autenticar, onde exibe igual no WhatsApp uma mensagem de boas vindas, e no canto esquerdo uma lista de contatos.',
+          'Pagina de inicio apos o usuário se autenticar, onde exibe uma mensagem de boas vindas, e no canto esquerdo uma lista de contatos.',
         img: '/projects/whatsapp/home-light.png'
       },
       {
@@ -398,7 +398,7 @@ const projects = [
       {
         name: 'Chat',
         description:
-          'Pagina de chat exibe a informações de um chat especifico mostrando as mensagens enviadas por você e aquelas respondidas pelo outro contato, igual na versão do whatsapp.',
+          'Pagina de chat exibe a informações de um chat especifico mostrando as mensagens enviadas por você e aquelas respondidas pelo outro contato.',
         img: '/projects/whatsapp/chat.png'
       },
       {
@@ -407,8 +407,8 @@ const projects = [
         img: '/projects/whatsapp/chat-emoji.png'
       },
       {
-        name: 'New Chat',
-        description: 'Opção onde você pode escolher um novo chat.',
+        name: 'Novo Chat',
+        description: 'Aba com uma lista contendo a opção de escolha de um novo chat.',
         img: '/projects/whatsapp/new-chat.png'
       }
     ],
@@ -465,19 +465,19 @@ const projects = [
         img: '/projects/pomodoro/pomodoro-home.png'
       },
       {
-        name: 'Task Activated',
+        name: 'Tarefa Ativa',
         description:
           'Tarefa ja em execução com a opção de interromper essa tarefa.',
         img: '/projects/pomodoro/pomodoro-home-action.png'
       },
       {
-        name: 'Page Historic',
+        name: 'Histórico',
         description:
           'Pagina de lista onde são exibidas as tarefas ja realiza, as que estão em andamento e as interrompidas.',
         img: '/projects/pomodoro/pomodoro-history.png'
       },
       {
-        name: 'Task List',
+        name: 'Lista de Tarefas',
         description: 'Pagina mostrando a lista de tarefas.',
         img: '/projects/pomodoro/pomodoro-history-2.png'
       }
@@ -529,25 +529,25 @@ const projects = [
         img: '/projects/pokedex/pokedex-index.png'
       },
       {
-        name: 'Pokedex List',
+        name: 'Pokedex Lista',
         description:
-          'Pagina onde mostra a lista de pokémons separados por tipo e dependendo do seu tipo uma cor de card é atribuído a ele facilitando assim a escolha de um tipo, com opção de busca.',
+          'Pagina mostrando uma lista de pokémons separados por tipo e dependendo do seu tipo uma cor de card é atribuído a ele facilitando assim a escolha de um tipo, com opção de busca.',
         img: '/projects/pokedex/pokedex-home.png'
       },
       {
-        name: 'Detail',
+        name: 'Detalhes',
         description:
           'Pagina de detalhes de um pokémon, mostrando uma imagem dele, junto com o fundo da cor que foi atribuída pelo seu tipo e o rank que ele pertence dentro da PokeAPI.',
         img: '/projects/pokedex/pokedex-detail.png'
       },
       {
-        name: 'Detail About',
+        name: 'Sobre Detalhes',
         description:
           'Segunda parte da pagina de detalhes onde mostra mais detalhes desse pokémon como o tipo dele, peso, altura, formas e atributos.',
         img: '/projects/pokedex/pokedex-detail-about.png'
       },
       {
-        name: 'Detail Status',
+        name: 'Detalhes Status',
         description:
           'Terceira parte da pagina de detalhes onde mostra os status de ataque, defesa, vida, ataque especial, etc...',
         img: '/projects/pokedex/pokedex-detail-stats.png'
