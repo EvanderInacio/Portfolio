@@ -15,7 +15,6 @@ export const Content = styled.div`
     margin-top: -1rem;
     padding-left: 2rem;
   }
-
 `
 
 export const HomeText = styled.div`
@@ -27,13 +26,46 @@ export const HomeText = styled.div`
     @media (min-width: 768px) {
       font-size: 1.3rem;
     }
+
+    span {
+      animation: wave-animation 2.1s infinite;
+      transform-origin: 70% 70%;
+      display: inline-block;
+
+      @keyframes wave-animation {
+        0% {
+          transform: rotate(0deg);
+        }
+        10% {
+          transform: rotate(14deg);
+        }
+        20% {
+          transform: rotate(-8deg);
+        }
+        30% {
+          transform: rotate(14deg);
+        }
+        40% {
+          transform: rotate(-4deg);
+        }
+        50% {
+          transform: rotate(10deg);
+        }
+        60% {
+          transform: rotate(0deg);
+        } /* Reset for the last half to pause */
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    }
   }
 
   h1 {
     font-size: 2.2rem;
     font-weight: 800;
     color: ${props => props.theme.firstColor};
-    background: linear-gradient(90deg, #9442FE, #3378FF);
+    background: linear-gradient(90deg, #9442fe, #3378ff);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -46,7 +78,7 @@ export const HomeText = styled.div`
       font-size: 3.3rem;
     }
   }
-  
+
   h2 {
     @media (max-width: 668px) {
       font-size: 1.2rem;
@@ -59,12 +91,12 @@ export const HomeText = styled.div`
     color: ${props => props.theme.blue};
     font-weight: 600;
   }
-  
+
   .animation {
     position: absolute;
     width: 70px;
     height: 70px;
-    
+
     @media (min-width: 468px) {
       width: 90px;
       height: 90px;
@@ -73,7 +105,7 @@ export const HomeText = styled.div`
 
     @media (min-width: 994px) {
       width: 120px;
-      height: 120px; 
+      height: 120px;
     }
 
     top: 13%;
@@ -94,12 +126,12 @@ export const HomeText = styled.div`
     flex-direction: column;
     align-items: center;
 
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
       flex-direction: row;
       gap: 1rem;
     }
 
-    @media(min-width: 1200px) {
+    @media (min-width: 1200px) {
       gap: 1.5rem;
     }
   }
@@ -113,8 +145,7 @@ export const ImgHome = styled.div`
     z-index: -1;
     width: 5rem;
     top: 3rem;
-    
-    
+
     @media (min-width: 768px) {
       width: 8rem;
       left: 25vw;
@@ -130,10 +161,10 @@ export const ImgHome = styled.div`
       top: 69%;
       width: 10rem;
     }
-  } 
+  }
 
-  .home-img {  
-    display: none;  
+  .home-img {
+    display: none;
     @media (min-width: 994px) {
       display: block;
       position: relative;
@@ -153,6 +184,4 @@ export const ImgHome = styled.div`
       }
     }
   }
-
-  
 `

@@ -10,15 +10,13 @@ export const TabsContainer = styled.section`
 
   
   .vector-circle{
-    @media(max-width: 994px){
-      display: none;
-    }
+    
 
     position: fixed;
     z-index: -999;
     opacity: 0.5;
     bottom: -15%;
-    left: -12%;
+    
     width: 25rem;
   
     animation: cubo 7s linear infinite;

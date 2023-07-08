@@ -49,12 +49,6 @@ export default function Experience() {
         </Description>
 
         <TabsContainer>
-          {/* <img
-            className="vector-circle"
-            src="/vectors/circle-spin.svg"
-            alt="circulo animado"
-          /> */}
-
           <Tabs
             className="tabs"
             selectedIndex={tabIndex}

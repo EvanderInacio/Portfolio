@@ -1,21 +1,16 @@
+import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import projects from '../data/projects'
-import * as S from '../styles/projects'
-import {
-  Description,
-  Section,
-  Title,
-  ButtonAlternatives
-} from '../styles/styles'
 import { Header } from '../components/Header'
 import { Links } from '../components/Links'
 import { Footer } from '../components/Footer'
 import { ScrollTop } from '../components/ScrollTop'
+import * as S from '../styles/projects'
+import { Description, Section, Title, ButtonAlternatives } from '../styles/styles'
 import { HiOutlineDesktopComputer } from 'react-icons/hi'
 import { ArrowRight } from 'phosphor-react'
-import { useState } from 'react'
 
 interface ProjectsProps {
   target: HTMLInputElement
@@ -61,23 +56,6 @@ export default function Projects() {
         </Description>
 
         <S.ProjectsContainer>
-          {/* <div className="laptop">
-            <Image
-              width={400}
-              height={400}
-              src="/vectors/laptop.svg"
-              alt="laptop"
-            />
-          </div>
-          <div className="pc">
-            <Image
-              width={400}
-              height={400}
-              src="/vectors/pc.svg"
-              alt="monitor"
-            />
-          </div> */}
-
           <S.ProjectsContent>
             <div className="search">
               <p>Pesquise pelo nome do projeto</p>

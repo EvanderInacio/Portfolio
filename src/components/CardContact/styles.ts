@@ -5,6 +5,18 @@ export const CardContactContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  .ellipse{
+    @media(max-width: 1200px){
+      display: none;
+    }
+    
+    position: absolute;
+    left: -12%;
+    top: 1%;
+    width: 10rem;
+  }
 `
 
 export const CardContactContent = styled.div`

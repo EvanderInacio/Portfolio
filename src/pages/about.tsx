@@ -117,8 +117,7 @@ export default function About() {
                 cursar Análise e Desenvolvimento de Sistemas. Sempre tive
                 interesse por computadores e uma curiosidade em relação à
                 criação de páginas web. Então, decidi unir essas duas paixões e
-                ingressei na faculdade, não com o plano de me tornar um
-                desenvolvedor, mas para explorar as possibilidades da área de
+                ingressei na faculdade para explorar as possibilidades da área de
                 TI.
               </p>
               <p>
@@ -136,9 +135,7 @@ export default function About() {
                 desenvolvedor web.
               </p>
               <p>
-                Atualmente, trabalho como desenvolvedor front-end freelancer,
-                utilizando ReactJS e Material UI, além de fazer integração com o
-                back-end em NodeJS.
+                Em termos de minha experiência até o momento, tenho uma base sólida em desenvolvimento front-end. Gosto de trabalhar com React e NextJS para criar interfaces de usuário dinâmicas. Atualmente, trabalho como desenvolvedor front-end freelancer, utilizando ReactJS e Material UI, além de fazer integrações com NodeJS.
               </p>
               <p>
                 Além do trabalho, continuo estudando e desenvolvendo projetos

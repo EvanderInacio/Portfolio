@@ -3,40 +3,6 @@ import { rgba } from 'polished'
 
 export const ProjectsContainer = styled.section`
   position: relative;
-
-  .laptop {
-    @media (max-width: 994px) {
-      display: none;
-    }
-
-    width: 15rem;
-    position: absolute;
-    top: -20rem;
-
-    /* animation: icons 5s ease 2s infinite alternate;
-    @keyframes icons {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-      100% {
-        transform: translateY(10px);
-      }
-    } */
-  }
-
-  .pc {
-    @media (max-width: 994px) {
-      display: none;
-    }
-
-    width: 15rem;
-    right: 0;
-    position: absolute;
-    top: -20rem;
-  }
 `
 
 export const ProjectsContent = styled.section`
