@@ -1,48 +1,6 @@
 const projects = [
-  // {
-  //   id: 1,
-  //   url: 'portfolio',
-  //   img: '/projects/portfolio/thumb.png',
-  //   title: 'Portfolio',
-  //   type: 'Website',
-  //   icon: '/construtor.svg',
-  //   github: 'https://github.com/EvanderInacio/Portfolio',
-  //   web: 'https://evander.vercel.app/',
-  //   description:
-  //     'Meu portfólio criado com o objetivo de mostrar meus projetos ao longo da minha carreira.',
-  //   tags: [
-  //     {
-  //       name: 'Next JS',
-  //       icon: '/skills/next-js.svg',
-  //       color: '#FFFFFF',
-  //       rgb: '255, 255, 255'
-  //     },
-  //     {
-  //       name: 'TypeScript',
-  //       icon: '/skills/typescript.svg',
-  //       color: '#3178C6',
-  //       rgb: '49, 120, 198'
-  //     },
-  //     {
-  //       name: 'Styled Components',
-  //       icon: '/skills/styled-components.svg',
-  //       color: '#C476AE',
-  //       rgb: '196, 118, 174'
-  //     }
-  //   ],
-  //   print: [
-  //     { name: '404', img: '/construtor.svg' },
-  //   ],
-  //   status: 'Em andamento',
-  //   year: '2023',
-  //   gif: 'https://i.imgur.com/vEn0VYV.gif',
-  //   backgroundImage: '/construtor.svg',
-  //   video:
-  //     '/404.svg'
-  // },
-
   {
-    id: 2,
+    id: 1,
     url: 'turtle-movie',
     img: '/projects/turtlemovie/turtle.png',
     title: 'Turtle Movie',
@@ -133,6 +91,86 @@ const projects = [
     backgroundImage: '/projects/turtlemovie/detail-home.png',
     video:
       'https://www.youtube.com/watch?v=wt2g4q2md9g&ab_channel=EvanderIn%C3%A1cio'
+  },
+
+  {
+    id: 2,
+    url: 'whatsapp',
+    img: '/projects/whatsapp/login.png',
+    title: 'WhatsApp',
+    type: 'Website',
+    icon: '/projects/whatsapp/icon.svg',
+    github: 'https://github.com/EvanderInacio/WhatsApp',
+    web: 'https://whatsapp-green.vercel.app/',
+    description:
+      'Clone do WhatsApp web, usando ReactJs e Styled Components para fazer a estilização e o firebase e suas funcionalidades como o AUTH para autenticação de usuários e FIRESTORE para armazenar as conversas de cada pessoa cadastrada.  Com a opção de dark mode para alterar o tema e assim ficar com uma interface agradável.',
+    tags: [
+      {
+        name: 'React Js',
+        icon: '/skills/react.svg',
+        color: '#61DAFB',
+        rgb: '97, 218, 251'
+      },
+      {
+        name: 'JavaScript',
+        icon: '/skills/javascript.svg',
+        color: '#F7DF1E',
+        rgb: '247, 223, 30'
+      },
+      {
+        name: 'Styled Components',
+        icon: '/skills/styled-components.svg',
+        color: '#C476AE',
+        rgb: '196, 118, 174'
+      },
+      {
+        name: 'Firebase',
+        icon: '/skills/firebase.svg',
+        color: '#FFCA28',
+        rgb: '255, 202, 40'
+      }
+    ],
+    print: [
+      {
+        name: 'Login',
+        description:
+          'Pagina de login com a opção de logar pelo google ou pelo github.',
+        img: '/projects/whatsapp/login.png'
+      },
+      {
+        name: 'Home Light',
+        description:
+          'Pagina de inicio apos o usuário se autenticar, onde exibe uma mensagem de boas vindas, e no canto esquerdo uma lista de contatos.',
+        img: '/projects/whatsapp/home-light.png'
+      },
+      {
+        name: 'Home Dark',
+        description: 'Pagina de inicio na versão dark mode.',
+        img: '/projects/whatsapp/home-dark.png'
+      },
+      {
+        name: 'Chat',
+        description:
+          'Pagina de chat exibe a informações de um chat especifico mostrando as mensagens enviadas por você e aquelas respondidas pelo outro contato.',
+        img: '/projects/whatsapp/chat.png'
+      },
+      {
+        name: 'Chat Emoji',
+        description: 'Opção de escolher um emoji.',
+        img: '/projects/whatsapp/chat-emoji.png'
+      },
+      {
+        name: 'Novo Chat',
+        description: 'Aba com uma lista contendo a opção de escolha de um novo chat.',
+        img: '/projects/whatsapp/new-chat.png'
+      }
+    ],
+    status: 'Completo',
+    year: '2022',
+    gif: '/projects/whatsapp/whatsapp.mp4',
+    backgroundImage: '/projects/whatsapp/home-dark.png',
+    video:
+      'https://www.youtube.com/watch?v=PZpp2sCm0zY&t=11s&ab_channel=EvanderIn%C3%A1cio'
   },
 
   {
@@ -342,86 +380,6 @@ const projects = [
 
   {
     id: 6,
-    url: 'whatsapp',
-    img: '/projects/whatsapp/login.png',
-    title: 'WhatsApp',
-    type: 'Website',
-    icon: '/projects/whatsapp/icon.svg',
-    github: 'https://github.com/EvanderInacio/WhatsApp',
-    web: 'https://whatsapp-green.vercel.app/',
-    description:
-      'Clone do WhatsApp web, usando ReactJs e Styled Components para fazer a estilização e o firebase e suas funcionalidades como o AUTH para autenticação de usuários e FIRESTORE para armazenar as conversas de cada pessoa cadastrada.  Com a opção de dark mode para alterar o tema e assim ficar com uma interface agradável.',
-    tags: [
-      {
-        name: 'React Js',
-        icon: '/skills/react.svg',
-        color: '#61DAFB',
-        rgb: '97, 218, 251'
-      },
-      {
-        name: 'JavaScript',
-        icon: '/skills/javascript.svg',
-        color: '#F7DF1E',
-        rgb: '247, 223, 30'
-      },
-      {
-        name: 'Styled Components',
-        icon: '/skills/styled-components.svg',
-        color: '#C476AE',
-        rgb: '196, 118, 174'
-      },
-      {
-        name: 'Firebase',
-        icon: '/skills/firebase.svg',
-        color: '#FFCA28',
-        rgb: '255, 202, 40'
-      }
-    ],
-    print: [
-      {
-        name: 'Login',
-        description:
-          'Pagina de login com a opção de logar pelo google ou pelo github.',
-        img: '/projects/whatsapp/login.png'
-      },
-      {
-        name: 'Home Light',
-        description:
-          'Pagina de inicio apos o usuário se autenticar, onde exibe uma mensagem de boas vindas, e no canto esquerdo uma lista de contatos.',
-        img: '/projects/whatsapp/home-light.png'
-      },
-      {
-        name: 'Home Dark',
-        description: 'Pagina de inicio na versão dark mode.',
-        img: '/projects/whatsapp/home-dark.png'
-      },
-      {
-        name: 'Chat',
-        description:
-          'Pagina de chat exibe a informações de um chat especifico mostrando as mensagens enviadas por você e aquelas respondidas pelo outro contato.',
-        img: '/projects/whatsapp/chat.png'
-      },
-      {
-        name: 'Chat Emoji',
-        description: 'Opção de escolher um emoji.',
-        img: '/projects/whatsapp/chat-emoji.png'
-      },
-      {
-        name: 'Novo Chat',
-        description: 'Aba com uma lista contendo a opção de escolha de um novo chat.',
-        img: '/projects/whatsapp/new-chat.png'
-      }
-    ],
-    status: 'Completo',
-    year: '2022',
-    gif: '/projects/whatsapp/whatsapp.mp4',
-    backgroundImage: '/projects/whatsapp/home-dark.png',
-    video:
-      'https://www.youtube.com/watch?v=PZpp2sCm0zY&t=11s&ab_channel=EvanderIn%C3%A1cio'
-  },
-
-  {
-    id: 7,
     url: 'pomodoro',
     img: '/projects/pomodoro/pomodoro-home.png',
     title: 'Pomodoro Timer',
@@ -491,7 +449,7 @@ const projects = [
   },
 
   {
-    id: 8,
+    id: 7,
     url: 'pokedex',
     img: '/projects/pokedex/pokedex-home.png',
     title: 'Pokedex',
