@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import * as S from '../styles/about'
-import { ButtonAlt, Section, Title } from '../styles/styles'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { ScrollTop } from '../components/ScrollTop'
@@ -12,6 +10,8 @@ import { RiWhatsappFill } from 'react-icons/ri'
 import { BsLinkedin } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
 import { FaDiscord } from 'react-icons/fa'
+import * as S from '../styles/about'
+import { ButtonAlt, Section, Title } from '../styles/styles'
 
 export default function About() {
   return (
@@ -117,8 +117,8 @@ export default function About() {
                 cursar Análise e Desenvolvimento de Sistemas. Sempre tive
                 interesse por computadores e uma curiosidade em relação à
                 criação de páginas web. Então, decidi unir essas duas paixões e
-                ingressei na faculdade para explorar as possibilidades da área de
-                TI.
+                ingressei na faculdade para explorar as possibilidades da área
+                de TI.
               </p>
               <p>
                 Foi somente em 2021, no penúltimo semestre da faculdade, que
@@ -135,7 +135,12 @@ export default function About() {
                 desenvolvedor web.
               </p>
               <p>
-                Em termos de minha experiência até o momento, tenho uma base sólida em desenvolvimento front-end. Gosto de trabalhar com React e NextJS para criar interfaces de usuário dinâmicas. Atualmente, trabalho como desenvolvedor front-end freelancer, utilizando ReactJS e Material UI, além de fazer integrações com NodeJS.
+                Em termos de minha experiência até o momento, tenho uma base
+                sólida em desenvolvimento front-end. Gosto de trabalhar com
+                React e NextJS para criar interfaces de usuário dinâmicas.
+                Atualmente, trabalho como desenvolvedor front-end freelancer,
+                utilizando ReactJS e Material UI, além de fazer integrações com
+                NodeJS.
               </p>
               <p>
                 Além do trabalho, continuo estudando e desenvolvendo projetos

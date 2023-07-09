@@ -8,8 +8,9 @@ import { Links } from '../components/Links'
 import { Footer } from '../components/Footer'
 import { ScrollTop } from '../components/ScrollTop'
 import * as S from '../styles/projects'
-import { Description, Section, Title, ButtonAlternatives } from '../styles/styles'
+import * as T from '../styles/styles'
 import { HiOutlineDesktopComputer } from 'react-icons/hi'
+import { FaSearch } from 'react-icons/fa'
 import { ArrowRight } from 'phosphor-react'
 
 interface ProjectsProps {
@@ -22,6 +23,10 @@ export default function Projects() {
   const handleChange = (e: ProjectsProps) => {
     setQuery(e.target.value)
   }
+
+  const projectFilter = projects.filter(project =>
+    project.title.toLowerCase().includes(query.toLowerCase())
+  )
 
   return (
     <>
@@ -41,89 +46,95 @@ export default function Projects() {
       <Header />
       <Links />
       <ScrollTop />
-      <Section>
-        <Title>
+      <T.Section>
+        <T.Title>
           <p>../projects</p>
           Projetos
           <span>
             <HiOutlineDesktopComputer /> Projects
           </span>
-        </Title>
-        <Description>
+        </T.Title>
+        <T.Description>
           Aqui você poderá ver alguns dos trabalhos que eu desenvolvi. Navegue à
           vontade e explore os projetos para ver como foram criados, as
           tecnologias utilizadas e as funcionalidades implementadas.
-        </Description>
+        </T.Description>
 
         <S.ProjectsContainer>
           <S.ProjectsContent>
             <div className="search">
               <p>Pesquise pelo nome do projeto</p>
+              
+              <div className="input">
               <input
                 type="text"
-                placeholder="Pesquisar projetos"
+                placeholder="Pesquisar..."
                 value={query}
                 onChange={handleChange}
               />
+              <FaSearch />
+              </div>
             </div>
 
-            {projects
-              .filter(e => e.title.toLowerCase().includes(query.toLowerCase()))
-              .map(project => {
-                return (
-                  <>
-                    <div className="border" key={project.id} />
-                    <S.ProjectsItem>
-                      <div className="banner">
+            {!projectFilter.length && (
+              <h3 className="not-found">Projeto não encontrado 🙁</h3>
+            )}
+
+            {projectFilter.map(project => {
+              return (
+                <>
+                  <div className="border" key={project.id} />
+                  <S.ProjectsItem>
+                    <div className="banner">
+                      <Image
+                        width={500}
+                        height={300}
+                        src={project.img}
+                        alt={project.title}
+                      />
+                    </div>
+
+                    <div>
+                      <div className="title">
                         <Image
-                          width={500}
-                          height={300}
-                          src={project.img}
+                          width={20}
+                          height={20}
+                          src={'/icon.svg'}
                           alt={project.title}
                         />
+                        <h2>{project.title}</h2>
                       </div>
+                      <div className="description">
+                        <p>{project.description}</p>
 
-                      <div>
-                        <div className="title">
-                          <Image
-                            width={20}
-                            height={20}
-                            src={'/icon.svg'}
-                            alt={project.title}
-                          />
-                          <h2>{project.title}</h2>
+                        <div className="tags">
+                          {project.tags.map(tag => {
+                            return <span key={tag.name}>{tag.name}</span>
+                          })}
                         </div>
-                        <div className="description">
-                          <p>{project.description}</p>
-
-                          <div className="tags">
-                            {project.tags.map(tag => {
-                              return <span key={tag.name}>{tag.name}</span>
-                            })}
-                          </div>
-                        </div>
-                        <Link href={`/project/${project.url}`}>
-                          <a>
-                            <ButtonAlternatives>
-                              Ver projeto
-                              <ArrowRight
-                                style={{
-                                  marginBottom: '-0.1rem',
-                                }}
-                                weight="bold"
-                                size={16}
-                              />
-                            </ButtonAlternatives>
-                          </a>
-                        </Link>
                       </div>
-                    </S.ProjectsItem>
-                  </>
-                )
-              })}
+                      <Link href={`/project/${project.url}`}>
+                        <a>
+                          <T.ButtonAlternatives>
+                            Ver projeto
+                            <ArrowRight
+                              style={{
+                                marginBottom: '-0.1rem'
+                              }}
+                              weight="bold"
+                              size={16}
+                            />
+                          </T.ButtonAlternatives>
+                        </a>
+                      </Link>
+                    </div>
+                  </S.ProjectsItem>
+                </>
+              )
+            })}
           </S.ProjectsContent>
         </S.ProjectsContainer>
-      </Section>
+      </T.Section>
       <Footer />
     </>
   )

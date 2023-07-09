@@ -14,7 +14,7 @@ export const ProjectsContent = styled.section`
   margin-top: -3rem;
 
   .search {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: 90vw;
     max-width: 650px;
 
@@ -23,23 +23,34 @@ export const ProjectsContent = styled.section`
       margin-bottom: 1rem;
     }
 
-    input {
+    .input {
       width: 100%;
-      border: solid 2px ${props => props.theme.backgroundSecond};
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      padding: 1rem;
       border-radius: 10px;
       background: ${props => props.theme.backgroundSecond};
-      padding: 1rem;
-      font-size: 1rem;
-      color: ${props => props.theme.gray};
+      border: solid 2px ${props => props.theme.gray_easy};
+      color: ${props => props.theme.gray_easy};
 
-      &:focus {
+      input {
+        width: 100%;
+        font-size: 1rem;
+        color: ${props => props.theme.gray};
+        background: none;
         outline: none;
-        border: 2px solid ${props => props.theme.secondColor};
-        background: ${props => props.theme.backgroundSecond};
+        border: none;
+
+        ::placeholder {
+          color: ${props => props.theme.gray_easy};
+        }
       }
     }
+  }
 
-    
+  .not-found {
+    margin-top: 2rem;
   }
 
   .border {
@@ -68,19 +79,6 @@ export const ProjectsItem = styled.div`
       border-radius: 0.5rem;
     }
   }
-
-  /* button {
-    border: none;
-    background: transparent;
-    color: ${props => props.theme.gray};
-    cursor: pointer;
-    font-size: 1.1rem;
-    display: flex;
-
-    &:hover {
-      color: ${props => props.theme.firstColor};
-    }
-  } */
 
   .title {
     display: flex;

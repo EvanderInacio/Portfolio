@@ -11,7 +11,9 @@ export function HomeHero() {
     <Container>
       <Content>
         <HomeText>
-          <p><span>👋🏻</span> Olá, o meu nome é</p>
+          <p>
+            <span>👋🏻</span> Olá, o meu nome é
+          </p>
           <h1>
             Evander Inácio
             <span>
@@ -25,7 +27,11 @@ export function HomeHero() {
           <h2>
             <Typewriter
               options={{
-                strings: ['Desenvolvedor Front-End'],
+                strings: [
+                  'Desenvolvedor Front-End',
+                  'Desenvolvedor ReactJS',
+                  'Desenvolvedor Next.JS'
+                ],
                 autoStart: true,
                 loop: true,
                 skipAddStyles: true
@@ -33,7 +39,7 @@ export function HomeHero() {
             />
           </h2>
 
-          <div className='button'>
+          <div className="button">
             <ButtonPrimary>
               <Link href={'#projects'}>
                 <a>

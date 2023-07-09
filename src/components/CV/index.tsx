@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import { BsFileText } from "react-icons/bs";
 import { ButtonSecondAlt, Container, Title } from "../../styles/styles";
 import { CVContainer, CVContent, CVDescription, Curriculum } from "./styles"
 import { FiDownload } from 'react-icons/fi'

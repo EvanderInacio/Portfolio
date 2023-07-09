@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import styled from 'styled-components'
 import { ArrowLeft } from 'phosphor-react'
 import { ButtonAlt } from '../styles/styles'
-import styled from 'styled-components'
 
 const Styles404 = styled.div`
   display: flex;
