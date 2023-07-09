@@ -1,5 +1,5 @@
 <h1 align="center">
-  Portfolio <img width="25px" src="https://raw.githubusercontent.com/EvanderInacio/Portfolio/3954a3ad525e1e2f9f58dac1417aae0abcdd176c/public/icon.svg"/>
+  Portfolio <img width="25px" src="https://raw.githubusercontent.com/EvanderInacio/Portfolio/73b9d0b179efc28c26d11e8d44570901d6f8b520/public/icon.svg"/>
 </h1>
 
  <p align="center">
@@ -10,7 +10,7 @@
 
 <br>
 
-![Resultado final do projeto](https://raw.githubusercontent.com/EvanderInacio/Portfolio/main/public/projects/portfolio/thumb.png)
+![Resultado final do projeto](https://raw.githubusercontent.com/EvanderInacio/Portfolio/main/public/ogimage.png)
 
 <br>
 
@@ -33,7 +33,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Google Fonts](https://fonts.google.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Phosphor Icons](https://phosphoricons.com/)
-- [Form Submit](https://formsubmit.co/)
 
 
 ## 🔗 Links
