@@ -64,15 +64,15 @@ export default function Projects() {
           <S.ProjectsContent>
             <div className="search">
               <p>Pesquise pelo nome do projeto</p>
-              
+
               <div className="input">
-              <input
-                type="text"
-                placeholder="Pesquisar..."
-                value={query}
-                onChange={handleChange}
-              />
-              <FaSearch />
+                <input
+                  type="text"
+                  placeholder="Pesquisar..."
+                  value={query}
+                  onChange={handleChange}
+                />
+                <FaSearch />
               </div>
             </div>
 
@@ -133,7 +133,17 @@ export default function Projects() {
               )
             })}
 
-            <p className='github'>Ei, ei, ei... Tenho ainda mais no <a href="https://github.com/EvanderInacio" target="_blank">meu GitHub </a>!</p>
+            <p className="github">
+              Ei, ei, ei... Tenho ainda mais no{' '}
+              <a
+                href="https://github.com/EvanderInacio"
+                target="_blank"
+                rel="noreferrer"
+              >
+                meu GitHub{' '}
+              </a>
+              !
+            </p>
           </S.ProjectsContent>
         </S.ProjectsContainer>
       </T.Section>
