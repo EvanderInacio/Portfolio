@@ -32,7 +32,7 @@ a {
 
 ::-webkit-scrollbar{
   width: 0.5rem;
-  background-color: ${props => props.theme.borderSecond};
+  background-color: ${props => props.theme.backgroundSecond};
 }
 ::-webkit-scrollbar-thumb{
   border-radius: 0.5rem;

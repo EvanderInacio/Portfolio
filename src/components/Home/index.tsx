@@ -30,7 +30,7 @@ export function HomeHero() {
                 strings: [
                   'Desenvolvedor Front-End',
                   'Desenvolvedor ReactJS',
-                  'Desenvolvedor Next.JS'
+                  'Desenvolvedor NextJS'
                 ],
                 autoStart: true,
                 loop: true,

@@ -59,6 +59,22 @@ export const ProjectsContent = styled.section`
     margin-bottom: 4rem;
     border-top: 1px solid ${props => props.theme.gray_easy};
   }
+
+  .github{
+    text-align: center;
+    margin-top: 5rem;
+    color: ${props => props.theme.gray};
+
+    a {
+      color: ${props => props.theme.firstColor};
+      border-bottom: 1px solid ${props => props.theme.firstColor};
+
+      &:hover {
+        color: ${props => props.theme.hover};
+        border-bottom: 1px solid ${props => props.theme.hover};
+      }
+    }
+  }
 `
 
 export const ProjectsItem = styled.div`

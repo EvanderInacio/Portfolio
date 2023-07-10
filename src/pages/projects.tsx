@@ -132,6 +132,8 @@ export default function Projects() {
                 </>
               )
             })}
+
+            <p className='github'>Ei, ei, ei... Tenho ainda mais no <a href="https://github.com/EvanderInacio" target="_blank">meu GitHub </a>!</p>
           </S.ProjectsContent>
         </S.ProjectsContainer>
       </T.Section>
