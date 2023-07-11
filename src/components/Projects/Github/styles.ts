@@ -71,7 +71,7 @@ export const Cubo = styled.div`
       width: 100px;
       height: 100px;
       border: 2px solid #1e1e25;
-      background: rgba(1, 1, 1, 0.4);
+      background: rgba(1, 1, 1, 0.9);
       text-align: center;
       display: flex;
       justify-content: center;
@@ -81,18 +81,26 @@ export const Cubo = styled.div`
     .face1 {
       transform: translateZ(50px);
     }
+
     .face2 {
-      transform: rotateY(90deg) translateZ(50px);
-    }
-    .face3 {
       transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
     }
-    .face4 {
-      transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+
+    .face3 {
+      transform: rotateY(90deg) translateZ(50px);
+      img {
+        transform: rotate(-90deg);  
+      }
     }
-    .face5 {
+
+    .face4 {
       transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
     }
+
+    .face5 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+    }
+
     .face6 {
       transform: rotateX(-90deg) translateZ(50px);
     }

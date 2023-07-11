@@ -38,9 +38,13 @@ export const WorkContent = styled.div`
       color: ${props => props.theme.hover};
     }
 
-    img {
-      width: 2.1rem;
-      margin-left: .8rem;
+    .tag{
+      display: flex;
+      gap: .5rem;
+
+      img {
+        width: 2.1rem;
+      }
     }
   }
 `

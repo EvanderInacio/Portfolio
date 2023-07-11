@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import Typewriter from 'typewriter-effect'
 import { ButtonPrimary, Container } from '../../styles/styles'
@@ -16,11 +17,12 @@ export function HomeHero() {
           </p>
           <h1>
             Evander Inácio
-            <span>
-              <img
-                className="animation"
+            <span className="animation">
+              <Image
+                width={200}
+                height={200}
                 src="/vectors/triangle.svg"
-                alt="Imagem de um triangulo"
+                alt="Imagem de um triangulo com animação de giro"
               />
             </span>
           </h1>
@@ -51,8 +53,16 @@ export function HomeHero() {
           </div>
         </HomeText>
         <ImgHome>
-          <img className="code" src="/vectors/dino.svg" alt="dinossauro" />
           <img className="home-img" src="/home.png" alt="Imagem da Home" />
+
+          <div className="code">
+            <Image
+              width={150}
+              height={150}
+              src="/vectors/dino.svg"
+              alt="dinossauro"
+            />
+          </div>
         </ImgHome>
       </Content>
     </Container>

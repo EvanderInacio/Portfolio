@@ -40,9 +40,9 @@ export function Contact() {
               {' '}
               <TelegramLogo size={22} color="#00fffb" /> Email{' '}
             </h4>
-            <Link href="mailto:evander.20112@hotmail.com">
+            <Link href="mailto:evander.20116@gmail.com">
               <a target="_blank">
-                <span>evander.20112@hotmail.com</span>
+                <span>evander.20116@gmail.com</span>
               </a>
             </Link>
           </div>

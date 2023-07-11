@@ -23,7 +23,13 @@ export function Projects() {
         <span>
           <HiOutlineDesktopComputer /> Projects
         </span>
-        <img className="vector" src="/vectors/code.svg" alt="" />
+          <img 
+            className="vector" 
+            width={100} 
+            height={100} 
+            src="/vectors/code.svg" 
+            alt="tag de desenvolvimento animado" 
+          />        
       </Title>
       <ProjectsContainer>
         {projects.slice(0, 9).map(project => {

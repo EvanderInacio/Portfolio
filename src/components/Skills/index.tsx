@@ -16,8 +16,12 @@ export function Skills() {
   return (
     <Container>
       <Vector>
-        <img className='js' src="/vectors/js.svg" alt="" />
-        <img className='html' src="/vectors/html.svg" alt="" />
+        <div className='js'>
+          <Image width={100} height={100} src="/vectors/js.svg" alt="" />
+        </div>
+        <div className='html'>
+          <Image width={85} height={85} src="/vectors/html.svg" alt="" />
+        </div>
       </Vector>
       <Title>
         Habilidades

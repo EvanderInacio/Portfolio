@@ -158,7 +158,7 @@ export const ImgHome = styled.div`
 
     @media (min-width: 1300px) {
       left: 85%;
-      top: 69%;
+      top: 70%;
       width: 10rem;
     }
   }

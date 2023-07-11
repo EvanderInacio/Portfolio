@@ -1,12 +1,12 @@
 import { FormEvent, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
 import { sendContactMail } from '../../services/sendMail'
-import toast from 'react-hot-toast'
 import { z } from 'zod'
-import { At, ChatText, TelegramLogo, User } from 'phosphor-react'
+import { zodResolver } from '@hookform/resolvers/zod'
+import toast from 'react-hot-toast'
 import { ButtonSecondary } from '../../styles/styles'
 import { FormContent } from './styles'
+import { At, ChatText, TelegramLogo, User } from 'phosphor-react'
 
 const contactFormSchema = z.object({
   name: z.string().min(3).max(100),

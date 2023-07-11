@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import { useTheme } from 'styled-components'
 import works from '../../data/work'
@@ -34,7 +33,9 @@ export function Work() {
                     borderBottom: `7px solid ${theme.backgroundAlt}`,
                     boxShadow: `0px 5px 0px 0px ${theme.firstColor}`
                   }}
-                  contentArrowStyle={{ borderRight: `10px solid ${theme.backgroundAlt}`}}
+                  contentArrowStyle={{
+                    borderRight: `10px solid ${theme.backgroundAlt}`
+                  }}
                   date={work.date}
                   icon={
                     <Image
@@ -59,9 +60,17 @@ export function Work() {
                       <p>{work.description}</p>
                       <ul>
                         <h3>Techs:</h3>
-                        {work.tags.map(tag => (
-                          <img key={tag.name} src={tag.icon} alt={tag.name} />
-                        ))}
+                        <div className="tag">
+                          {work.tags.map(tag => (
+                            <Image
+                              key={tag.name}
+                              width={40}
+                              height={40}
+                              src={tag.icon}
+                              alt={tag.name}
+                            />
+                          ))}
+                        </div>
                       </ul>
                     </WorkContent>
                   </WorkContainer>

@@ -10,6 +10,7 @@ import { Educations } from '../components/Educations'
 import { Section, Title, Description } from '../styles/styles'
 import { TabButton, TabContent, TabsContainer } from '../styles/experience'
 import { Briefcase } from 'phosphor-react'
+import Image from 'next/image'
 
 export default function Experience() {
   const [tabIndex, setTabIndex] = useState(0)
@@ -104,7 +105,12 @@ export default function Experience() {
                       <ul>
                         {work.tags.map(tag => (
                           <div className="tags" key={tag.name}>
-                            <img src={tag.icon} alt={tag.name} />
+                            <Image 
+                              width={50} 
+                              height={45} 
+                              src={tag.icon} 
+                              alt={tag.name} 
+                            />
                             <h4>{tag.name}</h4>
                           </div>
                         ))}
