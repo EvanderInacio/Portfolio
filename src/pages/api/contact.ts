@@ -8,7 +8,7 @@ const bodySchema = z.object({
   message: z.string()
 })
 
-const WEBHOOK_URL = process.env.WEBHOOK_URL!
+const WEBHOOK_URL = process.env.NEXT_PUBLIC_WEBHOOK_URL as string
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
