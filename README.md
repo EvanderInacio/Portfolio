@@ -18,9 +18,12 @@
 
 Meu portfólio criado com o objetivo de mostrar meus projetos. 
 
-- Website: [evander.vercel.app](https://evander.vercel.app/)
 
-## 🚀 Tecnologias
+## 🚀 Deploy
+
+ [evander.com.br](https://www.evander.com.br)
+
+## 🔥 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
