@@ -21,7 +21,7 @@ export default function About() {
         <meta
           name="description"
           content="Meu nome é Evander Inácio, sou um desenvolvedor front-end React
-            do Brasil."
+          do Brasil."
         />
         <meta property="og:title" content="About | Evander Inácio" />
         <meta

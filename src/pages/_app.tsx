@@ -1,32 +1,37 @@
-import type { AppProps } from 'next/app';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
-import { ThemeProvider } from 'styled-components';
-import NextNprogress from 'nextjs-progressbar';
-import { GlobalStyles }from '../styles/global';
+import type { AppProps } from 'next/app'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+import { ThemeProvider } from 'styled-components'
+import NextNprogress from 'nextjs-progressbar'
+import { GlobalStyles } from '../styles/global'
 import { defaultTheme } from '../styles/themes/default'
-import { Toaster } from '../components/Toaster';
+import { Toaster } from '../components/Toaster'
 
 function useNormalScrollRoutes() {
-  const router = useRouter();
+  const router = useRouter()
 
   useEffect(() => {
     router.events.on('routeChangeStart', () => {
-      document.documentElement.classList.add('normal-scroll');
-    });
+      document.documentElement.classList.add('normal-scroll')
+    })
     router.events.on('routeChangeComplete', () => {
-      document.documentElement.classList.remove('normal-scroll');
-    });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+      document.documentElement.classList.remove('normal-scroll')
+    })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
-  useNormalScrollRoutes();
+  useNormalScrollRoutes()
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-        <NextNprogress 
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <ThemeProvider theme={defaultTheme}>
+        <NextNprogress
           color={defaultTheme.firstColor}
           startPosition={0.3}
           stopDelayMs={300}
@@ -37,8 +42,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Toaster />
         <GlobalStyles />
         <Component {...pageProps} />
-    </ThemeProvider>
-  );
-};
+      </ThemeProvider>
+    </>
+  )
+}
 
 export default MyApp

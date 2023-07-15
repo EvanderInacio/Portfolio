@@ -44,25 +44,31 @@ export default class MyDocument extends Document {
           <meta name="author" content="Evander Inácio" />
           <meta
             name="description"
-            content="Meu nome é Evander Inácio sou um Desenvolvedor Front-end do Brasil."
+            content="Desenvolvedor Front-end do Brasil. Especializado em criação de interfaces e funcionalidades para aplicativos da web usando React.js e Next.js."
+          />
+          <meta itemProp="name" content="Evander Inácio - Desenvolvedor Front-End" />
+          <meta
+            itemProp="description"
+            content="Desenvolvedor Front-end do Brasil. Especializado em criação de interfaces e funcionalidades para aplicativos da web usando React.js e Next.js."
+          />
+          <meta 
+            itemProp="image" 
+            content="https://raw.githubusercontent.com/EvanderInacio/Portfolio/main/public/ogimage.png" 
           />
           <meta
             name="keywords"
-            content="Evander, Evander Inacio, desenvolvedor, website, programador, front-end, personal website, developer, portfolio, sites, web, são paulo, sp, JavaScript, TypeScript, ReactJS, NextJS, software, aplicações, Freelancer, profissional, e-commerce, Evander portfolio"
+            content="Evander, Evander Inacio, desenvolvedor, website, programador, front-end, personal website, developer, portfolio, sites, web, são paulo, sp, JavaScript, TypeScript, ReactJS, NextJS, software, aplicações, Freelancer, portfolio developer, e-commerce, Evander portfolio"
           />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-          />
+
           <meta name="theme-color" content="#00d9ff" />
           <meta name="copyright" content="Evander Inácio 2023" />
           <meta http-equiv="content-language" content="pt-br" />
-          <meta property="og:image" content="/ogimage.png" />
-          <meta property="og:title" content="Evander Inácio | Desenvolvedor" />
-          <meta
-            property="og:description"
-            content="Meu nome é Evander Inácio sou um Desenvolvedor Front-end do Brasil."
-          />
+          <meta name="robots" content="index, follow" />
+          <meta http-equiv="cache-control" content="no-cache" />
+          <meta http-equiv="pragma" content="no-cache" />
+          <meta name="language" content="pt-BR" />
+          <meta name="rating" content="general" />
+          <link rel="canonical" href="https://www.evander.com.br/" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -71,16 +77,28 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <meta name="robots" content="index, follow" />
-          <meta http-equiv="cache-control" content="no-cache" />
-          <meta http-equiv="pragma" content="no-cache" />
-          <meta name="language" content="pt-BR" />
-          <meta name="rating" content="general" />
-          <link rel="canonical" href="https://www.evander.com.br/" />
           <meta property="og:url" content="https://www.evander.com.br/" />
           <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="Evander Inácio Portfolio" />
-          <meta name="twitter:image" content="/ogimage.png" />
+          <meta property="og:site_name" content="Evander Inácio" />
+          <meta property="og:title" content="Evander Inácio - Desenvolvedor Front-End" />
+          <meta
+            property="og:description"
+            content="Desenvolvedor Front-end do Brasil. Especializado em criação de interfaces e funcionalidades para aplicativos da web usando React.js e Next.js."
+          />
+          <meta 
+            property="og:image" 
+            content="https://raw.githubusercontent.com/EvanderInacio/Portfolio/main/public/ogimage.png" 
+          />
+
+          <meta name="twitter:title" content="Evander Inácio - Desenvolvedor Front-End" />
+          <meta
+            name="twitter:description"
+            content="Desenvolvedor Front-end do Brasil. Especializado em criação de interfaces e funcionalidades para aplicativos da web usando React.js e Next.js."
+          />
+          <meta 
+            name="twitter:image" 
+            content="https://raw.githubusercontent.com/EvanderInacio/Portfolio/main/public/ogimage.png" 
+          />
 
           <link rel="icon" href="/icon.svg" />
         </Head>
