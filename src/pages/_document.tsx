@@ -8,33 +8,34 @@ import Document, {
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
+const meta = {
+  title: 'Evander Inácio - Desenvolvedor Front-End',
+  description:
+    'Desenvolvedor Front-end do Brasil. Especializado em criação de interfaces e funcionalidades para aplicativos da web usando React.js e Next.js.',
+  image:
+    'https://raw.githubusercontent.com/EvanderInacio/Portfolio/main/public/ogimage.png'
+}
+
 export default class MyDocument extends Document {
-  static async getInitialProps(
-    ctx: DocumentContext
-  ): Promise<DocumentInitialProps> {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
+  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
+		const sheet = new ServerStyleSheet();
+		const originalRenderPage = ctx.renderPage;
 
-    try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
-        })
+		try {
+			ctx.renderPage = () =>
+				originalRenderPage({
+					enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
+				});
 
-      const initialProps = await Document.getInitialProps(ctx)
-      return {
-        ...initialProps,
-        styles: (
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>
-        )
-      }
-    } finally {
-      sheet.seal()
-    }
-  }
+			const initialProps = await Document.getInitialProps(ctx);
+			return {
+				...initialProps,
+				styles: [initialProps.styles, sheet.getStyleElement()],
+			};
+		} finally {
+			sheet.seal();
+		}
+	}
 
   render() {
     return (
@@ -42,19 +43,10 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="author" content="Evander Inácio" />
-          <meta
-            name="description"
-            content="Desenvolvedor Front-end do Brasil. Especializado em criação de interfaces e funcionalidades para aplicativos da web usando React.js e Next.js."
-          />
-          <meta itemProp="name" content="Evander Inácio - Desenvolvedor Front-End" />
-          <meta
-            itemProp="description"
-            content="Desenvolvedor Front-end do Brasil. Especializado em criação de interfaces e funcionalidades para aplicativos da web usando React.js e Next.js."
-          />
-          <meta 
-            itemProp="image" 
-            content="https://raw.githubusercontent.com/EvanderInacio/Portfolio/main/public/ogimage.png" 
-          />
+          <meta name="description" content={meta.description} />
+          <meta itemProp="name" content={meta.title} />
+          <meta itemProp="description" content={meta.description} />
+          <meta itemProp="image" content={meta.image} />
           <meta
             name="keywords"
             content="Evander, Evander Inacio, desenvolvedor, website, programador, front-end, personal website, developer, portfolio, sites, web, são paulo, sp, JavaScript, TypeScript, ReactJS, NextJS, software, aplicações, Freelancer, portfolio developer, e-commerce, Evander portfolio"
@@ -80,25 +72,13 @@ export default class MyDocument extends Document {
           <meta property="og:url" content="https://www.evander.com.br/" />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="Evander Inácio" />
-          <meta property="og:title" content="Evander Inácio - Desenvolvedor Front-End" />
-          <meta
-            property="og:description"
-            content="Desenvolvedor Front-end do Brasil. Especializado em criação de interfaces e funcionalidades para aplicativos da web usando React.js e Next.js."
-          />
-          <meta 
-            property="og:image" 
-            content="https://raw.githubusercontent.com/EvanderInacio/Portfolio/main/public/ogimage.png" 
-          />
+          <meta property="og:title" content={meta.title} />
+          <meta property="og:description" content={meta.description} />
+          <meta property="og:image" content={meta.image} />
 
-          <meta name="twitter:title" content="Evander Inácio - Desenvolvedor Front-End" />
-          <meta
-            name="twitter:description"
-            content="Desenvolvedor Front-end do Brasil. Especializado em criação de interfaces e funcionalidades para aplicativos da web usando React.js e Next.js."
-          />
-          <meta 
-            name="twitter:image" 
-            content="https://raw.githubusercontent.com/EvanderInacio/Portfolio/main/public/ogimage.png" 
-          />
+          <meta name="twitter:title" content={meta.title} />
+          <meta name="twitter:description" content={meta.description} />
+          <meta name="twitter:image" content={meta.image} />
 
           <link rel="icon" href="/icon.svg" />
         </Head>
