@@ -1,16 +1,17 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import { useState } from 'react'
-import works from '../data/work'
+import experiences from '../data/experiences'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
+import { Work } from '../components/Work'
 import { Links } from '../components/Links'
 import { ScrollTop } from '../components/ScrollTop'
 import { Educations } from '../components/Educations'
 import { Section, Title, Description } from '../styles/styles'
 import { TabButton, TabContent, TabsContainer } from '../styles/experience'
 import { Briefcase } from 'phosphor-react'
-import Image from 'next/image'
 
 export default function Experience() {
   const [tabIndex, setTabIndex] = useState(0)
@@ -59,18 +60,18 @@ export default function Experience() {
           >
             <TabButton>
               <TabList className="tab__list">
-                {works.map(work => {
-                  if (work.id) {
+                {experiences.map(experience => {
+                  if (experience.id) {
                     numbering += 1
                     return (
                       <>
-                        <h2 key={work.id}>
+                        <h2 key={experience.id}>
                           {numbering >= 0 && numbering <= 10
                             ? `0${numbering - 1}`
                             : `${numbering - 1}`}
                         </h2>
                         <Tab className="tab">
-                          <button>{work.title}</button>
+                          <button>{experience.title}</button>
                         </Tab>
                       </>
                     )
@@ -80,36 +81,36 @@ export default function Experience() {
             </TabButton>
 
             <TabContent>
-              {works.map(work => {
+              {experiences.map(experience => {
                 return (
-                  <TabPanel className="tab__panel" key={work.id}>
+                  <TabPanel className="tab__panel" key={experience.id}>
                     <div className="title-container">
                       <div className="title-content">
                         <div>
-                          <img src={work.img} alt={work.title} />
+                          <img src={experience.img} alt={experience.title} />
                         </div>
                         <div className="title">
-                          <h1>{work.title}</h1>
+                          <h1>{experience.title}</h1>
                           <div className="sub"></div>
-                          <h2>{work.subTitle}</h2>
+                          <h2>{experience.subTitle}</h2>
                         </div>
                       </div>
                       <div className="office">
-                        <h3>{work.office}</h3>
-                        <h4>{work.date}</h4>
+                        <h3>{experience.office}</h3>
+                        <h4>{experience.date}</h4>
                       </div>
                     </div>
-                    <p>{work.description}</p>
+                    <p>{experience.description}</p>
                     <div className="techs">
                       <h3>Techs:</h3>
                       <ul>
-                        {work.tags.map(tag => (
+                        {experience.tags.map(tag => (
                           <div className="tags" key={tag.name}>
-                            <Image 
-                              width={50} 
-                              height={45} 
-                              src={tag.icon} 
-                              alt={tag.name} 
+                            <Image
+                              width={50}
+                              height={45}
+                              src={tag.icon}
+                              alt={tag.name}
                             />
                             <h4>{tag.name}</h4>
                           </div>
@@ -123,6 +124,7 @@ export default function Experience() {
           </Tabs>
         </TabsContainer>
 
+        <Work />
         <Educations />
       </Section>
       <Footer />

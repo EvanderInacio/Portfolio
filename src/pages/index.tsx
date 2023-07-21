@@ -7,9 +7,10 @@ import { Projects } from '../components/Projects'
 import { Skills } from '../components/Skills'
 import { ScrollTop } from '../components/ScrollTop'
 import { Footer } from '../components/Footer'
-import { Work } from '../components/Work'
+import { Experience } from '../components/Experience'
 import { CardContact } from '../components/CardContact'
 import { Section } from '../styles/styles'
+import { Work } from '../components/Work'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <HomeHero />
         <About />
         <Skills />
+        <Experience />
         <Work />
         <Projects />
         <CardContact />
