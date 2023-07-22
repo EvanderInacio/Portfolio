@@ -29,11 +29,7 @@ export function HomeHero() {
           <h2>
             <Typewriter
               options={{
-                strings: [
-                  'Desenvolvedor Front-End',
-                  'Desenvolvedor ReactJS',
-                  'Desenvolvedor NextJS'
-                ],
+                strings: ['Desenvolvedor Front-End', 'React JS', 'Next JS'],
                 autoStart: true,
                 loop: true,
                 skipAddStyles: true
@@ -42,14 +38,14 @@ export function HomeHero() {
           </h2>
 
           <div className="button">
-            <ButtonPrimary>
-              <Link href={'#projects'}>
+            <Link href={'#projects'}>
+              <ButtonPrimary>
                 <a>
                   <b>Conheça meu portfólio </b>
                   <FiArrowRight style={{ marginBottom: '-0.3rem' }} size={20} />
                 </a>
-              </Link>
-            </ButtonPrimary>
+              </ButtonPrimary>
+            </Link>
           </div>
         </HomeText>
         <ImgHome>
