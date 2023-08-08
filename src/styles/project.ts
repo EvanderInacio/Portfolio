@@ -372,9 +372,16 @@ export const Print = styled.div`
     align-items: center;
     flex-direction: column;
 
+    img {
+      object-fit: contain;
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+    }
+
     h3 {
       color: ${props => props.theme.secondColor};
-      margin-top: 2.4rem;
+      margin-top: 3.7rem;
       font-size: 1.5rem;
       font-weight: 700;
 
@@ -386,10 +393,9 @@ export const Print = styled.div`
     p {
       color: ${props => props.theme.gray};
       padding: 0 1rem;
-      margin-bottom: .7rem;
+      margin-bottom: .4rem;
     }
   }
-  
 
   width: 18rem;
 

@@ -38,7 +38,7 @@ export default function Projeto({ project }: ProjectProps) {
 
       <S.ProjectContainer>
         <S.Banner>
-          <img className="bannerUrl" src={project.imgUrl} alt={project.title} />
+          <img className="bannerUrl" src={project.banner} alt={project.title} />
           <div className="bannerContainer">
             <div className="bannerContent">
               <img src={project.icon} alt={project.title} />
@@ -151,9 +151,8 @@ export default function Projeto({ project }: ProjectProps) {
                       <h3>{print.name}</h3>
                       <p>{print.description}</p>
                       <Image
-                        style={{ borderRadius: '10px' }}
-                        width={780}
-                        height={470}
+                        width={770}
+                        height={460}
                         src={print.img}
                         alt={print.name}
                       />
@@ -218,6 +217,7 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
     id: project.id,
     link: project.url,
     imgUrl: project.img,
+    banner: project.banner,
     icon: project.icon,
     title: project.title,
     type: project.type,

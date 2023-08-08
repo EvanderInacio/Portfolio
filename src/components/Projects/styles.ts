@@ -88,6 +88,10 @@ export const ProjectsContent = styled.div`
       display: flex;
       flex-direction: row;
       gap: 9px;
+
+      img {
+        object-fit: contain;
+      }
     }
   }
 
