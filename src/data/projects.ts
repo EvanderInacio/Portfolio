@@ -41,45 +41,51 @@ const projects = [
       {
         name: 'Home',
         description:
-          'Homepage do site com um banner em forma de sliders que mostra os destaques de produtos existentes na loja.',
+          'Homepage do site com um banner em forma de sliders que mostra os destaques de produtos existentes na loja. Cada slide destaca as características distintas de cada produto.',
         img: '/projects/e-shop/home.png'
       },
       {
         name: 'Lista de Produtos',
         description:
-          'Homepage do site, onde são exibidos todos os produtos da loja..',
+          'Homepage do site, onde são exibidos todos os produtos da loja. Explorando uma ampla gama de produtos que atendem a diversos gostos e necessidades.',
         img: '/projects/e-shop/home-products.png'
       },
       {
         name: 'Produto Detalhes',
         description:
-          'Pagina de detalhes de um produto, contendo uma descrição do produto, assim como o seu preço e um imagem ilustrativa e o botão de adicionar aos favoritos ou ao carrinho.',
+          'Página de detalhes de um produto, contendo uma descrição do produto, assim como o seu preço e um imagem ilustrativa. Botão de adicionar aos favoritos ou ao carrinho.',
         img: '/projects/e-shop/details.png'
       },
       {
         name: 'Favoritos',
         description:
-          'Pagina de favoritos, local para deixar guardado aquele produto desejado. ',
+          'Página de Favoritos, o seu próprio santuário de desejos! Aqui, você tem a oportunidade de manter um registro dos produtos que capturaram o seu coração.',
         img: '/projects/e-shop/favorite.png'
       },
       {
         name: 'Carrinho',
         description:
-          'Pagina do carrinho. Aqui você tem a opção de adicionar a quatidade especifica de produtos que deseja, assim como visualizar todos os produtos adicionados ao carrinho e sua soma total.',
+          'Página do carrinho. Aqui você tem a opção de adicionar a quantidade específica de produtos que deseja, assim como visualizar todos os produtos adicionados ao carrinho e a soma dos valores de todos os produtos.',
         img: '/projects/e-shop/cart.png'
       },
       {
+        name: 'Checkout',
+        description:
+          'Página com o formulário de pagamentos da plataforma stripe.',
+        img: '/projects/e-shop/stripe.png'
+      },
+      {
         name: 'Sucesso',
-        description: 'Pagina de sucesso, mostra as imagens do produtos que a pessoa compro assim como o nome dela e a quantidade de produtos comprados.',
+        description: 'Página de sucesso, mostra as imagens dos produtos que a pessoa compro assim como o nome dela e a quantidade de produtos comprados.',
         img: '/projects/e-shop/success.png'
       },
     ],
     status: 'Completo',
     year: '2023',
-    gif: '',
-    backgroundImage: '/projects/turtlemovie/home.png',
+    gif: '/projects/e-shop/e-shop.mp4',
+    backgroundImage: '/projects/e-shop/home.png',
     video:
-      ''
+      'https://www.youtube.com/watch?v=xotEZglo6l8&ab_channel=EvanderIn%C3%A1cio'
   },
 
   {
@@ -124,24 +130,24 @@ const projects = [
       {
         name: 'Login',
         description:
-          'Pagina de login com a opção de logar pelo google ou pelo github.',
+          'Página de login com a opção de conectar pelo google ou pelo github.',
         img: '/projects/whatsapp/login.png'
       },
       {
         name: 'Home Light',
         description:
-          'Pagina de inicio apos o usuário se autenticar, onde exibe uma mensagem de boas vindas, e no canto esquerdo uma lista de contatos.',
+          'Página de início, após o usuário se autenticar, onde exibe uma mensagem de Boas-vindas, e no canto esquerdo uma lista de contatos.',
         img: '/projects/whatsapp/home-light.png'
       },
       {
         name: 'Home Dark',
-        description: 'Pagina de inicio na versão dark mode.',
+        description: 'Página inicial em sua versão dark mode.',
         img: '/projects/whatsapp/home-dark.png'
       },
       {
         name: 'Chat',
         description:
-          'Pagina de chat exibe a informações de um chat especifico mostrando as mensagens enviadas por você e aquelas respondidas pelo outro contato.',
+          'Página de chat exibe a informações de um chat especifico mostrando as mensagens enviadas por você e aquelas respondidas pelo outro contato.',
         img: '/projects/whatsapp/chat.png'
       },
       {
@@ -211,25 +217,25 @@ const projects = [
       {
         name: 'Filmes Populares',
         description:
-          'Pagina que tem os filmes mais populares, assim como aqueles com a maior nota de todos os tempos.',
+          'Página que tem os filmes mais populares, assim como aqueles com a maior nota de todos os tempos.',
         img: '/projects/turtlemovie/movie-popular.png'
       },
       {
         name: 'Séries Populares',
         description:
-          'Pagina que contem as séries mais populares, assim como aqueles com a maior nota de todos os tempos.',
+          'Página que contem as séries mais populares, assim como aqueles com a maior nota de todos os tempos.',
         img: '/projects/turtlemovie/series-popular.png'
       },
       {
         name: 'Pagina Detalhes',
         description:
-          'Pagina que contem os detalhes de um filme/serie especifico. Como a data de lançamento, a duração (no caso de filmes), a produção, o idioma e o país de origem. ',
+          'Página que contem os detalhes de um filme/serie especifico. Como a data de lançamento, a duração (no caso de filmes), a produção, o idioma e o país de origem. ',
         img: '/projects/turtlemovie/detail-home.png'
       },
       {
         name: 'Detalhes Atores',
         description:
-          'Pagina que contem os detalhes dos personagens assim como a opção de ver a ficha técnica de cada pessoa específica.',
+          'Página que contem os detalhes dos personagens assim como a opção de ver a ficha técnica de cada pessoa específica.',
         img: '/projects/turtlemovie/detail-elenco.png'
       },
       {
@@ -246,7 +252,7 @@ const projects = [
       {
         name: 'Atores Detalhes',
         description:
-          'Pagina que contem os detalhes dos personagens assim como a ficha técnica de cada pessoa específica. Você poderá acompanhar a carreira de seus atores favoritos e encontrar novas obras para assistir.',
+          'Página que contem os detalhes dos personagens assim como a ficha técnica de cada pessoa específica. Você poderá acompanhar a carreira de seus atores favoritos e encontrar novas obras para assistir.',
         img: '/projects/turtlemovie/detail-people.png'
       }
     ],
@@ -293,7 +299,7 @@ const projects = [
       {
         name: 'Home',
         description:
-          'Pagina inicial do site com uma animação no controle do playstation, assim como a possibilidade de ver sobre e também explorar outros controles.',
+          'Página inicial do site com uma animação no controle do playstation, assim como a possibilidade de ver sobre e também explorar outros controles.',
         img: '/projects/playstation/playstation-home.png'
       },
       {
@@ -305,13 +311,13 @@ const projects = [
       {
         name: 'Sobre',
         description:
-          'Pagina que mostra uma geral dos controles disponíveis no site.',
+          'Página que mostra uma geral dos controles disponíveis no site.',
         img: '/projects/playstation/playstation-about.png'
       },
       {
         name: 'Produtos',
         description:
-          'Pagina de produtos que mostra uma lista com mais detalhes sobre a diferença de cada controle.',
+          'Página de produtos que mostra uma lista com mais detalhes sobre a diferença de cada controle.',
         img: '/projects/playstation/playstation-product.png'
       },
       {
@@ -323,7 +329,7 @@ const projects = [
       {
         name: 'Venda',
         description:
-          'Pagina de compra onde existe um formulário com a opção escolhida e o cadastro de compra.',
+          'Página de compra onde existe um formulário com a opção escolhida e o cadastro de compra.',
         img: '/projects/playstation/playstation-buy.png'
       },
       {
