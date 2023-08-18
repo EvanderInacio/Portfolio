@@ -52,7 +52,7 @@ export default function About() {
               />
 
               <div className="links">
-                <ul role="list">
+                <ul>
                   <Link href={'https://github.com/EvanderInacio'}>
                     <a target="_blank" aria-label="Link para o Github">
                       <AiFillGithub size={25} /> @EvanderInacio
@@ -81,13 +81,13 @@ export default function About() {
                       <FaDiscord size={25} /> @evander_inacio
                     </a>
                   </Link>
-                  <Link href={'mailto:evander.20112@hotmail.com'}>
+                  <Link href={'mailto:evander.20116@gmail.com'}>
                     <a
                       className="email"
                       target="_blank"
                       aria-label="Link para o email"
                     >
-                      <GrMail size={25} /> @evander.20112@hotmail.com
+                      <GrMail size={25} /> @evander.20116@gmail.com
                     </a>
                   </Link>
                 </ul>
@@ -138,12 +138,11 @@ export default function About() {
                 Em termos de minha experiência até o momento, tenho uma base
                 sólida em desenvolvimento front-end. Gosto de trabalhar com
                 React e NextJS para criar interfaces de usuário dinâmicas.
-                Atualmente, trabalho como desenvolvedor front-end freelancer,
-                utilizando ReactJS e Material UI, além de fazer integrações com
-                NodeJS.
+                Trabalhei como desenvolvedor front-end freelancer,
+                utilizando ReactJS e Material UI, além de colaborar com a equipe de desenvolvimento Back-end para integrar componentes Front-end e Back-end de nossas aplicações.
               </p>
               <p>
-                Além do trabalho, continuo estudando e desenvolvendo projetos
+                Continuo estudando e desenvolvendo projetos
                 pessoais para expandir meus conhecimentos, focado no ecossistema
                 Javascript para desenvolvimento Front-end utilizando ReactJS,
                 Typescript, Next.js, entre outros.
