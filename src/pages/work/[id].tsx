@@ -71,13 +71,13 @@ export default function Projeto({ work }: WorkProps) {
             return (
               <div className='print' key={print.id}>
                 <h3>{print.name}</h3>
-                <p>{print.description}</p>
                 <Image
                   width={900}
                   height={500}
                   src={print.image}
                   alt={print.name}
-                />
+                  />
+                <p>{print.description}</p>
               </div>
             )
           })}

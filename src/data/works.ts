@@ -41,13 +41,13 @@ const works = [
         name: 'Filters',
         image: '/work/spedisco/filter.png',
         description:
-          'Página de filters o usuário pode filtrar um contato, assim como criar um filtro.'
+          'Página de filters o usuário pode filtrar um contato, assim criar, deletar e editar um filtro.'
       },
       {
         name: 'Group',
         image: '/work/spedisco/group.png',
         description:
-          'Página de grupos o usuário pode criar/deletar/editar um grupo de um ou mais contatos.'
+          'Página de group o usuário pode criar/deletar/editar um grupo de um ou mais contatos.'
       },
       {
         name: 'Settings Email',
@@ -59,7 +59,7 @@ const works = [
         name: 'Settings Lang',
         image: '/work/spedisco/settings-lang.png',
         description:
-          'Ainda dentro da página de configuração ele tem a opção de escolher a linguagem da plataforma com a opção de Italiano ou inglês.'
+          'Ainda dentro da página de configuração existe a opção de escolher a linguagem da plataforma entre Italiano que é o padrão da plataforma ou inglês.'
       }
     ]
   },

@@ -48,7 +48,7 @@ export const WorkBanner = styled.div<WorkProps>`
     font-size: 1.3rem;
     font-weight: 500;
   }
-  
+
   span {
     color: ${props => props.theme.gray};
     margin-bottom: 3rem;
@@ -84,7 +84,7 @@ export const WorkBanner = styled.div<WorkProps>`
 `
 
 export const WorkContent = styled.div`
-  margin-top: 5rem;
+  margin: 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,22 +92,47 @@ export const WorkContent = styled.div`
   gap: 5rem;
   padding: 0 1rem;
 
+  @media (min-width: 994px) {
+    gap: 10rem;
+  }
+
   .print {
+    position: relative;
+
     h3 {
       text-align: center;
       color: ${props => props.theme.firstColor};
       font-size: 3rem;
       margin-bottom: 0.5rem;
 
-      @media(max-width: 468px) {
+      @media (max-width: 468px) {
         font-size: 2rem;
       }
     }
 
+    img {
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
     p {
-      max-width: 55rem;
-      margin-bottom: 1rem;
-      color: ${props => props.theme.gray};
+      @media (min-width: 994px) {
+        position: absolute;
+        bottom: -2.5rem;
+        left: -2.5rem;
+        z-index: 1;
+        max-width: 35rem;
+        background-color: ${props => props.theme.backgroundAlt};
+        border-radius: 3px;
+        padding: 1rem;
+      }
+      
+      padding-top: 1rem;
+      max-width: 40rem;
+      color: ${props => props.theme.white};
     }
   }
 `
