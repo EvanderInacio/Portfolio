@@ -8,6 +8,9 @@ export const WorkContainer = styled.section`
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
 `
 
 export const WorkBanner = styled.div<WorkProps>`
@@ -83,56 +86,84 @@ export const WorkBanner = styled.div<WorkProps>`
   }
 `
 
-export const WorkContent = styled.div`
-  margin: 5rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-  padding: 0 1rem;
+export const WorkDescription = styled.div``
 
-  @media (min-width: 994px) {
-    gap: 10rem;
+export const WorkContent = styled.div`
+  display: flex;
+  align-items: flex-end;
+  gap: 5rem;
+  margin-bottom: 5rem;
+  position: relative;
+
+  @media (min-width: 1000px) {
+    margin-bottom: 15rem;
   }
 
-  .print {
+  .workItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 0 1rem;
     position: relative;
 
-    h3 {
-      text-align: center;
-      color: ${props => props.theme.firstColor};
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-
-      @media (max-width: 468px) {
-        font-size: 2rem;
-      }
-    }
-
     img {
-      opacity: 0.8;
+      border-radius: 5px;
+      max-width: 1200px;
+    }
 
-      &:hover {
-        opacity: 1;
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      h3 {
+        color: ${props => props.theme.firstColor};
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+
+        @media (max-width: 468px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      p {
+        max-width: 35rem;
+        color: ${props => props.theme.gray_light};
+        margin-bottom: 1rem;
       }
     }
 
-    p {
-      @media (min-width: 994px) {
+    @media (min-width: 1000px) {
+      .text {
         position: absolute;
-        bottom: -2.5rem;
-        left: -2.5rem;
+        bottom: -6rem;
+        right: -2.5rem;
+        transition: 0.5s;
+        max-width: 40rem;
         z-index: 1;
-        max-width: 35rem;
         background-color: ${props => props.theme.backgroundAlt};
         border-radius: 3px;
         padding: 1rem;
+        text-align: start;
       }
-      
-      padding-top: 1rem;
-      max-width: 40rem;
-      color: ${props => props.theme.white};
+    }
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    align-items: center;
+
+    .workItem {
+      .text {
+        align-items: right;
+        right: 0;
+        left: -10rem;
+      }
     }
   }
 `

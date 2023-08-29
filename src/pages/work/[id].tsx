@@ -17,7 +17,7 @@ interface WorkProps {
 export default function Projeto({ work }: WorkProps) {
   return (
     <>
-       <Head>
+      <Head>
         <title>{work.title} | Evander Inácio </title>
         <meta name="description" content={work.description} />
         <meta property="og:title" content={work.title} />
@@ -27,11 +27,11 @@ export default function Projeto({ work }: WorkProps) {
         <meta name="twitter:image" content={work.imgUrl} />
         <meta name="twitter:image:src" content={work.imgUrl} />
       </Head>
-      
+
       <S.WorkContainer>
         <S.WorkBanner imgUrl={work.imgUrl}>
           <div className="bannerImg" />
-          <div className='title'>
+          <div className="title">
             <Image width={55} height={55} src={work.logo} alt={work.title} />
             <h1>{work.title}</h1>
           </div>
@@ -66,22 +66,28 @@ export default function Projeto({ work }: WorkProps) {
           </Link>
         </S.WorkBanner>
 
-        <S.WorkContent>
+        <S.WorkDescription>
           {work.prints.map(print => {
             return (
-              <div className='print' key={print.id}>
-                <h3>{print.name}</h3>
-                <Image
-                  width={900}
-                  height={500}
-                  src={print.image}
-                  alt={print.name}
-                  />
-                <p>{print.description}</p>
-              </div>
+              <>
+                <S.WorkContent>
+                  <div className="workItem" key={print.id}>
+                    <div className="text">
+                      <h3>{print.name}</h3>
+                      <p>{print.description}</p>
+                    </div>
+                    <Image
+                      width={700}
+                      height={400}
+                      src={print.image}
+                      alt={print.name}
+                    />
+                  </div>
+                </S.WorkContent>
+              </>
             )
           })}
-        </S.WorkContent>
+        </S.WorkDescription>
 
         <Link href={'/#work'}>
           <ButtonSecondary>
