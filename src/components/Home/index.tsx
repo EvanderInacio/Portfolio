@@ -29,7 +29,7 @@ export function HomeHero() {
           <h2>
             <Typewriter
               options={{
-                strings: ['Desenvolvedor Front-End', 'React JS', 'Next JS'],
+                strings: ['Desenvolvedor Front-End'],
                 autoStart: true,
                 loop: true,
                 skipAddStyles: true
